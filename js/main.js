@@ -142,6 +142,7 @@ function loadSharedComponents() {
           <!-- <li><a href="${prefix}pages/translation.html">翻译</a></li> -->
           <!-- <li><a href="${prefix}pages/writing.html">作文</a></li> -->
           <li><a href="${prefix}pages/vocabulary.html">词汇</a></li>
+          <li><a href="${prefix}pages/games.html">游戏</a></li>
         </ul>
         <button class="nav__toggle" aria-label="菜单">
           <span></span>
@@ -159,6 +160,7 @@ function loadSharedComponents() {
         <!-- <a href="${prefix}pages/translation.html">翻译</a> -->
         <!-- <a href="${prefix}pages/writing.html">作文</a> -->
         <a href="${prefix}pages/vocabulary.html">词汇</a>
+        <a href="${prefix}pages/games.html">游戏</a>
       </div>
     </nav>
   `;
@@ -193,6 +195,7 @@ function loadSharedComponents() {
               <!-- <li><a href="${prefix}pages/translation.html">翻译</a></li> -->
               <!-- <li><a href="${prefix}pages/writing.html">作文</a></li> -->
               <li><a href="${prefix}pages/vocabulary.html">核心词汇</a></li>
+              <li><a href="${prefix}pages/games.html">单词游戏</a></li>
             </ul>
           </div>
           <div class="footer__col">

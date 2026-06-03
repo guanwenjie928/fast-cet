@@ -1,6 +1,6 @@
 /**
  * Fast CET — Service Worker
- * 离线优先缓存策略, 支持通勤模式 (metro) 断网环境
+ * 离线优先缓存策略
  *
  * 缓存策略:
  *   - Static assets (CSS/JS/fonts):  Cache-First (预缓存, 永久可用)
@@ -34,9 +34,6 @@ const PRECACHE_URLS = [
   '/css/cards.css',
   '/css/content.css',
   '/css/responsive.css',
-  '/css/metro.css',
-  '/css/stealth.css',
-  '/css/disguises.css',
 
   // JS
   '/js/main.js',
@@ -48,8 +45,10 @@ const PRECACHE_URLS = [
   '/js/filter.js',
   '/js/counters.js',
   '/js/content-animations.js',
-  '/js/mode-manager.js',
-  '/js/boss-key.js',
+
+  // 核心内容页
+  '/pages/vocabulary.html',
+  '/pages/games.html',
 
   // 离线回退页
   '/offline.html',

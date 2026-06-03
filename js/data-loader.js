@@ -20,7 +20,8 @@ const DataLoader = {
   _pendingRequests: new Map(),
 
   /**
-   * Fetch JSON with caching and deduplication
+   * Fetch JSON with caching and deduplication.
+   * Uses fetch() first (works on HTTP), falls back to XHR (works on file://).
    * @param {string} path - relative path from API_BASE
    * @returns {Promise<object|null>}
    */
@@ -37,24 +38,64 @@ const DataLoader = {
       return this._pendingRequests.get(url);
     }
 
-    const promise = fetch(url)
-      .then(res => {
-        if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
-        return res.json();
-      })
-      .then(data => {
+    const promise = this._doFetch(url);
+    this._pendingRequests.set(url, promise);
+    return promise;
+  },
+
+  /**
+   * Internal: try fetch() first, fall back to XHR for file:// compatibility.
+   */
+  async _doFetch(url) {
+    // Try fetch() first (works on HTTP/S)
+    try {
+      const res = await fetch(url);
+      if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
+      const data = await res.json();
+      this._cache.set(url, data);
+      this._pendingRequests.delete(url);
+      return data;
+    } catch (fetchErr) {
+      // If fetch fails (e.g. file:// protocol), try XHR fallback
+      try {
+        const data = await this._xhrFetch(url);
         this._cache.set(url, data);
         this._pendingRequests.delete(url);
         return data;
-      })
-      .catch(err => {
+      } catch (xhrErr) {
         this._pendingRequests.delete(url);
-        console.warn(`[DataLoader] Failed to load ${url}:`, err.message);
+        console.warn(`[DataLoader] Failed to load ${url}:`, fetchErr.message);
         return null;
-      });
+      }
+    }
+  },
 
-    this._pendingRequests.set(url, promise);
-    return promise;
+  /**
+   * XHR-based JSON loader — works with file:// protocol where fetch() fails.
+   * @param {string} url
+   * @returns {Promise<object>}
+   */
+  _xhrFetch(url) {
+    return new Promise((resolve, reject) => {
+      const xhr = new XMLHttpRequest();
+      xhr.open('GET', url, true);
+      xhr.overrideMimeType('application/json');
+      xhr.onload = () => {
+        if (xhr.status >= 200 && xhr.status < 300) {
+          try {
+            resolve(JSON.parse(xhr.responseText));
+          } catch (e) {
+            reject(new Error(`JSON parse error for ${url}: ${e.message}`));
+          }
+        } else {
+          reject(new Error(`XHR ${xhr.status} for ${url}`));
+        }
+      };
+      xhr.onerror = () => reject(new Error(`XHR network error for ${url}`));
+      xhr.ontimeout = () => reject(new Error(`XHR timeout for ${url}`));
+      xhr.timeout = 10000;
+      xhr.send();
+    });
   },
 
   /**
