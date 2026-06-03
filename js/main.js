@@ -140,6 +140,7 @@ function loadSharedComponents() {
           <li><a href="${prefix}pages/reading.html">阅读</a></li>
           <li><a href="${prefix}pages/translation.html">翻译</a></li>
           <li><a href="${prefix}pages/writing.html">作文</a></li>
+          <li><a href="${prefix}pages/vocabulary.html">词汇</a></li>
         </ul>
         <button class="nav__toggle" aria-label="菜单">
           <span></span>
@@ -155,6 +156,7 @@ function loadSharedComponents() {
         <a href="${prefix}pages/reading.html">阅读</a>
         <a href="${prefix}pages/translation.html">翻译</a>
         <a href="${prefix}pages/writing.html">作文</a>
+        <a href="${prefix}pages/vocabulary.html">词汇</a>
       </div>
     </nav>
   `;
@@ -186,6 +188,7 @@ function loadSharedComponents() {
               <li><a href="${prefix}pages/reading.html">阅读理解</a></li>
               <li><a href="${prefix}pages/translation.html">翻译</a></li>
               <li><a href="${prefix}pages/writing.html">作文</a></li>
+              <li><a href="${prefix}pages/vocabulary.html">核心词汇</a></li>
             </ul>
           </div>
           <div class="footer__col">

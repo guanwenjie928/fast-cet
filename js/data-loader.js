@@ -173,6 +173,7 @@ const DataLoader = {
       this.loadQuestionBank('reading'),
       this.loadQuestionBank('translation'),
       this.loadQuestionBank('writing'),
+      this.loadQuestionBank('vocabulary'),
     ];
     await Promise.allSettled(tasks);
   },

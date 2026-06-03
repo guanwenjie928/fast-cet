@@ -1,0 +1,656 @@
+{
+  "type": "vocabulary",
+  "title": "CET-4 核心词汇",
+  "items": [
+    {
+      "id": "v-001",
+      "word": "abandon",
+      "pronunciation": "/əˈbændən/",
+      "definition": "v. 放弃；抛弃；遗弃",
+      "example": "They had to abandon the sinking ship.",
+      "exampleTranslation": "他们不得不放弃正在下沉的船。",
+      "category": "verb",
+      "difficulty": 2
+    },
+    {
+      "id": "v-002",
+      "word": "absorb",
+      "pronunciation": "/əbˈzɔːrb/",
+      "definition": "v. 吸收；吸引（注意力）；理解",
+      "example": "Plants absorb carbon dioxide from the air.",
+      "exampleTranslation": "植物从空气中吸收二氧化碳。",
+      "category": "verb",
+      "difficulty": 2
+    },
+    {
+      "id": "v-003",
+      "word": "accompany",
+      "pronunciation": "/əˈkʌmpəni/",
+      "definition": "v. 陪伴；伴随；为…伴奏",
+      "example": "She accompanied her mother to the hospital.",
+      "exampleTranslation": "她陪母亲去了医院。",
+      "category": "verb",
+      "difficulty": 2
+    },
+    {
+      "id": "v-004",
+      "word": "accomplish",
+      "pronunciation": "/əˈkɑːmplɪʃ/",
+      "definition": "v. 完成；实现；达到",
+      "example": "If we work together, we can accomplish anything.",
+      "exampleTranslation": "如果我们齐心协力，我们可以完成任何事情。",
+      "category": "verb",
+      "difficulty": 2
+    },
+    {
+      "id": "v-005",
+      "word": "acknowledge",
+      "pronunciation": "/əkˈnɑːlɪdʒ/",
+      "definition": "v. 承认；确认收到；致谢",
+      "example": "He acknowledged his mistake and apologized.",
+      "exampleTranslation": "他承认了自己的错误并道歉。",
+      "category": "verb",
+      "difficulty": 3
+    },
+    {
+      "id": "v-006",
+      "word": "adapt",
+      "pronunciation": "/əˈdæpt/",
+      "definition": "v. 适应；改编；调整",
+      "example": "Animals must adapt to changes in their environment.",
+      "exampleTranslation": "动物必须适应环境的变化。",
+      "category": "verb",
+      "difficulty": 2
+    },
+    {
+      "id": "v-007",
+      "word": "advocate",
+      "pronunciation": "/ˈædvəkeɪt/",
+      "definition": "v. 提倡；拥护；主张",
+      "example": "The organization advocates for equal rights for all.",
+      "exampleTranslation": "该组织倡导人人享有平等权利。",
+      "category": "verb",
+      "difficulty": 3
+    },
+    {
+      "id": "v-008",
+      "word": "allocate",
+      "pronunciation": "/ˈæləkeɪt/",
+      "definition": "v. 分配；拨出",
+      "example": "The government allocated funds for the new project.",
+      "exampleTranslation": "政府为新项目拨出了资金。",
+      "category": "verb",
+      "difficulty": 3
+    },
+    {
+      "id": "v-009",
+      "word": "anticipate",
+      "pronunciation": "/ænˈtɪsɪpeɪt/",
+      "definition": "v. 预期；期望；预先准备",
+      "example": "We anticipate that demand will increase next year.",
+      "exampleTranslation": "我们预计明年的需求会增加。",
+      "category": "verb",
+      "difficulty": 3
+    },
+    {
+      "id": "v-010",
+      "word": "appreciate",
+      "pronunciation": "/əˈpriːʃieɪt/",
+      "definition": "v. 欣赏；感激；理解",
+      "example": "I really appreciate your help with the project.",
+      "exampleTranslation": "我非常感激你在这个项目上的帮助。",
+      "category": "verb",
+      "difficulty": 2
+    },
+    {
+      "id": "v-011",
+      "word": "approach",
+      "pronunciation": "/əˈproʊtʃ/",
+      "definition": "v. 接近；着手处理 n. 方法；途径",
+      "example": "We need to approach this problem from a different angle.",
+      "exampleTranslation": "我们需要从不同的角度来处理这个问题。",
+      "category": "verb",
+      "difficulty": 2
+    },
+    {
+      "id": "v-012",
+      "word": "assess",
+      "pronunciation": "/əˈses/",
+      "definition": "v. 评估；评定；估算",
+      "example": "Teachers need to assess students' progress regularly.",
+      "exampleTranslation": "教师需要定期评估学生的进步。",
+      "category": "verb",
+      "difficulty": 3
+    },
+    {
+      "id": "v-013",
+      "word": "associate",
+      "pronunciation": "/əˈsoʊʃieɪt/",
+      "definition": "v. 联想；联系；交往",
+      "example": "People often associate success with hard work.",
+      "exampleTranslation": "人们常常把成功和努力联系在一起。",
+      "category": "verb",
+      "difficulty": 2
+    },
+    {
+      "id": "v-014",
+      "word": "assume",
+      "pronunciation": "/əˈsuːm/",
+      "definition": "v. 假定；假设；承担",
+      "example": "Don't assume that everyone agrees with you.",
+      "exampleTranslation": "不要假设每个人都同意你。",
+      "category": "verb",
+      "difficulty": 2
+    },
+    {
+      "id": "v-015",
+      "word": "attribute",
+      "pronunciation": "/əˈtrɪbjuːt/",
+      "definition": "v. 把…归因于 n. 属性；特征",
+      "example": "She attributes her success to hard work and perseverance.",
+      "exampleTranslation": "她把成功归因于努力和毅力。",
+      "category": "verb",
+      "difficulty": 3
+    },
+    {
+      "id": "n-001",
+      "word": "access",
+      "pronunciation": "/ˈækses/",
+      "definition": "n. 通道；进入权；访问 v. 访问；获取",
+      "example": "Students have free access to the library's online resources.",
+      "exampleTranslation": "学生可以免费访问图书馆的在线资源。",
+      "category": "noun",
+      "difficulty": 2
+    },
+    {
+      "id": "n-002",
+      "word": "accommodation",
+      "pronunciation": "/əˌkɑːməˈdeɪʃn/",
+      "definition": "n. 住宿；住处；容纳",
+      "example": "The university provides accommodation for international students.",
+      "exampleTranslation": "大学为国际学生提供住宿。",
+      "category": "noun",
+      "difficulty": 2
+    },
+    {
+      "id": "n-003",
+      "word": "achievement",
+      "pronunciation": "/əˈtʃiːvmənt/",
+      "definition": "n. 成就；成绩；实现",
+      "example": "Winning the competition was a great achievement for the team.",
+      "exampleTranslation": "赢得比赛对团队来说是一个巨大的成就。",
+      "category": "noun",
+      "difficulty": 2
+    },
+    {
+      "id": "n-004",
+      "word": "ambition",
+      "pronunciation": "/æmˈbɪʃn/",
+      "definition": "n. 抱负；雄心；野心",
+      "example": "Her ambition is to become a successful doctor.",
+      "exampleTranslation": "她的抱负是成为一名成功的医生。",
+      "category": "noun",
+      "difficulty": 2
+    },
+    {
+      "id": "n-005",
+      "word": "atmosphere",
+      "pronunciation": "/ˈætməsfɪr/",
+      "definition": "n. 气氛；大气层；氛围",
+      "example": "The restaurant has a warm and welcoming atmosphere.",
+      "exampleTranslation": "这家餐厅有一种温暖而热情的氛围。",
+      "category": "noun",
+      "difficulty": 2
+    },
+    {
+      "id": "n-006",
+      "word": "circumstance",
+      "pronunciation": "/ˈsɜːrkəmstæns/",
+      "definition": "n. 环境；情况；条件",
+      "example": "Under no circumstances should you give up your dream.",
+      "exampleTranslation": "在任何情况下都不要放弃你的梦想。",
+      "category": "noun",
+      "difficulty": 3
+    },
+    {
+      "id": "n-007",
+      "word": "consequence",
+      "pronunciation": "/ˈkɑːnsɪkwens/",
+      "definition": "n. 结果；后果；重要性",
+      "example": "Climate change will have serious consequences for future generations.",
+      "exampleTranslation": "气候变化将对后代产生严重的后果。",
+      "category": "noun",
+      "difficulty": 3
+    },
+    {
+      "id": "n-008",
+      "word": "contribution",
+      "pronunciation": "/ˌkɑːntrɪˈbjuːʃn/",
+      "definition": "n. 贡献；捐款；投稿",
+      "example": "Their contribution to the project was highly valued.",
+      "exampleTranslation": "他们对项目的贡献受到了高度评价。",
+      "category": "noun",
+      "difficulty": 3
+    },
+    {
+      "id": "n-009",
+      "word": "controversy",
+      "pronunciation": "/ˈkɑːntrəvɜːrsi/",
+      "definition": "n. 争议；争论；辩论",
+      "example": "The policy has caused great controversy among the public.",
+      "exampleTranslation": "这项政策在公众中引起了巨大争议。",
+      "category": "noun",
+      "difficulty": 3
+    },
+    {
+      "id": "n-010",
+      "word": "diversity",
+      "pronunciation": "/daɪˈvɜːrsəti/",
+      "definition": "n. 多样性；差异性",
+      "example": "Cultural diversity is one of the city's greatest strengths.",
+      "exampleTranslation": "文化多样性是这座城市最大的优势之一。",
+      "category": "noun",
+      "difficulty": 2
+    },
+    {
+      "id": "n-011",
+      "word": "economy",
+      "pronunciation": "/ɪˈkɑːnəmi/",
+      "definition": "n. 经济；节约",
+      "example": "The country's economy has been growing steadily.",
+      "exampleTranslation": "该国的经济一直在稳步增长。",
+      "category": "noun",
+      "difficulty": 2
+    },
+    {
+      "id": "n-012",
+      "word": "environment",
+      "pronunciation": "/ɪnˈvaɪrənmənt/",
+      "definition": "n. 环境；自然环境",
+      "example": "We must protect the environment for future generations.",
+      "exampleTranslation": "我们必须为后代保护环境。",
+      "category": "noun",
+      "difficulty": 1
+    },
+    {
+      "id": "n-013",
+      "word": "evidence",
+      "pronunciation": "/ˈevɪdəns/",
+      "definition": "n. 证据；迹象；证明",
+      "example": "There is strong evidence that exercise improves mental health.",
+      "exampleTranslation": "有强有力的证据表明运动能改善心理健康。",
+      "category": "noun",
+      "difficulty": 2
+    },
+    {
+      "id": "n-014",
+      "word": "opportunity",
+      "pronunciation": "/ˌɑːpərˈtuːnəti/",
+      "definition": "n. 机会；时机",
+      "example": "College is a great opportunity to discover your interests.",
+      "exampleTranslation": "大学是发现你兴趣的绝佳机会。",
+      "category": "noun",
+      "difficulty": 1
+    },
+    {
+      "id": "n-015",
+      "word": "phenomenon",
+      "pronunciation": "/fɪˈnɑːmɪnən/",
+      "definition": "n. 现象；杰出的人",
+      "example": "Global warming is a complex phenomenon that affects everyone.",
+      "exampleTranslation": "全球变暖是一个影响每个人的复杂现象。",
+      "category": "noun",
+      "difficulty": 3
+    },
+    {
+      "id": "adj-001",
+      "word": "abundant",
+      "pronunciation": "/əˈbʌndənt/",
+      "definition": "adj. 丰富的；充裕的",
+      "example": "The region has abundant natural resources.",
+      "exampleTranslation": "该地区拥有丰富的自然资源。",
+      "category": "adjective",
+      "difficulty": 3
+    },
+    {
+      "id": "adj-002",
+      "word": "accessible",
+      "pronunciation": "/əkˈsesəbl/",
+      "definition": "adj. 可进入的；易接近的；可理解的",
+      "example": "The museum is accessible to people with disabilities.",
+      "exampleTranslation": "博物馆对残障人士是无障碍的。",
+      "category": "adjective",
+      "difficulty": 2
+    },
+    {
+      "id": "adj-003",
+      "word": "adequate",
+      "pronunciation": "/ˈædɪkwət/",
+      "definition": "adj. 足够的；充分的；适当的",
+      "example": "Make sure you get adequate sleep before the exam.",
+      "exampleTranslation": "确保考试前有充足的睡眠。",
+      "category": "adjective",
+      "difficulty": 3
+    },
+    {
+      "id": "adj-004",
+      "word": "alternative",
+      "pronunciation": "/ɔːlˈtɜːrnətɪv/",
+      "definition": "adj. 可替代的 n. 替代方案",
+      "example": "We need to find alternative sources of energy.",
+      "exampleTranslation": "我们需要找到替代能源。",
+      "category": "adjective",
+      "difficulty": 2
+    },
+    {
+      "id": "adj-005",
+      "word": "appropriate",
+      "pronunciation": "/əˈproʊpriət/",
+      "definition": "adj. 适当的；合适的",
+      "example": "Please wear appropriate clothing for the interview.",
+      "exampleTranslation": "面试时请穿着得体的服装。",
+      "category": "adjective",
+      "difficulty": 2
+    },
+    {
+      "id": "adj-006",
+      "word": "artificial",
+      "pronunciation": "/ˌɑːrtɪˈfɪʃl/",
+      "definition": "adj. 人造的；人工的；虚假的",
+      "example": "Artificial intelligence is transforming many industries.",
+      "exampleTranslation": "人工智能正在改变许多行业。",
+      "category": "adjective",
+      "difficulty": 2
+    },
+    {
+      "id": "adj-007",
+      "word": "beneficial",
+      "pronunciation": "/ˌbenɪˈfɪʃl/",
+      "definition": "adj. 有益的；有利的",
+      "example": "Regular exercise is beneficial to both body and mind.",
+      "exampleTranslation": "定期锻炼对身心都有益。",
+      "category": "adjective",
+      "difficulty": 2
+    },
+    {
+      "id": "adj-008",
+      "word": "comprehensive",
+      "pronunciation": "/ˌkɑːmprɪˈhensɪv/",
+      "definition": "adj. 全面的；综合的；详尽的",
+      "example": "The report provides a comprehensive analysis of the issue.",
+      "exampleTranslation": "该报告对这一问题进行了全面的分析。",
+      "category": "adjective",
+      "difficulty": 3
+    },
+    {
+      "id": "adj-009",
+      "word": "conscious",
+      "pronunciation": "/ˈkɑːnʃəs/",
+      "definition": "adj. 有意识的；清醒的；故意的",
+      "example": "We should be more conscious of our environmental impact.",
+      "exampleTranslation": "我们应该更加注意我们对环境的影响。",
+      "category": "adjective",
+      "difficulty": 3
+    },
+    {
+      "id": "adj-010",
+      "word": "controversial",
+      "pronunciation": "/ˌkɑːntrəˈvɜːrʃl/",
+      "definition": "adj. 有争议的；引起争论的",
+      "example": "The controversial policy was debated for months.",
+      "exampleTranslation": "这项有争议的政策被辩论了数月。",
+      "category": "adjective",
+      "difficulty": 3
+    },
+    {
+      "id": "adj-011",
+      "word": "efficient",
+      "pronunciation": "/ɪˈfɪʃnt/",
+      "definition": "adj. 高效的；有效率的",
+      "example": "The new system is much more efficient than the old one.",
+      "exampleTranslation": "新系统比旧系统高效得多。",
+      "category": "adjective",
+      "difficulty": 2
+    },
+    {
+      "id": "adj-012",
+      "word": "essential",
+      "pronunciation": "/ɪˈsenʃl/",
+      "definition": "adj. 必要的；本质的；基本的",
+      "example": "Water is essential for all living things.",
+      "exampleTranslation": "水对所有生物都是必不可少的。",
+      "category": "adjective",
+      "difficulty": 2
+    },
+    {
+      "id": "adj-013",
+      "word": "flexible",
+      "pronunciation": "/ˈfleksəbl/",
+      "definition": "adj. 灵活的；柔韧的；可变通的",
+      "example": "The company offers flexible working hours to its employees.",
+      "exampleTranslation": "公司为员工提供灵活的工作时间。",
+      "category": "adjective",
+      "difficulty": 2
+    },
+    {
+      "id": "adj-014",
+      "word": "inevitable",
+      "pronunciation": "/ɪnˈevɪtəbl/",
+      "definition": "adj. 不可避免的；必然发生的",
+      "example": "Change is inevitable in every aspect of life.",
+      "exampleTranslation": "变化在生活的方方面面都是不可避免的。",
+      "category": "adjective",
+      "difficulty": 3
+    },
+    {
+      "id": "adj-015",
+      "word": "significant",
+      "pronunciation": "/sɪɡˈnɪfɪkənt/",
+      "definition": "adj. 重要的；显著的；有意义的",
+      "example": "There has been a significant increase in online learning.",
+      "exampleTranslation": "在线学习有了显著的增长。",
+      "category": "adjective",
+      "difficulty": 2
+    },
+    {
+      "id": "adv-001",
+      "word": "absolutely",
+      "pronunciation": "/ˈæbsəluːtli/",
+      "definition": "adv. 绝对地；完全地；毫无疑问地",
+      "example": "You are absolutely right about that.",
+      "exampleTranslation": "关于那件事你完全正确。",
+      "category": "adverb",
+      "difficulty": 2
+    },
+    {
+      "id": "adv-002",
+      "word": "accordingly",
+      "pronunciation": "/əˈkɔːrdɪŋli/",
+      "definition": "adv. 因此；相应地；从而",
+      "example": "The situation has changed, and we must act accordingly.",
+      "exampleTranslation": "情况已经变了，我们必须相应地采取行动。",
+      "category": "adverb",
+      "difficulty": 3
+    },
+    {
+      "id": "adv-003",
+      "word": "approximately",
+      "pronunciation": "/əˈprɑːksɪmətli/",
+      "definition": "adv. 大约；大概；近似地",
+      "example": "The project will take approximately six months to complete.",
+      "exampleTranslation": "这个项目大约需要六个月才能完成。",
+      "category": "adverb",
+      "difficulty": 2
+    },
+    {
+      "id": "adv-004",
+      "word": "consequently",
+      "pronunciation": "/ˈkɑːnsɪkwentli/",
+      "definition": "adv. 因此；所以；结果",
+      "example": "He didn't study for the exam; consequently, he failed.",
+      "exampleTranslation": "他没有为考试复习，因此他没通过。",
+      "category": "adverb",
+      "difficulty": 3
+    },
+    {
+      "id": "adv-005",
+      "word": "deliberately",
+      "pronunciation": "/dɪˈlɪbərətli/",
+      "definition": "adv. 故意地；慎重地",
+      "example": "I deliberately avoided mentioning the topic at dinner.",
+      "exampleTranslation": "我故意避免在晚餐时提及那个话题。",
+      "category": "adverb",
+      "difficulty": 3
+    },
+    {
+      "id": "adv-006",
+      "word": "eventually",
+      "pronunciation": "/ɪˈventʃuəli/",
+      "definition": "adv. 最终；终于；最后",
+      "example": "After many attempts, she eventually passed the driving test.",
+      "exampleTranslation": "经过多次尝试，她最终通过了驾驶考试。",
+      "category": "adverb",
+      "difficulty": 2
+    },
+    {
+      "id": "adv-007",
+      "word": "frequently",
+      "pronunciation": "/ˈfriːkwəntli/",
+      "definition": "adv. 频繁地；经常地",
+      "example": "This word frequently appears in CET-4 exams.",
+      "exampleTranslation": "这个词在四级考试中频繁出现。",
+      "category": "adverb",
+      "difficulty": 2
+    },
+    {
+      "id": "adv-008",
+      "word": "gradually",
+      "pronunciation": "/ˈɡrædʒuəli/",
+      "definition": "adv. 渐渐地；逐步地",
+      "example": "Her health gradually improved after the treatment.",
+      "exampleTranslation": "治疗后，她的健康状况逐渐好转。",
+      "category": "adverb",
+      "difficulty": 2
+    },
+    {
+      "id": "adv-009",
+      "word": "inevitably",
+      "pronunciation": "/ɪnˈevɪtəbli/",
+      "definition": "adv. 不可避免地；必然地",
+      "example": "Technological advances inevitably change the way we work.",
+      "exampleTranslation": "技术进步不可避免地改变了我们的工作方式。",
+      "category": "adverb",
+      "difficulty": 3
+    },
+    {
+      "id": "adv-010",
+      "word": "relatively",
+      "pronunciation": "/ˈrelətɪvli/",
+      "definition": "adv. 相对地；比较地",
+      "example": "The exam was relatively easy compared to last year's.",
+      "exampleTranslation": "与去年相比，这次考试相对容易。",
+      "category": "adverb",
+      "difficulty": 2
+    },
+    {
+      "id": "phrase-001",
+      "word": "account for",
+      "pronunciation": "/əˈkaʊnt fɔːr/",
+      "definition": "phr. 解释；说明（原因）；占（比例）",
+      "example": "Online sales account for 30% of the company's total revenue.",
+      "exampleTranslation": "在线销售占公司总收入的30%。",
+      "category": "phrase",
+      "difficulty": 3
+    },
+    {
+      "id": "phrase-002",
+      "word": "bring about",
+      "pronunciation": "/brɪŋ əˈbaʊt/",
+      "definition": "phr. 引起；导致；带来",
+      "example": "Technology has brought about significant changes in education.",
+      "exampleTranslation": "技术给教育带来了重大变革。",
+      "category": "phrase",
+      "difficulty": 2
+    },
+    {
+      "id": "phrase-003",
+      "word": "come up with",
+      "pronunciation": "/kʌm ʌp wɪð/",
+      "definition": "phr. 想出；提出（想法、方案）",
+      "example": "We need to come up with a better solution to the problem.",
+      "exampleTranslation": "我们需要想出一个更好的解决方案。",
+      "category": "phrase",
+      "difficulty": 2
+    },
+    {
+      "id": "phrase-004",
+      "word": "cope with",
+      "pronunciation": "/koʊp wɪð/",
+      "definition": "phr. 处理；应对；应付",
+      "example": "Students must learn to cope with academic pressure.",
+      "exampleTranslation": "学生必须学会应对学业压力。",
+      "category": "phrase",
+      "difficulty": 2
+    },
+    {
+      "id": "phrase-005",
+      "word": "figure out",
+      "pronunciation": "/ˈfɪɡjər aʊt/",
+      "definition": "phr. 弄清楚；弄明白；计算出",
+      "example": "I can't figure out why he suddenly changed his mind.",
+      "exampleTranslation": "我搞不懂他为什么突然改变了主意。",
+      "category": "phrase",
+      "difficulty": 2
+    },
+    {
+      "id": "phrase-006",
+      "word": "give rise to",
+      "pronunciation": "/ɡɪv raɪz tu/",
+      "definition": "phr. 引起；导致；造成",
+      "example": "The new policy gave rise to heated public debate.",
+      "exampleTranslation": "新政策引起了公众的热烈讨论。",
+      "category": "phrase",
+      "difficulty": 3
+    },
+    {
+      "id": "phrase-007",
+      "word": "in terms of",
+      "pronunciation": "/ɪn tɜːrmz əv/",
+      "definition": "phr. 就…而言；在…方面",
+      "example": "The city is quite small in terms of population.",
+      "exampleTranslation": "就人口而言，这个城市相当小。",
+      "category": "phrase",
+      "difficulty": 2
+    },
+    {
+      "id": "phrase-008",
+      "word": "make sense",
+      "pronunciation": "/meɪk sens/",
+      "definition": "phr. 有道理；讲得通；有意义",
+      "example": "His explanation doesn't make any sense to me.",
+      "exampleTranslation": "他的解释对我来说毫无道理。",
+      "category": "phrase",
+      "difficulty": 1
+    },
+    {
+      "id": "phrase-009",
+      "word": "take advantage of",
+      "pronunciation": "/teɪk ədˈvæntɪdʒ əv/",
+      "definition": "phr. 利用；占…的便宜",
+      "example": "You should take advantage of every opportunity to practice English.",
+      "exampleTranslation": "你应该利用每一个机会来练习英语。",
+      "category": "phrase",
+      "difficulty": 2
+    },
+    {
+      "id": "phrase-010",
+      "word": "turn out",
+      "pronunciation": "/tɜːrn aʊt/",
+      "definition": "phr. 结果是；证明是；出席",
+      "example": "The interview turned out to be much easier than I expected.",
+      "exampleTranslation": "面试结果比我想象的容易得多。",
+      "category": "phrase",
+      "difficulty": 2
+    }
+  ]
+}

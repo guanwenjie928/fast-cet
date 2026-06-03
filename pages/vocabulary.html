@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>核心词汇 — Fast CET</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="../css/reset.css?v=af37c8f">
+  <link rel="stylesheet" href="../css/variables.css?v=af37c8f">
+  <link rel="stylesheet" href="../css/global.css?v=af37c8f">
+  <link rel="stylesheet" href="../css/nav.css?v=af37c8f">
+  <link rel="stylesheet" href="../css/content.css?v=af37c8f">
+  <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+  <style>
+    /* ── Vocabulary Flashcard Layout ── */
+    .vocab-layout {
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: var(--space-xl);
+      align-items: start;
+    }
+
+    /* ── Flashcard Stage ── */
+    .flashcard-stage {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--space-lg);
+    }
+
+    .flashcard {
+      width: 100%;
+      max-width: 560px;
+      min-height: 380px;
+      background: var(--glass-bg);
+      backdrop-filter: blur(var(--glass-blur));
+      -webkit-backdrop-filter: blur(var(--glass-blur));
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-lg);
+      padding: 48px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      transition: box-shadow 0.3s ease;
+      cursor: default;
+    }
+
+    .flashcard:hover {
+      box-shadow: var(--shadow-md);
+    }
+
+    .flashcard__category {
+      position: absolute;
+      top: 20px;
+      left: 24px;
+      padding: 4px 14px;
+      font-size: 11px;
+      font-weight: var(--weight-bold);
+      color: var(--color-primary);
+      background: rgba(255,94,77,0.08);
+      border-radius: var(--radius-full);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .flashcard__difficulty {
+      position: absolute;
+      top: 20px;
+      right: 24px;
+      font-size: 13px;
+      color: var(--color-accent);
+      letter-spacing: 2px;
+    }
+
+    .flashcard__word {
+      font-family: var(--font-en);
+      font-size: clamp(36px, 6vw, 56px);
+      font-weight: var(--weight-extrabold);
+      color: var(--color-text);
+      margin-bottom: 12px;
+      line-height: 1.1;
+    }
+
+    .flashcard__pronunciation {
+      font-family: var(--font-en);
+      font-size: var(--text-lg);
+      color: var(--color-text-secondary);
+      margin-bottom: 32px;
+      font-weight: var(--weight-medium);
+    }
+
+    .flashcard__reveal-area {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .flashcard__definition {
+      font-size: var(--text-md);
+      color: var(--color-primary);
+      font-weight: var(--weight-semibold);
+      margin-bottom: 20px;
+      line-height: var(--leading-relaxed);
+    }
+
+    .flashcard__example {
+      background: var(--gradient-card);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      font-size: var(--text-sm);
+      color: var(--color-text);
+      line-height: var(--leading-loose);
+      margin-bottom: 8px;
+      text-align: left;
+      border-left: 3px solid var(--color-accent);
+    }
+
+    .flashcard__example-translation {
+      font-size: var(--text-xs);
+      color: var(--color-text-secondary);
+      text-align: left;
+      padding-left: 20px;
+    }
+
+    /* ── Action Buttons ── */
+    .flashcard__actions {
+      display: flex;
+      gap: var(--space-md);
+      width: 100%;
+      max-width: 560px;
+    }
+
+    .btn-vocab {
+      flex: 1;
+      padding: 14px 24px;
+      font-size: var(--text-base);
+      font-weight: var(--weight-semibold);
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .btn-reveal-def {
+      background: var(--glass-bg);
+      border: 1.5px solid var(--color-primary);
+      color: var(--color-primary);
+      width: 100%;
+      max-width: 560px;
+      padding: 14px 24px;
+      font-size: var(--text-base);
+      font-weight: var(--weight-semibold);
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn-reveal-def:hover {
+      background: var(--color-primary);
+      color: #FFF;
+      box-shadow: var(--shadow-md);
+    }
+
+    .btn-know {
+      background: linear-gradient(135deg, #22C55E, #16A34A);
+      color: #FFF;
+      box-shadow: 0 4px 12px rgba(34,197,94,0.3);
+    }
+
+    .btn-know:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(34,197,94,0.4);
+    }
+
+    .btn-dunno {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+      color: #FFF;
+      box-shadow: 0 4px 12px rgba(255,94,77,0.3);
+    }
+
+    .btn-dunno:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(255,94,77,0.4);
+    }
+
+    .btn-reset {
+      background: transparent;
+      border: 1.5px solid var(--color-border);
+      color: var(--color-text-secondary);
+      padding: 10px 20px;
+      font-size: var(--text-sm);
+      font-weight: var(--weight-medium);
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn-reset:hover {
+      border-color: var(--color-text-secondary);
+      color: var(--color-text);
+    }
+
+    /* ── Progress Bar ── */
+    .vocab-progress {
+      width: 100%;
+      max-width: 560px;
+    }
+
+    .vocab-progress__info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      font-size: var(--text-sm);
+      color: var(--color-text-secondary);
+    }
+
+    .vocab-progress__info strong {
+      color: var(--color-text);
+    }
+
+    .vocab-progress__bar {
+      width: 100%;
+      height: 8px;
+      background: var(--color-border);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .vocab-progress__fill {
+      height: 100%;
+      background: var(--gradient-progress);
+      border-radius: inherit;
+      transition: width 0.5s ease;
+    }
+
+    /* ── Sidebar Stats ── */
+    .vocab-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-lg);
+      position: sticky;
+      top: calc(var(--nav-height, 72px) + 24px);
+    }
+
+    .vocab-stat-card {
+      background: var(--glass-bg);
+      backdrop-filter: blur(var(--glass-blur));
+      -webkit-backdrop-filter: blur(var(--glass-blur));
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+    }
+
+    .vocab-stat-card__title {
+      font-size: var(--text-xs);
+      font-weight: var(--weight-bold);
+      color: var(--color-text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: var(--space-md);
+    }
+
+    .vocab-stat-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-md);
+    }
+
+    .vocab-stat-item {
+      text-align: center;
+      padding: 16px 12px;
+      background: var(--gradient-card);
+      border-radius: var(--radius-md);
+    }
+
+    .vocab-stat-item__number {
+      font-family: var(--font-en);
+      font-size: var(--text-2xl);
+      font-weight: var(--weight-extrabold);
+      color: var(--color-text);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .vocab-stat-item__number--know {
+      color: #22C55E;
+    }
+
+    .vocab-stat-item__number--dunno {
+      color: var(--color-primary);
+    }
+
+    .vocab-stat-item__number--remain {
+      color: var(--color-accent);
+    }
+
+    .vocab-stat-item__label {
+      font-size: var(--text-xs);
+      color: var(--color-text-secondary);
+    }
+
+    /* ── Wrong Answer Notebook ── */
+    .notebook {
+      background: var(--glass-bg);
+      backdrop-filter: blur(var(--glass-blur));
+      -webkit-backdrop-filter: blur(var(--glass-blur));
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+
+    .notebook__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 24px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      user-select: none;
+    }
+
+    .notebook__header:hover {
+      background: var(--gradient-card);
+    }
+
+    .notebook__title {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      font-weight: var(--weight-semibold);
+      color: var(--color-text);
+    }
+
+    .notebook__count {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 24px;
+      height: 24px;
+      padding: 0 8px;
+      font-size: 12px;
+      font-weight: var(--weight-bold);
+      color: #FFF;
+      background: var(--color-primary);
+      border-radius: var(--radius-full);
+    }
+
+    .notebook__toggle {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: var(--text-sm);
+      color: var(--color-text-secondary);
+    }
+
+    .notebook__arrow {
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
+
+    .notebook--open .notebook__arrow {
+      transform: rotate(180deg);
+    }
+
+    .notebook__body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .notebook--open .notebook__body {
+      max-height: 2000px;
+    }
+
+    .notebook__list {
+      padding: 0 24px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+
+    .notebook__item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 16px;
+      background: var(--gradient-card);
+      border-radius: var(--radius-sm);
+      font-size: var(--text-sm);
+      gap: var(--space-sm);
+    }
+
+    .notebook__item-word {
+      font-family: var(--font-en);
+      font-weight: var(--weight-semibold);
+      color: var(--color-text);
+      min-width: 120px;
+    }
+
+    .notebook__item-def {
+      color: var(--color-text-secondary);
+      flex: 1;
+      font-size: var(--text-xs);
+    }
+
+    .notebook__item-remove {
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      border: 1px solid var(--color-border);
+      background: transparent;
+      color: var(--color-text-secondary);
+      cursor: pointer;
+      font-size: 14px;
+      transition: all 0.2s ease;
+      flex-shrink: 0;
+    }
+
+    .notebook__item-remove:hover {
+      background: var(--color-primary);
+      border-color: var(--color-primary);
+      color: #FFF;
+    }
+
+    .notebook__empty {
+      text-align: center;
+      padding: 24px;
+      color: var(--color-text-secondary);
+      font-size: var(--text-sm);
+    }
+
+    /* ── Completion State ── */
+    .flashcard--complete {
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .flashcard__complete-icon {
+      font-size: 64px;
+      margin-bottom: 8px;
+    }
+
+    .flashcard__complete-title {
+      font-family: var(--font-en);
+      font-size: var(--text-2xl);
+      font-weight: var(--weight-extrabold);
+      color: var(--color-text);
+    }
+
+    .flashcard__complete-stats {
+      font-size: var(--text-sm);
+      color: var(--color-text-secondary);
+      line-height: 2;
+      text-align: center;
+    }
+
+    /* ── Empty State (no words in filtered pool) ── */
+    .flashcard--empty {
+      justify-content: center;
+      gap: 12px;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 1024px) {
+      .vocab-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .vocab-sidebar {
+        position: static;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .flashcard {
+        min-height: 320px;
+        padding: 36px 24px;
+      }
+
+      .flashcard__word {
+        font-size: 32px;
+      }
+
+      .flashcard__actions {
+        flex-direction: column;
+      }
+
+      .vocab-stat-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="content-page container">
+    <div class="breadcrumb">
+      <a href="../index.html">首页</a>
+      <span class="breadcrumb__sep">/</span>
+      <span class="breadcrumb__current">核心词汇</span>
+    </div>
+    <header class="page-header">
+      <h1>核心词汇</h1>
+      <p>一张一张翻，会的过，不会的记下来反复看 — 用最朴素的方式攻克 CET-4 高频词汇</p>
+    </header>
+
+    <div class="filter-tags" id="filterTags">
+      <button class="filter-tag filter-tag--active" data-filter="all">全部</button>
+      <button class="filter-tag" data-filter="verb">动词</button>
+      <button class="filter-tag" data-filter="noun">名词</button>
+      <button class="filter-tag" data-filter="adjective">形容词</button>
+      <button class="filter-tag" data-filter="adverb">副词</button>
+      <button class="filter-tag" data-filter="phrase">短语</button>
+    </div>
+
+    <div class="vocab-layout">
+      <!-- Main flashcard area -->
+      <div class="flashcard-stage">
+        <div class="vocab-progress" id="vocabProgress">
+          <div class="vocab-progress__info">
+            <span>进度: <strong id="progressText">0/0</strong></span>
+            <span id="progressPercent">0%</span>
+          </div>
+          <div class="vocab-progress__bar">
+            <div class="vocab-progress__fill" id="progressFill" style="width:0%"></div>
+          </div>
+        </div>
+
+        <div class="flashcard" id="flashcard">
+          <!-- Dynamically rendered -->
+        </div>
+
+        <div id="flashcardActions"></div>
+
+        <button class="btn-reset" id="btnReset" style="display:none" onclick="resetSession()">
+          重新开始
+        </button>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="vocab-sidebar">
+        <div class="vocab-stat-card">
+          <h3 class="vocab-stat-card__title">本轮统计</h3>
+          <div class="vocab-stat-grid">
+            <div class="vocab-stat-item">
+              <div class="vocab-stat-item__number" id="statReviewed">0</div>
+              <div class="vocab-stat-item__label">已复习</div>
+            </div>
+            <div class="vocab-stat-item">
+              <div class="vocab-stat-item__number vocab-stat-item__number--remain" id="statRemaining">0</div>
+              <div class="vocab-stat-item__label">剩余</div>
+            </div>
+            <div class="vocab-stat-item">
+              <div class="vocab-stat-item__number vocab-stat-item__number--know" id="statKnow">0</div>
+              <div class="vocab-stat-item__label">认识</div>
+            </div>
+            <div class="vocab-stat-item">
+              <div class="vocab-stat-item__number vocab-stat-item__number--dunno" id="statDunno">0</div>
+              <div class="vocab-stat-item__label">不认识</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="notebook" id="notebook">
+          <div class="notebook__header" onclick="toggleNotebook()">
+            <span class="notebook__title">
+              错题本
+              <span class="notebook__count" id="notebookCount">0</span>
+            </span>
+            <span class="notebook__toggle">
+              <span id="notebookToggleLabel">展开</span>
+              <span class="notebook__arrow">▾</span>
+            </span>
+          </div>
+          <div class="notebook__body">
+            <div class="notebook__list" id="notebookList">
+              <div class="notebook__empty">还没有不认识的词，继续保持！</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <script src="../js/main.js?v=af37c8f"></script>
+  <script src="../js/data-loader.js?v=af37c8f"></script>
+  <script>
+    initApp();
+
+    /* ── Vocabulary Session State ── */
+    const VocabSession = {
+      allWords: [],         // All words from JSON
+      pool: [],             // Currently filtered/shuffled words
+      currentIndex: 0,      // Position in pool
+      reviewed: 0,
+      knowCount: 0,
+      dunnoCount: 0,
+      wrongWords: [],       // { word, definition, id } — for 错题本
+      isRevealed: false,    // Whether current card is showing definition
+      activeFilter: 'all',
+
+      get currentWord() {
+        return this.pool[this.currentIndex] || null;
+      },
+
+      get totalInPool() {
+        return this.pool.length;
+      },
+
+      get isComplete() {
+        return this.pool.length > 0 && this.currentIndex >= this.pool.length;
+      }
+    };
+
+    /* ── Load Data ── */
+    async function loadVocabulary() {
+      const data = await DataLoader.loadQuestionBank('vocabulary');
+      if (!data || !data.items || data.items.length === 0) {
+        document.getElementById('flashcard').innerHTML =
+          '<div class="empty-state"><div class="empty-state__icon">📭</div><div class="empty-state__title">暂无词汇数据</div></div>';
+        return;
+      }
+      VocabSession.allWords = data.items;
+      buildPool('all');
+    }
+
+    /* ── Build Pool from filter ── */
+    function buildPool(filter) {
+      VocabSession.activeFilter = filter;
+      VocabSession.currentIndex = 0;
+      VocabSession.reviewed = 0;
+      VocabSession.knowCount = 0;
+      VocabSession.dunnoCount = 0;
+      VocabSession.wrongWords = [];
+      VocabSession.isRevealed = false;
+
+      if (filter === 'all') {
+        VocabSession.pool = [...VocabSession.allWords];
+      } else {
+        VocabSession.pool = VocabSession.allWords.filter(w => w.category === filter);
+      }
+
+      // Shuffle (Fisher-Yates)
+      for (let i = VocabSession.pool.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [VocabSession.pool[i], VocabSession.pool[j]] = [VocabSession.pool[j], VocabSession.pool[i]];
+      }
+
+      updateAllUI();
+    }
+
+    /* ── Render Current Card ── */
+    function renderCard() {
+      const card = document.getElementById('flashcard');
+      const actions = document.getElementById('flashcardActions');
+      const resetBtn = document.getElementById('btnReset');
+
+      if (VocabSession.isComplete) {
+        renderCompleteState(card, actions, resetBtn);
+        return;
+      }
+
+      resetBtn.style.display = 'none';
+
+      const word = VocabSession.currentWord;
+      if (!word) {
+        card.className = 'flashcard flashcard--empty';
+        card.innerHTML = '<p style="color:var(--color-text-secondary)">当前筛选下没有词汇</p>';
+        actions.innerHTML = '';
+        return;
+      }
+
+      VocabSession.isRevealed = false;
+      card.className = 'flashcard';
+
+      const categoryLabel = {
+        verb: '动词', noun: '名词', adjective: '形容词', adverb: '副词', phrase: '短语'
+      }[word.category] || word.category;
+
+      const difficultyStars = '★'.repeat(word.difficulty || 3) + '☆'.repeat(5 - (word.difficulty || 3));
+
+      card.innerHTML = `
+        <span class="flashcard__category">${categoryLabel}</span>
+        <span class="flashcard__difficulty">${difficultyStars}</span>
+        <div class="flashcard__word">${word.word}</div>
+        <div class="flashcard__pronunciation">${word.pronunciation}</div>
+        <div class="flashcard__reveal-area" id="revealArea" style="display:none">
+          <div class="flashcard__definition">${word.definition}</div>
+          <div class="flashcard__example">${word.example}</div>
+          <div class="flashcard__example-translation">${word.exampleTranslation}</div>
+        </div>
+      `;
+
+      actions.innerHTML = `
+        <button class="btn-reveal-def" id="btnReveal" onclick="revealDefinition()">
+          查看释义 <span style="display:inline-block;transition:transform 0.3s">→</span>
+        </button>
+        <div id="assessButtons" style="display:none;width:100%;display:none;gap:var(--space-md)">
+          <button class="btn-vocab btn-dunno" onclick="markDunno()">不认识</button>
+          <button class="btn-vocab btn-know" onclick="markKnow()">认识</button>
+        </div>
+      `;
+
+      // Animate card in
+      gsap.fromTo(card, { opacity: 0, y: 30, scale: 0.95 }, { opacity: 1, y: 0, scale: 1, duration: 0.5, ease: 'power3.out' });
+    }
+
+    /* ── Reveal Definition ── */
+    function revealDefinition() {
+      if (VocabSession.isRevealed) return;
+      VocabSession.isRevealed = true;
+
+      const revealArea = document.getElementById('revealArea');
+      const btnReveal = document.getElementById('btnReveal');
+      const assessDiv = document.getElementById('assessButtons');
+
+      // Hide reveal button, show definition
+      gsap.to(btnReveal, { opacity: 0, y: -10, duration: 0.25, ease: 'power2.in', onComplete: () => {
+        btnReveal.style.display = 'none';
+        revealArea.style.display = '';
+        gsap.fromTo(revealArea, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5, ease: 'power3.out', onComplete: () => {
+          assessDiv.style.display = 'flex';
+          gsap.fromTo(assessDiv.children, { opacity: 0, y: 15 }, { opacity: 1, y: 0, duration: 0.4, stagger: 0.08, ease: 'back.out(1.4)' });
+        }});
+      }});
+    }
+
+    /* ── Mark as Known ── */
+    function markKnow() {
+      VocabSession.knowCount++;
+      VocabSession.reviewed++;
+      advanceCard();
+    }
+
+    /* ── Mark as Unknown ── */
+    function markDunno() {
+      VocabSession.dunnoCount++;
+      VocabSession.reviewed++;
+
+      const word = VocabSession.currentWord;
+      // Avoid duplicates in wrong list
+      if (!VocabSession.wrongWords.some(w => w.id === word.id)) {
+        VocabSession.wrongWords.push({
+          id: word.id,
+          word: word.word,
+          pronunciation: word.pronunciation,
+          definition: word.definition,
+          category: word.category
+        });
+      }
+
+      advanceCard();
+    }
+
+    /* ── Advance to Next Card ── */
+    function advanceCard() {
+      VocabSession.currentIndex++;
+
+      if (VocabSession.isComplete) {
+        updateAllUI();
+      } else {
+        updateStatsUI();
+        updateNotebookUI();
+        updateProgressUI();
+
+        // Animate out current, then in next
+        const card = document.getElementById('flashcard');
+        const actions = document.getElementById('flashcardActions');
+        gsap.to([card, actions], { opacity: 0, y: -20, duration: 0.25, ease: 'power2.in', onComplete: () => {
+          renderCard();
+        }});
+      }
+    }
+
+    /* ── Complete State ── */
+    function renderCompleteState(card, actions, resetBtn) {
+      const total = VocabSession.totalInPool;
+      const knowPercent = total > 0 ? Math.round((VocabSession.knowCount / total) * 100) : 0;
+
+      card.className = 'flashcard flashcard--complete';
+      card.innerHTML = `
+        <div class="flashcard__complete-icon">${knowPercent >= 80 ? '🎉' : knowPercent >= 50 ? '💪' : '📚'}</div>
+        <div class="flashcard__complete-title">${knowPercent >= 80 ? '太棒了！' : knowPercent >= 50 ? '继续加油！' : '复习完成'}</div>
+        <div class="flashcard__complete-stats">
+          本轮复习 <strong>${total}</strong> 个词汇<br>
+          认识 <strong style="color:#22C55E">${VocabSession.knowCount}</strong> 个 ·
+          不认识 <strong style="color:var(--color-primary)">${VocabSession.dunnoCount}</strong> 个<br>
+          掌握率 <strong>${knowPercent}%</strong>
+        </div>
+      `;
+      gsap.fromTo(card, { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.6, ease: 'back.out(1.4)' });
+
+      actions.innerHTML = '';
+      resetBtn.style.display = '';
+    }
+
+    /* ── Reset Session ── */
+    function resetSession() {
+      buildPool(VocabSession.activeFilter);
+      renderCard();
+    }
+
+    /* ── Toggle Notebook ── */
+    function toggleNotebook() {
+      const nb = document.getElementById('notebook');
+      const label = document.getElementById('notebookToggleLabel');
+      const isOpen = nb.classList.toggle('notebook--open');
+      label.textContent = isOpen ? '收起' : '展开';
+    }
+
+    /* ── Remove from Notebook ── */
+    function removeFromNotebook(id) {
+      VocabSession.wrongWords = VocabSession.wrongWords.filter(w => w.id !== id);
+      updateNotebookUI();
+    }
+
+    /* ── UI Updates ── */
+    function updateAllUI() {
+      updateProgressUI();
+      updateStatsUI();
+      updateNotebookUI();
+      renderCard();
+    }
+
+    function updateProgressUI() {
+      const total = VocabSession.totalInPool;
+      const reviewed = VocabSession.reviewed;
+      document.getElementById('progressText').textContent = `${reviewed}/${total}`;
+      const pct = total > 0 ? Math.round((reviewed / total) * 100) : 0;
+      document.getElementById('progressPercent').textContent = pct + '%';
+      document.getElementById('progressFill').style.width = pct + '%';
+    }
+
+    function updateStatsUI() {
+      document.getElementById('statReviewed').textContent = VocabSession.reviewed;
+      document.getElementById('statRemaining').textContent = Math.max(0, VocabSession.totalInPool - VocabSession.reviewed);
+      document.getElementById('statKnow').textContent = VocabSession.knowCount;
+      document.getElementById('statDunno').textContent = VocabSession.dunnoCount;
+    }
+
+    function updateNotebookUI() {
+      const count = VocabSession.wrongWords.length;
+      document.getElementById('notebookCount').textContent = count;
+
+      const list = document.getElementById('notebookList');
+      if (count === 0) {
+        list.innerHTML = '<div class="notebook__empty">还没有不认识的词，继续保持！</div>';
+      } else {
+        const categoryLabel = { verb: '动词', noun: '名词', adjective: '形容词', adverb: '副词', phrase: '短语' };
+        list.innerHTML = VocabSession.wrongWords.map(w => `
+          <div class="notebook__item">
+            <span class="notebook__item-word">${w.word} <span style="font-size:11px;color:var(--color-text-secondary)">${w.pronunciation}</span></span>
+            <span class="notebook__item-def">${w.definition}</span>
+            <button class="notebook__item-remove" onclick="removeFromNotebook('${w.id}')" title="移除">✕</button>
+          </div>
+        `).join('');
+      }
+    }
+
+    /* ── Filter Tag Handling ── */
+    function initFilterTags() {
+      const container = document.getElementById('filterTags');
+      if (!container) return;
+
+      container.querySelectorAll('.filter-tag').forEach(tag => {
+        tag.addEventListener('click', () => {
+          const filter = tag.getAttribute('data-filter');
+          if (!filter || filter === VocabSession.activeFilter) return;
+
+          // Update active state
+          container.querySelectorAll('.filter-tag').forEach(t => t.classList.remove('filter-tag--active'));
+          tag.classList.add('filter-tag--active');
+
+          // Animate out current card
+          const card = document.getElementById('flashcard');
+          const actions = document.getElementById('flashcardActions');
+          gsap.to([card, actions], { opacity: 0, y: -15, duration: 0.2, ease: 'power2.in', onComplete: () => {
+            buildPool(filter);
+          }});
+        });
+      });
+    }
+
+    /* ── Keyboard shortcuts ── */
+    function initKeyboard() {
+      document.addEventListener('keydown', (e) => {
+        if (VocabSession.isComplete) return;
+
+        if (e.key === ' ' || e.key === 'Spacebar') {
+          e.preventDefault();
+          if (!VocabSession.isRevealed) {
+            revealDefinition();
+          }
+        } else if (e.key === 'ArrowLeft' && VocabSession.isRevealed) {
+          e.preventDefault();
+          markDunno();
+        } else if (e.key === 'ArrowRight' && VocabSession.isRevealed) {
+          e.preventDefault();
+          markKnow();
+        }
+      });
+    }
+
+    /* ── Bootstrap ── */
+    loadVocabulary().then(() => {
+      initFilterTags();
+      initKeyboard();
+    });
+  </script>
+</body>
+</html>
