@@ -27,7 +27,7 @@
       <p>涵盖社会、文化、科技、教育、经济、环境等常考话题，配套参考译文与翻译要点，帮你掌握汉译英技巧</p>
     </header>
     <div class="filter-tags" id="filterTags">
-      <button class="filter-tag is-active" data-filter="all">全部</button>
+      <button class="filter-tag filter-tag--active" data-filter="all">全部</button>
       <button class="filter-tag" data-filter="society">社会</button>
       <button class="filter-tag" data-filter="culture">文化</button>
       <button class="filter-tag" data-filter="technology">科技</button>
@@ -85,15 +85,7 @@
           </div>
           <div class="question-card__footer">
             <span class="question-card__meta">难度 ${item.difficulty || 3}/5</span>
-            <button class="btn-ghost question-card__action translation-toggle" onclick="
-              const ref = this.closest('.question-card').querySelector('.translation-reference');
-              const isHidden = ref.style.display === 'none';
-              ref.style.display = isHidden ? 'block' : 'none';
-              this.innerHTML = isHidden ? '隐藏译文 <span class=\"link-arrow\">↑</span>' : '查看译文 <span class=\"link-arrow\">→</span>';
-              if (isHidden) {
-                gsap.fromTo(ref, {opacity:0, y:-10}, {opacity:1, y:0, duration:0.4, ease:'power2.out'});
-              }
-            ">
+            <button class="btn-ghost question-card__action translation-toggle" onclick="toggleTranslation(this)">
               查看译文 <span class="link-arrow">→</span>
             </button>
           </div>
@@ -112,6 +104,16 @@
       Filter.init('filterTags', 'questionList', { filterAttr: 'data-category', itemSelector: '.question-card' });
       ContentAnimations.init({ filterContainerId: 'filterTags', cardSelector: '.question-card' });
     });
+
+    function toggleTranslation(btn) {
+      const ref = btn.closest('.question-card').querySelector('.translation-reference');
+      const isHidden = ref.style.display === 'none';
+      ref.style.display = isHidden ? 'block' : 'none';
+      btn.innerHTML = isHidden ? '隐藏译文 <span class="link-arrow">↑</span>' : '查看译文 <span class="link-arrow">→</span>';
+      if (isHidden) {
+        gsap.fromTo(ref, {opacity:0, y:-10}, {opacity:1, y:0, duration:0.4, ease:'power2.out'});
+      }
+    }
   </script>
 </body>
 </html>

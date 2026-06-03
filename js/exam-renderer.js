@@ -367,8 +367,8 @@ const ExamRenderer = {
   _toggleAnswer(questionId) {
     const el = document.getElementById(`answer-${questionId}`);
     if (!el) return;
-    const isOpen = el.classList.toggle('is-open');
-    const btn = el.nextElementSibling;
+    const isOpen = el.classList.toggle('answer-reveal--open');
+    const btn = el.querySelector('.answer-reveal__toggle');
     if (btn) {
       btn.textContent = isOpen ? '隐藏答案' : '查看答案';
     }
@@ -392,11 +392,11 @@ const ExamRenderer = {
 
     if (data.sampleEssay) {
       html += `<div class="sample-collapse glass-card">
-        <div class="sample-collapse__header" onclick="this.parentElement.classList.toggle('is-open')">
+        <div class="sample-collapse__header" onclick="var b=this.nextElementSibling;var o=b.style.display==='block';b.style.display=o?'none':'block';this.querySelector('.sample-collapse__arrow').style.transform=o?'rotate(0deg)':'rotate(180deg)'">
           <span>📄 参考范文</span>
           <span class="sample-collapse__arrow">▼</span>
         </div>
-        <div class="sample-collapse__body">
+        <div class="sample-collapse__body" style="display:none">
           <p>${this._escapeHTML(data.sampleEssay)}</p>
         </div>
       </div>`;
@@ -565,11 +565,11 @@ const ExamRenderer = {
 
     if (data.referenceTranslation) {
       html += `<div class="sample-collapse glass-card">
-        <div class="sample-collapse__header" onclick="this.parentElement.classList.toggle('is-open')">
+        <div class="sample-collapse__header" onclick="var b=this.nextElementSibling;var o=b.style.display==='block';b.style.display=o?'none':'block';this.querySelector('.sample-collapse__arrow').style.transform=o?'rotate(0deg)':'rotate(180deg)'">
           <span>📄 参考译文</span>
           <span class="sample-collapse__arrow">▼</span>
         </div>
-        <div class="sample-collapse__body">
+        <div class="sample-collapse__body" style="display:none">
           <p>${this._escapeHTML(data.referenceTranslation)}</p>
         </div>
       </div>`;

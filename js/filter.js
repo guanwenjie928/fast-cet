@@ -65,10 +65,10 @@ const Filter = {
   _toggleTag(tag, value) {
     if (this._activeTags.has(value)) {
       this._activeTags.delete(value);
-      tag.classList.remove('is-active');
+      tag.classList.remove('filter-tag--active');
     } else {
       this._activeTags.add(value);
-      tag.classList.add('is-active');
+      tag.classList.add('filter-tag--active');
     }
   },
 
@@ -77,13 +77,13 @@ const Filter = {
     if (this._activeTags.has(value)) {
       // Deselect current
       this._activeTags.clear();
-      tag.classList.remove('is-active');
+      tag.classList.remove('filter-tag--active');
     } else {
       // Clear all, select one
       this._activeTags.clear();
-      this._container.querySelectorAll('.filter-tag').forEach(t => t.classList.remove('is-active'));
+      this._container.querySelectorAll('.filter-tag').forEach(t => t.classList.remove('filter-tag--active'));
       this._activeTags.add(value);
-      tag.classList.add('is-active');
+      tag.classList.add('filter-tag--active');
     }
   },
 
@@ -147,9 +147,9 @@ const Filter = {
   setFilter(value) {
     this._activeTags.clear();
     this._container.querySelectorAll('.filter-tag').forEach(t => {
-      t.classList.remove('is-active');
+      t.classList.remove('filter-tag--active');
       if (t.getAttribute('data-filter') === value) {
-        t.classList.add('is-active');
+        t.classList.add('filter-tag--active');
         this._activeTags.add(value);
       }
     });
@@ -162,7 +162,7 @@ const Filter = {
   /** Clear all filters */
   clearFilter() {
     this._activeTags.clear();
-    this._container.querySelectorAll('.filter-tag').forEach(t => t.classList.remove('is-active'));
+    this._container.querySelectorAll('.filter-tag').forEach(t => t.classList.remove('filter-tag--active'));
     this._applyFilter();
     if (this._options.onFilter) {
       this._options.onFilter([]);

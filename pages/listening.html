@@ -27,7 +27,7 @@
       <p>涵盖短新闻、长对话、短文理解三大题型，配套高清音频与逐题解析，帮你攻克听力难关</p>
     </header>
     <div class="filter-tags" id="filterTags">
-      <button class="filter-tag is-active" data-filter="all">全部</button>
+      <button class="filter-tag filter-tag--active" data-filter="all">全部</button>
       <button class="filter-tag" data-filter="news">短新闻</button>
       <button class="filter-tag" data-filter="longConversation">长对话</button>
       <button class="filter-tag" data-filter="passage">短文理解</button>
@@ -75,7 +75,7 @@
           </div>
           <div class="question-card__footer">
             <span class="question-card__meta">共 ${item.questions ? item.questions.length : 0} 题</span>
-            <button class="btn-ghost question-card__action" onclick="this.closest('.question-card').querySelector('.question-card__detail').classList.toggle('is-open')">
+            <button class="btn-ghost question-card__action" onclick="toggleDetail(this)">
               展开题目 <span class="link-arrow">→</span>
             </button>
           </div>
@@ -102,6 +102,13 @@
       Filter.init('filterTags', 'questionList', { filterAttr: 'data-category', itemSelector: '.question-card' });
       ContentAnimations.init({ filterContainerId: 'filterTags', cardSelector: '.question-card' });
     });
+
+    function toggleDetail(btn) {
+      var detail = btn.closest('.question-card').querySelector('.question-card__detail');
+      var isOpen = detail.style.display === 'block';
+      detail.style.display = isOpen ? 'none' : 'block';
+      btn.innerHTML = isOpen ? '展开题目 <span class="link-arrow">→</span>' : '收起题目 <span class="link-arrow">↑</span>';
+    }
   </script>
 </body>
 </html>

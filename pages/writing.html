@@ -27,7 +27,7 @@
       <p>涵盖议论文、书信、图表作文、记叙文、应用文等常考题型，配套参考范文、写作要点与实用表达，帮你提升写作能力</p>
     </header>
     <div class="filter-tags" id="filterTags">
-      <button class="filter-tag is-active" data-filter="all">全部</button>
+      <button class="filter-tag filter-tag--active" data-filter="all">全部</button>
       <button class="filter-tag" data-filter="argumentation">议论文</button>
       <button class="filter-tag" data-filter="letter">书信</button>
       <button class="filter-tag" data-filter="chart">图表作文</button>
@@ -88,26 +88,10 @@
           <div class="question-card__footer" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
             <span class="question-card__meta">难度 ${item.difficulty || 3}/5</span>
             <div style="display:flex;gap:8px;">
-              <button class="btn-ghost question-card__action writing-sample-toggle" onclick="
-                const sample = this.closest('.question-card').querySelector('.writing-sample');
-                const isHidden = sample.style.display === 'none';
-                sample.style.display = isHidden ? 'block' : 'none';
-                this.innerHTML = isHidden ? '隐藏范文 <span class=\"link-arrow\">↑</span>' : '查看范文 <span class=\"link-arrow\">→</span>';
-                if (isHidden) {
-                  gsap.fromTo(sample, {opacity:0, y:-10}, {opacity:1, y:0, duration:0.4, ease:'power2.out'});
-                }
-              ">
+              <button class="btn-ghost question-card__action writing-sample-toggle" onclick="toggleSample(this)">
                 查看范文 <span class="link-arrow">→</span>
               </button>
-              <button class="btn-ghost question-card__action writing-detail-toggle" onclick="
-                const detail = this.closest('.question-card').querySelector('.question-card__detail');
-                const isHidden = detail.style.display === 'none';
-                detail.style.display = isHidden ? 'block' : 'none';
-                this.innerHTML = isHidden ? '隐藏要点 <span class=\"link-arrow\">↑</span>' : '写作要点 <span class=\"link-arrow\">→</span>';
-                if (isHidden) {
-                  gsap.fromTo(detail, {opacity:0, y:-10}, {opacity:1, y:0, duration:0.4, ease:'power2.out'});
-                }
-              ">
+              <button class="btn-ghost question-card__action writing-detail-toggle" onclick="toggleKeyPoints(this)">
                 写作要点 <span class="link-arrow">→</span>
               </button>
             </div>
@@ -135,6 +119,26 @@
       Filter.init('filterTags', 'questionList', { filterAttr: 'data-category', itemSelector: '.question-card' });
       ContentAnimations.init({ filterContainerId: 'filterTags', cardSelector: '.question-card' });
     });
+
+    function toggleSample(btn) {
+      const sample = btn.closest('.question-card').querySelector('.writing-sample');
+      const isHidden = sample.style.display === 'none';
+      sample.style.display = isHidden ? 'block' : 'none';
+      btn.innerHTML = isHidden ? '隐藏范文 <span class="link-arrow">↑</span>' : '查看范文 <span class="link-arrow">→</span>';
+      if (isHidden) {
+        gsap.fromTo(sample, {opacity:0, y:-10}, {opacity:1, y:0, duration:0.4, ease:'power2.out'});
+      }
+    }
+
+    function toggleKeyPoints(btn) {
+      const detail = btn.closest('.question-card').querySelector('.question-card__detail');
+      const isHidden = detail.style.display === 'none';
+      detail.style.display = isHidden ? 'block' : 'none';
+      btn.innerHTML = isHidden ? '隐藏要点 <span class="link-arrow">↑</span>' : '写作要点 <span class="link-arrow">→</span>';
+      if (isHidden) {
+        gsap.fromTo(detail, {opacity:0, y:-10}, {opacity:1, y:0, duration:0.4, ease:'power2.out'});
+      }
+    }
   </script>
 </body>
 </html>
