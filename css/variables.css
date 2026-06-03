@@ -1,61 +1,83 @@
 /* ============================================
    Fast CET — CSS Custom Properties (variables.css)
-   洋橙色系 (珊瑚橙 + 洋红暖色调)
+   「暗夜闪电」Dark Lightning 主题
+   靛蓝紫 (#6366F1) + 琥珀金 (#F59E0B) + 夜空底 (#080C14)
    ============================================ */
 
 :root {
-  /* ── 主色调 ── */
-  --color-primary:        #FF5E4D;  /* 活力珊瑚橙-主色 */
-  --color-primary-dark:   #E54D3D;  /* 深珊瑚橙-hover态 */
-  --color-primary-light:  #FF8A7D;  /* 浅珊瑚橙-辅助 */
-  --color-secondary:      #FF2D78;  /* 洋红-辅色 */
-  --color-secondary-dark: #E02668;  /* 深洋红-hover */
-  --color-accent:         #FFB84D;  /* 暖橙-强调色 */
-  --color-accent-light:   #FFD08A;  /* 浅暖橙 */
+  /* ═══ 背景层次（夜空递进） ═══ */
+  --color-bg-base:       #080C14;   /* 最深底色 — 夜空 */
+  --color-bg-elevated:   #0F1520;   /* 抬升层 — 云层 */
+  --color-bg-surface:    #161E2B;   /* 卡片表面 — 深灰蓝 */
+  --color-bg-hover:      #1C2738;   /* hover态 — 微亮 */
 
-  /* ── 背景与文字 ── */
-  --color-bg:             #FFF8F5;  /* 暖白背景 */
-  --color-bg-alt:         #FFF0EB;  /* 微妙暖色交替背景 */
-  --color-text:           #2D1A14;  /* 深棕正文 */
-  --color-text-secondary: #8B6B5E;  /* 浅棕-副文本 */
-  --color-text-inverse:   #FFFFFF;  /* 反色文字(用于渐变背景) */
+  /* ═══ 主色调：靛蓝紫（学术·科技·信任） ═══ */
+  --color-primary:        #6366F1;   /* 靛蓝紫 */
+  --color-primary-dark:   #4F46E5;   /* 深靛 */
+  --color-primary-light:  #818CF8;   /* 浅紫 */
+  --color-primary-glow:   rgba(99, 102, 241, 0.4);
 
-  /* ── 边框 ── */
-  --color-border:         rgba(255, 94, 77, 0.15);
-  --color-border-light:   rgba(255, 94, 77, 0.08);
-  --color-border-strong:  rgba(255, 94, 77, 0.25);
+  /* ═══ 暖色强调：琥珀金（成就·温度·激励） ═══ */
+  --color-accent:         #F59E0B;   /* 琥珀金 */
+  --color-accent-dark:    #D97706;   /* 深琥珀 */
+  --color-accent-light:   #FBBF24;   /* 亮金 */
+  --color-accent-glow:    rgba(245, 158, 11, 0.4);
 
-  /* ── 毛玻璃 ── */
-  --glass-bg:             rgba(255, 255, 255, 0.6);
-  --glass-bg-strong:      rgba(255, 255, 255, 0.8);
-  --glass-border:         rgba(255, 255, 255, 0.8);
-  --glass-blur:           20px;
+  /* ═══ 能量色：珊瑚（速度·活力·CTA） ═══ */
+  --color-energy:         #FF6B4A;   /* 暖珊瑚 */
+  --color-energy-glow:    rgba(255, 107, 74, 0.35);
 
-  /* ── 渐变 ── */
-  --gradient-hero:        linear-gradient(135deg, #FF2D78, #FF5E4D, #FFB84D);
-  --gradient-hero-reverse: linear-gradient(225deg, #FF2D78, #FF5E4D, #FFB84D);
-  --gradient-card:        linear-gradient(135deg, rgba(255, 94, 77, 0.08), rgba(255, 45, 120, 0.08));
-  --gradient-text:        linear-gradient(135deg, var(--color-primary), var(--color-secondary), var(--color-accent), var(--color-primary));
-  --gradient-progress:    linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+  /* ═══ 语义色 ═══ */
+  --color-success:        #10B981;   /* 翠绿 — 正确/掌握 */
+  --color-warning:        #F59E0B;   /* 琥珀 — 注意 */
+  --color-error:          #EF4444;   /* 红 — 错误 */
+  --color-info:           #6366F1;   /* 紫蓝 — 信息 */
 
-  /* ── 阴影 ── */
-  --shadow-xs:            0 1px 4px rgba(255, 94, 77, 0.06);
-  --shadow-sm:            0 2px 8px rgba(255, 94, 77, 0.12);
-  --shadow-md:            0 8px 24px rgba(255, 94, 77, 0.15);
-  --shadow-lg:            0 16px 48px rgba(255, 45, 120, 0.18);
-  --shadow-xl:            0 24px 64px rgba(255, 45, 120, 0.22);
-  --shadow-glow:          0 0 40px rgba(255, 94, 77, 0.2);
-  --shadow-card-hover:    0 12px 32px rgba(255, 94, 77, 0.2);
+  /* ═══ 文字层次 ═══ */
+  --color-text-primary:   #F1F5F9;   /* 正文 — 高明度白 */
+  --color-text-secondary: #94A3B8;   /* 副文 — 中灰蓝 */
+  --color-text-muted:     #64748B;   /* 弱文 — 低明度灰 */
+  --color-text-inverse:   #080C14;   /* 反色文字（用于浅色底） */
 
-  /* ── 圆角 ── */
+  /* ═══ 边框 ═══ */
+  --color-border:         rgba(99, 102, 241, 0.12);
+  --color-border-hover:   rgba(99, 102, 241, 0.3);
+  --color-border-active:  rgba(99, 102, 241, 0.5);
+
+  /* ═══ 毛玻璃（暗色底专用） ═══ */
+  --glass-bg:             rgba(22, 30, 43, 0.7);
+  --glass-bg-strong:      rgba(22, 30, 43, 0.85);
+  --glass-border:         rgba(255, 255, 255, 0.06);
+  --glass-blur:           24px;
+
+  /* ═══ 渐变体系 ═══ */
+  --gradient-primary:     linear-gradient(135deg, #6366F1, #818CF8);
+  --gradient-accent:      linear-gradient(135deg, #F59E0B, #FBBF24);
+  --gradient-energy:      linear-gradient(135deg, #FF6B4A, #F59E0B);
+  --gradient-text:        linear-gradient(135deg, #818CF8, #6366F1, #F59E0B);
+  --gradient-hero:        linear-gradient(135deg, #6366F1 0%, #818CF8 40%, #F59E0B 100%);
+  --gradient-card-border: conic-gradient(from var(--border-angle, 0deg), transparent, #6366F1, #F59E0B, transparent);
+  --gradient-progress:    linear-gradient(90deg, #6366F1, #F59E0B);
+
+  /* ═══ 阴影（暗色底专用 — 深黑底 + 品牌色辉光） ═══ */
+  --shadow-xs:            0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-sm:            0 2px 8px rgba(0, 0, 0, 0.5);
+  --shadow-md:            0 8px 24px rgba(0, 0, 0, 0.6);
+  --shadow-lg:            0 16px 48px rgba(0, 0, 0, 0.7);
+  --shadow-xl:            0 24px 80px rgba(0, 0, 0, 0.8);
+  --shadow-glow-primary:  0 0 30px rgba(99, 102, 241, 0.25);
+  --shadow-glow-accent:   0 0 30px rgba(245, 158, 11, 0.2);
+  --shadow-card-hover:    0 16px 48px rgba(99, 102, 241, 0.15);
+
+  /* ═══ 圆角 ═══ */
   --radius-xs:            4px;
   --radius-sm:            8px;
-  --radius-md:            16px;
-  --radius-lg:            24px;
-  --radius-xl:            32px;
+  --radius-md:            14px;
+  --radius-lg:            20px;
+  --radius-xl:            28px;
   --radius-full:          9999px;
 
-  /* ── 间距 ── */
+  /* ═══ 间距 ═══ */
   --space-xs:             4px;
   --space-sm:             8px;
   --space-md:             16px;
@@ -65,12 +87,12 @@
   --space-3xl:            64px;
   --space-4xl:            96px;
 
-  /* ── 字体 ── */
+  /* ═══ 字体族 ═══ */
   --font-en:              'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-zh:              'PingFang SC', 'Noto Sans SC', 'Microsoft YaHei', 'Hiragino Sans GB', sans-serif;
   --font-mono:            'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
 
-  /* ── 字号 ── */
+  /* ═══ 字号 ═══ */
   --text-xs:              0.75rem;   /* 12px */
   --text-sm:              0.875rem;  /* 14px */
   --text-base:            1rem;      /* 16px */
@@ -82,27 +104,27 @@
   --text-4xl:             3.5rem;    /* 56px */
   --text-5xl:             4.5rem;    /* 72px */
 
-  /* ── 字重 ── */
+  /* ═══ 字重 ═══ */
   --weight-normal:        400;
   --weight-medium:        500;
   --weight-semibold:      600;
   --weight-bold:          700;
   --weight-extrabold:     800;
 
-  /* ── 行高 ── */
+  /* ═══ 行高 ═══ */
   --leading-tight:        1.15;
   --leading-snug:         1.35;
   --leading-normal:       1.6;
   --leading-relaxed:      1.75;
 
-  /* ── 过渡 ── */
+  /* ═══ 过渡 ═══ */
   --transition-fast:      0.15s ease;
   --transition-normal:    0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-slow:      0.5s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-glacial:   0.8s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-bounce:    0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 
-  /* ── 层级 ── */
+  /* ═══ 层级 ═══ */
   --z-base:               1;
   --z-overlay:            100;
   --z-hero:               10;
@@ -111,14 +133,36 @@
   --z-tooltip:            3000;
   --z-cursor-glow:        1;
 
-  /* ── 布局 ── */
+  /* ═══ 布局 ═══ */
   --container-max:        1200px;
   --container-narrow:     860px;
   --container-padding:    24px;
   --nav-height:           72px;
 
-  /* ── 响应式断点 (供 @media 引用，实际断点定义在 media queries) ── */
-  /* mobile:  < 640px  (default) */
-  /* tablet:  >= 640px */
-  /* desktop: >= 1024px */
+  /* ══════════════════════════════════════
+     向后兼容别名（渐进式迁移用）
+     旧名 → 新名映射，确保现有CSS不中断
+     ══════════════════════════════════════ */
+
+  /* 背景 */
+  --color-bg:             var(--color-bg-base);
+  --color-bg-alt:         var(--color-bg-elevated);
+
+  /* 文字 */
+  --color-text:           var(--color-text-primary);
+
+  /* 旧辅色 → 映射到新主色系 */
+  --color-secondary:      var(--color-primary-light);
+  --color-secondary-dark: var(--color-primary);
+
+  /* 边框 */
+  --color-border-light:   rgba(99, 102, 241, 0.06);
+  --color-border-strong:  var(--color-border-active);
+
+  /* 渐变 */
+  --gradient-hero-reverse: linear-gradient(225deg, #6366F1, #818CF8, #F59E0B);
+  --gradient-card:         linear-gradient(135deg, rgba(99, 102, 241, 0.08), rgba(245, 158, 11, 0.08));
+
+  /* 阴影 */
+  --shadow-glow: var(--shadow-glow-primary);
 }

@@ -226,8 +226,8 @@ function injectFooterStyles() {
   const style = document.createElement('style');
   style.textContent = `
     .footer {
-      background: #2D1A14;
-      color: #FFF8F5;
+      background: #0F1520;
+      color: #F1F5F9;
       padding: 64px 0 32px;
       margin-top: 80px;
     }
@@ -252,7 +252,7 @@ function injectFooterStyles() {
     }
     .footer__slogan {
       font-size: 14px;
-      color: rgba(255,248,245,0.6);
+      color: #94A3B8;
       line-height: 1.8;
     }
     .footer__heading {
@@ -272,7 +272,7 @@ function injectFooterStyles() {
     }
     .footer__links a {
       font-size: 14px;
-      color: rgba(255,248,245,0.7);
+      color: rgba(241,245,249,0.7);
       transition: color 0.2s ease;
     }
     .footer__links a:hover {
@@ -280,7 +280,7 @@ function injectFooterStyles() {
     }
     .footer__copyright {
       font-size: 13px;
-      color: rgba(255,248,245,0.5);
+      color: rgba(241,245,249,0.5);
       line-height: 1.8;
     }
     @media (max-width: 768px) {

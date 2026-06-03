@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="../css/global.css?v=af37c8f">
   <link rel="stylesheet" href="../css/nav.css?v=af37c8f">
   <link rel="stylesheet" href="../css/content.css?v=af37c8f">
+  <link rel="stylesheet" href="../css/disguises.css?v=c16ecbc">
   <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
   <style>
     /* ── Vocabulary Flashcard Layout ── */
@@ -191,6 +192,23 @@
     .btn-dunno:hover {
       transform: translateY(-2px);
       box-shadow: 0 6px 20px rgba(255,94,77,0.4);
+    }
+
+    .btn-back {
+      background: transparent;
+      border: 1.5px solid var(--color-border);
+      color: var(--color-text-secondary);
+      padding: 10px 20px;
+      font-size: var(--text-sm);
+      font-weight: var(--weight-medium);
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn-back:hover {
+      border-color: var(--color-accent);
+      color: var(--color-accent);
     }
 
     .btn-reset {
@@ -595,6 +613,8 @@
   </main>
 
   <script src="../js/main.js?v=af37c8f"></script>
+  <script src="../js/mode-manager.js?v=af37c8f"></script>
+  <script src="../js/boss-key.js?v=af37c8f"></script>
   <script src="../js/data-loader.js?v=af37c8f"></script>
   <script>
     initApp();
@@ -609,6 +629,7 @@
       dunnoCount: 0,
       wrongWords: [],       // { word, definition, id } — for 错题本
       isRevealed: false,    // Whether current card is showing definition
+      lastAction: null,     // 'know' | 'dunno' | null — for goBack() undo
       activeFilter: 'all',
 
       get currentWord() {
@@ -645,6 +666,7 @@
       VocabSession.dunnoCount = 0;
       VocabSession.wrongWords = [];
       VocabSession.isRevealed = false;
+      VocabSession.lastAction = null;
 
       if (filter === 'all') {
         VocabSession.pool = [...VocabSession.allWords];
@@ -711,6 +733,11 @@
           <button class="btn-vocab btn-dunno" onclick="markDunno()">不认识</button>
           <button class="btn-vocab btn-know" onclick="markKnow()">认识</button>
         </div>
+        ${VocabSession.currentIndex > 0 ? `
+          <button class="btn-back" onclick="goBack()" style="margin-top:12px;width:100%;max-width:560px">
+            ← 上一张
+          </button>
+        ` : ''}
       `;
 
       // Animate card in
@@ -739,6 +766,7 @@
 
     /* ── Mark as Known ── */
     function markKnow() {
+      VocabSession.lastAction = 'know';
       VocabSession.knowCount++;
       VocabSession.reviewed++;
       advanceCard();
@@ -746,6 +774,7 @@
 
     /* ── Mark as Unknown ── */
     function markDunno() {
+      VocabSession.lastAction = 'dunno';
       VocabSession.dunnoCount++;
       VocabSession.reviewed++;
 
@@ -782,6 +811,27 @@
           renderCard();
         }});
       }
+    }
+
+    /* ── Go Back to Previous Card ── */
+    function goBack() {
+      if (VocabSession.currentIndex <= 0) return;
+
+      // Undo the last action's stats
+      if (VocabSession.lastAction === 'know') {
+        VocabSession.knowCount = Math.max(0, VocabSession.knowCount - 1);
+      } else if (VocabSession.lastAction === 'dunno') {
+        VocabSession.dunnoCount = Math.max(0, VocabSession.dunnoCount - 1);
+        // Remove the last added wrong word
+        if (VocabSession.wrongWords.length > 0) {
+          VocabSession.wrongWords.pop();
+        }
+      }
+      VocabSession.reviewed = Math.max(0, VocabSession.reviewed - 1);
+      VocabSession.lastAction = null;
+      VocabSession.currentIndex--;
+
+      updateAllUI();
     }
 
     /* ── Complete State ── */
@@ -909,6 +959,9 @@
         } else if (e.key === 'ArrowRight' && VocabSession.isRevealed) {
           e.preventDefault();
           markKnow();
+        } else if (e.key === 'ArrowUp' && VocabSession.currentIndex > 0) {
+          e.preventDefault();
+          goBack();
         }
       });
     }

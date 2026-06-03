@@ -11,7 +11,7 @@
   right: 0;
   z-index: var(--z-nav);
   padding: 16px 0;
-  background: rgba(255, 248, 245, 0);
+  background: rgba(8, 12, 20, 0);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid transparent;
@@ -28,7 +28,7 @@
 }
 
 .nav--scrolled {
-  background: rgba(255, 248, 245, 0.85);
+  background: rgba(8, 12, 20, 0.85);
   border-bottom-color: var(--color-border);
   box-shadow: var(--shadow-sm);
   padding: 10px 0;
@@ -150,7 +150,7 @@
 }
 
 .nav__toggle:hover {
-  background: rgba(255, 94, 77, 0.08);
+  background: rgba(99, 102, 241, 0.1);
 }
 
 .nav__toggle span {
@@ -182,7 +182,7 @@
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(255, 248, 245, 0.97);
+  background: rgba(8, 12, 20, 0.97);
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
   z-index: var(--z-nav);
@@ -211,7 +211,7 @@
 
 .nav__mobile-panel a:hover {
   color: var(--color-primary);
-  background: rgba(255, 94, 77, 0.08);
+  background: rgba(99, 102, 241, 0.1);
 }
 
 /* ── Responsive: Nav ── */

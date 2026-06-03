@@ -65,20 +65,20 @@
   /* 渐变文字变静态 */
   .gradient-text {
     background: none !important;
-    -webkit-text-fill-color: var(--color-primary, #FF5E4D) !important;
+    -webkit-text-fill-color: var(--color-primary, #6366F1) !important;
     background-clip: unset !important;
     animation: none !important;
   }
 
   /* 梯度背景变纯色 */
   .btn-primary {
-    background: var(--color-primary, #FF5E4D);
+    background: var(--color-primary, #6366F1);
     box-shadow: none;
     transition: none;
   }
 
   .cta-section {
-    background: var(--color-primary, #FF5E4D);
+    background: var(--color-primary, #6366F1);
   }
 
   .cta-section::before,
@@ -107,7 +107,7 @@
 
   /* 毛玻璃背景降级为纯色半透明 */
   .nav {
-    background: rgba(255, 248, 245, 0.95) !important;
+    background: rgba(8, 12, 20, 0.95) !important;
   }
 
   .bento-card,
@@ -115,7 +115,7 @@
   .question-card,
   .word-card,
   .glass-card {
-    background: rgba(255, 255, 255, 0.95) !important;
+    background: rgba(22, 30, 43, 0.95) !important;
   }
 }
 
@@ -315,7 +315,7 @@
       padding: 6px 8px;
       margin: 0 0 4px;
       border-radius: 2px;
-      border: 1px solid var(--color-border, rgba(255,94,77,0.15));
+      border: 1px solid var(--color-border, rgba(99,102,241,0.12));
     }
 
     .question-card__stem {

@@ -178,7 +178,7 @@
 }
 
 .exam-card__badge--real {
-  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
   color: #FFF;
 }
 
@@ -264,7 +264,7 @@
 
 .exam-card__start-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 94, 77, 0.35);
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.35);
 }
 
 .exam-card__start-arrow {
@@ -340,7 +340,7 @@
   font-size: 11px;
   font-weight: var(--weight-medium);
   color: var(--color-primary);
-  background: rgba(255,94,77,0.08);
+  background: rgba(99,102,241,0.1);
   border-radius: var(--radius-full);
 }
 
@@ -369,12 +369,12 @@
 
 .option-item:hover {
   border-color: var(--color-primary);
-  background: rgba(255,94,77,0.06);
+  background: rgba(99,102,241,0.08);
 }
 
 .option-item--selected {
   border-color: var(--color-primary);
-  background: rgba(255,94,77,0.1);
+  background: rgba(99,102,241,0.12);
 }
 
 .option-item--correct {
@@ -543,7 +543,7 @@
 }
 
 .sample-collapse__trigger:hover {
-  background: rgba(255,94,77,0.06);
+  background: rgba(99,102,241,0.06);
 }
 
 .sample-collapse__trigger::after {
@@ -710,8 +710,8 @@
   font-size: var(--text-sm);
   font-weight: var(--weight-medium);
   color: var(--color-primary);
-  background: rgba(255,94,77,0.08);
-  border: 1px solid rgba(255,94,77,0.2);
+  background: rgba(99,102,241,0.1);
+  border: 1px solid rgba(99,102,241,0.2);
   border-radius: var(--radius-full);
   cursor: pointer;
   transition: all 0.25s ease;
@@ -773,7 +773,7 @@
 .practice-textarea:focus {
   outline: none;
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(255,94,77,0.15);
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.2);
 }
 
 .practice-textarea::placeholder {
@@ -821,8 +821,8 @@
   display: flex;
   gap: var(--space-md);
   padding: 20px 24px;
-  background: linear-gradient(135deg, rgba(255,184,77,0.1), rgba(255,94,77,0.06));
-  border: 1px solid rgba(255,184,77,0.3);
+  background: linear-gradient(135deg, rgba(245,158,11,0.1), rgba(99,102,241,0.06));
+  border: 1px solid rgba(245,158,11,0.25);
   border-radius: var(--radius-md);
   margin-bottom: var(--space-md);
 }
@@ -927,7 +927,7 @@
 .skeleton {
   background: linear-gradient(90deg,
     var(--gradient-card) 25%,
-    rgba(255,94,77,0.04) 50%,
+    rgba(99,102,241,0.06) 50%,
     var(--gradient-card) 75%
   );
   background-size: 200% 100%;
@@ -1013,7 +1013,7 @@
 .exam-room__question-dot--current {
   border-color: var(--color-primary);
   color: var(--color-primary);
-  background: rgba(255,94,77,0.1);
+  background: rgba(99,102,241,0.12);
 }
 
 .exam-room__question-dot--answered {
@@ -1024,7 +1024,7 @@
 
 .exam-room__question-dot--marked {
   border-color: var(--color-accent);
-  box-shadow: 0 0 0 2px rgba(255,184,77,0.3);
+  box-shadow: 0 0 0 2px rgba(245,158,11,0.3);
 }
 
 .exam-room__main {
