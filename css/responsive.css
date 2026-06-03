@@ -1,0 +1,533 @@
+/* ============================================
+   Fast CET — Global Responsive Overrides (responsive.css)
+   Breakpoints: < 640px (mobile), 640-1024px (tablet), > 1024px (desktop)
+   ============================================ */
+
+/* ── Mobile First Defaults (< 640px) ── */
+/* These are the base styles — overridden by tablet/desktop below */
+
+section {
+  padding: 60px 0;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+/* ── Typography ── */
+.heading-1 { font-size: 28px; }
+.heading-2 { font-size: 24px; }
+.heading-3 { font-size: 20px; }
+.heading-4 { font-size: 18px; }
+.body-text { font-size: 15px; }
+.caption { font-size: 12px; }
+
+/* ── Navigation ── */
+.nav__links {
+  display: none;
+}
+
+.nav--open .nav__links {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  inset: 0;
+  background: var(--color-bg);
+  padding: 80px 24px 40px;
+  z-index: calc(var(--z-nav) - 1);
+  gap: 4px;
+}
+
+.nav--open .nav__links a {
+  padding: 14px 16px;
+  font-size: 18px;
+  border-radius: var(--radius-md);
+}
+
+.nav--open .nav__links a:hover {
+  background: rgba(255, 94, 77, 0.08);
+}
+
+.nav__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  background: none;
+  border: none;
+  color: var(--color-text);
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+}
+
+/* ── Hero ── */
+.hero {
+  min-height: 100vh;
+  padding: 120px 0 80px;
+}
+
+.hero__shape--4,
+.hero__shape--6 {
+  display: none;
+}
+
+.hero__cursor-glow {
+  display: none;
+}
+
+.hero__cta {
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hero__cta .btn {
+  width: 100%;
+  justify-content: center;
+}
+
+/* ── Stats ── */
+.stats__grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+/* ── Bento Grid ── */
+.bento-grid {
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.bento-card--large {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+/* ── Learning Path ── */
+.learning-path__inner {
+  padding-left: 32px;
+}
+
+.learning-path__line {
+  left: 15px;
+}
+
+.learning-path__step {
+  padding-left: 28px;
+}
+
+.step__node {
+  width: 12px;
+  height: 12px;
+}
+
+/* ── Marquee ── */
+.marquee__item {
+  padding: 10px 18px;
+  font-size: 14px;
+}
+
+/* ── CTA ── */
+.cta-section {
+  margin: 0 16px;
+  padding: 60px 24px;
+  border-radius: var(--radius-lg);
+}
+
+.cta-section h2 {
+  font-size: 24px;
+}
+
+/* ── Footer ── */
+.footer__grid {
+  grid-template-columns: 1fr;
+  gap: 32px;
+  text-align: center;
+}
+
+/* ── Content Pages ── */
+.content-page {
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.page-header {
+  padding-left: 16px;
+}
+
+.content-columns {
+  grid-template-columns: 1fr;
+}
+
+.exam-grid {
+  grid-template-columns: 1fr;
+}
+
+.options-grid {
+  grid-template-columns: 1fr;
+}
+
+.question-card__body {
+  padding: 16px;
+}
+
+.section-grid {
+  grid-template-columns: 1fr;
+}
+
+.exam-room {
+  grid-template-columns: 1fr;
+}
+
+.exam-room__sidebar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  flex-direction: row;
+  overflow-x: auto;
+  padding: 12px 16px;
+  border-top: 1px solid var(--color-border);
+  border-left: none;
+  background: var(--color-bg);
+  z-index: 50;
+}
+
+.exam-room__sidebar .question-nav {
+  flex-direction: row;
+}
+
+.exam-room__main {
+  padding-bottom: 100px;
+}
+
+.score-display {
+  flex-direction: column;
+  text-align: center;
+}
+
+.score-breakdown {
+  grid-template-columns: 1fr;
+}
+
+/* ── Glass Cards (mobile performance) ── */
+.glass-card {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.nav {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  background: rgba(255, 248, 245, 0.95);
+}
+
+/* ── Filter ── */
+.filter-tags {
+  gap: 8px;
+}
+
+.filter-tag {
+  padding: 6px 14px;
+  font-size: 13px;
+}
+
+/* ============================================ */
+/* Tablet (≥ 640px)                             */
+/* ============================================ */
+@media (min-width: 640px) {
+
+  section {
+    padding: 80px 0;
+  }
+
+  .container {
+    padding: 0 24px;
+  }
+
+  /* Typography */
+  .heading-1 { font-size: 36px; }
+  .heading-2 { font-size: 30px; }
+  .heading-3 { font-size: 22px; }
+  .body-text { font-size: 16px; }
+
+  /* Nav */
+  .nav__toggle {
+    display: none;
+  }
+
+  .nav__links {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    background: none;
+    padding: 0;
+    gap: 4px;
+  }
+
+  .nav__links a {
+    padding: 8px 14px;
+    font-size: 15px;
+  }
+
+  /* Hero */
+  .hero__cta {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .hero__cta .btn {
+    width: auto;
+  }
+
+  /* Stats */
+  .stats__grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  /* Bento */
+  .bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .bento-card--large {
+    grid-column: span 2;
+  }
+
+  /* Learning Path */
+  .learning-path__inner {
+    padding-left: 60px;
+  }
+
+  .learning-path__line {
+    left: 31px;
+  }
+
+  .learning-path__step {
+    padding-left: 48px;
+  }
+
+  /* CTA */
+  .cta-section {
+    margin: 0 24px;
+    padding: 80px 40px;
+  }
+
+  .cta-section h2 {
+    font-size: 32px;
+  }
+
+  /* Footer */
+  .footer__grid {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+  }
+
+  /* Content */
+  .content-page {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+
+  .exam-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .options-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .content-columns {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .score-breakdown {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ============================================ */
+/* Desktop (≥ 1024px)                           */
+/* ============================================ */
+@media (min-width: 1024px) {
+
+  section {
+    padding: 100px 0;
+  }
+
+  .container {
+    padding: 0 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Typography */
+  .heading-1 { font-size: 48px; }
+  .heading-2 { font-size: 36px; }
+  .heading-3 { font-size: 24px; }
+  .heading-4 { font-size: 20px; }
+
+  /* Nav */
+  .nav__links a {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+
+  /* Hero */
+  .hero__shape--4,
+  .hero__shape--6 {
+    display: block;
+  }
+
+  .hero__cursor-glow {
+    display: block;
+  }
+
+  /* Stats */
+  .stats__grid {
+    gap: 24px;
+  }
+
+  /* Bento */
+  .bento-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .bento-card--large {
+    grid-column: span 2;
+  }
+
+  /* CTA */
+  .cta-section {
+    padding: 100px 40px;
+    border-radius: var(--radius-xl);
+  }
+
+  .cta-section h2 {
+    font-size: 40px;
+  }
+
+  /* Footer */
+  .footer__grid {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    text-align: left;
+  }
+
+  /* Content */
+  .content-page {
+    padding-top: 120px;
+  }
+
+  .exam-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .section-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .exam-room {
+    grid-template-columns: 240px 1fr;
+  }
+
+  .exam-room__sidebar {
+    position: sticky;
+    top: 80px;
+    flex-direction: column;
+    border-left: 1px solid var(--color-border);
+    border-top: none;
+    padding: 24px;
+    background: none;
+    overflow-x: visible;
+  }
+
+  .exam-room__sidebar .question-nav {
+    flex-direction: column;
+  }
+
+  .exam-room__main {
+    padding-bottom: 0;
+  }
+
+  /* Glass cards — enable blur on desktop */
+  .glass-card {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    background: var(--glass-bg);
+  }
+
+  .nav {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    background: rgba(255, 248, 245, 0.75);
+  }
+}
+
+/* ============================================ */
+/* Large Desktop (> 1440px)                     */
+/* ============================================ */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1280px;
+  }
+
+  .bento-grid {
+    gap: 28px;
+  }
+}
+
+/* ============================================ */
+/* Reduced Motion                              */
+/* ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================ */
+/* Print Styles                                */
+/* ============================================ */
+@media print {
+  .nav,
+  .hero__cursor-glow,
+  .hero__particles,
+  .hero__scroll-indicator,
+  .marquee-section,
+  .cta-section,
+  .btn-magnetic,
+  .footer {
+    display: none !important;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .question-card,
+  .exam-card {
+    break-inside: avoid;
+    border: 1px solid #ccc;
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,688 @@
+/**
+ * Fast CET — Disguises (伪装主题)
+ *
+ * 6 套伪装主题, 通过 [data-disguise] 属性切换
+ * 让学习界面看起来像工作工具, 配合 BossKey 的 CSS 叠加层方案
+ *
+ * 使用: document.documentElement.setAttribute('data-disguise', 'excel')
+ * 清除: document.documentElement.removeAttribute('data-disguise')
+ *
+ * 伪装主题列表:
+ *   excel    — 灰色网格 + Calibri + 绿色强调 (模仿 Excel 365)
+ *   word     — 白色文档区 + Times New Roman + 蓝色强调
+ *   vscode   — 暗色编辑器 + Consolas + 蓝色强调
+ *   wechat   — 微信绿 + 气泡圆角
+ *   wiki     — 百科白底 + 学术蓝链接
+ *   terminal — 纯黑底 + 绿色等宽字体
+ */
+
+/* ============================================================
+   1. Excel 伪装
+   ============================================================ */
+
+[data-disguise="excel"] {
+  --color-primary: #217346;
+  --color-primary-dark: #1a5c38;
+  --color-secondary: #217346;
+  --color-accent: #217346;
+  --color-bg: #FFFFFF;
+  --color-text: #333333;
+  --color-text-secondary: #666666;
+  --color-border: #d0d0d0;
+  --glass-bg: rgba(255, 255, 255, 1);
+  --glass-border: #d0d0d0;
+  --gradient-hero: linear-gradient(135deg, #217346, #2b8a4e);
+  --gradient-card: none;
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 0;
+  --radius-xl: 0;
+  --font-en: 'Calibri', 'Microsoft YaHei', sans-serif;
+  --font-zh: 'Microsoft YaHei', sans-serif;
+
+  /* 导航变成 Ribbon 工具栏 */
+  .nav {
+    background: #f0f0f0;
+    border-bottom: 1px solid #d0d0d0;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .nav__links a {
+    color: #444;
+    font-size: 12px;
+    font-family: Calibri, 'Microsoft YaHei', sans-serif;
+    border-radius: 0;
+  }
+
+  .nav__links a:hover {
+    background: #e0e0e0;
+  }
+
+  /* 卡片变单元格 */
+  .bento-card, .exam-card, .question-card, .word-card {
+    background: #fff;
+    border: 1px solid #d0d0d0;
+    border-radius: 0;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  /* 按钮变 Ribbon 风格 */
+  .btn-primary {
+    background: #217346;
+    border-radius: 2px;
+    box-shadow: none;
+    font-size: 12px;
+  }
+
+  .btn-outline {
+    border: 1px solid #d0d0d0;
+    color: #444;
+    border-radius: 2px;
+    font-size: 12px;
+  }
+
+  /* 链接变绿色 */
+  a, .bento-card__link {
+    color: #217346;
+  }
+
+  /* 隐藏所有装饰 */
+  .hero__shape,
+  .hero__cursor-glow,
+  .hero__particles,
+  .hero__grid,
+  .hero__scroll-indicator,
+  .bento-card__glow,
+  .bento-card__border,
+  .bento-card__bg-pattern,
+  .stat-card__ring,
+  .cta-sparkle {
+    display: none !important;
+  }
+
+  /* 渐变动画关闭 */
+  .gradient-text {
+    background: none;
+    -webkit-text-fill-color: #217346;
+    background-clip: unset;
+    animation: none;
+  }
+}
+
+/* ============================================================
+   2. Word 伪装
+   ============================================================ */
+
+[data-disguise="word"] {
+  --color-primary: #2b579a;
+  --color-primary-dark: #1a3f6e;
+  --color-secondary: #2b579a;
+  --color-accent: #2b579a;
+  --color-bg: #e8e8e8;
+  --color-text: #333333;
+  --color-text-secondary: #666666;
+  --color-border: #d0d0d0;
+  --glass-bg: rgba(255, 255, 255, 1);
+  --glass-border: #d0d0d0;
+  --gradient-hero: linear-gradient(135deg, #2b579a, #3a6db5);
+  --gradient-card: none;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.1);
+  --shadow-md: 0 2px 8px rgba(0,0,0,0.12);
+  --shadow-lg: 0 4px 16px rgba(0,0,0,0.15);
+  --radius-sm: 2px;
+  --radius-md: 2px;
+  --radius-lg: 2px;
+  --radius-xl: 2px;
+  --font-en: 'Times New Roman', 'SimSun', serif;
+  --font-zh: 'SimSun', 'Microsoft YaHei', serif;
+
+  .nav {
+    background: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .nav__links a {
+    color: #555;
+    font-size: 12px;
+    font-family: 'Times New Roman', 'SimSun', serif;
+  }
+
+  /* 内容区像文档页 */
+  .app-content {
+    background: #e8e8e8;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .content-page {
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    padding: 40px 48px;
+    max-width: 800px;
+    width: 100%;
+    min-height: 80vh;
+  }
+
+  .bento-card, .exam-card, .question-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .btn-primary {
+    background: #2b579a;
+    border-radius: 2px;
+    box-shadow: none;
+  }
+
+  a, .bento-card__link {
+    color: #2b579a;
+    text-decoration: underline;
+  }
+
+  /* 隐藏装饰 */
+  .hero__shape,
+  .hero__cursor-glow,
+  .hero__particles,
+  .hero__grid,
+  .hero__scroll-indicator,
+  .bento-card__glow,
+  .bento-card__border,
+  .bento-card__bg-pattern,
+  .stat-card__ring,
+  .cta-sparkle {
+    display: none !important;
+  }
+
+  .gradient-text {
+    background: none;
+    -webkit-text-fill-color: #2b579a;
+    background-clip: unset;
+    animation: none;
+  }
+}
+
+/* ============================================================
+   3. VSCode 伪装
+   ============================================================ */
+
+[data-disguise="vscode"] {
+  --color-primary: #007acc;
+  --color-primary-dark: #005a9e;
+  --color-secondary: #007acc;
+  --color-accent: #e5c07b;
+  --color-bg: #1e1e1e;
+  --color-text: #d4d4d4;
+  --color-text-secondary: #858585;
+  --color-border: #3c3c3c;
+  --glass-bg: rgba(30, 30, 30, 0.9);
+  --glass-border: #3c3c3c;
+  --gradient-hero: linear-gradient(135deg, #007acc, #0098ff);
+  --gradient-card: none;
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 0;
+  --radius-xl: 0;
+  --font-en: 'Consolas', 'Courier New', 'Microsoft YaHei', monospace;
+  --font-zh: 'Microsoft YaHei', monospace;
+
+  body {
+    background: #1e1e1e;
+  }
+
+  .nav {
+    background: #323233;
+    border-bottom: 1px solid #3c3c3c;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .nav__links a {
+    color: #ccc;
+    font-size: 12px;
+    font-family: 'Consolas', 'Courier New', monospace;
+  }
+
+  .nav__links a:hover {
+    color: #fff;
+    background: #007acc;
+  }
+
+  .bento-card, .exam-card, .question-card, .word-card {
+    background: #252526;
+    border: 1px solid #3c3c3c;
+    border-radius: 0;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    color: #d4d4d4;
+  }
+
+  .btn-primary {
+    background: #007acc;
+    border-radius: 0;
+    box-shadow: none;
+    font-family: 'Consolas', 'Courier New', monospace;
+  }
+
+  .btn-outline {
+    border: 1px solid #3c3c3c;
+    color: #ccc;
+    border-radius: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+  }
+
+  a, .bento-card__link {
+    color: #4fc1ff;
+  }
+
+  .page-header h1 {
+    color: #d4d4d4;
+    font-family: 'Consolas', 'Courier New', monospace;
+  }
+
+  /* 隐藏所有装饰 */
+  .hero__shape,
+  .hero__cursor-glow,
+  .hero__particles,
+  .hero__grid,
+  .hero__scroll-indicator,
+  .bento-card__glow,
+  .bento-card__border,
+  .bento-card__bg-pattern,
+  .stat-card__ring,
+  .cta-sparkle {
+    display: none !important;
+  }
+
+  .gradient-text {
+    background: none;
+    -webkit-text-fill-color: #4fc1ff;
+    background-clip: unset;
+    animation: none;
+  }
+
+  /* 代码风格滚动条 */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #3c3c3c #1e1e1e;
+  }
+}
+
+/* ============================================================
+   4. 微信伪装
+   ============================================================ */
+
+[data-disguise="wechat"] {
+  --color-primary: #07c160;
+  --color-primary-dark: #06ad56;
+  --color-secondary: #07c160;
+  --color-accent: #07c160;
+  --color-bg: #ededed;
+  --color-text: #333333;
+  --color-text-secondary: #999999;
+  --color-border: #d9d9d9;
+  --glass-bg: rgba(255, 255, 255, 1);
+  --glass-border: #d9d9d9;
+  --gradient-hero: linear-gradient(135deg, #07c160, #06ad56);
+  --gradient-card: none;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+  --shadow-md: 0 2px 4px rgba(0,0,0,0.08);
+  --shadow-lg: 0 4px 8px rgba(0,0,0,0.1);
+  --radius-sm: 4px;
+  --radius-md: 4px;
+  --radius-lg: 4px;
+  --radius-xl: 4px;
+  --font-en: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --font-zh: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+
+  body {
+    background: #ededed;
+  }
+
+  .nav {
+    background: #ededed;
+    border-bottom: 1px solid #d9d9d9;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .nav__links a {
+    color: #333;
+    font-size: 14px;
+    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  }
+
+  /* 卡片变成聊天气泡 */
+  .bento-card, .exam-card, .question-card {
+    background: #fff;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  /* 正确/提交按钮变微信绿 */
+  .btn-primary {
+    background: #07c160;
+    border-radius: 4px;
+    box-shadow: none;
+  }
+
+  .btn-outline {
+    border: 1px solid #07c160;
+    color: #07c160;
+    border-radius: 4px;
+  }
+
+  a, .bento-card__link {
+    color: #576b95;
+  }
+
+  /* 隐藏装饰 */
+  .hero__shape,
+  .hero__cursor-glow,
+  .hero__particles,
+  .hero__grid,
+  .hero__scroll-indicator,
+  .bento-card__glow,
+  .bento-card__border,
+  .bento-card__bg-pattern,
+  .stat-card__ring,
+  .cta-sparkle {
+    display: none !important;
+  }
+
+  .gradient-text {
+    background: none;
+    -webkit-text-fill-color: #07c160;
+    background-clip: unset;
+    animation: none;
+  }
+
+  /* 选项按钮变聊天风格 */
+  .option-btn {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+  }
+
+  .option-btn--selected {
+    background: #95ec69;
+    border-color: #07c160;
+    color: #333;
+  }
+}
+
+/* ============================================================
+   5. 百科伪装
+   ============================================================ */
+
+[data-disguise="wiki"] {
+  --color-primary: #0645ad;
+  --color-primary-dark: #053a8f;
+  --color-secondary: #0645ad;
+  --color-accent: #0645ad;
+  --color-bg: #f8f9fa;
+  --color-text: #222222;
+  --color-text-secondary: #666666;
+  --color-border: #e0e0e0;
+  --glass-bg: rgba(255, 255, 255, 1);
+  --glass-border: #e0e0e0;
+  --gradient-hero: linear-gradient(135deg, #0645ad, #3366cc);
+  --gradient-card: none;
+  --shadow-sm: 0 1px 4px rgba(0,0,0,0.05);
+  --shadow-md: 0 2px 8px rgba(0,0,0,0.08);
+  --shadow-lg: 0 4px 16px rgba(0,0,0,0.1);
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 4px;
+  --radius-xl: 4px;
+  --font-en: 'Georgia', 'PingFang SC', serif;
+  --font-zh: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+
+  body {
+    background: #f8f9fa;
+  }
+
+  .nav {
+    background: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .nav__links a {
+    color: #0645ad;
+    font-size: 13px;
+    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  }
+
+  .nav__links a:hover {
+    text-decoration: underline;
+  }
+
+  .bento-card, .exam-card, .question-card, .word-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .btn-primary {
+    background: #0645ad;
+    border-radius: 2px;
+    box-shadow: none;
+  }
+
+  a, .bento-card__link {
+    color: #0645ad;
+  }
+
+  a:hover, .bento-card__link:hover {
+    text-decoration: underline;
+  }
+
+  .page-header {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .page-header h1 {
+    font-family: Georgia, 'PingFang SC', serif;
+  }
+
+  /* 隐藏装饰 */
+  .hero__shape,
+  .hero__cursor-glow,
+  .hero__particles,
+  .hero__grid,
+  .hero__scroll-indicator,
+  .bento-card__glow,
+  .bento-card__border,
+  .bento-card__bg-pattern,
+  .stat-card__ring,
+  .cta-sparkle {
+    display: none !important;
+  }
+
+  .gradient-text {
+    background: none;
+    -webkit-text-fill-color: #0645ad;
+    background-clip: unset;
+    animation: none;
+  }
+}
+
+/* ============================================================
+   6. Terminal 伪装
+   ============================================================ */
+
+[data-disguise="terminal"] {
+  --color-primary: #4ec9b0;
+  --color-primary-dark: #3ab89a;
+  --color-secondary: #00ff00;
+  --color-accent: #00ff00;
+  --color-bg: #0c0c0c;
+  --color-text: #cccccc;
+  --color-text-secondary: #888888;
+  --color-border: #333333;
+  --glass-bg: rgba(12, 12, 12, 0.95);
+  --glass-border: #333333;
+  --gradient-hero: linear-gradient(135deg, #00ff00, #4ec9b0);
+  --gradient-card: none;
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 0;
+  --radius-xl: 0;
+  --font-en: 'Consolas', 'Courier New', monospace;
+  --font-zh: 'Microsoft YaHei', monospace;
+
+  body {
+    background: #0c0c0c;
+  }
+
+  .nav {
+    background: #1a1a1a;
+    border-bottom: 1px solid #333;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .nav__links a {
+    color: #4ec9b0;
+    font-size: 13px;
+    font-family: 'Consolas', 'Courier New', monospace;
+  }
+
+  .nav__links a::before {
+    content: '$ ';
+    color: #888;
+  }
+
+  .bento-card, .exam-card, .question-card, .word-card {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 0;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    color: #ccc;
+  }
+
+  .btn-primary {
+    background: #4ec9b0;
+    color: #0c0c0c;
+    border-radius: 0;
+    box-shadow: none;
+    font-family: 'Consolas', 'Courier New', monospace;
+  }
+
+  .btn-outline {
+    border: 1px solid #4ec9b0;
+    color: #4ec9b0;
+    border-radius: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+  }
+
+  a, .bento-card__link {
+    color: #4ec9b0;
+  }
+
+  .page-header h1 {
+    color: #4ec9b0;
+    font-family: 'Consolas', 'Courier New', monospace;
+  }
+
+  .page-header h1::before {
+    content: '> ';
+    color: #888;
+  }
+
+  /* 隐藏装饰 */
+  .hero__shape,
+  .hero__cursor-glow,
+  .hero__particles,
+  .hero__grid,
+  .hero__scroll-indicator,
+  .bento-card__glow,
+  .bento-card__border,
+  .bento-card__bg-pattern,
+  .stat-card__ring,
+  .cta-sparkle {
+    display: none !important;
+  }
+
+  .gradient-text {
+    background: none;
+    -webkit-text-fill-color: #00ff00;
+    background-clip: unset;
+    animation: none;
+  }
+
+  /* 终端风格选项 */
+  .option-btn::before {
+    content: '[ ] ';
+    color: #888;
+    font-family: 'Consolas', monospace;
+  }
+
+  .option-btn--selected::before {
+    content: '[x] ';
+    color: #4ec9b0;
+  }
+}
+
+/* ============================================================
+   7. 通用伪装基类
+   ============================================================ */
+
+[data-disguise] {
+  /* 所有伪装主题统一关闭的特性 */
+
+  /* 关闭毛玻璃 */
+  .glass-card, .nav, .word-card, .bento-card, .exam-card, .question-card,
+  .audio-player, .filter-tag, .metro-actions {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  /* 关闭动画渐变边框 */
+  .bento-card__border {
+    animation: none !important;
+    display: none !important;
+  }
+
+  /* 光标恢复默认 */
+  .btn, .option-btn, .exam-card, .filter-tag, .word-card {
+    cursor: default !important;
+  }
+
+  /* 关闭非必要的过渡动画 */
+  @media (prefers-reduced-motion: no-preference) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}

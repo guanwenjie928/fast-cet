@@ -1,0 +1,472 @@
+{
+  "meta": {
+    "id": "cet4-mock-01",
+    "year": 2025,
+    "month": 1,
+    "set": null,
+    "title": "CET-4 全真模拟题（一）",
+    "totalTime": 125,
+    "totalScore": 710,
+    "type": "mock",
+    "difficulty": 3
+  },
+  "sections": {
+    "writing": {
+      "title": "作文",
+      "time": 30,
+      "score": 106.5,
+      "direction": "Directions: For this part, you are allowed 30 minutes to write an essay on the topic below. You should write at least 120 words but no more than 180 words.",
+      "topic": "The impact of short video platforms on young people's attention span",
+      "sampleEssay": "Short video platforms have become an integral part of young people's daily lives, with millions spending hours scrolling through bite-sized content daily. While these platforms offer entertainment and information, their impact on attention span deserves serious examination.\n\nResearch increasingly suggests that constant exposure to rapidly switching content—often just 15 to 60 seconds per video—may be rewiring young brains to expect instant gratification. A study published in Nature Communications found that heavy social media users showed reduced ability to sustain focus on longer tasks compared to light users. The mechanism is neurological: each video provides a dopamine hit, and the brain adapts by requiring more frequent stimulation.\n\nAcademically, this manifests as difficulty reading long texts or following extended lectures without reaching for a phone. Students report feeling restless after just a few minutes of concentrated study, a phenomenon educators describe as 'TikTok brain.'\n\nHowever, blaming technology entirely oversimplifies the issue. The same platforms can be used to deliver educational content in engaging formats. The key is mindful consumption—setting time limits, using focus modes, and deliberately practicing sustained attention through activities like reading books or solving complex problems.\n\nUltimately, short video platforms are tools whose effects depend on how we use them. Developing digital literacy and self-regulation skills is perhaps more important than demonizing the technology itself.",
+      "keyPoints": [
+        "Impact of short-form content on sustained attention",
+        "Neurological basis: dopamine-driven reward cycles",
+        "Academic consequences: 'TikTok brain' phenomenon",
+        "Balanced perspective: mindful consumption over technological blame"
+      ]
+    },
+    "listening": {
+      "title": "听力理解",
+      "time": 25,
+      "score": 248.5,
+      "sections": {
+        "newsReports": [
+          {
+            "id": "l1",
+            "type": "news",
+            "audioSrc": "assets/audio/mock-01/l1.mp3",
+            "transcript": "The European Space Agency announced on Wednesday that its Jupiter Icy Moons Explorer, or JUICE, has successfully entered orbit around Jupiter after an eight-year journey through the solar system. The spacecraft, launched in April 2023, traveled more than 600 million kilometers to reach the gas giant. JUICE will spend the next four years studying Jupiter and three of its largest moons—Europa, Ganymede, and Callisto—which scientists believe may harbor subsurface oceans capable of supporting life. The mission's primary objective is to determine whether these moons have the necessary conditions for life, including liquid water, energy sources, and chemical building blocks. Mission controllers in Darmstadt, Germany, confirmed the orbital insertion at 4:32 AM local time, prompting celebrations among the exhausted but elated team.",
+            "questions": [
+              {
+                "id": "q1",
+                "stem": "What is the primary goal of the JUICE mission?",
+                "options": [
+                  "A) To land astronauts on Jupiter's surface",
+                  "B) To determine if Jupiter's moons have conditions for life",
+                  "C) To measure Jupiter's gravitational field",
+                  "D) To test new spacecraft propulsion technology"
+                ],
+                "answer": "B"
+              },
+              {
+                "id": "q2",
+                "stem": "How long did the JUICE spacecraft travel to reach Jupiter?",
+                "options": [
+                  "A) Four years",
+                  "B) Six years",
+                  "C) Eight years",
+                  "D) Ten years"
+                ],
+                "answer": "C"
+              }
+            ]
+          },
+          {
+            "id": "l2",
+            "type": "news",
+            "audioSrc": "assets/audio/mock-01/l2.mp3",
+            "transcript": "A new report from the World Health Organization has found that air pollution now causes an estimated 7 million premature deaths annually worldwide, making it the single largest environmental health risk. The report highlights that 99 percent of the global population breathes air that exceeds WHO guideline limits for pollutants. The most severe impacts are concentrated in low- and middle-income countries, particularly in Southeast Asia and Africa, where rapid industrialization has outpaced environmental regulations. However, the report also notes encouraging trends: 124 countries have now established national air quality standards, and investment in renewable energy reached a record 500 billion dollars last year. The WHO director-general emphasized that air pollution is a solvable problem, pointing to cities like Beijing and Mexico City that have significantly improved air quality through policy interventions including electric vehicle mandates, industrial emission controls, and expanded public transit.",
+            "questions": [
+              {
+                "id": "q3",
+                "stem": "According to the WHO report, what percentage of the world's population breathes polluted air?",
+                "options": [
+                  "A) 75 percent",
+                  "B) 85 percent",
+                  "C) 95 percent",
+                  "D) 99 percent"
+                ],
+                "answer": "D"
+              },
+              {
+                "id": "q4",
+                "stem": "Which regions are most severely affected by air pollution according to the report?",
+                "options": [
+                  "A) North America and Western Europe",
+                  "B) Southeast Asia and Africa",
+                  "C) Australia and New Zealand",
+                  "D) Scandinavia and the Arctic"
+                ],
+                "answer": "B"
+              }
+            ]
+          }
+        ],
+        "longConversations": [
+          {
+            "id": "lc1",
+            "type": "longConversation",
+            "audioSrc": "assets/audio/mock-01/lc1.mp3",
+            "transcript": "M: Jessica, I'm thinking about applying for that summer internship program at the tech startup incubator. Have you heard anything about it?\nW: Actually, my roommate did it last summer. She said it was intense but incredibly rewarding. They assign each intern to a real startup team, not just busy work.\nM: That's exactly what I'm looking for. My biggest concern is the time commitment—I saw it requires 35 hours per week for ten weeks.\nW: That's true, and it's unpaid, which is a drawback. But my roommate said the networking opportunities alone were worth it. She met three venture capitalists and got a job offer from one of the startups after graduation.\nM: That's pretty compelling. I'm also wondering about the application process. The website mentions a project proposal requirement?\nW: Yes, you need to submit a one-page proposal for a product or service you'd want to develop during the internship. They're looking for creativity and practical thinking, not fully developed business plans.\nM: That's right up my alley. I've been working on an idea for a mobile app that helps students track their carbon footprint.\nW: That sounds perfect for the application. The deadline is March 15th, so you have about three weeks. I'd recommend having Professor Martinez review your proposal before submitting—she used to be an entrepreneur herself.\nM: Great suggestion. I'll reach out to her this week. Thanks for the advice, Jessica.",
+            "questions": [
+              {
+                "id": "q5",
+                "stem": "What aspect of the internship concerned the man initially?",
+                "options": [
+                  "A) The application deadline",
+                  "B) The time commitment of 35 hours per week",
+                  "C) The lack of networking opportunities",
+                  "D) The requirement to work with venture capitalists"
+                ],
+                "answer": "B"
+              },
+              {
+                "id": "q6",
+                "stem": "What does the application require besides basic information?",
+                "options": [
+                  "A) A letter of recommendation from a professor",
+                  "B) A completed business plan with financial projections",
+                  "C) A one-page project proposal demonstrating creativity",
+                  "D) Previous startup experience"
+                ],
+                "answer": "C"
+              },
+              {
+                "id": "q7",
+                "stem": "What did Jessica suggest the man do before submitting his application?",
+                "options": [
+                  "A) Contact the startup incubator directly",
+                  "B) Complete an online business course",
+                  "C) Ask Professor Martinez to review his proposal",
+                  "D) Find a co-founder for his project idea"
+                ],
+                "answer": "C"
+              }
+            ]
+          },
+          {
+            "id": "lc2",
+            "type": "longConversation",
+            "audioSrc": "assets/audio/mock-01/lc2.mp3",
+            "transcript": "W: Dr. Thompson, I'm having trouble with my biology lab report. The data from my experiment doesn't match what the textbook says should happen.\nM: That's not necessarily a problem, Emily. Some of the most important scientific discoveries came from unexpected results. Tell me about your experiment.\nW: We were testing the effect of temperature on enzyme activity. According to the textbook, the enzyme should be most active at around 37 degrees Celsius and lose activity above 45 degrees. But my data shows peak activity at 42 degrees.\nM: Interesting. Before we conclude your results are wrong, let's consider possible explanations. Did you calibrate the thermometer before starting?\nW: I did, but I suppose it could have been slightly off. I also noticed the lab's air conditioning was broken that day, so the room temperature was unusually warm.\nM: Both factors could contribute. But here's another thought—did you check the source of your enzyme? Different organisms produce enzymes adapted to different temperatures.\nW: Actually, the lab manual said we were using a bacterial enzyme from a hot spring organism. I didn't think about that!\nM: That explains everything. Hot spring bacteria are adapted to high temperatures—their enzymes are most active at 40 to 45 degrees Celsius. Your results are likely correct; you're just using a different enzyme than the textbook describes.\nW: That's a huge relief. So should I report my actual results in the lab report?\nM: Absolutely. In fact, this is a better learning experience. Explain the discrepancy in your discussion section—it shows critical thinking, which is exactly what I'm looking for in these reports.",
+            "questions": [
+              {
+                "id": "q8",
+                "stem": "What was Emily's problem with her lab experiment?",
+                "options": [
+                  "A) She couldn't find the required textbook",
+                  "B) Her experimental data didn't match the textbook prediction",
+                  "C) The laboratory equipment was broken",
+                  "D) She forgot to record her observations"
+                ],
+                "answer": "B"
+              },
+              {
+                "id": "q9",
+                "stem": "What was the real reason for the unexpected results?",
+                "options": [
+                  "A) The thermometer was not properly calibrated",
+                  "B) The air conditioning affected the experiment",
+                  "C) The enzyme came from hot spring bacteria adapted to high temperatures",
+                  "D) Emily made a calculation error in her data analysis"
+                ],
+                "answer": "C"
+              },
+              {
+                "id": "q10",
+                "stem": "What did Dr. Thompson advise Emily to do in her lab report?",
+                "options": [
+                  "A) Repeat the experiment with the correct enzyme",
+                  "B) Report her actual results and explain the discrepancy",
+                  "C) Use the textbook data instead of her own results",
+                  "D) Only report results that matched the expected outcome"
+                ],
+                "answer": "B"
+              }
+            ]
+          }
+        ],
+        "passages": [
+          {
+            "id": "p1",
+            "type": "passage",
+            "audioSrc": "assets/audio/mock-01/p1.mp3",
+            "transcript": "The 'gig economy'—characterized by short-term, flexible jobs mediated through digital platforms—has grown dramatically over the past decade. From ride-sharing drivers to freelance graphic designers, an estimated 59 million Americans now participate in some form of independent work. While the gig economy offers flexibility and autonomy, it also raises fundamental questions about worker protections designed for a different era of employment.\n\nTraditional employment comes with a package of benefits that most workers take for granted: employer-sponsored health insurance, paid sick leave, retirement contributions, workers' compensation for injuries, and unemployment insurance. Gig workers, classified as independent contractors rather than employees, typically receive none of these protections. A 2023 survey by the Economic Policy Institute found that 56 percent of gig workers lacked health insurance, compared to 12 percent of traditional employees.\n\nThe legal landscape is evolving. California's Proposition 22, passed in 2020, created a hybrid category for app-based workers that provides some benefits while maintaining their independent contractor status. The European Union recently approved the Platform Work Directive, which presumes that platform workers are employees unless the platform can prove otherwise—a fundamental shift in the burden of proof.\n\nEconomists remain divided on the gig economy's net impact. Proponents argue that it has created new income opportunities for people who struggle with traditional employment schedules, including parents of young children, students, and retirees. Critics counter that the flexibility is often illusory—algorithms effectively control when and how much people work, and the lack of benefits transfers significant costs from corporations to workers and taxpayers.",
+            "questions": [
+              {
+                "id": "q11",
+                "stem": "What is the main concern about gig economy workers mentioned in the passage?",
+                "options": [
+                  "A) They earn too much money",
+                  "B) They lack traditional employment benefits and protections",
+                  "C) They have too much flexibility in their schedules",
+                  "D) They cannot find enough work opportunities"
+                ],
+                "answer": "B"
+              },
+              {
+                "id": "q12",
+                "stem": "What did the European Union's Platform Work Directive establish?",
+                "options": [
+                  "A) A complete ban on gig economy platforms",
+                  "B) A requirement for platforms to provide free housing",
+                  "C) A presumption that platform workers are employees unless proven otherwise",
+                  "D) A minimum wage specifically for delivery drivers"
+                ],
+                "answer": "C"
+              },
+              {
+                "id": "q13",
+                "stem": "According to the passage, what is one argument critics make against the gig economy?",
+                "options": [
+                  "A) It creates too many stable, full-time positions",
+                  "B) Algorithmic control limits genuine worker flexibility",
+                  "C) Traditional employees are jealous of gig workers",
+                  "D) The gig economy is shrinking too rapidly"
+                ],
+                "answer": "B"
+              }
+            ]
+          },
+          {
+            "id": "p2",
+            "type": "passage",
+            "audioSrc": "assets/audio/mock-01/p2.mp3",
+            "transcript": "In 1971, a small group of activists sailed a fishing boat from Vancouver toward a tiny island off the coast of Alaska to protest an American nuclear weapons test. Their vessel was intercepted, and the test proceeded. But the journey of the 'Phyllis Cormack'—better known as Greenpeace—launched what would become the world's most recognized environmental organization. Fifty years later, Greenpeace operates in over 55 countries and has fundamentally shaped how environmental movements communicate their message.\n\nGreenpeace's strategy has always centered on what communication scholars call 'mind bombs'—dramatic images and actions designed to capture media attention and shift public consciousness. When a Greenpeace inflatable boat positions itself between a whaling ship and a whale, or when activists hang banners from industrial smokestacks, the goal is not to stop that specific activity directly but to create an image that travels globally through media coverage and, today, social networks.\n\nThis approach has been remarkably effective at raising awareness but has also drawn criticism. Some environmental policy experts argue that Greenpeace's confrontational tactics alienate the very corporations and governments whose cooperation is needed for systemic change. Others note that the organization's absolutist positions—for example, its blanket opposition to all genetically modified organisms—sometimes conflict with scientific consensus.\n\nRegardless of these critiques, Greenpeace's influence on environmental communication is undeniable. The organization pioneered techniques now used by movements ranging from climate activism to racial justice: viral imagery, direct action, and the understanding that in a media-saturated world, changing how people think about an issue is often more important than winning a single policy battle.",
+            "questions": [
+              {
+                "id": "q14",
+                "stem": "What does the passage describe as Greenpeace's 'mind bomb' strategy?",
+                "options": [
+                  "A) Using psychological warfare against corporations",
+                  "B) Creating dramatic images and actions to capture media attention",
+                  "C) Developing nuclear weapons for environmental protection",
+                  "D) Conducting secret negotiations with government officials"
+                ],
+                "answer": "B"
+              },
+              {
+                "id": "q15",
+                "stem": "What criticism has Greenpeace faced according to the passage?",
+                "options": [
+                  "A) The organization is not active enough in developing countries",
+                  "B) Its confrontational tactics may alienate potential partners for systemic change",
+                  "C) It spends too much money on administrative costs",
+                  "D) It focuses exclusively on ocean-related environmental issues"
+                ],
+                "answer": "B"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "reading": {
+      "title": "阅读理解",
+      "time": 40,
+      "score": 248.5,
+      "sections": {
+        "wordBank": {
+          "title": "选词填空",
+          "direction": "In this section, there is a passage with ten blanks. You are required to select one word for each blank from a list of choices given in a word bank following the passage.",
+          "passage": "The rise of remote work has fundamentally altered the geography of employment. For decades, workers (1)______ to live near major cities where jobs were concentrated. Now, many knowledge workers can perform their duties from anywhere with a reliable internet connection, leading to what demographers call the 'great (2)______.'\n\nThis shift has produced both winners and losers. Small towns and rural areas that were previously (3)______ by the knowledge economy are now attracting remote workers seeking lower costs of living and more space. Cities like Tulsa, Oklahoma, have even offered cash (4)______ to remote workers willing to relocate, providing up to $10,000 along with free co-working space and community-building programs.\n\nHowever, the picture is more (5)______ for the urban service workers whose jobs depend on office commuters. Restaurants, dry cleaners, and transit systems in central business districts have seen dramatic (6)______ in demand. The Center for New York City Affairs estimates that 150,000 service jobs in Manhattan alone may be (7)______ affected by the shift to remote work.\n\nFor knowledge workers themselves, the experience has been (8)______. Some report improved work-life balance and higher productivity, while others struggle with isolation, burnout from blurred boundaries between work and home, and the (9)______ that comes from being 'out of sight, out of mind' for promotions. Companies are now (10)______ with hybrid models—requiring some in-office days while maintaining the flexibility workers have come to expect.",
+          "words": [
+            { "word": "needed", "id": "A" },
+            { "word": "dispersion", "id": "B" },
+            { "word": "overlooked", "id": "C" },
+            { "word": "incentives", "id": "D" },
+            { "word": "complicated", "id": "E" },
+            { "word": "declines", "id": "F" },
+            { "word": "permanently", "id": "G" },
+            { "word": "mixed", "id": "H" },
+            { "word": "anxiety", "id": "I" },
+            { "word": "experimenting", "id": "J" },
+            { "word": "struggled", "id": "K" },
+            { "word": "concentration", "id": "L" },
+            { "word": "benefited", "id": "M" },
+            { "word": "curiosity", "id": "N" },
+            { "word": "returning", "id": "O" }
+          ],
+          "answerKey": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
+        },
+        "longPassage": {
+          "title": "长篇阅读",
+          "direction": "In this section, you are going to read a passage with ten statements attached to it. Each statement contains information given in one of the paragraphs. Identify the paragraph from which the information is derived.",
+          "passage": "The Psychology of Procrastination: Why We Delay and How to Overcome It\n\n[A] Everyone procrastinates. Surveys consistently find that 80 to 95 percent of college students engage in procrastination, with about 50 percent doing so consistently and problematically. But despite its universality, procrastination is poorly understood. It is not, as commonly assumed, a time management problem. Rather, psychologists have identified it as an emotion regulation failure—we procrastinate not because we are bad at managing time, but because we are avoiding the negative emotions associated with a task.\n\n[B] Dr. Tim Pychyl, a psychology professor at Carleton University and one of the world's leading researchers on procrastination, explains that the immediate relief we feel when we choose to do something else instead of a dreaded task is a powerful reinforcement mechanism. 'We give in to feel good,' he writes. 'Procrastination is a mood repair strategy.' The problem, of course, is that this relief is temporary, and the task remains—now accompanied by guilt, shame, and increased anxiety that make it even harder to start.\n\n[C] Neuroscience offers additional insights. Brain imaging studies show that when procrastinators contemplate a task they have been avoiding, their amygdala—the brain's fear center—activates more strongly than in non-procrastinators. This suggests that for chronic procrastinators, the emotional threat response to a task is genuinely more intense. Their brains are not merely being lazy; they are experiencing something closer to a fear reaction.\n\n[D] The personality traits associated with procrastination are also revealing. Research has found strong correlations between procrastination and low conscientiousness, high impulsivity, and perfectionism. The perfectionism connection is particularly counterintuitive—surely perfectionists would want to start early to do the best work? But perfectionists often set impossibly high standards, and the fear of not meeting those standards becomes paralyzing. Starting late becomes a self-protective strategy: 'I could have done better if I had more time' is easier to accept than 'I did my best and it wasn't good enough.'\n\n[E] The consequences of chronic procrastination extend well beyond missed deadlines. A longitudinal study of 3,000 university students found that procrastinators not only had lower GPAs but also reported higher stress levels, more frequent illnesses, and lower overall life satisfaction at graduation. A 15-year follow-up found that these effects persisted into early career years, with procrastinators earning lower salaries and reporting less career satisfaction.\n\n[F] Digital technology has both amplified and complicated the procrastination problem. Social media platforms, streaming services, and mobile games are engineered to be maximally engaging and minimally effortful—exactly the combination that appeals to a brain seeking escape from a difficult task. The average smartphone user checks their device 96 times per day, and each check provides a micro-dose of distraction that makes sustained focus increasingly difficult. Some researchers have coined the term 'digital procrastination' to describe the specific phenomenon of using digital devices to delay important tasks.\n\n[G] However, the same technology that enables procrastination can also help combat it. Productivity apps that block distracting websites, track time spent on tasks, and create structured work intervals have helped many users reduce procrastination. The key difference is intentionality: using technology as a tool rather than allowing it to be a source of distraction.\n\n[H] The most effective interventions for procrastination target the emotional core of the problem rather than time management skills. Cognitive behavioral therapy approaches help procrastinators identify and challenge the irrational beliefs underlying their avoidance—such as 'I must be in the right mood to work' or 'This task must be done perfectly.' Mindfulness techniques train individuals to notice the urge to procrastinate without acting on it, creating a space between impulse and action.\n\n[I] One practical technique that has shown consistent effectiveness is the 'five-minute rule': commit to working on a task for just five minutes, with permission to stop afterward. This lowers the psychological barrier to starting, and research shows that once people begin, they almost always continue beyond the initial five minutes. The technique works because it sidesteps the emotional negotiation process entirely—there is no need to feel ready when the commitment is so minimal.\n\n[J] Another evidence-based approach is 'temptation bundling,' researched by Dr. Katherine Milkman at the University of Pennsylvania. The concept involves pairing a task you tend to avoid with an activity you enjoy—for example, only listening to your favorite podcast while exercising, or only allowing yourself to get a fancy coffee while working on your taxes. This transforms the avoided activity into a gateway to pleasure rather than an obstacle to it.\n\n[K] At the societal level, some argue that our approach to procrastination needs to be more compassionate. The intense shame that chronic procrastinators often feel—reinforced by cultural messages that equate procrastination with laziness or moral failure—can deepen the avoidance cycle. Understanding procrastination as a psychological pattern rather than a character flaw is the first step toward meaningful change.",
+          "statements": [
+            {
+              "id": "s1",
+              "text": "Procrastination is fundamentally an emotion regulation problem rather than a time management issue.",
+              "answer": "A"
+            },
+            {
+              "id": "s2",
+              "text": "Brain imaging reveals that procrastinators experience stronger activation in the amygdala when thinking about avoided tasks.",
+              "answer": "C"
+            },
+            {
+              "id": "s3",
+              "text": "Perfectionists may procrastinate because starting late allows them to attribute poor results to time constraints rather than lack of ability.",
+              "answer": "D"
+            },
+            {
+              "id": "s4",
+              "text": "A 15-year study found that procrastination in college was associated with lower salaries in early career years.",
+              "answer": "E"
+            },
+            {
+              "id": "s5",
+              "text": "The 'five-minute rule' works by lowering the psychological barrier to starting a task.",
+              "answer": "I"
+            },
+            {
+              "id": "s6",
+              "text": "Productivity apps can help combat procrastination when used intentionally as tools.",
+              "answer": "G"
+            },
+            {
+              "id": "s7",
+              "text": "Temptation bundling involves pairing avoided tasks with enjoyable activities.",
+              "answer": "J"
+            },
+            {
+              "id": "s8",
+              "text": "The average smartphone user checks their device 96 times per day, contributing to digital procrastination.",
+              "answer": "F"
+            },
+            {
+              "id": "s9",
+              "text": "Dr. Tim Pychyl describes procrastination as a mood repair strategy where people 'give in to feel good.'",
+              "answer": "B"
+            },
+            {
+              "id": "s10",
+              "text": "The article argues that society should treat procrastination as a psychological pattern rather than a character flaw.",
+              "answer": "K"
+            }
+          ]
+        },
+        "inDepth": {
+          "title": "仔细阅读",
+          "direction": "There are 2 passages in this section. Each passage is followed by some questions or unfinished statements. For each of them there are four choices marked A), B), C) and D). You should decide on the best choice.",
+          "passages": [
+            {
+              "id": "idp1",
+              "title": "Passage One — The Science of Habits",
+              "text": "In his bestselling book 'The Power of Habit,' journalist Charles Duhigg popularized the concept of the 'habit loop'—a three-step neurological pattern consisting of a cue, a routine, and a reward. This framework, drawn from decades of neuroscience research, has profoundly influenced how we understand behavior change. But more recent research suggests that the habit loop model, while useful, may oversimplify the complexity of habit formation.\n\nDr. Wendy Wood, a psychologist at the University of Southern California who has studied habits for over 30 years, argues that context is far more important than the cue-routine-reward model suggests. Her research shows that about 43 percent of our daily actions are performed habitually, without conscious decision-making. But these habits are not triggered by abstract cues in the way Duhigg describes. Instead, they are embedded in specific contexts—the physical environment, the time of day, the presence of certain people, and the sequence of preceding actions.\n\nWood's research has a practical implication that challenges much popular advice about habit formation. If habits are context-dependent, then the most effective way to change a habit is not to focus on willpower or motivation, but to change the context. A study she conducted with college students found that those who transferred to a different university were much more likely to successfully change their exercise and eating habits than those who stayed at the same university—even when both groups reported equal motivation to change. The move disrupted the environmental cues that triggered old habits, creating a window of opportunity for new ones.\n\nThis finding aligns with what behavioral economists call 'choice architecture'—the idea that the environment in which decisions are made can be designed to make certain choices easier. If you want to read more, the most effective strategy is not to summon more willpower but to put your phone in another room and keep a book on your nightstand. The friction of accessing the phone and the ease of picking up the book reshape the habit landscape.\n\nWhat makes habits particularly challenging to change is that they never truly disappear—they are merely overwritten by new patterns. Neuroscientists have found that old habit pathways remain in the brain's basal ganglia even after new habits are established. This is why stress, fatigue, or a return to an old environment can cause old habits to resurface. Understanding this can be liberating: habit relapse is not a personal failure but a neurological reality.",
+              "questions": [
+                {
+                  "id": "q16",
+                  "stem": "According to Dr. Wendy Wood's research, what percentage of daily actions are performed habitually?",
+                  "options": [
+                    "A) About 25 percent",
+                    "B) About 33 percent",
+                    "C) About 43 percent",
+                    "D) About 55 percent"
+                  ],
+                  "answer": "C",
+                  "explanation": "The passage states that 'about 43 percent of our daily actions are performed habitually, without conscious decision-making.'"
+                },
+                {
+                  "id": "q17",
+                  "stem": "What did the study of college students who transferred universities reveal?",
+                  "options": [
+                    "A) Transfer students had less motivation to change their habits",
+                    "B) Changing environment was more effective than relying on motivation alone",
+                    "C) Students who stayed at the same university changed their habits more easily",
+                    "D) Exercise habits are impossible to change during college"
+                  ],
+                  "answer": "B",
+                  "explanation": "The passage explains that students who transferred 'were much more likely to successfully change their exercise and eating habits' because the move 'disrupted the environmental cues that triggered old habits.'"
+                },
+                {
+                  "id": "q18",
+                  "stem": "Why do old habits resurface under stress according to the passage?",
+                  "options": [
+                    "A) People lose all willpower when stressed",
+                    "B) Stress creates new habit pathways in the brain",
+                    "C) Old habit pathways remain in the brain's basal ganglia",
+                    "D) Stress hormones directly trigger specific behaviors"
+                  ],
+                  "answer": "C",
+                  "explanation": "The passage notes that 'old habit pathways remain in the brain's basal ganglia even after new habits are established,' and this is why 'stress, fatigue, or a return to an old environment can cause old habits to resurface.'"
+                },
+                {
+                  "id": "q19",
+                  "stem": "According to the passage, what is the most effective strategy for reading more books?",
+                  "options": [
+                    "A) Developing stronger willpower through meditation",
+                    "B) Putting your phone in another room and keeping a book accessible",
+                    "C) Setting a daily reading goal of 50 pages",
+                    "D) Joining a book club for accountability"
+                  ],
+                  "answer": "B",
+                  "explanation": "The passage uses the example: 'put your phone in another room and keep a book on your nightstand. The friction of accessing the phone and the ease of picking up the book reshape the habit landscape.'"
+                }
+              ]
+            },
+            {
+              "id": "idp2",
+              "title": "Passage Two — The Coral Reef Crisis",
+              "text": "Coral reefs cover less than one percent of the ocean floor, yet they support approximately 25 percent of all marine life. These underwater ecosystems, often called the 'rainforests of the sea,' provide food and livelihoods for over 500 million people worldwide through fishing, tourism, and coastal protection. The economic value of coral reefs is estimated at 375 billion dollars annually. Yet these irreplaceable ecosystems are dying at an alarming rate.\n\nThe primary driver of coral reef decline is rising ocean temperatures, which cause a phenomenon known as coral bleaching. Corals have a symbiotic relationship with microscopic algae called zooxanthellae, which live within their tissues and provide up to 90 percent of the coral's energy through photosynthesis. When water temperatures rise even 1-2°C above normal, this relationship breaks down. The stressed coral expels the algae, turning white—hence 'bleaching.' If temperatures return to normal quickly, corals can recover. If not, they starve and die.\n\nBetween 2014 and 2017, a global bleaching event—the longest and most widespread ever recorded—affected over 70 percent of the world's coral reefs. The Great Barrier Reef, the largest living structure on Earth, lost approximately half of its coral cover during this period. Marine biologists described the event as an 'underwater holocaust,' and their language was not hyperbolic: the scale of loss was unprecedented in recorded history.\n\nScientists are racing to develop interventions. Some are pursuing 'assisted evolution'—breeding heat-resistant corals by selecting the most resilient individuals and propagating them. Others are exploring 'coral cryopreservation,' freezing coral sperm and larvae to preserve genetic diversity for future restoration efforts. In the Florida Keys, researchers have successfully transplanted nursery-grown corals onto degraded reefs, achieving survival rates of 80 percent or higher.\n\nHowever, scientists emphasize that these interventions are stopgap measures, not solutions. Without addressing the underlying cause—climate change driven by greenhouse gas emissions—all restoration efforts will eventually be overwhelmed. The Intergovernmental Panel on Climate Change projects that if global temperatures rise by 2°C above pre-industrial levels, 99 percent of coral reefs will be lost. At 1.5°C, the projected loss drops to 70-90 percent—still catastrophic, but leaving a 10-30 percent window for survival.\n\nThis narrow window has galvanized the scientific community. As one marine ecologist put it, 'We are not just fighting to save coral reefs. We are fighting to save the communities that depend on them, the biodiversity they harbor, and the coastal protection they provide. The reefs are the canary in the coal mine for the ocean—and for us.'",
+              "questions": [
+                {
+                  "id": "q20",
+                  "stem": "What causes coral bleaching according to the passage?",
+                  "options": [
+                    "A) Overfishing of herbivorous fish species",
+                    "B) Rising ocean temperatures that disrupt the coral-algae symbiosis",
+                    "C) Chemical pollution from agricultural runoff",
+                    "D) Physical damage from tourist diving activities"
+                  ],
+                  "answer": "B",
+                  "explanation": "The passage explains that 'when water temperatures rise even 1-2°C above normal, this relationship breaks down. The stressed coral expels the algae, turning white.'"
+                },
+                {
+                  "id": "q21",
+                  "stem": "How much of the Great Barrier Reef's coral cover was lost during the 2014-2017 bleaching event?",
+                  "options": [
+                    "A) About one quarter",
+                    "B) About one third",
+                    "C) Approximately half",
+                    "D) Nearly all of it"
+                  ],
+                  "answer": "C",
+                  "explanation": "The passage states that 'the Great Barrier Reef lost approximately half of its coral cover during this period.'"
+                },
+                {
+                  "id": "q22",
+                  "stem": "What does the passage say about the long-term effectiveness of coral restoration efforts?",
+                  "options": [
+                    "A) They will completely solve the coral reef crisis",
+                    "B) They are stopgap measures that cannot succeed without addressing climate change",
+                    "C) They are more effective than reducing greenhouse gas emissions",
+                    "D) They have already restored most damaged reefs"
+                  ],
+                  "answer": "B",
+                  "explanation": "The passage notes that 'scientists emphasize that these interventions are stopgap measures, not solutions. Without addressing the underlying cause—climate change—all restoration efforts will eventually be overwhelmed.'"
+                },
+                {
+                  "id": "q23",
+                  "stem": "According to the IPCC projections, what would happen to coral reefs at 2°C of warming?",
+                  "options": [
+                    "A) 50 percent of coral reefs would be lost",
+                    "B) 70-90 percent of coral reefs would be lost",
+                    "C) 99 percent of coral reefs would be lost",
+                    "D) Coral reefs would actually thrive"
+                  ],
+                  "answer": "C",
+                  "explanation": "The passage states that the IPCC projects 'if global temperatures rise by 2°C above pre-industrial levels, 99 percent of coral reefs will be lost.'"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "translation": {
+      "title": "翻译",
+      "time": 30,
+      "score": 106.5,
+      "direction": "Directions: For this part, you are allowed 30 minutes to translate a passage from Chinese into English.",
+      "chineseText": "太极拳是中国传统武术的一种，已有数百年的历史。它最初是作为一种自卫技术发展起来的，但如今更多的人练习太极拳是为了健康益处和精神放松。太极拳的动作缓慢而流畅，强调身心合一、以柔克刚。研究表明，定期练习太极拳可以改善平衡能力、降低血压、减轻压力，对老年人尤其有益。近年来，太极拳在全球范围内越来越受欢迎，数以百万计的非中国人也开始练习太极拳。联合国教科文组织于2020年将太极拳列入人类非物质文化遗产代表作名录，这进一步肯定了太极拳的文化价值和全球影响力。如今，在纽约、伦敦、悉尼等国际大都市的公园里，人们经常可以看到练习太极拳的身影。",
+      "referenceTranslation": "Tai Chi, or Taijiquan, is a form of traditional Chinese martial arts with a history spanning several hundred years. It was originally developed as a self-defense technique, but today more people practice Tai Chi for its health benefits and mental relaxation. The movements of Tai Chi are slow and flowing, emphasizing the unity of mind and body and the principle of overcoming hardness with softness. Research has shown that regular Tai Chi practice can improve balance, lower blood pressure, and reduce stress, making it particularly beneficial for the elderly. In recent years, Tai Chi has gained increasing popularity worldwide, with millions of non-Chinese people taking up the practice. In 2020, UNESCO inscribed Tai Chi on the Representative List of the Intangible Cultural Heritage of Humanity, further affirming its cultural value and global influence. Today, in parks across major international cities such as New York, London, and Sydney, it is common to see people practicing Tai Chi.",
+      "keyPoints": [
+        "Tai Chi: traditional Chinese martial arts, hundreds of years of history",
+        "Health benefits: improved balance, lower blood pressure, reduced stress",
+        "UNESCO Intangible Cultural Heritage listing in 2020",
+        "Global popularity: practiced in cities like New York, London, Sydney"
+      ]
+    }
+  }
+}

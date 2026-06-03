@@ -1,0 +1,275 @@
+{
+  "meta": {
+    "id": "cet4-2024-06-c",
+    "year": 2024,
+    "month": 6,
+    "set": "C",
+    "title": "2024年6月大学英语四级真题（卷三）",
+    "totalTime": 125,
+    "totalScore": 710,
+    "type": "real"
+  },
+  "sections": {
+    "writing": {
+      "title": "作文",
+      "time": 30,
+      "score": 106.5,
+      "direction": "Directions: For this part, you are allowed 30 minutes to write an essay on the topic of \"The Importance of Developing Practical Skills in College\". You should write at least 120 words but no more than 180 words.",
+      "topic": "Suppose your university is organizing a forum on career readiness. Write an essay arguing that colleges should place greater emphasis on developing students' practical skills alongside academic knowledge.",
+      "sampleEssay": "In today's competitive job market, a college degree alone is no longer sufficient to guarantee career success. I firmly believe that universities should place equal emphasis on developing students' practical skills alongside academic knowledge.\n\nFirst, practical skills such as communication, teamwork, and problem-solving are exactly what employers value most. A recent survey of Fortune 500 companies revealed that 78% of hiring managers prioritize practical abilities over academic grades when evaluating candidates. Second, hands-on experience helps students discover their true interests and strengths. An internship or project-based course can provide clarity that no textbook can offer. Third, practical skills build confidence. When students can apply theoretical knowledge to solve real-world problems, they develop a sense of competence that is essential for professional growth.\n\nOf course, academic knowledge remains important as the foundation of intellectual development. The ideal education is one that combines rigorous academic training with ample opportunities for practical application. Universities should expand internship programs, invite industry professionals as guest lecturers, and integrate project-based learning across all disciplines.",
+      "keyPoints": [
+        "雇主更看重沟通、团队合作等实用技能而非成绩",
+        "实践经验帮助发现真正的兴趣和优势",
+        "理想教育应将学术培训与实践应用相结合"
+      ]
+    },
+    "listening": {
+      "title": "听力理解",
+      "time": 25,
+      "score": 248.5,
+      "sections": {
+        "newsReports": [
+          {
+            "id": "l1",
+            "type": "news",
+            "audioSrc": "assets/audio/2024-06-c/l1.mp3",
+            "transcript": "Scientists at the European Space Agency have announced the discovery of a new Earth-like planet orbiting a nearby star system. The planet, designated Proxima Centauri d, is located approximately 4.2 light-years from Earth and lies within the so-called 'habitable zone' where liquid water could exist on its surface. The discovery was made using the Very Large Telescope in Chile. Dr. Maria Santos, the lead researcher, said the planet is roughly one-third the mass of Earth, making it one of the lightest exoplanets ever detected. While the planet's surface temperature is estimated to be around minus 40 degrees Celsius, scientists believe that geothermal activity could potentially support simple forms of life beneath the surface.",
+            "questions": [
+              {
+                "id": "q1",
+                "stem": "What makes the newly discovered planet special?",
+                "options": ["A. It is the closest planet to Earth ever found", "B. It lies within the habitable zone of its star", "C. It has visible signs of life on its surface", "D. It is larger than any previously discovered planet"],
+                "answer": "B",
+                "explanation": "新闻提到planet lies within the habitable zone where liquid water could exist on its surface。"
+              },
+              {
+                "id": "q2",
+                "stem": "What is the estimated mass of the new planet compared to Earth?",
+                "options": ["A. About the same mass", "B. Twice the mass", "C. One-third the mass", "D. Ten times the mass"],
+                "answer": "C",
+                "explanation": "新闻明确说the planet is roughly one-third the mass of Earth。"
+              }
+            ]
+          },
+          {
+            "id": "l2",
+            "type": "news",
+            "audioSrc": "assets/audio/2024-06-c/l2.mp3",
+            "transcript": "The city of Copenhagen has reached a major milestone in its journey toward becoming carbon neutral. City officials announced on Tuesday that 75% of all trips within the city are now made by bicycle, public transport, or on foot. This achievement is the result of a 20-year effort that included building over 400 kilometers of dedicated cycling lanes, implementing congestion charges for cars, and investing heavily in electric buses. The city's target is to become the world's first carbon-neutral capital by 2025. Other cities, including Amsterdam, Oslo, and Vancouver, have sent delegations to study Copenhagen's approach. The mayor emphasized that the key to success was not just infrastructure but also changing the culture around transportation through public education campaigns starting in elementary schools.",
+            "questions": [
+              {
+                "id": "q3",
+                "stem": "What percentage of trips in Copenhagen are now made by green transport?",
+                "options": ["A. 50%", "B. 65%", "C. 75%", "D. 85%"],
+                "answer": "C",
+                "explanation": "新闻报告75% of all trips within the city are now made by bicycle, public transport, or on foot。"
+              }
+            ]
+          }
+        ],
+        "longConversations": [
+          {
+            "id": "lc1",
+            "type": "longConversation",
+            "audioSrc": "assets/audio/2024-06-c/lc1.mp3",
+            "transcript": "W: Hey David, I heard you got an internship at that tech startup. How's it going?\nM: It's been amazing, Lisa. Totally different from what I expected though.\nW: Really? How so?\nM: Well, in class we learn all these theories and frameworks, but in the real world, things are much messier. Last week, our server crashed two hours before a major client presentation. There's no textbook for that kind of situation.\nW: That sounds stressful! How did you handle it?\nM: Honestly, I just stayed calm and worked with the team. We divided tasks — someone contacted the client to explain the delay, someone else worked on fixing the server, and I prepared an offline backup of the presentation. In the end, we were only 15 minutes late.\nW: That's impressive. It sounds like you learned more in that one moment than in a whole semester.\nM: Exactly! That's what I've been telling everyone. The internship has taught me that technical skills are only half the equation. Communication, adaptability, and staying calm under pressure are just as important.\nW: I'm actually looking for an internship now. Do you think your company is still hiring?\nM: Actually, yes! The marketing department is looking for summer interns. I can refer you if you're interested.\nW: That would be fantastic! Thank you so much.",
+            "questions": [
+              {
+                "id": "q4",
+                "stem": "What unexpected situation did the man face at work?",
+                "options": ["A. A client canceled a major contract", "B. The server crashed before a presentation", "C. He was assigned to a different department", "D. His supervisor gave him a negative review"],
+                "answer": "B",
+                "explanation": "男士说server crashed two hours before a major client presentation。"
+              },
+              {
+                "id": "q5",
+                "stem": "What has the man learned from his internship?",
+                "options": ["A. Technical skills are the most important", "B. Soft skills are as important as technical skills", "C. Startups are more stressful than large companies", "D. Academic knowledge is useless in the workplace"],
+                "answer": "B",
+                "explanation": "男士总结Communication, adaptability, and staying calm under pressure are just as important as technical skills。"
+              },
+              {
+                "id": "q6",
+                "stem": "What does the man offer to do for the woman?",
+                "options": ["A. Help her prepare for an interview", "B. Introduce her to his supervisor", "C. Refer her for a marketing internship", "D. Share his internship report with her"],
+                "answer": "C",
+                "explanation": "男士说I can refer you if you're interested，并提到营销部门在招暑期实习生。"
+              }
+            ]
+          }
+        ],
+        "passages": [
+          {
+            "id": "p1",
+            "type": "passage",
+            "audioSrc": "assets/audio/2024-06-c/p1.mp3",
+            "transcript": "Urban gardening, once considered a hobby for retirees, is rapidly becoming a mainstream movement among young city dwellers. Across major cities worldwide, millennials and Gen Z are transforming balconies, rooftops, and vacant lots into productive green spaces. A 2023 survey by the Urban Agriculture Association found that 42% of urban gardeners are now under the age of 35, up from just 12% a decade ago. Several factors are driving this trend. First, growing concerns about food safety and the environmental impact of industrial agriculture have led many young people to seek greater control over what they eat. Second, the mental health benefits of gardening are well documented — studies show that regular contact with soil and plants can reduce stress levels by up to 30%. Third, community gardens have become important social hubs where neighbors who might otherwise never interact can form meaningful connections. The economic benefits should not be overlooked either. A well-maintained vegetable garden can produce up to $600 worth of food annually from an initial investment of just $70 in seeds and supplies. City governments are taking notice. New York, London, and Singapore have all introduced policies to support urban agriculture, including tax incentives for rooftop gardens and simplified permits for community garden projects. As one researcher put it, 'Urban gardening is not just about growing food — it's about growing communities.'",
+            "questions": [
+              {
+                "id": "q7",
+                "stem": "What trend does the passage mainly discuss?",
+                "options": ["A. The decline of traditional farming", "B. The rise of urban gardening among young people", "C. Government policies on food safety", "D. The economic benefits of rural agriculture"],
+                "answer": "B",
+                "explanation": "全文讨论的是城市园艺在年轻人中越来越流行的趋势。"
+              },
+              {
+                "id": "q8",
+                "stem": "According to the survey, what percentage of urban gardeners are now under 35?",
+                "options": ["A. 12%", "B. 30%", "C. 42%", "D. 55%"],
+                "answer": "C",
+                "explanation": "调查显示42% of urban gardeners are now under the age of 35。"
+              },
+              {
+                "id": "q9",
+                "stem": "What is one of the mental health benefits of gardening mentioned?",
+                "options": ["A. It improves memory and concentration", "B. It can reduce stress levels by up to 30%", "C. It helps people sleep better at night", "D. It increases social media engagement"],
+                "answer": "B",
+                "explanation": "文章提到gardening can reduce stress levels by up to 30%。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "reading": {
+      "title": "阅读理解",
+      "time": 40,
+      "score": 248.5,
+      "sections": {
+        "wordBank": {
+          "title": "选词填空",
+          "passage": "The concept of minimalism has gained ___ (1) traction in recent years, particularly among young professionals. At its core, minimalism is about intentionally ___ (2) only the things that add value to your life and removing the rest. Advocates argue that our consumer-driven society encourages us to ___ (3) more possessions than we actually need, leading to both financial strain and mental clutter. By ___ (4) the number of material possessions, many people report feeling a greater sense of freedom and clarity. The movement is not about deprivation but about making ___ (5) choices about what truly matters.",
+          "words": [
+            {"word": "significant", "id": "A"},
+            {"word": "keeping", "id": "B"},
+            {"word": "accumulate", "id": "C"},
+            {"word": "reducing", "id": "D"},
+            {"word": "conscious", "id": "E"},
+            {"word": "removing", "id": "F"},
+            {"word": "purchase", "id": "G"},
+            {"word": "moderate", "id": "H"},
+            {"word": "increasing", "id": "I"},
+            {"word": "deliberate", "id": "J"}
+          ],
+          "answers": [
+            {"position": 1, "correct": "A"},
+            {"position": 2, "correct": "B"},
+            {"position": 3, "correct": "C"},
+            {"position": 4, "correct": "D"},
+            {"position": 5, "correct": "E"}
+          ],
+          "explanations": [
+            {"position": 1, "text": "significant traction表示'显著的关注度/影响力'，近年极简主义获得了显著的关注。"},
+            {"position": 2, "text": "keeping only the things that add value表示'只保留有价值的东西'，这是极简主义的核心理念。"},
+            {"position": 3, "text": "accumulate more possessions表示'积累更多物品'，消费社会鼓励我们购买超出需要的物品。"},
+            {"position": 4, "text": "reducing the number of material possessions表示'减少物质财产的数量'。"},
+            {"position": 5, "text": "conscious choices表示'有意识的选择'，极简主义是关于做出清醒的选择。"}
+          ]
+        },
+        "longPassage": {
+          "title": "长篇阅读",
+          "passage": "The Rise of Mental Health Awareness in the Workplace\n\n[A] Until relatively recently, mental health was a topic rarely discussed in professional settings. Employees who struggled with anxiety, depression, or burnout typically suffered in silence, fearing that disclosure would damage their career prospects. The prevailing attitude was that personal problems should be left at the office door.\n\n[B] This has changed dramatically. A 2023 report by the World Economic Forum identified mental health as one of the top three workplace priorities for the coming decade, alongside climate adaptation and artificial intelligence. The statistics driving this shift are striking: depression and anxiety disorders cost the global economy an estimated $1 trillion in lost productivity each year.\n\n[C] Tech companies have been at the forefront of this change. Google, Microsoft, and Salesforce have all introduced comprehensive mental health benefits, including free therapy sessions, meditation apps, and mental health days. These initiatives are not purely altruistic — companies have found that every dollar invested in mental health support yields approximately four dollars in improved productivity and reduced absenteeism.\n\n[D] However, experts caution that benefits alone are not enough. A study published in the Journal of Occupational Health Psychology found that employees are unlikely to use mental health resources if they perceive a stigma around doing so. The real challenge is creating a culture where discussing mental health is as normal as discussing physical health.\n\n[E] Middle managers play a crucial role in this cultural shift. They are often the first to notice when an employee is struggling, yet many feel ill-equipped to handle mental health conversations. A survey by the Chartered Management Institute found that 62% of managers had never received any training on supporting employee mental health, despite 78% saying they had encountered such situations.\n\n[F] The legal landscape is also evolving. In many countries, mental health conditions are now recognized under disability legislation, requiring employers to provide reasonable accommodations. This includes flexible working hours, modified duties, and access to counseling services. Failure to comply can result in significant legal penalties.\n\n[G] As the boundaries between work and personal life continue to blur — especially in the era of remote work — the need for workplace mental health support will only grow. The most successful organizations of the future will be those that recognize their employees as whole human beings, not just productivity units.",
+          "questions": [
+            {
+              "id": "q10",
+              "stem": "The World Economic Forum ranks mental health among the top three workplace priorities for the next decade.",
+              "paragraph": "B",
+              "explanation": "Paragraph B states the WEF identified mental health as one of the top three workplace priorities."
+            },
+            {
+              "id": "q11",
+              "stem": "Middle managers frequently encounter employee mental health issues but lack proper training to handle them.",
+              "paragraph": "E",
+              "explanation": "Paragraph E provides statistics about managers lacking mental health training."
+            },
+            {
+              "id": "q12",
+              "stem": "Companies gain about four dollars in productivity for every dollar spent on mental health support.",
+              "paragraph": "C",
+              "explanation": "Paragraph C mentions the 4:1 return on investment for mental health initiatives."
+            },
+            {
+              "id": "q13",
+              "stem": "In the past, employees with mental health issues were afraid to speak up because they worried about their careers.",
+              "paragraph": "A",
+              "explanation": "Paragraph A describes how employees historically suffered in silence fearing career damage."
+            },
+            {
+              "id": "q14",
+              "stem": "Many countries now legally require employers to provide accommodations for mental health conditions.",
+              "paragraph": "F",
+              "explanation": "Paragraph F discusses how mental health is recognized under disability legislation."
+            },
+            {
+              "id": "q15",
+              "stem": "The availability of mental health benefits is not enough if employees feel stigmatized for using them.",
+              "paragraph": "D",
+              "explanation": "Paragraph D warns that benefits alone are insufficient without addressing workplace stigma."
+            }
+          ]
+        },
+        "inDepth": {
+          "title": "仔细阅读",
+          "passages": [
+            {
+              "title": "The Science of Habit Formation",
+              "passage": "We are what we repeatedly do, as the ancient Greek philosopher Aristotle observed. More than two millennia later, modern neuroscience has confirmed the profound truth of this statement. Habits — automatic behaviors triggered by environmental cues — shape an estimated 40 to 45% of our daily actions, according to research from Duke University.\n\nThe neuroscience of habit formation centers on a structure deep within the brain called the basal ganglia. When we first perform a new action, the prefrontal cortex — the brain's 'thinking' center — is highly active as we consciously process each step. But as we repeat the behavior, neural activity gradually shifts to the basal ganglia, which can execute the sequence automatically with minimal energy consumption. This is why driving a car, which initially requires intense concentration, eventually becomes so effortless that we can carry on a conversation simultaneously.\n\nCharles Duhigg, author of 'The Power of Habit,' popularized the concept of the 'habit loop,' which consists of three components: a cue (the trigger that initiates the behavior), a routine (the behavior itself), and a reward (the positive outcome that reinforces the behavior). Understanding this loop is the key to both building good habits and breaking bad ones.\n\nResearch suggests that the most effective strategy for changing habits is not to eliminate the cue or the reward, but to replace the routine while keeping the other elements constant. For example, someone who habitually eats a cookie every afternoon (routine) in response to fatigue (cue) to get an energy boost (reward) might replace the cookie with a short walk, which provides the same energizing reward through a healthier routine.\n\nContrary to popular belief, there is no magic number of days required to form a habit. A widely cited study from University College London found that the time to reach 'automaticity' — the point at which a behavior becomes automatic — ranged from 18 to 254 days, with a median of 66 days. The key variable was not willpower but consistency: missing a single day had no measurable impact on the habit formation process, but missing multiple consecutive days significantly delayed it.\n\nFor those seeking to build better habits, the evidence points to a simple but powerful principle: start small. James Clear, author of 'Atomic Habits,' advocates for the 'two-minute rule' — any new habit should take less than two minutes to complete initially. The goal is not immediate results but establishing the identity of the kind of person who performs the behavior consistently.",
+              "questions": [
+                {
+                  "id": "q16",
+                  "stem": "According to Duke University research, what percentage of daily actions are driven by habits?",
+                  "options": ["A. 20-25%", "B. 40-45%", "C. 60-65%", "D. 80-85%"],
+                  "answer": "B",
+                  "explanation": "文章明确提到habits...shape an estimated 40 to 45% of our daily actions, according to research from Duke University。"
+                },
+                {
+                  "id": "q17",
+                  "stem": "What role does the basal ganglia play in habit formation?",
+                  "options": ["A. It consciously processes each step of new actions", "B. It stores memories of past experiences", "C. It executes automatic behaviors with minimal energy", "D. It creates new neural pathways for learning"],
+                  "answer": "C",
+                  "explanation": "文章指出basal ganglia...can execute the sequence automatically with minimal energy consumption。"
+                },
+                {
+                  "id": "q18",
+                  "stem": "What is the 'habit loop' according to the passage?",
+                  "options": ["A. Cue, routine, and reward", "B. Thought, action, and reflection", "C. Motivation, behavior, and feedback", "D. Trigger, response, and consequence"],
+                  "answer": "A",
+                  "explanation": "文章明确说明habit loop由cue, routine, reward三部分组成。"
+                },
+                {
+                  "id": "q19",
+                  "stem": "What did the University College London study find about habit formation time?",
+                  "options": ["A. All habits take exactly 21 days to form", "B. Most habits form within one week", "C. Habit formation time varies widely from 18 to 254 days", "D. Simple habits form faster than complex ones"],
+                  "answer": "C",
+                  "explanation": "研究发现the time to reach automaticity ranged from 18 to 254 days, with a median of 66 days。"
+                },
+                {
+                  "id": "q20",
+                  "stem": "What is James Clear's 'two-minute rule'?",
+                  "options": ["A. Complete any task within two minutes of starting", "B. A new habit should initially take less than two minutes", "C. Take a two-minute break between different tasks", "D. Spend two minutes each day planning your habits"],
+                  "answer": "B",
+                  "explanation": "文章提到any new habit should take less than two minutes to complete initially。"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "translation": {
+      "title": "翻译",
+      "time": 30,
+      "score": 106.5,
+      "direction": "Directions: For this part, you are allowed 30 minutes to translate a passage from Chinese into English.",
+      "chineseText": "中国的传统节日文化源远流长，是中华民族宝贵的文化遗产。春节是中国最重要的传统节日，家人团聚、吃年夜饭、放烟花是春节的重要习俗。中秋节则象征着团圆，人们会赏月、吃月饼，表达对亲人的思念之情。端午节与纪念爱国诗人屈原有关，赛龙舟和吃粽子是这一节日的传统活动。这些传统节日不仅丰富了中国人民的精神生活，也成为连接海内外华人的情感纽带。",
+      "referenceTranslation": "China's traditional festival culture has a long history and is a valuable cultural heritage of the Chinese nation. The Spring Festival is China's most important traditional festival, and family reunions, New Year's Eve dinners, and setting off fireworks are important customs of the Spring Festival. The Mid-Autumn Festival symbolizes reunion, and people admire the moon and eat mooncakes to express their longing for loved ones. The Dragon Boat Festival is associated with commemorating the patriotic poet Qu Yuan, and dragon boat racing and eating zongzi are traditional activities of this festival. These traditional festivals not only enrich the spiritual life of the Chinese people but also serve as emotional bonds connecting Chinese people at home and abroad.",
+      "keyPoints": [
+        {"chinese": "源远流长", "english": "has a long history"},
+        {"chinese": "宝贵的文化遗产", "english": "valuable cultural heritage"},
+        {"chinese": "家人团聚", "english": "family reunions"},
+        {"chinese": "对亲人的思念之情", "english": "longing for loved ones"},
+        {"chinese": "情感纽带", "english": "emotional bonds"}
+      ]
+    }
+  }
+}

@@ -1,0 +1,383 @@
+{
+  "meta": {
+    "id": "cet4-2024-06-a",
+    "year": 2024,
+    "month": 6,
+    "set": "A",
+    "title": "2024年6月大学英语四级真题（卷一）",
+    "totalTime": 125,
+    "totalScore": 710,
+    "type": "real"
+  },
+  "sections": {
+    "writing": {
+      "title": "作文",
+      "time": 30,
+      "score": 106.5,
+      "direction": "Directions: For this part, you are allowed 30 minutes to write an essay. You should write at least 120 words but no more than 180 words.",
+      "topic": "Suppose your university is conducting a survey on students' reading habits. You are asked to write a short essay about the importance of reading in the digital age. You should give your own opinions and support them with examples.",
+      "sampleEssay": "In the digital age, reading remains an indispensable part of our intellectual growth and personal development. Despite the prevalence of short videos and social media, the habit of reading—especially deep reading—offers benefits that cannot be replaced by fragmented digital content.\n\nFirstly, reading cultivates critical thinking and concentration. Unlike scrolling through social media feeds, reading a book requires sustained attention and encourages readers to process information, question assumptions, and form independent judgments. Secondly, reading enriches our vocabulary and writing skills, which are essential for academic success and professional communication. A student who reads widely is often better at expressing ideas clearly and persuasively.\n\nIn conclusion, while digital media has transformed how we access information, reading—particularly in-depth reading of books and long-form articles—remains a cornerstone of education. Universities should encourage students to maintain regular reading habits alongside their digital literacy skills.",
+      "keyPoints": [
+        "阅读培养批判性思维和专注力",
+        "阅读提升词汇量和写作能力",
+        "阅读是教育的基石，应与数字素养并重"
+      ]
+    },
+    "listening": {
+      "title": "听力理解",
+      "time": 25,
+      "score": 248.5,
+      "sections": {
+        "newsReports": [
+          {
+            "id": "l1",
+            "type": "news",
+            "audioSrc": "assets/audio/2024-06-a/news-1.mp3",
+            "transcript": "The United Nations Educational, Scientific and Cultural Organization has launched a new initiative to promote digital literacy among young people in developing countries. The program, which will be rolled out in 15 countries over the next three years, aims to provide training in basic computer skills, online safety, and digital content creation. UNESCO officials say the initiative is particularly important as more jobs require digital competencies.",
+            "questions": [
+              {
+                "id": "l1q1",
+                "stem": "What is the news report mainly about?",
+                "options": [
+                  {"key": "A", "text": "A new UNESCO digital literacy program"},
+                  {"key": "B", "text": "Job opportunities in developing countries"},
+                  {"key": "C", "text": "Computer manufacturing in Asia"},
+                  {"key": "D", "text": "Online safety regulations worldwide"}
+                ],
+                "answer": "A",
+                "explanation": "The news report is primarily about UNESCO launching a new initiative to promote digital literacy among young people in developing countries."
+              },
+              {
+                "id": "l1q2",
+                "stem": "How many countries will the program cover?",
+                "options": [
+                  {"key": "A", "text": "5"},
+                  {"key": "B", "text": "10"},
+                  {"key": "C", "text": "15"},
+                  {"key": "D", "text": "20"}
+                ],
+                "answer": "C",
+                "explanation": "The report states the program will be rolled out in 15 countries over the next three years."
+              }
+            ]
+          },
+          {
+            "id": "l2",
+            "type": "news",
+            "audioSrc": "assets/audio/2024-06-a/news-2.mp3",
+            "transcript": "Scientists at Cambridge University have developed a new type of battery that can be fully charged in just five minutes. The breakthrough, published in the journal Nature, uses a novel electrode design that dramatically increases the speed at which ions can move through the battery. The researchers say the technology could be available in electric vehicles within five years, potentially solving one of the biggest barriers to EV adoption—long charging times.",
+            "questions": [
+              {
+                "id": "l2q1",
+                "stem": "What breakthrough did Cambridge scientists achieve?",
+                "options": [
+                  {"key": "A", "text": "A new electric vehicle design"},
+                  {"key": "B", "text": "A five-minute charging battery"},
+                  {"key": "C", "text": "A solar-powered car"},
+                  {"key": "D", "text": "A new type of fuel"}
+                ],
+                "answer": "B",
+                "explanation": "The scientists developed a battery that can be fully charged in just five minutes."
+              },
+              {
+                "id": "l2q2",
+                "stem": "When might the technology be used in vehicles?",
+                "options": [
+                  {"key": "A", "text": "Within 1 year"},
+                  {"key": "B", "text": "Within 3 years"},
+                  {"key": "C", "text": "Within 5 years"},
+                  {"key": "D", "text": "Within 10 years"}
+                ],
+                "answer": "C",
+                "explanation": "The researchers said the technology could be available in electric vehicles within five years."
+              }
+            ]
+          }
+        ],
+        "longConversations": [
+          {
+            "id": "lc1",
+            "type": "conversation",
+            "audioSrc": "assets/audio/2024-06-a/conversation-1.mp3",
+            "transcript": "M: Hi Sarah, have you registered for next semester's courses yet?\nW: Not yet, Mike. I'm still trying to decide between the marketing elective and the data analysis course.\nM: I took data analysis last semester. It's tough but really useful. Professor Chen is excellent.\nW: That's what I've heard. But I'm worried about the math requirements.\nM: There is some statistics, but they have tutorial sessions every week. You'll be fine if you keep up with the homework.\nW: Thanks for the advice. When does registration close?\nM: This Friday at midnight. Don't wait too long—the class fills up quickly.",
+            "questions": [
+              {
+                "id": "lc1q1",
+                "stem": "What is the woman trying to decide?",
+                "options": [
+                  {"key": "A", "text": "Which university to attend"},
+                  {"key": "B", "text": "Which elective course to take"},
+                  {"key": "C", "text": "Whether to change her major"},
+                  {"key": "D", "text": "When to start her internship"}
+                ],
+                "answer": "B",
+                "explanation": "The woman is deciding between the marketing elective and the data analysis course."
+              },
+              {
+                "id": "lc1q2",
+                "stem": "What does the man say about the data analysis course?",
+                "options": [
+                  {"key": "A", "text": "It is easy but boring"},
+                  {"key": "B", "text": "It is tough but useful"},
+                  {"key": "C", "text": "It requires no math background"},
+                  {"key": "D", "text": "It is not very popular"}
+                ],
+                "answer": "B",
+                "explanation": "Mike says data analysis is 'tough but really useful.'"
+              },
+              {
+                "id": "lc1q3",
+                "stem": "When does registration close?",
+                "options": [
+                  {"key": "A", "text": "Thursday at noon"},
+                  {"key": "B", "text": "Friday at midnight"},
+                  {"key": "C", "text": "Saturday afternoon"},
+                  {"key": "D", "text": "Monday morning"}
+                ],
+                "answer": "B",
+                "explanation": "Registration closes this Friday at midnight."
+              }
+            ]
+          }
+        ],
+        "passages": [
+          {
+            "id": "p1",
+            "type": "passage",
+            "audioSrc": "assets/audio/2024-06-a/passage-1.mp3",
+            "transcript": "Good morning, everyone. Today I'd like to talk about the importance of sleep for college students. Research shows that the average college student gets only 6 to 6.5 hours of sleep per night, well below the recommended 7 to 9 hours. This sleep deprivation can have serious consequences, including decreased academic performance, impaired memory, and weakened immune system. A study conducted at Stanford University found that students who maintained a regular sleep schedule scored an average of 12% higher on exams than those with irregular sleep patterns. The key is not just the quantity of sleep but also its consistency—going to bed and waking up at roughly the same time each day.",
+            "questions": [
+              {
+                "id": "p1q1",
+                "stem": "What is the recommended amount of sleep per night?",
+                "options": [
+                  {"key": "A", "text": "5 to 6 hours"},
+                  {"key": "B", "text": "6 to 6.5 hours"},
+                  {"key": "C", "text": "7 to 9 hours"},
+                  {"key": "D", "text": "9 to 11 hours"}
+                ],
+                "answer": "C",
+                "explanation": "The passage states the recommended sleep is 7 to 9 hours per night."
+              },
+              {
+                "id": "p1q2",
+                "stem": "According to the Stanford study, what was the benefit of regular sleep?",
+                "options": [
+                  {"key": "A", "text": "Better social relationships"},
+                  {"key": "B", "text": "12% higher exam scores"},
+                  {"key": "C", "text": "Less need for coffee"},
+                  {"key": "D", "text": "Faster graduation rates"}
+                ],
+                "answer": "B",
+                "explanation": "Students with regular sleep schedules scored 12% higher on exams."
+              },
+              {
+                "id": "p1q3",
+                "stem": "What factor does the speaker emphasize besides sleep quantity?",
+                "options": [
+                  {"key": "A", "text": "Sleep environment"},
+                  {"key": "B", "text": "Diet before sleep"},
+                  {"key": "C", "text": "Consistency of sleep schedule"},
+                  {"key": "D", "text": "Exercise routines"}
+                ],
+                "answer": "C",
+                "explanation": "The speaker emphasizes consistency—going to bed and waking up at roughly the same time each day."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "reading": {
+      "title": "阅读理解",
+      "time": 40,
+      "score": 248.5,
+      "sections": {
+        "wordBank": {
+          "passage": "The Internet has fundamentally (1)______ the way people access information and communicate with one another. In the past two decades, digital technology has become increasingly (2)______ in nearly every aspect of modern life. However, experts warn that excessive screen time may have negative (3)______ on mental health, particularly among young people. Studies have shown that spending more than three hours per day on social media can significantly (4)______ feelings of anxiety and depression. Nevertheless, when used (5)______, the Internet remains a powerful tool for education, business, and maintaining social connections.",
+          "words": [
+            "transformed", "integrated", "effects", "increase", "wisely",
+            "transforming", "integrating", "affected", "decrease", "wise",
+            "transformation", "integral", "effective", "increasing", "wisdom"
+          ],
+          "blanks": [
+            {"position": 1, "correctWord": "transformed"},
+            {"position": 2, "correctWord": "integrated"},
+            {"position": 3, "correctWord": "effects"},
+            {"position": 4, "correctWord": "increase"},
+            {"position": 5, "correctWord": "wisely"}
+          ]
+        },
+        "longPassage": {
+          "title": "The Future of Remote Work",
+          "passage": "The COVID-19 pandemic fundamentally changed how millions of people work, accelerating a shift toward remote work that had been slowly building for years. Now, as the world emerges from the pandemic, companies and employees alike are grappling with what the future of work should look like.\n\nParagraph A: Before 2020, only about 5% of full-time employees in the United States worked primarily from home. By April 2020, that figure had jumped to over 60%, according to a Stanford University study. While the numbers have since declined, approximately 30% of workers continue to work remotely at least part of the time.\n\nParagraph B: Proponents of remote work point to numerous benefits. Employees report higher job satisfaction, better work-life balance, and significant savings in commuting time and costs. Companies benefit from reduced office expenses and access to a wider talent pool unrestricted by geographic location. Productivity studies have generally shown that remote workers are at least as productive as their office-based counterparts, and in many cases more so.\n\nParagraph C: Critics, however, raise valid concerns. The lack of face-to-face interaction can hinder collaboration and creativity. New employees may struggle to integrate into company culture without in-person mentorship. Some managers report difficulty in monitoring and evaluating remote workers' performance fairly. There are also equity concerns, as not all jobs can be performed remotely, creating a potential divide between knowledge workers and those in service or manual roles.\n\nParagraph D: Most experts predict a hybrid model will become the norm. A survey of 500 major corporations found that over 80% plan to adopt a hybrid approach, with employees spending two to three days per week in the office. This model aims to combine the flexibility of remote work with the collaborative benefits of in-person interaction.\n\nParagraph E: For employees, the shift to hybrid work requires new skills and adaptations. Time management becomes even more critical when the boundary between work and home life blurs. Communication skills must be honed for virtual meetings and written correspondence. Setting up an efficient home office is no longer a luxury but a necessity.\n\nParagraph F: Looking ahead, the implications for cities and the broader economy are significant. Reduced commuting means less traffic congestion and lower carbon emissions. Commercial real estate markets face unprecedented challenges as companies reduce their office footprints. Meanwhile, suburban and rural areas may see renewed growth as workers freed from daily commutes seek more space and lower living costs.",
+          "questions": [
+            {
+              "id": "lp1",
+              "stem": "According to Paragraph A, what percentage of workers continue to work remotely at least part-time?",
+              "options": [
+                {"key": "A", "text": "About 5%"},
+                {"key": "B", "text": "Over 60%"},
+                {"key": "C", "text": "Approximately 30%"},
+                {"key": "D", "text": "Over 80%"}
+              ],
+              "answer": "C",
+              "paragraph": "A",
+              "explanation": "Paragraph A states 'approximately 30% of workers continue to work remotely at least part of the time.'"
+            },
+            {
+              "id": "lp2",
+              "stem": "Which paragraph discusses the challenges new employees face in remote work environments?",
+              "options": [
+                {"key": "A", "text": "Paragraph B"},
+                {"key": "B", "text": "Paragraph C"},
+                {"key": "C", "text": "Paragraph D"},
+                {"key": "D", "text": "Paragraph E"}
+              ],
+              "answer": "B",
+              "paragraph": "C",
+              "explanation": "Paragraph C mentions that 'new employees may struggle to integrate into company culture without in-person mentorship.'"
+            },
+            {
+              "id": "lp3",
+              "stem": "What do most experts predict will become the norm for future work?",
+              "options": [
+                {"key": "A", "text": "Fully remote work"},
+                {"key": "B", "text": "Return to full-time office work"},
+                {"key": "C", "text": "A hybrid model"},
+                {"key": "D", "text": "A four-day work week"}
+              ],
+              "answer": "C",
+              "paragraph": "D",
+              "explanation": "Paragraph D states that 'most experts predict a hybrid model will become the norm.'"
+            },
+            {
+              "id": "lp4",
+              "stem": "According to the passage, which of the following is NOT mentioned as a benefit of remote work?",
+              "options": [
+                {"key": "A", "text": "Higher job satisfaction"},
+                {"key": "B", "text": "Reduced office expenses for companies"},
+                {"key": "C", "text": "More vacation days for employees"},
+                {"key": "D", "text": "Access to a wider talent pool"}
+              ],
+              "answer": "C",
+              "paragraph": "B",
+              "explanation": "Paragraph B lists higher job satisfaction, savings in commuting time/costs, reduced office expenses, and wider talent pool as benefits. More vacation days is not mentioned."
+            },
+            {
+              "id": "lp5",
+              "stem": "What new skills does Paragraph E suggest remote workers need?",
+              "options": [
+                {"key": "A", "text": "Programming and data analysis"},
+                {"key": "B", "text": "Time management and communication skills"},
+                {"key": "C", "text": "Foreign languages and public speaking"},
+                {"key": "D", "text": "Sales and marketing techniques"}
+              ],
+              "answer": "B",
+              "paragraph": "E",
+              "explanation": "Paragraph E highlights time management and communication skills as critical for hybrid work."
+            },
+            {
+              "id": "lp6",
+              "stem": "What impact does the passage predict for suburban and rural areas?",
+              "options": [
+                {"key": "A", "text": "Population decline"},
+                {"key": "B", "text": "Increased traffic congestion"},
+                {"key": "C", "text": "Renewed growth"},
+                {"key": "D", "text": "Higher office rents"}
+              ],
+              "answer": "C",
+              "paragraph": "F",
+              "explanation": "Paragraph F states 'suburban and rural areas may see renewed growth.'"
+            }
+          ]
+        },
+        "inDepth": {
+          "passages": [
+            {
+              "title": "The Psychology of Decision-Making",
+              "passage": "Every day, we make thousands of decisions—from what to eat for breakfast to which career path to pursue. For decades, economists assumed that humans are rational decision-makers who carefully weigh costs and benefits before arriving at the optimal choice. However, research in behavioral psychology has revealed that our decision-making processes are far from purely rational.\n\nDaniel Kahneman, who won the Nobel Prize in Economics for his work in this field, described two systems of thinking that govern our decisions. System 1 operates automatically and quickly, with little or no effort. It is responsible for our gut reactions, emotional responses, and snap judgments. System 2, by contrast, is deliberate, analytical, and effortful. It is engaged when we solve complex math problems, compare detailed options, or consciously restrain impulses.\n\nWhile System 1 is remarkably efficient—allowing us to navigate familiar situations with ease—it is also prone to systematic errors known as cognitive biases. For example, confirmation bias leads us to seek out and favor information that confirms our existing beliefs while ignoring contradictory evidence. The availability heuristic causes us to overestimate the likelihood of events that are easily recalled, such as plane crashes, while underestimating more common but less memorable risks like heart disease.\n\nUnderstanding these biases has practical implications. In medicine, doctors who are aware of diagnostic biases are less likely to make premature judgments based on initial symptoms. In business, leaders who recognize overconfidence bias can implement better decision-making frameworks. For individuals, simply knowing that our brains take mental shortcuts can help us slow down and engage System 2 when facing important choices.",
+              "questions": [
+                {
+                  "id": "id1q1",
+                  "stem": "What assumption did economists previously make about human decision-making?",
+                  "options": [
+                    {"key": "A", "text": "Humans are emotional decision-makers"},
+                    {"key": "B", "text": "Humans are rational decision-makers"},
+                    {"key": "C", "text": "Humans make random decisions"},
+                    {"key": "D", "text": "Humans cannot make decisions alone"}
+                  ],
+                  "answer": "B",
+                  "explanation": "The passage states economists assumed 'humans are rational decision-makers who carefully weigh costs and benefits.'"
+                },
+                {
+                  "id": "id1q2",
+                  "stem": "According to Kahneman's theory, System 1 thinking is characterized by being:",
+                  "options": [
+                    {"key": "A", "text": "Slow and deliberate"},
+                    {"key": "B", "text": "Automatic and quick"},
+                    {"key": "C", "text": "Always accurate"},
+                    {"key": "D", "text": "Based on careful analysis"}
+                  ],
+                  "answer": "B",
+                  "explanation": "System 1 'operates automatically and quickly, with little or no effort.'"
+                },
+                {
+                  "id": "id1q3",
+                  "stem": "The 'availability heuristic' causes people to:",
+                  "options": [
+                    {"key": "A", "text": "Always choose the cheapest option"},
+                    {"key": "B", "text": "Overestimate easily recalled events"},
+                    {"key": "C", "text": "Prefer familiar brands exclusively"},
+                    {"key": "D", "text": "Avoid making any decisions at all"}
+                  ],
+                  "answer": "B",
+                  "explanation": "The availability heuristic 'causes us to overestimate the likelihood of events that are easily recalled.'"
+                },
+                {
+                  "id": "id1q4",
+                  "stem": "How can understanding cognitive biases help doctors?",
+                  "options": [
+                    {"key": "A", "text": "They can work longer hours"},
+                    {"key": "B", "text": "They make fewer premature judgments"},
+                    {"key": "C", "text": "They prescribe more medications"},
+                    {"key": "D", "text": "They see more patients daily"}
+                  ],
+                  "answer": "B",
+                  "explanation": "The passage states doctors aware of biases 'are less likely to make premature judgments based on initial symptoms.'"
+                },
+                {
+                  "id": "id1q5",
+                  "stem": "What is the main purpose of this passage?",
+                  "options": [
+                    {"key": "A", "text": "To criticize economists' theories"},
+                    {"key": "B", "text": "To introduce behavioral psychology research on decision-making"},
+                    {"key": "C", "text": "To provide medical advice to doctors"},
+                    {"key": "D", "text": "To compare different economic systems"}
+                  ],
+                  "answer": "B",
+                  "explanation": "The passage's main purpose is to introduce research in behavioral psychology about how humans make decisions."
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "translation": {
+      "title": "翻译",
+      "time": 30,
+      "score": 106.5,
+      "direction": "Directions: For this part, you are allowed 30 minutes to translate a passage from Chinese into English.",
+      "chineseText": "近年来，中国在可再生能源领域取得了显著进展。太阳能和风能发电装机容量大幅增长，电动汽车的普及速度也在加快。这些成就不仅有助于减少碳排放，还为经济增长创造了新的机会。中国政府表示，将继续加大对绿色能源的投资，并推动相关技术的创新和应用，以实现可持续发展目标。",
+      "referenceTranslation": "In recent years, China has made remarkable progress in the field of renewable energy. The installed capacity of solar and wind power has grown substantially, and the adoption of electric vehicles has been accelerating. These achievements not only help reduce carbon emissions but also create new opportunities for economic growth. The Chinese government has stated that it will continue to increase investment in green energy and promote the innovation and application of related technologies to achieve sustainable development goals.",
+      "keyPoints": [
+        "可再生能源: renewable energy",
+        "装机容量: installed capacity",
+        "电动汽车普及: adoption of electric vehicles",
+        "碳排放: carbon emissions",
+        "可持续发展: sustainable development"
+      ]
+    }
+  }
+}

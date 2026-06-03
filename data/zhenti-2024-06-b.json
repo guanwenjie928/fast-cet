@@ -1,0 +1,275 @@
+{
+  "meta": {
+    "id": "cet4-2024-06-b",
+    "year": 2024,
+    "month": 6,
+    "set": "B",
+    "title": "2024年6月大学英语四级真题（卷二）",
+    "totalTime": 125,
+    "totalScore": 710,
+    "type": "real"
+  },
+  "sections": {
+    "writing": {
+      "title": "作文",
+      "time": 30,
+      "score": 106.5,
+      "direction": "Directions: For this part, you are allowed 30 minutes to write an essay on the topic of \"The Role of Artificial Intelligence in Higher Education\". You should write at least 120 words but no more than 180 words.",
+      "topic": "Suppose you are a college student and you have been asked to share your views on how artificial intelligence is changing university education. Write an essay discussing both the benefits and potential drawbacks of AI in higher education.",
+      "sampleEssay": "Artificial intelligence has become an increasingly prominent force in higher education, transforming both how students learn and how educators teach.\n\nOn the positive side, AI-powered tools have made learning more personalized and accessible. Intelligent tutoring systems can adapt to each student's pace and learning style, providing customized explanations and practice exercises. AI chatbots can answer students' questions 24/7, reducing the wait time for assistance. Additionally, AI helps researchers analyze vast amounts of data quickly, accelerating the pace of academic discovery.\n\nHowever, there are legitimate concerns. Over-reliance on AI tools like ChatGPT for writing assignments may undermine students' critical thinking and writing skills. There are also concerns about academic integrity, as some students use AI to generate essays and claim them as their own work. Furthermore, the digital divide means that students without access to advanced AI tools may be at a disadvantage.\n\nIn my opinion, the key lies in striking a balance. Universities should embrace AI as a supplementary tool while emphasizing the irreplaceable value of human-led education—creative thinking, intellectual discussion, and moral development that no algorithm can replicate.",
+      "keyPoints": [
+        "个性化学习与全天候答疑是AI的主要优势",
+        "学术诚信与批判性思维能力下降是主要风险",
+        "核心观点：在利用AI工具与保持人类主导教育之间寻求平衡"
+      ]
+    },
+    "listening": {
+      "title": "听力理解",
+      "time": 25,
+      "score": 248.5,
+      "sections": {
+        "newsReports": [
+          {
+            "id": "l1",
+            "type": "news",
+            "audioSrc": "assets/audio/2024-06-b/l1.mp3",
+            "transcript": "The World Health Organization has launched a new global initiative aimed at reducing plastic pollution in the world's oceans. The program, announced at a press conference in Geneva on Monday, calls for a 60% reduction in single-use plastics by 2030. WHO Director-General Dr. Tedros Adhanom Ghebreyesus stated that microplastics have now been detected in human blood, drinking water, and even the air we breathe. The initiative will provide technical support to developing nations and establish monitoring stations across 50 coastal countries. Environmental groups have welcomed the announcement but stress that binding targets rather than voluntary commitments are needed to address this crisis effectively.",
+            "questions": [
+              {
+                "id": "q1",
+                "stem": "What is the WHO's new initiative mainly about?",
+                "options": ["A. Improving drinking water quality worldwide", "B. Reducing plastic pollution in oceans", "C. Establishing new hospitals in coastal areas", "D. Monitoring air quality in developing nations"],
+                "answer": "B",
+                "explanation": "新闻第一句明确提到WHO launched a new global initiative aimed at reducing plastic pollution in the world's oceans。"
+              },
+              {
+                "id": "q2",
+                "stem": "What concern did environmental groups raise about the initiative?",
+                "options": ["A. It lacks sufficient funding", "B. It covers too few countries", "C. It needs binding rather than voluntary targets", "D. It focuses only on developed nations"],
+                "answer": "C",
+                "explanation": "新闻最后一句提到Environmental groups...stress that binding targets rather than voluntary commitments are needed。"
+              }
+            ]
+          },
+          {
+            "id": "l2",
+            "type": "news",
+            "audioSrc": "assets/audio/2024-06-b/l2.mp3",
+            "transcript": "A team of Japanese researchers has developed a revolutionary new material that can repair itself when cracked or damaged. The self-healing polymer, described in the latest issue of the journal Science, can recover its original strength within just 30 seconds of being exposed to ordinary room light. Professor Tanaka Hiroshi, who led the research at the University of Tokyo, said the discovery was partly accidental. His team was initially trying to create a more durable adhesive for electronic components. The material works by using light energy to re-form broken molecular bonds. Potential applications include smartphone screens that fix their own scratches, car paint that repairs minor damage, and medical devices that last longer inside the human body.",
+            "questions": [
+              {
+                "id": "q3",
+                "stem": "How quickly can the new material repair itself?",
+                "options": ["A. Within 10 seconds", "B. Within 30 seconds", "C. Within 1 minute", "D. Within 5 minutes"],
+                "answer": "B",
+                "explanation": "新闻中提到can recover its original strength within just 30 seconds of being exposed to ordinary room light。"
+              }
+            ]
+          }
+        ],
+        "longConversations": [
+          {
+            "id": "lc1",
+            "type": "longConversation",
+            "audioSrc": "assets/audio/2024-06-b/lc1.mp3",
+            "transcript": "M: Hi Sarah, you look exhausted. What's going on?\nW: Hey Mike. I've been pulling all-nighters for the past week trying to finish my graduation thesis.\nM: Oh wow, that's intense. What's your topic?\nW: I'm researching the impact of social media marketing on consumer purchasing behavior among Generation Z. It's fascinating, but there's just so much data to analyze.\nM: I can imagine. Have you talked to your supervisor about extending the deadline?\nW: I did, actually. Professor Chen was really understanding. She gave me an extra week, but I still feel the pressure. I want to make sure the quality is there.\nM: That's totally understandable. Hey, I know a great data visualization tool that might speed up your analysis. It's called DataViz Pro, and it can process survey data really efficiently.\nW: Really? I've been doing everything manually in Excel. That would be a lifesaver!\nM: Yeah, and the university actually provides free licenses for students. You just need to register with your student email.\nW: I had no idea! Thanks so much, Mike. I'll check it out right now.\nM: No problem. And don't forget to take breaks, okay? Your brain needs rest to function properly.",
+            "questions": [
+              {
+                "id": "q4",
+                "stem": "What has the woman been doing for the past week?",
+                "options": ["A. Preparing for final exams", "B. Working on her graduation thesis", "C. Applying for graduate schools", "D. Attending job interviews"],
+                "answer": "B",
+                "explanation": "女士说I've been pulling all-nighters for the past week trying to finish my graduation thesis。"
+              },
+              {
+                "id": "q5",
+                "stem": "What did Professor Chen do for the woman?",
+                "options": ["A. Helped her analyze data", "B. Recommended a research topic", "C. Extended the deadline by one week", "D. Introduced a data visualization tool"],
+                "answer": "C",
+                "explanation": "女士提到Professor Chen...gave me an extra week。"
+              },
+              {
+                "id": "q6",
+                "stem": "What does the man suggest the woman use?",
+                "options": ["A. A professional editing service", "B. A data visualization tool", "C. A library research database", "D. A survey distribution platform"],
+                "answer": "B",
+                "explanation": "男士推荐了DataViz Pro，一个数据可视化工具来加速分析。"
+              }
+            ]
+          }
+        ],
+        "passages": [
+          {
+            "id": "p1",
+            "type": "passage",
+            "audioSrc": "assets/audio/2024-06-b/p1.mp3",
+            "transcript": "The concept of emotional intelligence, often abbreviated as EQ, has gained significant attention in both educational and professional settings over the past two decades. Unlike IQ, which measures cognitive abilities such as logical reasoning and mathematical skills, emotional intelligence refers to the capacity to recognize, understand, and manage one's own emotions, as well as the emotions of others. Research conducted at Harvard University has shown that EQ may be a stronger predictor of career success than IQ. In a landmark study that followed 800 participants over 25 years, individuals with high emotional intelligence were found to earn an average of 29% more than their counterparts with lower EQ scores, even when their IQ levels were comparable. The good news is that, unlike IQ which remains relatively stable throughout life, emotional intelligence can be developed and improved through practice. Experts recommend several strategies: keeping a daily emotion journal to build self-awareness, practicing active listening in conversations, and seeking regular feedback from colleagues about your interpersonal skills. Many Fortune 500 companies have now incorporated EQ training into their leadership development programs, recognizing that the most effective leaders are those who combine technical expertise with strong emotional intelligence.",
+            "questions": [
+              {
+                "id": "q7",
+                "stem": "What is the main difference between EQ and IQ according to the passage?",
+                "options": ["A. EQ is easier to measure than IQ", "B. EQ can be improved while IQ remains stable", "C. EQ is more important for academic success", "D. EQ only relates to understanding others' emotions"],
+                "answer": "B",
+                "explanation": "文章提到unlike IQ which remains relatively stable throughout life, emotional intelligence can be developed and improved。"
+              },
+              {
+                "id": "q8",
+                "stem": "What did the Harvard study find about people with high EQ?",
+                "options": ["A. They had higher IQ scores on average", "B. They were more likely to become managers", "C. They earned 29% more than those with lower EQ", "D. They reported higher life satisfaction levels"],
+                "answer": "C",
+                "explanation": "文章明确指出individuals with high emotional intelligence were found to earn an average of 29% more。"
+              },
+              {
+                "id": "q9",
+                "stem": "Which of the following is recommended as a way to improve EQ?",
+                "options": ["A. Taking IQ tests regularly", "B. Keeping a daily emotion journal", "C. Reading more academic books", "D. Attending more social events"],
+                "answer": "B",
+                "explanation": "文章建议keeping a daily emotion journal to build self-awareness作为提升情商的策略之一。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "reading": {
+      "title": "阅读理解",
+      "time": 40,
+      "score": 248.5,
+      "sections": {
+        "wordBank": {
+          "title": "选词填空",
+          "passage": "The sharing economy has ___ (1) nearly every aspect of modern life, from transportation to accommodation. Companies like Uber and Airbnb have demonstrated that ___ (2) access to goods and services can often be more efficient than individual ownership. However, this economic model has also ___ (3) significant regulatory challenges. Traditional industries argue that sharing economy platforms operate with an unfair ___ (4) because they are not subject to the same safety, insurance, and licensing requirements. Governments worldwide are now ___ (5) with how to balance innovation with consumer protection.",
+          "words": [
+            {"word": "transformed", "id": "A"},
+            {"word": "shared", "id": "B"},
+            {"word": "posed", "id": "C"},
+            {"word": "advantage", "id": "D"},
+            {"word": "struggling", "id": "E"},
+            {"word": "limited", "id": "F"},
+            {"word": "created", "id": "G"},
+            {"word": "burden", "id": "H"},
+            {"word": "competing", "id": "I"},
+            {"word": "expanded", "id": "J"}
+          ],
+          "answers": [
+            {"position": 1, "correct": "A"},
+            {"position": 2, "correct": "B"},
+            {"position": 3, "correct": "C"},
+            {"position": 4, "correct": "D"},
+            {"position": 5, "correct": "E"}
+          ],
+          "explanations": [
+            {"position": 1, "text": "transformed意为'改变'，sharing economy has transformed every aspect表示共享经济已经改变了现代生活的方方面面。"},
+            {"position": 2, "text": "shared access表示'共享使用权'，与下文的individual ownership（个人所有权）形成对比。"},
+            {"position": 3, "text": "posed challenges为固定搭配，表示'带来了挑战'。"},
+            {"position": 4, "text": "unfair advantage表示'不公平的优势'，指共享经济平台不受同等监管约束。"},
+            {"position": 5, "text": "struggling with表示'正在努力应对'，描述政府正在艰难地寻找平衡点。"}
+          ]
+        },
+        "longPassage": {
+          "title": "长篇阅读",
+          "passage": "The Digital Transformation of Traditional Manufacturing\n\n[A] For decades, manufacturing was viewed as a sector resistant to rapid change. Factories operated on the same basic principles that had governed industrial production for over a century: assembly lines, standardized processes, and human supervision at every critical stage. That picture has changed dramatically in the past five years.\n\n[B] The term 'Industry 4.0' has become a buzzword in manufacturing circles, but behind the jargon lies a genuine revolution. Sensors now collect real-time data from every machine on the factory floor. Cloud computing platforms analyze this data to predict equipment failures before they happen. Artificial intelligence optimizes production schedules in ways that no human planner could match.\n\n[C] One company leading this transformation is Siemens. Its factory in Amberg, Germany, is often cited as one of the most advanced manufacturing facilities in the world. The plant produces 15 million programmable logic controllers annually, with a defect rate of less than 0.001%. What makes this achievement remarkable is that 75% of the production process is handled autonomously by machines communicating with each other.\n\n[D] The impact on the workforce has been complex and multifaceted. While some fear that automation will eliminate jobs, the reality has been more nuanced. A 2023 report by the Manufacturing Institute found that companies adopting Industry 4.0 technologies actually increased their hiring by 8% on average. However, the nature of these jobs changed significantly — demand for machine operators decreased, while demand for data analysts and robotics technicians surged.\n\n[E] Small and medium-sized enterprises (SMEs) face particular challenges in this transition. Unlike large corporations, they often lack the capital to invest in expensive new equipment and the talent to implement complex digital systems. Governments in several countries have responded with subsidy programs. Germany's 'Mittelstand 4.0' initiative, for instance, provides free consulting services to help smaller manufacturers identify and implement appropriate digital solutions.\n\n[F] The environmental implications of digital manufacturing are also worth noting. Smart factories typically consume 20-30% less energy than traditional facilities because AI can optimize energy use in real time. Predictive maintenance reduces waste by extending the life of equipment. However, the production of sensors and computing hardware itself has an environmental cost that must be factored into any comprehensive assessment.\n\n[G] Looking ahead, experts predict that the next frontier will be 'autonomous manufacturing' — factories capable of running for extended periods without any human intervention. While fully autonomous facilities remain experimental, semi-autonomous systems are already being deployed in sectors ranging from pharmaceuticals to electronics. The question is no longer whether digital transformation will reshape manufacturing, but how quickly and with what consequences for workers, companies, and society at large.",
+          "questions": [
+            {
+              "id": "q10",
+              "stem": "Siemens' factory in Amberg achieves a defect rate below 0.001% with 75% autonomous production.",
+              "paragraph": "C",
+              "explanation": "Paragraph C provides these exact statistics about the Siemens Amberg factory."
+            },
+            {
+              "id": "q11",
+              "stem": "Small manufacturers struggle with digital transformation due to limited financial resources and lack of specialized talent.",
+              "paragraph": "E",
+              "explanation": "Paragraph E discusses how SMEs lack capital and talent for digital transformation."
+            },
+            {
+              "id": "q12",
+              "stem": "Smart factories use 20-30% less energy compared to traditional manufacturing facilities.",
+              "paragraph": "F",
+              "explanation": "Paragraph F states that smart factories typically consume 20-30% less energy."
+            },
+            {
+              "id": "q13",
+              "stem": "Contrary to fears about job losses, companies adopting Industry 4.0 technologies increased hiring by 8% on average.",
+              "paragraph": "D",
+              "explanation": "Paragraph D cites the Manufacturing Institute report showing 8% hiring increase."
+            },
+            {
+              "id": "q14",
+              "stem": "The next stage of manufacturing evolution is expected to be fully autonomous factories requiring no human intervention.",
+              "paragraph": "G",
+              "explanation": "Paragraph G discusses 'autonomous manufacturing' as the next frontier."
+            },
+            {
+              "id": "q15",
+              "stem": "Manufacturing was historically considered a sector that changed very slowly.",
+              "paragraph": "A",
+              "explanation": "Paragraph A opens by stating manufacturing was viewed as resistant to rapid change."
+            }
+          ]
+        },
+        "inDepth": {
+          "title": "仔细阅读",
+          "passages": [
+            {
+              "title": "The Surprising Benefits of Boredom",
+              "passage": "In our hyper-connected world, boredom has become something of a forbidden emotion. The moment we feel even a hint of boredom, we reach for our smartphones — scrolling through social media, checking messages, or streaming videos. The average person now spends less than 2% of their waking hours without some form of digital stimulation.\n\nBut a growing body of research suggests that we may be making a mistake by constantly avoiding boredom. Psychologists at the University of Central Lancashire conducted a series of experiments in which participants were deliberately placed in boring situations — such as copying numbers from a phone book or sitting alone in a room for 15 minutes with nothing to do. The surprising finding was that these periods of boredom led to significant increases in creative problem-solving.\n\nIn one experiment, participants who had just completed a boring task generated 40% more creative uses for a common household object than a control group. The researchers theorize that boredom acts as a signal that our current activity lacks meaning, prompting the brain to search for new ideas and possibilities. It is during these 'unfocused' moments that the brain's default mode network becomes active — the same neural network associated with creative thinking and future planning.\n\nNeuroscientists have identified what they call the 'incubation effect.' When we step away from a problem and allow our minds to wander, the brain continues to work on it unconsciously. This explains why some of our best ideas seem to come out of nowhere while we are taking a shower or going for a walk.\n\nHowever, experts caution that not all boredom is beneficial. Chronic boredom — the kind that comes from a persistent lack of engagement with life — is associated with depression and risky behavior. The key distinction is between 'situational boredom' (temporary and potentially productive) and 'existential boredom' (chronic and potentially harmful).\n\nThe practical implication is clear: we should resist the urge to fill every spare moment with digital distraction. Scheduling regular periods of 'unplugged' time — even just 10 to 15 minutes a day — may boost creativity, improve focus, and lead to more original thinking.",
+              "questions": [
+                {
+                  "id": "q16",
+                  "stem": "What is the main argument of the passage?",
+                  "options": ["A. Smartphones are causing serious mental health problems", "B. Boredom can have positive effects on creativity", "C. Most people are addicted to digital entertainment", "D. Creative people tend to be more easily bored"],
+                  "answer": "B",
+                  "explanation": "全文的核心论点是无聊可以对创造力产生积极影响，多段实验和研究支持这一观点。"
+                },
+                {
+                  "id": "q17",
+                  "stem": "What did the University of Central Lancashire experiment find?",
+                  "options": ["A. Boring tasks reduced participants' attention spans", "B. Boredom led to better creative problem-solving", "C. Most participants could not tolerate 15 minutes of solitude", "D. Smartphone use during boring tasks improved focus"],
+                  "answer": "B",
+                  "explanation": "实验发现boredom led to significant increases in creative problem-solving。"
+                },
+                {
+                  "id": "q18",
+                  "stem": "What is the 'incubation effect' mentioned in paragraph 4?",
+                  "options": ["A. The brain becomes less active during rest periods", "B. Problems are solved more quickly under time pressure", "C. The brain continues working on problems unconsciously during rest", "D. New ideas can only emerge after long periods of focused work"],
+                  "answer": "C",
+                  "explanation": "文章解释When we step away from a problem...the brain continues to work on it unconsciously。"
+                },
+                {
+                  "id": "q19",
+                  "stem": "What distinction does the passage make about types of boredom?",
+                  "options": ["A. Short-term versus long-term boredom", "B. Productive situational boredom versus harmful chronic boredom", "C. Physical boredom versus mental boredom", "D. Voluntary boredom versus forced boredom"],
+                  "answer": "B",
+                  "explanation": "文章区分了situational boredom (temporary and potentially productive) 与existential boredom (chronic and potentially harmful)。"
+                },
+                {
+                  "id": "q20",
+                  "stem": "What practical suggestion does the author offer?",
+                  "options": ["A. Use smartphones only for work-related tasks", "B. Schedule regular unplugged time each day", "C. Engage in more social activities offline", "D. Practice meditation to improve concentration"],
+                  "answer": "B",
+                  "explanation": "作者建议Scheduling regular periods of 'unplugged' time — even just 10 to 15 minutes a day。"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "translation": {
+      "title": "翻译",
+      "time": 30,
+      "score": 106.5,
+      "direction": "Directions: For this part, you are allowed 30 minutes to translate a passage from Chinese into English.",
+      "chineseText": "近年来，中国在电动汽车领域取得了举世瞩目的成就。中国已经成为全球最大的电动汽车市场，销量连续多年位居世界第一。中国政府出台了一系列政策来鼓励电动汽车产业的发展，包括购车补贴、免税优惠和充电基础设施建设。越来越多的中国消费者选择电动汽车，不仅因为其环保特性，还因为使用成本远低于传统燃油车。中国本土品牌如比亚迪和蔚来汽车在技术创新方面也展现出强大的竞争力，逐步走向国际市场。",
+      "referenceTranslation": "In recent years, China has made remarkable achievements in the field of electric vehicles. China has become the world's largest electric vehicle market, with sales ranking first globally for many consecutive years. The Chinese government has introduced a series of policies to encourage the development of the electric vehicle industry, including purchase subsidies, tax exemptions, and the construction of charging infrastructure. An increasing number of Chinese consumers are choosing electric vehicles, not only because of their environmental benefits but also because their operating costs are far lower than those of traditional fuel-powered cars. Chinese domestic brands such as BYD and NIO have also demonstrated strong competitiveness in technological innovation and are gradually entering the international market.",
+      "keyPoints": [
+        {"chinese": "举世瞩目的成就", "english": "remarkable achievements"},
+        {"chinese": "购车补贴", "english": "purchase subsidies"},
+        {"chinese": "免税优惠", "english": "tax exemptions"},
+        {"chinese": "充电基础设施", "english": "charging infrastructure"},
+        {"chinese": "传统燃油车", "english": "traditional fuel-powered cars"}
+      ]
+    }
+  }
+}

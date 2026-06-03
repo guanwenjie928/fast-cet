@@ -1,0 +1,523 @@
+{
+  "type": "reading",
+  "title": "阅读专项练习题库",
+  "description": "CET-4 阅读理解专项训练，按题型分类：选词填空、长篇阅读、仔细阅读。每道题包含文章、题目、选项和详细解析。",
+  "items": [
+    {
+      "id": "rb-001",
+      "category": "wordBank",
+      "difficulty": 2,
+      "passage": "Social media has become an (1)______ part of daily life for billions of people around the world. Platforms such as WeChat, Weibo, and TikTok have (2)______ the way people communicate, share information, and form opinions. However, the widespread use of social media has also raised (3)______ about its impact on mental health. Research suggests that excessive social media use can (4)______ to feelings of loneliness and anxiety, particularly among adolescents. Experts recommend that users (5)______ their screen time and engage in more face-to-face interactions. Despite these concerns, social media continues to (6)______ rapidly, with new platforms and features (7)______ regularly. The challenge for society is to find a (8)______ between harnessing the benefits of these tools and minimizing their potential harm. Some countries have introduced digital literacy programs to help young people use social media more (9)______. In the long term, developing healthy digital habits will be (10)______ for maintaining psychological well-being in an increasingly connected world.",
+      "words": [
+        "integral", "transformed", "concerns", "lead", "limit",
+        "expand", "emerging", "balance", "responsibly", "essential",
+        "integrate", "transfer", "concerned", "load", "limited",
+        "expense", "emerge", "balanced", "response", "essentially"
+      ],
+      "blanks": [
+        {"position": 1, "correctWord": "integral"},
+        {"position": 2, "correctWord": "transformed"},
+        {"position": 3, "correctWord": "concerns"},
+        {"position": 4, "correctWord": "lead"},
+        {"position": 5, "correctWord": "limit"},
+        {"position": 6, "correctWord": "expand"},
+        {"position": 7, "correctWord": "emerging"},
+        {"position": 8, "correctWord": "balance"},
+        {"position": 9, "correctWord": "responsibly"},
+        {"position": 10, "correctWord": "essential"}
+      ]
+    },
+    {
+      "id": "rb-002",
+      "category": "wordBank",
+      "difficulty": 3,
+      "passage": "The (1)______ of artificial intelligence has sparked intense debate across multiple sectors of society. While AI offers (2)______ potential for improving efficiency and solving complex problems, it also poses significant (3)______ to employment and privacy. In the medical field, AI algorithms have shown remarkable (4)______ in diagnosing diseases from medical images. In manufacturing, robots powered by AI can work alongside humans, increasing (5)______ and reducing errors. However, economists warn that automation could (6)______ millions of jobs in the coming decades, particularly in sectors such as transportation and retail. Policymakers face the (7)______ task of developing regulations that protect workers without (8)______ innovation. Education systems must also (9)______ to prepare students for a job market where many current roles may no longer exist. The key is to view AI as a tool that (10)______ human abilities rather than replaces them.",
+      "words": [
+        "rise", "enormous", "threats", "accuracy", "productivity",
+        "displace", "delicate", "stifling", "adapt", "enhances",
+        "raise", "normous", "threaten", "accurate", "productive",
+        "display", "dedicate", "stifle", "adopt", "enhanced"
+      ],
+      "blanks": [
+        {"position": 1, "correctWord": "rise"},
+        {"position": 2, "correctWord": "enormous"},
+        {"position": 3, "correctWord": "threats"},
+        {"position": 4, "correctWord": "accuracy"},
+        {"position": 5, "correctWord": "productivity"},
+        {"position": 6, "correctWord": "displace"},
+        {"position": 7, "correctWord": "delicate"},
+        {"position": 8, "correctWord": "stifling"},
+        {"position": 9, "correctWord": "adapt"},
+        {"position": 10, "correctWord": "enhances"}
+      ]
+    },
+    {
+      "id": "rb-003",
+      "category": "wordBank",
+      "difficulty": 4,
+      "passage": "Climate change represents one of the most (1)______ challenges of our time, demanding urgent and coordinated action on a global (2)______. The scientific consensus is clear: rising greenhouse gas emissions are (3)______ the Earth's temperature at an unprecedented rate. The (4)______ of this warming are already visible, from melting polar ice caps to increasingly frequent extreme weather (5)______. Developing countries are often the most (6)______ to climate impacts despite having contributed the least to the problem. International agreements such as the Paris Accord represent important steps forward, but many experts argue that current commitments are (7)______ to meet the target of limiting warming to 1.5 degrees Celsius. The transition to renewable energy sources must be (8)______ if we are to avoid the most catastrophic scenarios. This will require not only technological innovation but also fundamental (9)______ in how societies produce and consume energy. Individual actions, while important, are no (10)______ for systemic policy changes at the governmental and corporate levels.",
+      "words": [
+        "pressing", "scale", "elevating", "consequences", "events",
+        "vulnerable", "insufficient", "accelerated", "shifts", "substitute",
+        "press", "scaled", "elevator", "consequence", "eventual",
+        "vulnerability", "sufficient", "acceleration", "shifting", "substitute"
+      ],
+      "blanks": [
+        {"position": 1, "correctWord": "pressing"},
+        {"position": 2, "correctWord": "scale"},
+        {"position": 3, "correctWord": "elevating"},
+        {"position": 4, "correctWord": "consequences"},
+        {"position": 5, "correctWord": "events"},
+        {"position": 6, "correctWord": "vulnerable"},
+        {"position": 7, "correctWord": "insufficient"},
+        {"position": 8, "correctWord": "accelerated"},
+        {"position": 9, "correctWord": "shifts"},
+        {"position": 10, "correctWord": "substitute"}
+      ]
+    },
+    {
+      "id": "rb-004",
+      "category": "longPassage",
+      "difficulty": 3,
+      "title": "The Sharing Economy: Promise and Peril",
+      "passage": "The sharing economy has transformed how people access goods and services, from ride-hailing and home-sharing to peer-to-peer lending and freelance work platforms.\n\nParagraph A: The sharing economy refers to an economic model in which individuals can borrow or rent assets owned by someone else. The concept is not entirely new—libraries have been sharing books for centuries—but digital platforms have dramatically expanded its scope and scale. Companies like Uber, Airbnb, and TaskRabbit have become household names, connecting millions of users worldwide.\n\nParagraph B: The benefits of the sharing economy are substantial. Consumers enjoy greater convenience, lower prices, and access to a wider variety of goods and services. Asset owners can generate income from underutilized resources—whether a spare bedroom, an idle car, or free time and skills. A study by PwC estimated that the sharing economy could generate $335 billion in global revenue by 2025.\n\nParagraph C: For workers, the sharing economy offers flexibility that traditional employment often does not. Gig workers can set their own schedules, work across multiple platforms, and supplement their primary income. This flexibility has proven particularly valuable for students, caregivers, and others who need to balance work with other responsibilities.\n\nParagraph D: However, the sharing economy has also generated significant controversy. Critics argue that many platforms engage in 'regulatory arbitrage'—operating in ways that would be illegal for traditional businesses. The legal battles between Uber and taxi regulators in cities worldwide exemplify this tension. Home-sharing platforms have been accused of exacerbating housing shortages in popular tourist destinations.\n\nParagraph E: Worker protections, or the lack thereof, represent another major concern. Because most gig workers are classified as independent contractors rather than employees, they typically do not receive benefits such as health insurance, paid leave, or retirement contributions. A 2023 study found that gig workers earn approximately 15% less per hour than traditional employees performing similar work, after accounting for expenses.\n\nParagraph F: The environmental impact of the sharing economy is mixed. While sharing underutilized assets should theoretically reduce consumption and waste, some research suggests the opposite. Ride-hailing services, for instance, have been found to increase traffic congestion in major cities as they pull people away from public transportation. The convenience of home-sharing may encourage more frequent travel, increasing overall carbon emissions.\n\nParagraph G: Regulators around the world are grappling with how to govern the sharing economy. Some cities have imposed strict limits on short-term rentals. Others have required ride-hailing companies to classify drivers as employees. The European Union has proposed a framework to improve working conditions for platform workers. The challenge is protecting consumers and workers without stifling innovation.\n\nParagraph H: Looking ahead, the sharing economy appears likely to continue growing, but its shape may change. More platforms are exploring cooperative ownership models. Some cities are developing their own platform alternatives. The debate over how to balance innovation, fairness, and sustainability in the sharing economy is far from over.",
+      "questions": [
+        {
+          "id": "rb-004-q1",
+          "stem": "The PwC study estimated that the sharing economy could generate how much in global revenue by 2025?",
+          "options": [
+            {"key": "A", "text": "$200 billion"},
+            {"key": "B", "text": "$285 billion"},
+            {"key": "C", "text": "$335 billion"},
+            {"key": "D", "text": "$500 billion"}
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "rb-004-q2",
+          "stem": "According to the passage, what flexibility does gig work offer?",
+          "options": [
+            {"key": "A", "text": "Unlimited vacation days"},
+            {"key": "B", "text": "Setting one's own schedule and working across multiple platforms"},
+            {"key": "C", "text": "Free health insurance"},
+            {"key": "D", "text": "Guaranteed retirement benefits"}
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "rb-004-q3",
+          "stem": "What is 'regulatory arbitrage' as mentioned in Paragraph D?",
+          "options": [
+            {"key": "A", "text": "A system for regulating financial markets"},
+            {"key": "B", "text": "Operating in ways that would be illegal for traditional businesses"},
+            {"key": "C", "text": "A method of calculating platform fees"},
+            {"key": "D", "text": "A type of international trade agreement"}
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "rb-004-q4",
+          "stem": "Why do gig workers typically not receive employment benefits?",
+          "options": [
+            {"key": "A", "text": "They choose to opt out of benefit programs"},
+            {"key": "B", "text": "The platforms are too small to offer benefits"},
+            {"key": "C", "text": "They are classified as independent contractors rather than employees"},
+            {"key": "D", "text": "Benefits are illegal in the sharing economy"}
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "rb-004-q5",
+          "stem": "What environmental concern about ride-hailing is mentioned?",
+          "options": [
+            {"key": "A", "text": "Electric vehicles are too expensive"},
+            {"key": "B", "text": "Ride-hailing services increase traffic congestion by pulling people from public transit"},
+            {"key": "C", "text": "The apps use too much electricity"},
+            {"key": "D", "text": "Drivers refuse to use fuel-efficient vehicles"}
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "id": "rb-005",
+      "category": "longPassage",
+      "difficulty": 3,
+      "title": "The Science of Habit Formation",
+      "passage": "Understanding how habits work is essential for anyone seeking to make lasting changes in their personal or professional life.\n\nParagraph A: Habits are automatic behaviors that we perform with little or no conscious thought. According to researchers at Duke University, habits account for approximately 40% of our daily actions. This means nearly half of what we do each day is driven not by conscious decisions but by deeply ingrained behavioral patterns.\n\nParagraph B: The basic structure of a habit consists of three components: a cue, a routine, and a reward. The cue triggers the brain to initiate a behavior. The routine is the behavior itself—the action you take. The reward is the benefit you receive, which reinforces the habit loop. Understanding this structure is the first step toward changing unwanted habits.\n\nParagraph C: Cues can take many forms. They may be external signals, such as a specific time of day, a location, the presence of certain people, or a preceding action. They may also be internal states, such as an emotional feeling or a particular thought pattern. Identifying the cues that trigger unwanted behaviors is crucial for breaking bad habits.\n\nParagraph D: The role of environment in habit formation cannot be overstated. People who successfully change their habits often do so not through sheer willpower but by redesigning their environments. If you want to eat healthier, placing fruit on the counter and hiding junk food in the back of a cabinet can make a significant difference. This is sometimes called 'choice architecture'—structuring the environment to make good choices easier and bad choices harder.\n\nParagraph E: The concept of 'keystone habits' suggests that changing certain foundational habits can trigger a cascade of positive changes across multiple areas of life. Exercise is a well-documented example. People who begin exercising regularly often find themselves eating better, sleeping more soundly, and even managing their finances more responsibly—all without directly targeting those behaviors.\n\nParagraph F: Modern technology has introduced new challenges to habit formation. Smartphone apps are specifically designed to create addictive usage patterns through variable rewards—the same mechanism that makes slot machines compelling. The average person checks their phone 96 times per day. Breaking this habit requires conscious intervention, such as turning off non-essential notifications or keeping the phone in another room during focused work.\n\nParagraph G: The timeline for habit formation varies widely. While the popular belief is that habits take 21 days to form, research suggests a more realistic average is around 66 days, with significant variation depending on the complexity of the behavior and individual differences. Missing a single day does not significantly impact the habit formation process, but missing multiple consecutive days can disrupt progress.\n\nParagraph H: Ultimately, successful habit change requires self-compassion. Perfectionism is the enemy of progress. Research shows that people who forgive themselves for occasional lapses are more likely to return to their desired behaviors than those who engage in harsh self-criticism. The goal is not flawless execution but consistent improvement over time.",
+      "questions": [
+        {
+          "id": "rb-005-q1",
+          "stem": "According to Duke University research, what percentage of daily actions are driven by habits?",
+          "options": [
+            {"key": "A", "text": "About 20%"},
+            {"key": "B", "text": "About 30%"},
+            {"key": "C", "text": "About 40%"},
+            {"key": "D", "text": "About 50%"}
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "rb-005-q2",
+          "stem": "What are the three components of a habit loop?",
+          "options": [
+            {"key": "A", "text": "Goal, plan, action"},
+            {"key": "B", "text": "Cue, routine, reward"},
+            {"key": "C", "text": "Thought, emotion, behavior"},
+            {"key": "D", "text": "Input, process, output"}
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "rb-005-q3",
+          "stem": "What is 'choice architecture' as described in Paragraph D?",
+          "options": [
+            {"key": "A", "text": "The design of buildings and physical spaces"},
+            {"key": "B", "text": "A computer program for making decisions"},
+            {"key": "C", "text": "Structuring the environment to make good choices easier"},
+            {"key": "D", "text": "A psychological theory about free will"}
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "rb-005-q4",
+          "stem": "What is a 'keystone habit'?",
+          "options": [
+            {"key": "A", "text": "A habit that is impossible to break"},
+            {"key": "B", "text": "A foundational habit that triggers positive changes in other areas"},
+            {"key": "C", "text": "A habit that only affects one specific area of life"},
+            {"key": "D", "text": "A habit that takes the longest time to form"}
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "rb-005-q5",
+          "stem": "According to research, how long does habit formation typically take on average?",
+          "options": [
+            {"key": "A", "text": "21 days"},
+            {"key": "B", "text": "30 days"},
+            {"key": "C", "text": "66 days"},
+            {"key": "D", "text": "90 days"}
+          ],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "id": "rb-006",
+      "category": "longPassage",
+      "difficulty": 4,
+      "title": "The Digital Divide in Higher Education",
+      "passage": "As universities increasingly integrate digital tools into their curricula, a troubling gap has emerged between students who have reliable access to technology and those who do not.\n\nParagraph A: The transition to digital learning was dramatically accelerated by the COVID-19 pandemic, which forced universities worldwide to shift to online instruction almost overnight. What began as a temporary emergency measure has since evolved into a permanent feature of higher education, with most institutions now offering a mix of online and in-person courses.\n\nParagraph B: The benefits of digital learning are well-documented. Online platforms allow students to learn at their own pace, revisit lecture recordings as needed, and access course materials from anywhere. Adaptive learning software can personalize instruction based on individual student performance. These tools have the potential to make education more accessible and effective for many learners.\n\nParagraph C: However, the presumption that all students have equal access to the technology required for digital learning is fundamentally flawed. A 2024 survey of college students found that 19% reported difficulty accessing reliable internet, and 14% said they lacked a computer adequate for their coursework. These figures are significantly higher among first-generation college students and those from low-income backgrounds.\n\nParagraph D: The consequences of the digital divide extend beyond mere inconvenience. Students with unreliable technology access are more likely to miss assignment deadlines, struggle to participate in online discussions, and experience higher levels of academic stress. A longitudinal study found that students on the wrong side of the digital divide had GPAs averaging 0.4 points lower than their better-connected peers.\n\nParagraph E: Some universities have implemented programs to address this gap. Laptop loan programs, Wi-Fi hotspot lending, and campus computer labs with extended hours are common interventions. However, these solutions often fail to address deeper structural issues, such as students living in housing without adequate space for focused online study or those whose work schedules conflict with available lab hours.\n\nParagraph F: The digital divide also manifests in digital literacy. Students who attended high schools with strong technology programs enter college comfortable with a range of software tools, while those from under-resourced schools may struggle with basic tasks like formatting documents or navigating learning management systems. This skills gap can compound the hardware access gap.\n\nParagraph G: Faculty awareness of the digital divide remains inconsistent. While some instructors carefully design their courses to minimize technology barriers, others assume universal access and build their pedagogy around tools that not all students can reliably use. Professional development programs that raise awareness of digital equity issues are increasingly seen as essential.\n\nParagraph H: Policy interventions are needed at multiple levels. At the institutional level, universities should conduct regular audits of student technology access and develop targeted support programs. At the governmental level, expanding broadband infrastructure and subsidizing devices for low-income students should be priorities. Closing the digital divide is not just about fairness—it is about ensuring that higher education fulfills its promise as an engine of social mobility.",
+      "questions": [
+        {
+          "id": "rb-006-q1",
+          "stem": "What percentage of students reported difficulty accessing reliable internet?",
+          "options": [
+            {"key": "A", "text": "10%"},
+            {"key": "B", "text": "14%"},
+            {"key": "C", "text": "19%"},
+            {"key": "D", "text": "25%"}
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "rb-006-q2",
+          "stem": "According to the passage, what was the GPA difference between students with poor versus good technology access?",
+          "options": [
+            {"key": "A", "text": "0.1 points"},
+            {"key": "B", "text": "0.2 points"},
+            {"key": "C", "text": "0.4 points"},
+            {"key": "D", "text": "0.8 points"}
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "rb-006-q3",
+          "stem": "What is mentioned as a limitation of current university interventions?",
+          "options": [
+            {"key": "A", "text": "They are too expensive to maintain"},
+            {"key": "B", "text": "They fail to address deeper structural issues like inadequate study space"},
+            {"key": "C", "text": "Students refuse to use the provided resources"},
+            {"key": "D", "text": "Faculty oppose all forms of technology lending"}
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "rb-006-q4",
+          "stem": "What is the 'skills gap' referred to in Paragraph F?",
+          "options": [
+            {"key": "A", "text": "The difference between academic and vocational skills"},
+            {"key": "B", "text": "The gap in digital literacy between students from different high school backgrounds"},
+            {"key": "C", "text": "The shortage of qualified technology instructors"},
+            {"key": "D", "text": "The discrepancy between what employers want and what universities teach"}
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "rb-006-q5",
+          "stem": "What is the author's main recommendation for universities?",
+          "options": [
+            {"key": "A", "text": "Eliminate all online courses"},
+            {"key": "B", "text": "Conduct regular audits of student technology access and develop targeted support"},
+            {"key": "C", "text": "Require all students to purchase the same laptop model"},
+            {"key": "D", "text": "Move entirely to paper-based instruction"}
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "id": "rb-007",
+      "category": "inDepth",
+      "difficulty": 3,
+      "passage": "The concept of emotional intelligence—often abbreviated as EQ—has gained significant attention in both academic and popular discourse since psychologist Daniel Goleman published his influential book on the subject in 1995. Emotional intelligence refers to the ability to recognize, understand, manage, and effectively use emotions in oneself and others. Unlike IQ, which measures cognitive abilities such as logical reasoning and mathematical skill, EQ encompasses a distinct set of competencies that research suggests are equally important for success in life and work.\n\nGoleman's model identifies five key components of emotional intelligence: self-awareness, self-regulation, motivation, empathy, and social skills. Self-awareness involves recognizing one's own emotions and their effects. Self-regulation is the ability to manage disruptive impulses and think before acting. Motivation refers to the inner drive to pursue goals with energy and persistence. Empathy is the capacity to understand the emotional makeup of others. Social skills encompass proficiency in managing relationships and building networks.\n\nA growing body of research has linked high emotional intelligence to positive outcomes across various domains. In the workplace, studies have found that EQ is a stronger predictor of leadership effectiveness than IQ or technical skills alone. Employees with high emotional intelligence tend to collaborate more effectively, handle stress better, and demonstrate greater resilience in the face of setbacks. A comprehensive analysis of over 600,000 people found that those scoring in the top 25% on emotional intelligence tests earned an average of $29,000 more per year than those in the bottom 25%.\n\nHowever, the concept of emotional intelligence is not without its critics. Some researchers argue that the definition of EQ is too broad and overlaps substantially with established personality traits such as agreeableness and neuroticism from the Big Five personality model. Others point out that emotional intelligence, unlike cognitive intelligence, is difficult to measure objectively, with most assessments relying on self-report questionnaires that may be influenced by social desirability bias.\n\nDespite these critiques, the practical value of emotional intelligence concepts has been demonstrated in fields ranging from management training to education. Schools that have implemented social-emotional learning programs report improvements in student behavior, academic performance, and overall well-being. These findings suggest that even if the scientific definition of EQ continues to be debated, teaching people to better understand and manage emotions yields measurable benefits.",
+      "questions": [
+        {
+          "id": "rb-007-q1",
+          "stem": "What is the main purpose of this passage?",
+          "options": [
+            {"key": "A", "text": "To argue that IQ is more important than EQ"},
+            {"key": "B", "text": "To explain the concept of emotional intelligence and discuss its value and criticisms"},
+            {"key": "C", "text": "To promote Daniel Goleman's book"},
+            {"key": "D", "text": "To prove that emotional intelligence cannot be measured"}
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "rb-007-q2",
+          "stem": "According to Goleman's model, which component involves managing disruptive impulses?",
+          "options": [
+            {"key": "A", "text": "Self-awareness"},
+            {"key": "B", "text": "Self-regulation"},
+            {"key": "C", "text": "Motivation"},
+            {"key": "D", "text": "Empathy"}
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "rb-007-q3",
+          "stem": "What did the study of over 600,000 people find about EQ and earnings?",
+          "options": [
+            {"key": "A", "text": "There was no relationship between EQ and income"},
+            {"key": "B", "text": "The top 25% in EQ earned $29,000 more per year on average"},
+            {"key": "C", "text": "Only CEOs benefited from high EQ"},
+            {"key": "D", "text": "High EQ was associated with lower salaries"}
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "rb-007-q4",
+          "stem": "What criticism do some researchers make about emotional intelligence?",
+          "options": [
+            {"key": "A", "text": "It is too easy to measure"},
+            {"key": "B", "text": "Its definition overlaps with established personality traits"},
+            {"key": "C", "text": "It is only relevant in Western cultures"},
+            {"key": "D", "text": "It has no practical applications"}
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "rb-007-q5",
+          "stem": "What results have schools reported after implementing social-emotional learning programs?",
+          "options": [
+            {"key": "A", "text": "No measurable changes"},
+            {"key": "B", "text": "Declines in academic performance"},
+            {"key": "C", "text": "Improvements in student behavior, academic performance, and well-being"},
+            {"key": "D", "text": "Increased teacher turnover"}
+          ],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "id": "rb-008",
+      "category": "inDepth",
+      "difficulty": 4,
+      "passage": "For decades, urban planners and traffic engineers operated under a seemingly logical assumption: to reduce traffic congestion, you need to build more roads. This 'predict and provide' approach—forecast future traffic growth and build enough road capacity to accommodate it—dominated transportation policy throughout the 20th century. The result was sprawling urban highways, ever-widening roads, and, paradoxically, ever-worsening traffic.\n\nThe reason this approach fails is a phenomenon known as 'induced demand.' When road capacity increases, driving becomes temporarily faster and more convenient. This attracts new drivers who previously avoided the road due to congestion, encouraged existing drivers to make trips they might have postponed, and over time, led people and businesses to locate farther from city centers. Within a few years, traffic volumes rise to fill the new capacity, and congestion returns to its previous level—or worse.\n\nThe concept of induced demand was first rigorously documented by economists in the 1960s, but it took decades for transportation policy to begin absorbing its implications. A landmark study by researchers at the University of California found that on average, a 10% increase in road capacity leads to a 9% increase in traffic volumes within five years, effectively erasing nearly all of the expected congestion relief.\n\nRecognition of induced demand has led some cities to adopt radically different approaches. Rather than building more roads, they are investing in public transit, bicycle infrastructure, and pedestrian-friendly urban design. Some have even embraced 'road diets'—reducing the number of traffic lanes on major streets to make room for bike lanes, wider sidewalks, or dedicated bus lanes. Critics predicted these reductions would cause traffic chaos, but the results have often been the opposite: while some traffic does shift to other routes, a portion of it simply 'evaporates' as drivers adjust their travel patterns.\n\nPerhaps the most dramatic example is Seoul, South Korea, which in 2003 demolished an elevated highway that carried 168,000 vehicles daily through the city center. The highway was replaced with a restored river, Cheonggyecheon, and a park. Predictably, there were dire warnings about gridlock. Instead, traffic distributed across the surrounding network without major disruption, bus ridership increased, and the area became one of Seoul's most beloved public spaces. Property values along the corridor rose, and air quality improved measurably.\n\nThe implications of induced demand extend beyond transportation policy to broader questions about how cities should grow and what makes urban life worth living. Cities that have prioritized moving cars quickly through urban spaces have often done so at the expense of the very qualities that make cities attractive in the first place: walkable neighborhoods, vibrant street life, and accessible public spaces. The growing recognition that you cannot build your way out of congestion has opened the door to more human-centered approaches to urban design.",
+      "questions": [
+        {
+          "id": "rb-008-q1",
+          "stem": "What was the 'predict and provide' approach to traffic?",
+          "options": [
+            {"key": "A", "text": "Reducing the number of cars on roads"},
+            {"key": "B", "text": "Forecasting traffic growth and building enough road capacity to match"},
+            {"key": "C", "text": "Charging drivers tolls during peak hours"},
+            {"key": "D", "text": "Converting roads into pedestrian zones"}
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "rb-008-q2",
+          "stem": "What is 'induced demand'?",
+          "options": [
+            {"key": "A", "text": "Government mandates requiring people to drive more"},
+            {"key": "B", "text": "The rise in traffic volumes that fills newly created road capacity"},
+            {"key": "C", "text": "A marketing campaign by car manufacturers"},
+            {"key": "D", "text": "The natural growth of population in urban areas"}
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "rb-008-q3",
+          "stem": "According to the University of California study, what happens after a 10% increase in road capacity?",
+          "options": [
+            {"key": "A", "text": "Congestion is permanently reduced by 10%"},
+            {"key": "B", "text": "Traffic volumes increase by about 9% within five years"},
+            {"key": "C", "text": "There is no measurable change in traffic patterns"},
+            {"key": "D", "text": "Public transit ridership increases"}
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "rb-008-q4",
+          "stem": "What happened after Seoul demolished the Cheonggyecheon highway?",
+          "options": [
+            {"key": "A", "text": "The city experienced severe and lasting gridlock"},
+            {"key": "B", "text": "Businesses all moved to the suburbs"},
+            {"key": "C", "text": "Traffic distributed across the network without major disruption, and the area flourished"},
+            {"key": "D", "text": "The highway was rebuilt two years later due to public demand"}
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "rb-008-q5",
+          "stem": "What is the author's overall argument in this passage?",
+          "options": [
+            {"key": "A", "text": "More highways are needed to solve urban congestion"},
+            {"key": "B", "text": "Public transit is always superior to private cars"},
+            {"key": "C", "text": "Building more roads does not solve congestion; human-centered urban design is a better approach"},
+            {"key": "D", "text": "Traffic congestion is an unsolvable problem"}
+          ],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "id": "rb-009",
+      "category": "inDepth",
+      "difficulty": 3,
+      "passage": "The modern university lecture traces its origins to the medieval European tradition in which a master would read aloud from a manuscript—often the only copy available—while students took notes. In an era before the printing press, this was an efficient way to disseminate knowledge. However, the printing press was invented in the 15th century. By any reasonable measure, the lecture's original rationale expired approximately 500 years ago.\n\nYet the lecture persists as the dominant mode of instruction in most universities worldwide. Walk into almost any large undergraduate course, and you will find a professor standing at the front of a room, delivering information to rows of students. The format has proven remarkably resistant to change, despite mounting evidence that it is among the least effective ways to promote learning.\n\nA meta-analysis published in the Proceedings of the National Academy of Sciences examined 225 studies comparing traditional lecturing to active learning methods in STEM courses. The results were striking: students in active learning classrooms scored 6% higher on exams on average, and students in traditional lecture courses were 1.5 times more likely to fail. The authors concluded that if these results had come from a medical trial comparing an established treatment to a new one, the trial would have been stopped early because it would be unethical to continue giving patients the inferior treatment.\n\nActive learning encompasses a range of techniques: think-pair-share activities in which students discuss questions with a partner before sharing with the class; problem-based learning that requires students to apply concepts to real-world scenarios; peer instruction in which students explain concepts to each other; and 'flipped classrooms' where students watch recorded lectures at home and use class time for discussion and problem-solving. What these methods share is that they require students to actively engage with material rather than passively receive it.\n\nDespite the evidence, barriers to widespread adoption remain. Many faculty members received their own education through lectures and feel most comfortable teaching that way. Redesigning courses around active learning requires significant upfront time investment. Some students resist active learning, believing that listening to an expert lecture is the 'proper' way to learn. And in some contexts, there is pressure to cover large amounts of content, which lectures appear to do efficiently—even if the evidence suggests students retain relatively little of it.\n\nPromisingly, change is occurring. A growing number of universities have established centers for teaching and learning that support faculty in adopting evidence-based methods. Some departments have redesigned entire course sequences around active learning, with measurable improvements in student outcomes. As the evidence base continues to grow and student expectations evolve, the lecture may finally yield its 500-year dominance to more effective approaches to learning.",
+      "questions": [
+        {
+          "id": "rb-009-q1",
+          "stem": "According to the passage, when did the original rationale for the lecture format expire?",
+          "options": [
+            {"key": "A", "text": "In the 18th century"},
+            {"key": "B", "text": "With the invention of the printing press in the 15th century"},
+            {"key": "C", "text": "With the rise of the internet in the 1990s"},
+            {"key": "D", "text": "During the COVID-19 pandemic"}
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "rb-009-q2",
+          "stem": "What did the meta-analysis in PNAS find about active learning?",
+          "options": [
+            {"key": "A", "text": "Active learning had no effect on exam scores"},
+            {"key": "B", "text": "Students in active learning scored 6% higher and traditional lecture students were 1.5x more likely to fail"},
+            {"key": "C", "text": "Only STEM courses benefited from active learning"},
+            {"key": "D", "text": "Traditional lectures were more effective for advanced students"}
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "rb-009-q3",
+          "stem": "What is a 'flipped classroom'?",
+          "options": [
+            {"key": "A", "text": "Students attend class at night instead of during the day"},
+            {"key": "B", "text": "The classroom has chairs facing the back wall"},
+            {"key": "C", "text": "Students watch recorded lectures at home and use class time for discussion and problem-solving"},
+            {"key": "D", "text": "The professor and students switch roles permanently"}
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "rb-009-q4",
+          "stem": "What is mentioned as a barrier to adopting active learning?",
+          "options": [
+            {"key": "A", "text": "Active learning requires expensive technology"},
+            {"key": "B", "text": "Most faculty are trained in lectures and redesigning courses requires significant time"},
+            {"key": "C", "text": "Active learning is illegal in some countries"},
+            {"key": "D", "text": "Students universally prefer lectures"}
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "rb-009-q5",
+          "stem": "What optimistic trend does the author highlight at the end?",
+          "options": [
+            {"key": "A", "text": "Universities are returning to traditional lecture-only instruction"},
+            {"key": "B", "text": "Students are dropping out at record rates"},
+            {"key": "C", "text": "A growing number of universities are establishing centers to support evidence-based teaching methods"},
+            {"key": "D", "text": "Online learning has completely replaced in-person education"}
+          ],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "id": "rb-010",
+      "category": "inDepth",
+      "difficulty": 4,
+      "passage": "The placebo effect has long been regarded as something of an annoyance in medical research—a statistical noise that randomized controlled trials must overcome to demonstrate that a treatment 'really' works. Increasingly, however, researchers are reframing the placebo effect not as noise but as signal—a window into the powerful ways that belief, expectation, and context shape human physiology.\n\nThe mechanisms underlying placebo responses are more sophisticated than simple self-deception. Neuroimaging studies have shown that placebo treatments can trigger the release of endogenous opioids—the brain's own pain-relieving chemicals—in patterns similar to those produced by active pain medications. Other research has demonstrated that placebo responses involve dopamine release in brain regions associated with reward and motivation, suggesting that the expectation of benefit itself activates neural circuitry that can produce genuine physiological changes.\n\nThe context in which treatment is delivered matters enormously. A study on pain relief found that patients who received a placebo injection from a warm, confident practitioner reported significantly more pain reduction than those receiving the same placebo from a distant, uncertain one. The color, shape, and perceived cost of placebo pills affect their efficacy: red pills tend to be more effective as stimulants, blue pills as sedatives; capsules are perceived as more potent than tablets; and 'expensive' placebos outperform 'cheap' ones. These findings suggest that the ritual of medicine—the white coat, the examination room, the authoritative explanation—is itself a therapeutic intervention.\n\nThe implications for medical practice are both promising and ethically complex. On one hand, harnessing placebo mechanisms without deception is possible. 'Open-label placebos'—placebos that patients know are placebos—have shown effectiveness in treating conditions including irritable bowel syndrome, chronic back pain, and depression. When patients receive a placebo along with an explanation of how placebos work, the treatment often produces measurable benefits despite full transparency. This approach respects patient autonomy while activating the same expectation-based healing pathways.\n\nOn the other hand, the power of expectations means that negative expectations can produce harm. The 'nocebo effect' occurs when patients experience adverse effects from inactive treatments because they expect to. Research has shown that informing patients about potential side effects of a medication can increase the likelihood they will experience those effects—a finding with troubling implications for the medical practice of informed consent. How do physicians honestly discuss risks without inadvertently causing them?\n\nThe placebo effect challenges fundamental assumptions about the boundary between mind and body that have shaped Western medicine for centuries. It suggests that meaning, expectation, and social context are not peripheral to healing but central to it. Rather than viewing the placebo effect as a problem to be eliminated from clinical trials, researchers increasingly see it as a resource to be understood and ethically leveraged in clinical care.",
+      "questions": [
+        {
+          "id": "rb-010-q1",
+          "stem": "How is the placebo effect increasingly being reframed by researchers?",
+          "options": [
+            {"key": "A", "text": "As a problem that must be eliminated from all research"},
+            {"key": "B", "text": "As a window into how belief and expectation shape physiology"},
+            {"key": "C", "text": "As proof that all medication is unnecessary"},
+            {"key": "D", "text": "As a purely psychological phenomenon with no biological basis"}
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "rb-010-q2",
+          "stem": "What did the study on practitioner warmth find?",
+          "options": [
+            {"key": "A", "text": "The practitioner's demeanor made no difference to placebo effectiveness"},
+            {"key": "B", "text": "Warm, confident practitioners produced significantly more pain reduction from the same placebo"},
+            {"key": "C", "text": "Patients preferred distant practitioners"},
+            {"key": "D", "text": "Only doctors in white coats could activate placebo effects"}
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "rb-010-q3",
+          "stem": "What are 'open-label placebos'?",
+          "options": [
+            {"key": "A", "text": "Placebos that are sold without a prescription"},
+            {"key": "B", "text": "Placebos that patients know are placebos"},
+            {"key": "C", "text": "Placebos that are more expensive than regular medication"},
+            {"key": "D", "text": "Placebos that can only be administered in hospitals"}
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "rb-010-q4",
+          "stem": "What is the 'nocebo effect'?",
+          "options": [
+            {"key": "A", "text": "The medical term for placebo pills"},
+            {"key": "B", "text": "Adverse effects from inactive treatments caused by negative expectations"},
+            {"key": "C", "text": "A type of pain medication"},
+            {"key": "D", "text": "The study of placebo mechanisms in the brain"}
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "rb-010-q5",
+          "stem": "What ethical concern does the passage raise about discussing side effects with patients?",
+          "options": [
+            {"key": "A", "text": "Discussing side effects takes too much time"},
+            {"key": "B", "text": "Informing patients about potential side effects may increase the likelihood they experience them"},
+            {"key": "C", "text": "Patients do not understand medical terminology"},
+            {"key": "D", "text": "Doctors should never mention side effects"}
+          ],
+          "answer": "B"
+        }
+      ]
+    }
+  ]
+}

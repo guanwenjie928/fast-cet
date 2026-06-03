@@ -1,0 +1,259 @@
+{
+  "type": "listening",
+  "title": "听力专项练习题库",
+  "description": "CET-4 听力理解专项训练，按题型分类：短篇新闻、长对话、短文理解。每道题包含音频路径、transcript、题目和答案解析。",
+  "items": [
+    {
+      "id": "lb-001",
+      "category": "news",
+      "difficulty": 2,
+      "audioSrc": "assets/audio/bank/news-climate.mp3",
+      "transcript": "Scientists at the World Climate Conference have warned that global temperatures could rise by 2.7 degrees Celsius by the end of this century if current emission trends continue. The report, compiled by over 200 researchers from 40 countries, emphasizes that immediate and drastic action is needed to avoid the worst effects of climate change. The researchers specifically pointed to the rapid melting of Arctic ice, which has accelerated beyond previous predictions. They called for a 45 percent reduction in carbon emissions by 2030 to keep warming within the 1.5-degree target set by the Paris Agreement.",
+      "questions": [
+        {
+          "id": "lb-001-q1",
+          "stem": "What temperature rise do scientists predict by the end of this century?",
+          "options": ["1.5 degrees Celsius", "2.7 degrees Celsius", "3.5 degrees Celsius", "4.0 degrees Celsius"],
+          "answer": "B"
+        },
+        {
+          "id": "lb-001-q2",
+          "stem": "What did researchers say about Arctic ice?",
+          "options": ["It has stopped melting completely", "It is melting faster than previously predicted", "It has recovered to normal levels", "The data on Arctic ice is unreliable"],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "id": "lb-002",
+      "category": "news",
+      "difficulty": 3,
+      "audioSrc": "assets/audio/bank/news-space.mp3",
+      "transcript": "China's space agency has announced plans to launch a manned mission to the Moon by 2030, marking a significant milestone in the country's ambitious space program. The mission will involve a new generation of carrier rockets and a next-generation crewed spacecraft currently under development. The lunar landing is part of a broader strategy that includes the construction of a permanent research station on the Moon's surface in cooperation with international partners. This announcement comes as multiple nations, including the United States and India, are also pursuing their own lunar exploration programs, creating what some analysts describe as a new space race.",
+      "questions": [
+        {
+          "id": "lb-002-q1",
+          "stem": "What has China's space agency announced?",
+          "options": ["A satellite launch to Mars", "A manned mission to the Moon by 2030", "The retirement of its space station", "A partnership with NASA"],
+          "answer": "B"
+        },
+        {
+          "id": "lb-002-q2",
+          "stem": "What else is part of the broader strategy mentioned?",
+          "options": ["Building a space hotel", "A permanent research station on the Moon", "Mining asteroids for resources", "Sending tourists to orbit Earth"],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "id": "lb-003",
+      "category": "news",
+      "difficulty": 2,
+      "audioSrc": "assets/audio/bank/news-health.mp3",
+      "transcript": "The World Health Organization has issued new guidelines recommending that adults spend at least 150 minutes per week engaged in moderate physical activity. The guidelines, updated for the first time in a decade, also warn that sedentary behavior is now the fourth leading risk factor for global mortality. According to the WHO, physical inactivity is responsible for an estimated 3.2 million deaths annually worldwide. The report specifically highlights the health risks of prolonged sitting, which has become increasingly common with the rise of desk jobs and digital entertainment.",
+      "questions": [
+        {
+          "id": "lb-003-q1",
+          "stem": "How much physical activity does the WHO recommend for adults per week?",
+          "options": ["At least 60 minutes", "At least 150 minutes", "At least 200 minutes", "At least 300 minutes"],
+          "answer": "B"
+        },
+        {
+          "id": "lb-003-q2",
+          "stem": "How many deaths per year are attributed to physical inactivity?",
+          "options": ["1.5 million", "2.4 million", "3.2 million", "5.1 million"],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "id": "lb-004",
+      "category": "longConversation",
+      "difficulty": 3,
+      "audioSrc": "assets/audio/bank/conv-course.mp3",
+      "transcript": "M: Hey Sarah, I'm trying to decide between two elective courses for next semester. Have you taken either Introduction to Psychology or Environmental Science?\n\nW: I took Psychology last year with Professor Williams. It was honestly one of the best courses I've had. The lectures are really engaging, and the workload is manageable — just a midterm, a final, and a short research paper.\n\nM: That sounds good. What about Environmental Science?\n\nW: My roommate took it. She said the content is fascinating, but be prepared for a lot of lab work. There's a three-hour lab session every week, plus field trips on some weekends.\n\nM: Hmm, that might be a problem since I work part-time on weekends. How was the grading for Psychology?\n\nW: Fair. Professor Williams gives a study guide before each exam, and if you follow it, you'll do well. The average grade was a B plus. But I should mention — there's a lot of reading. About 50 pages per week.\n\nM: I think I can handle the reading. Psychology sounds like a better fit for my schedule. Thanks for the advice!",
+      "questions": [
+        {
+          "id": "lb-004-q1",
+          "stem": "What is the conversation mainly about?",
+          "options": ["Complaining about a difficult professor", "Choosing between two elective courses", "Planning a weekend trip", "Discussing part-time job opportunities"],
+          "answer": "B"
+        },
+        {
+          "id": "lb-004-q2",
+          "stem": "What is a drawback of Environmental Science according to the woman?",
+          "options": ["The professor is boring", "It requires extensive lab work and weekend field trips", "The textbook is too expensive", "There are no exams"],
+          "answer": "B"
+        },
+        {
+          "id": "lb-004-q3",
+          "stem": "Why does the man lean toward Psychology?",
+          "options": ["He is interested in becoming a therapist", "It fits better with his part-time work schedule", "The woman promised to tutor him", "Environmental Science is already full"],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "id": "lb-005",
+      "category": "longConversation",
+      "difficulty": 4,
+      "audioSrc": "assets/audio/bank/conv-job.mp3",
+      "transcript": "W: Good afternoon, Mr. Chen. Thank you for coming in today. I've reviewed your resume, and I'm impressed with your background in marketing. Could you tell me more about your experience with digital campaigns?\n\nM: Certainly. In my current role at TechBridge, I've managed social media campaigns for three major product launches over the past two years. The most recent campaign achieved a 40 percent increase in engagement compared to our previous benchmark, and we saw a 25 percent rise in conversion rates.\n\nW: That's quite impressive. Our company is looking to expand our presence in the Southeast Asian market. Do you have any experience with cross-cultural marketing?\n\nM: Actually, yes. At TechBridge, I collaborated with our Singapore office on a regional campaign that ran across four countries. I learned a lot about adapting messaging for different cultural contexts while maintaining brand consistency. It was challenging but incredibly rewarding.\n\nW: That's exactly the kind of experience we're looking for. One more question — how do you handle tight deadlines and multiple projects?\n\nM: I use a combination of project management tools and prioritization frameworks. I'm a big believer in the Eisenhower Matrix — separating urgent from important tasks. In my last position, I typically juggled five to seven campaigns simultaneously, so I've developed systems that work.\n\nW: Well, I think you'd be a strong fit for our team. We'll be in touch within the next week.",
+      "questions": [
+        {
+          "id": "lb-005-q1",
+          "stem": "What result did the man's most recent campaign achieve?",
+          "options": ["A 25 percent increase in sales", "A 40 percent increase in engagement", "A 50 percent growth in followers", "A 30 percent reduction in costs"],
+          "answer": "B"
+        },
+        {
+          "id": "lb-005-q2",
+          "stem": "What experience did the man gain in cross-cultural marketing?",
+          "options": ["He studied marketing abroad in college", "He collaborated with the Singapore office on a regional campaign", "He worked for a Southeast Asian company previously", "He took a course in international business"],
+          "answer": "B"
+        },
+        {
+          "id": "lb-005-q3",
+          "stem": "How does the man manage multiple projects?",
+          "options": ["By working overtime every day", "By delegating all tasks to his team", "Using project management tools and the Eisenhower Matrix", "By focusing on one project at a time"],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "id": "lb-006",
+      "category": "longConversation",
+      "difficulty": 3,
+      "audioSrc": "assets/audio/bank/conv-library.mp3",
+      "transcript": "M: Excuse me, I'm looking for resources on Renaissance art for my art history paper. Can you help me find the right section?\n\nW: Of course! The art history section is on the third floor. But before you go up, let me check if the specific books you need are available. What's your topic exactly?\n\nM: I'm writing about the influence of patronage on Renaissance painting, specifically focusing on the Medici family in Florence.\n\nW: That's a great topic. We have several excellent books on the Medici. Let me look them up... It looks like the two most relevant books are both currently checked out. However, we have digital access to the JSTOR database, which has dozens of peer-reviewed articles on this exact subject.\n\nM: That would be really helpful. How do I access JSTOR?\n\nW: You can log in through the library portal using your student ID. I'd also recommend checking the Oxford Art Online database — it has excellent overview articles that are perfect for getting started. If you need help with citations, the writing center on the second floor offers free consultations.\n\nM: That's great to know. I'll start with the online databases first. Thanks for your help!",
+      "questions": [
+        {
+          "id": "lb-006-q1",
+          "stem": "What is the student's research topic?",
+          "options": ["The architecture of Renaissance churches", "The influence of patronage on Renaissance painting", "The biography of Leonardo da Vinci", "The history of the Medici bank"],
+          "answer": "B"
+        },
+        {
+          "id": "lb-006-q2",
+          "stem": "What problem does the student encounter?",
+          "options": ["The library is closed", "The relevant books are already checked out", "The student forgot his library card", "The books are in a different language"],
+          "answer": "B"
+        },
+        {
+          "id": "lb-006-q3",
+          "stem": "What alternative does the librarian suggest?",
+          "options": ["Waiting for the books to be returned", "Buying the books online", "Using digital databases like JSTOR and Oxford Art Online", "Changing the research topic"],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "id": "lb-007",
+      "category": "passage",
+      "difficulty": 3,
+      "audioSrc": "assets/audio/bank/passage-sleep.mp3",
+      "transcript": "Sleep is one of the most fundamental biological processes, yet modern society has developed a deeply problematic relationship with it. The average adult requires between seven and nine hours of sleep per night, but surveys indicate that nearly one-third of adults in developed countries regularly get less than six hours. The consequences of this sleep deficit extend far beyond mere tiredness. Chronic sleep deprivation has been linked to weakened immune function, increased risk of cardiovascular disease, impaired memory consolidation, and heightened emotional reactivity. Perhaps most troubling is the effect on learning and academic performance. During sleep, the brain processes and consolidates information acquired during the day, transferring memories from short-term to long-term storage. Students who sacrifice sleep for extra study time may actually be undermining their own efforts. Research has shown that students who maintain consistent sleep schedules perform better on exams than those who engage in all-night study sessions, even when total study time is held constant. The implications are clear: prioritizing sleep is not a luxury or a sign of laziness, but an essential component of effective learning and overall health.",
+      "questions": [
+        {
+          "id": "lb-007-q1",
+          "stem": "What percentage of adults in developed countries get insufficient sleep according to the passage?",
+          "options": ["About 10 percent", "Nearly one-third", "About half", "Over two-thirds"],
+          "answer": "B"
+        },
+        {
+          "id": "lb-007-q2",
+          "stem": "What happens during sleep according to the passage?",
+          "options": ["The brain completely shuts down", "The brain processes and consolidates information from the day", "Only physical restoration occurs", "The brain generates new memories unrelated to experience"],
+          "answer": "B"
+        },
+        {
+          "id": "lb-007-q3",
+          "stem": "What does the research suggest about students who maintain consistent sleep schedules?",
+          "options": ["They study more hours than other students", "They perform better on exams than those who stay up all night studying", "They are less likely to graduate", "They have lower GPAs but better health"],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "id": "lb-008",
+      "category": "passage",
+      "difficulty": 4,
+      "audioSrc": "assets/audio/bank/passage-language.mp3",
+      "transcript": "The way we learn languages has been transformed by digital technology, but the most effective approaches combine new tools with old wisdom. Traditional language instruction focused heavily on grammar rules and vocabulary memorization, often producing students who could read a foreign language but struggled to speak it. The communicative approach that emerged in the 1980s shifted emphasis to real-world conversation and practical usage, yielding better speaking outcomes but sometimes at the cost of grammatical accuracy. Today's language apps offer the convenience of learning anytime and anywhere, using spaced repetition algorithms to optimize vocabulary retention. However, research suggests that apps alone rarely produce fluency. The most successful language learners tend to combine multiple methods: using apps for vocabulary building, consuming authentic media in the target language for listening practice, engaging in conversation exchanges for speaking skills, and, yes, occasionally studying grammar rules. The key insight from modern language acquisition research is that exposure to comprehensible input — language that is slightly above one's current level — is the primary driver of progress. This explains why immersion is so effective and why learners should seek out content they can mostly, but not completely, understand. The role of motivation and emotional engagement should not be underestimated either. Learners who connect with the culture behind the language and find personal meaning in their studies consistently outperform those who study purely for academic requirements.",
+      "questions": [
+        {
+          "id": "lb-008-q1",
+          "stem": "What was a limitation of traditional language instruction?",
+          "options": ["It was too expensive for most students", "Students could read but struggled to speak", "There were no qualified teachers", "It focused only on pronunciation"],
+          "answer": "B"
+        },
+        {
+          "id": "lb-008-q2",
+          "stem": "What is the most effective approach to language learning according to the passage?",
+          "options": ["Using only language learning apps", "Studying grammar rules exclusively", "Combining multiple methods including apps, media, and conversation", "Moving to a foreign country is the only way"],
+          "answer": "C"
+        },
+        {
+          "id": "lb-008-q3",
+          "stem": "What is 'comprehensible input'?",
+          "options": ["Language that is far below the learner's current level", "Language that is slightly above the learner's current level", "Language that is completely incomprehensible", "Language that has been translated into the learner's native tongue"],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "id": "lb-009",
+      "category": "passage",
+      "difficulty": 2,
+      "audioSrc": "assets/audio/bank/passage-bees.mp3",
+      "transcript": "Honeybees play a far more critical role in global food production than most people realize. It is estimated that one out of every three bites of food we eat depends on pollinators, with honeybees being the most important of these. In the United States alone, honeybees contribute to the pollination of crops worth over 15 billion dollars annually, including almonds, apples, blueberries, and cucumbers. However, bee populations worldwide have been declining at alarming rates due to a phenomenon known as Colony Collapse Disorder. Scientists have identified several contributing factors, including pesticide use, habitat loss, climate change, and parasitic mites. The decline is not just an environmental concern but an economic and food security issue. Some regions of China have already been forced to pollinate fruit trees by hand due to the scarcity of natural pollinators — a labor-intensive and expensive process that underscores the irreplaceable value of bees. Conservation efforts are underway globally, including restrictions on harmful pesticides, the creation of bee-friendly habitats along highways and in urban areas, and research into disease-resistant bee strains.",
+      "questions": [
+        {
+          "id": "lb-009-q1",
+          "stem": "What proportion of our food is estimated to depend on pollinators?",
+          "options": ["One out of every ten bites", "One out of every three bites", "One out of every two bites", "Nearly all food depends on pollinators"],
+          "answer": "B"
+        },
+        {
+          "id": "lb-009-q2",
+          "stem": "What is NOT mentioned as a cause of bee population decline?",
+          "options": ["Pesticide use", "Habitat loss", "Overfishing", "Climate change"],
+          "answer": "C"
+        },
+        {
+          "id": "lb-009-q3",
+          "stem": "What has happened in some parts of China due to bee scarcity?",
+          "options": ["Fruit production has completely stopped", "Fruit trees are pollinated by hand", "Imported bees have solved the problem", "Farmers switched to growing only wheat"],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "id": "lb-010",
+      "category": "passage",
+      "difficulty": 3,
+      "audioSrc": "assets/audio/bank/passage-mindfulness.mp3",
+      "transcript": "Mindfulness meditation, once considered a niche spiritual practice, has entered the mainstream of psychology and healthcare over the past two decades. Rooted in Buddhist traditions but adapted into a secular form, mindfulness involves paying deliberate attention to the present moment without judgment. The scientific evidence for its benefits has grown substantially. Randomized controlled trials have shown that an eight-week mindfulness-based stress reduction program can significantly reduce symptoms of anxiety and depression, with effects comparable to antidepressant medication in some studies. Brain imaging research has revealed that regular meditation practice is associated with increased gray matter density in regions of the brain involved in learning, memory, and emotional regulation. Perhaps most intriguingly, studies have found that mindfulness training can reduce activity in the amygdala — the brain's fear center — in response to emotional stimuli. This suggests that mindfulness does not merely help people cope with stress subjectively but actually changes how the brain processes threatening information. Corporations including Google, Apple, and Nike have incorporated mindfulness programs into their employee wellness initiatives, though critics argue that this corporate adoption sometimes strips the practice of its ethical foundations and transforms it into merely a productivity tool.",
+      "questions": [
+        {
+          "id": "lb-010-q1",
+          "stem": "What does mindfulness meditation involve?",
+          "options": ["Thinking about past mistakes to avoid repeating them", "Paying deliberate attention to the present moment without judgment", "Planning future goals in detail", "Analyzing dreams for hidden meanings"],
+          "answer": "B"
+        },
+        {
+          "id": "lb-010-q2",
+          "stem": "What has brain imaging research shown about regular meditation?",
+          "options": ["It decreases brain size overall", "It increases gray matter density in regions related to learning and emotional regulation", "It has no measurable effect on brain structure", "It only affects the visual cortex"],
+          "answer": "B"
+        },
+        {
+          "id": "lb-010-q3",
+          "stem": "What criticism is mentioned regarding corporate mindfulness programs?",
+          "options": ["They are too expensive for most companies", "They may strip the practice of its ethical foundations and turn it into a productivity tool", "The programs are scientifically proven to be ineffective", "Employees refuse to participate in them"],
+          "answer": "B"
+        }
+      ]
+    }
+  ]
+}

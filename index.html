@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fast CET — 大学英语四级CET-4一站式备考平台。2024年最新真题+全真模拟，助你稳过四级。">
+  <title>Fast CET — 轻松备考，CET-4 一次过</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/cards.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+</head>
+<body>
+
+  <!-- ============================================ -->
+  <!-- 1. Hero Section                              -->
+  <!-- ============================================ -->
+  <section class="hero" id="hero">
+
+    <!-- Cursor glow -->
+    <div class="hero__cursor-glow" id="heroGlow"></div>
+
+    <!-- Floating shapes -->
+    <div class="hero__bg">
+      <div class="hero__shape hero__shape--1"></div>
+      <div class="hero__shape hero__shape--2"></div>
+      <div class="hero__shape hero__shape--3"></div>
+      <div class="hero__shape hero__shape--4"></div>
+      <div class="hero__shape hero__shape--5"></div>
+      <div class="hero__shape hero__shape--6"></div>
+      <!-- Particles container -->
+      <div class="hero__particles" id="heroParticles"></div>
+    </div>
+
+    <!-- Grid pattern -->
+    <div class="hero__grid"></div>
+
+    <!-- Content -->
+    <div class="hero__content container">
+      <h1 class="hero__title">
+        <span class="hero__title-line">轻松备考</span>
+        <span class="hero__title-line gradient-text">CET-4 一次过</span>
+      </h1>
+      <p class="hero__subtitle">2024年最新真题 + 全真模拟，助你稳过四级</p>
+      <div class="hero__cta">
+        <a href="pages/zhenti.html" class="btn btn-primary btn-magnetic">
+          开始刷真题 <span class="btn-arrow">→</span>
+        </a>
+        <a href="pages/moni.html" class="btn btn-outline btn-magnetic">模拟测试</a>
+      </div>
+      <div class="hero__scroll-indicator">
+        <span>向下滚动</span>
+        <div class="hero__scroll-line">
+          <div class="hero__scroll-dot"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 2. Stats Section                             -->
+  <!-- ============================================ -->
+  <section class="stats section" id="stats">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="heading-2">CET-4 <span class="gradient-text">考试数据</span></h2>
+        <p class="body-text">了解四级考试的基本信息，心中有数，备考不慌</p>
+      </div>
+      <div class="stats__grid">
+        <div class="stat-card">
+          <div class="stat-card__ring"></div>
+          <div class="stat-card__icon">🎯</div>
+          <span class="stat__number" data-target="710" data-suffix="分">0</span>
+          <span class="stat__label">总分</span>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__ring"></div>
+          <div class="stat-card__icon">⏱</div>
+          <span class="stat__number" data-target="125" data-suffix="分钟">0</span>
+          <span class="stat__label">考试时长</span>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__ring"></div>
+          <div class="stat-card__icon">📦</div>
+          <span class="stat__number" data-target="4" data-suffix="大模块">0</span>
+          <span class="stat__label">考试模块</span>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__ring"></div>
+          <div class="stat-card__icon">📋</div>
+          <span class="stat__number" data-target="6" data-suffix="套">0</span>
+          <span class="stat__label">全真真题</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 3. Bento Grid Section                        -->
+  <!-- ============================================ -->
+  <section class="bento-section section" id="bento">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="heading-2">六大 <span class="gradient-text">备考模块</span></h2>
+        <p class="body-text">覆盖四级考试全部题型，从真题到模拟，一站式备考</p>
+      </div>
+      <div class="bento-grid">
+
+        <!-- Card 1: 历年真题 (Large) -->
+        <a href="pages/zhenti.html" class="bento-card bento-card--large">
+          <div class="bento-card__glow"></div>
+          <div class="bento-card__border"></div>
+          <div class="bento-card__bg-pattern"></div>
+          <div class="bento-card__content">
+            <div class="bento-card__icon">
+              <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="4" y="3" width="20" height="22" rx="2"/>
+                <line x1="9" y1="9" x2="19" y2="9"/>
+                <line x1="9" y1="14" x2="19" y2="14"/>
+                <line x1="9" y1="19" x2="14" y2="19"/>
+              </svg>
+            </div>
+            <h3 class="bento-card__title">历年真题</h3>
+            <p class="bento-card__desc">2024年6套全真试卷，逐题精解，还原真实考试难度与命题趋势</p>
+            <span class="bento-card__link">进入模块 <span class="link-arrow">→</span></span>
+          </div>
+        </a>
+
+        <!-- Card 2: 模拟试题 -->
+        <a href="pages/moni.html" class="bento-card">
+          <div class="bento-card__glow"></div>
+          <div class="bento-card__border"></div>
+          <div class="bento-card__bg-pattern"></div>
+          <div class="bento-card__content">
+            <div class="bento-card__icon">
+              <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="14" cy="14" r="10"/>
+                <polyline points="9,14 12,17 19,10"/>
+              </svg>
+            </div>
+            <h3 class="bento-card__title">模拟试题</h3>
+            <p class="bento-card__desc">全真模拟环境，精准计时评分，提前适应考试节奏</p>
+            <span class="bento-card__link">进入模块 <span class="link-arrow">→</span></span>
+          </div>
+        </a>
+
+        <!-- Card 3: 听力理解 -->
+        <a href="pages/listening.html" class="bento-card">
+          <div class="bento-card__glow"></div>
+          <div class="bento-card__border"></div>
+          <div class="bento-card__bg-pattern"></div>
+          <div class="bento-card__content">
+            <div class="bento-card__icon">
+              <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 18V10a10 10 0 0 1 20 0v8"/>
+                <rect x="9" y="18" width="10" height="7" rx="2"/>
+              </svg>
+            </div>
+            <h3 class="bento-card__title">听力理解</h3>
+            <p class="bento-card__desc">新闻+长对话+短文，自定义播放器支持变速与单句重播</p>
+            <span class="bento-card__link">进入模块 <span class="link-arrow">→</span></span>
+          </div>
+        </a>
+
+        <!-- Card 4: 阅读理解 -->
+        <a href="pages/reading.html" class="bento-card">
+          <div class="bento-card__glow"></div>
+          <div class="bento-card__border"></div>
+          <div class="bento-card__bg-pattern"></div>
+          <div class="bento-card__content">
+            <div class="bento-card__icon">
+              <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="22" height="20" rx="2"/>
+                <line x1="7" y1="9" x2="21" y2="9"/>
+                <line x1="7" y1="14" x2="18" y2="14"/>
+                <line x1="7" y1="19" x2="15" y2="19"/>
+              </svg>
+            </div>
+            <h3 class="bento-card__title">阅读理解</h3>
+            <p class="bento-card__desc">选词填空+长篇阅读+仔细阅读，逐题解析考点与陷阱</p>
+            <span class="bento-card__link">进入模块 <span class="link-arrow">→</span></span>
+          </div>
+        </a>
+
+        <!-- Card 5: 翻译 -->
+        <a href="pages/translation.html" class="bento-card">
+          <div class="bento-card__glow"></div>
+          <div class="bento-card__border"></div>
+          <div class="bento-card__bg-pattern"></div>
+          <div class="bento-card__content">
+            <div class="bento-card__icon">
+              <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="10" cy="10" r="7"/>
+                <circle cx="18" cy="18" r="7"/>
+                <line x1="5" y1="5" x2="23" y2="23"/>
+              </svg>
+            </div>
+            <h3 class="bento-card__title">段落翻译</h3>
+            <p class="bento-card__desc">中英对照翻译练习，参考译文逐句分析，积累翻译技巧</p>
+            <span class="bento-card__link">进入模块 <span class="link-arrow">→</span></span>
+          </div>
+        </a>
+
+        <!-- Card 6: 作文 -->
+        <a href="pages/writing.html" class="bento-card">
+          <div class="bento-card__glow"></div>
+          <div class="bento-card__border"></div>
+          <div class="bento-card__bg-pattern"></div>
+          <div class="bento-card__content">
+            <div class="bento-card__icon">
+              <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 3v22l7-4 7 4V3a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2z"/>
+                <line x1="12" y1="8" x2="12" y2="15"/>
+                <line x1="16" y1="8" x2="16" y2="15"/>
+              </svg>
+            </div>
+            <h3 class="bento-card__title">作文训练</h3>
+            <p class="bento-card__desc">历年真题作文题目+范文分析+写作模板，提升写作水平</p>
+            <span class="bento-card__link">进入模块 <span class="link-arrow">→</span></span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 4. Learning Path Timeline                    -->
+  <!-- ============================================ -->
+  <section class="learning-path section" id="learningPath">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="heading-2">备考 <span class="gradient-text">四步走</span></h2>
+        <p class="body-text">科学规划你的四级备考之路，从入门到高分</p>
+      </div>
+      <div class="learning-path__inner">
+        <div class="learning-path__line"></div>
+
+        <div class="learning-path__step">
+          <div class="step__node"></div>
+          <div class="step__ring"></div>
+          <span class="step__number">Step 01</span>
+          <h3 class="step__title">摸底诊断</h3>
+          <p class="step__desc">完成一套全真模拟，系统自动分析你的强项和薄弱环节，生成个性化备考建议</p>
+        </div>
+
+        <div class="learning-path__step">
+          <div class="step__node"></div>
+          <div class="step__ring"></div>
+          <span class="step__number">Step 02</span>
+          <h3 class="step__title">专项突破</h3>
+          <p class="step__desc">针对弱项模块进行专项训练——听力变速精听、阅读长难句拆解、翻译高频搭配积累</p>
+        </div>
+
+        <div class="learning-path__step">
+          <div class="step__node"></div>
+          <div class="step__ring"></div>
+          <span class="step__number">Step 03</span>
+          <h3 class="step__title">真题实战</h3>
+          <p class="step__desc">逐套刷完2024年6套真题，每道题配有详细解析和陷阱分析，吃透命题规律</p>
+        </div>
+
+        <div class="learning-path__step">
+          <div class="step__node"></div>
+          <div class="step__ring"></div>
+          <span class="step__number">Step 04</span>
+          <h3 class="step__title">考前冲刺</h3>
+          <p class="step__desc">高频词单+作文模板+战略卡，考前最后48小时高效抢分，调整心态迎战</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 5. Marquee Section                           -->
+  <!-- ============================================ -->
+  <section class="marquee-section section" id="marquee">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="heading-2">备考 <span class="gradient-text">关键词</span></h2>
+        <p class="body-text">掌握这些核心技巧，让你的备考效率翻倍</p>
+      </div>
+    </div>
+
+    <!-- Row 1: Forward -->
+    <div class="marquee">
+      <div class="marquee__track">
+        <div class="marquee__item">
+          <span class="marquee__item-icon">🔊</span> 精听训练
+        </div>
+        <div class="marquee__item">
+          <span class="marquee__item-icon">📖</span> 快速阅读
+        </div>
+        <div class="marquee__item">
+          <span class="marquee__item-icon">📝</span> 作文模板
+        </div>
+        <div class="marquee__item">
+          <span class="marquee__item-icon">🌐</span> 中英互译
+        </div>
+        <div class="marquee__item">
+          <span class="marquee__item-icon">📋</span> 真题精练
+        </div>
+        <div class="marquee__item">
+          <span class="marquee__item-icon">🎯</span> 高频词汇
+        </div>
+        <div class="marquee__item">
+          <span class="marquee__item-icon">⏱</span> 时间管理
+        </div>
+        <div class="marquee__item">
+          <span class="marquee__item-icon">💡</span> 解题技巧
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 2: Reverse (visual variety) -->
+    <div class="marquee marquee--reverse" style="margin-top: 16px;">
+      <div class="marquee__track" style="animation-direction: reverse;">
+        <div class="marquee__item">
+          <span class="marquee__item-icon">🔥</span> 考前冲刺
+        </div>
+        <div class="marquee__item">
+          <span class="marquee__item-icon">📊</span> 成绩分析
+        </div>
+        <div class="marquee__item">
+          <span class="marquee__item-icon">🧠</span> 记忆曲线
+        </div>
+        <div class="marquee__item">
+          <span class="marquee__item-icon">🎵</span> 听力变速
+        </div>
+        <div class="marquee__item">
+          <span class="marquee__item-icon">📚</span> 词汇积累
+        </div>
+        <div class="marquee__item">
+          <span class="marquee__item-icon">✍️</span> 写作批改
+        </div>
+        <div class="marquee__item">
+          <span class="marquee__item-icon">🏆</span> 模拟排名
+        </div>
+        <div class="marquee__item">
+          <span class="marquee__item-icon">💪</span> 每日打卡
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 6. CTA Section                               -->
+  <!-- ============================================ -->
+  <section class="cta-section" id="cta">
+    <div class="cta-section__content">
+      <h2>准备好开始你的四级之旅了吗？</h2>
+      <p>2024年最新真题已全部上线，现在就开启你的备考计划</p>
+      <a href="pages/zhenti.html" class="btn btn-magnetic">开始刷真题 →</a>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- Scripts                                     -->
+  <!-- ============================================ -->
+  <script src="js/main.js"></script>
+  <script src="js/parallax.js"></script>
+  <script src="js/counters.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

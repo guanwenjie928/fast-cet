@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 48" fill="none">
+  <!-- 闪电图标 -->
+  <path d="M14 26L24 6L20 20H28L18 42L21 26H14Z" fill="#FF5E4D" stroke="#FF5E4D" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Fast 文字 -->
+  <text x="34" y="32" font-family="'Inter', -apple-system, sans-serif" font-weight="800" font-size="24" fill="#FF5E4D">Fast</text>
+  <!-- CET 文字 -->
+  <text x="96" y="32" font-family="'Inter', -apple-system, sans-serif" font-weight="500" font-size="24" fill="#2D1A14">CET</text>
+</svg>

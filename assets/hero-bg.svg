@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" fill="none">
+  <!-- 大圆渐变光斑 1 -->
+  <circle cx="200" cy="150" r="280" fill="#FF5E4D" opacity="0.08"/>
+  <!-- 大圆渐变光斑 2 -->
+  <circle cx="1200" cy="600" r="350" fill="#FF2D78" opacity="0.06"/>
+  <!-- 大圆渐变光斑 3 -->
+  <circle cx="700" cy="400" r="200" fill="#FFB84D" opacity="0.07"/>
+  <!-- 装饰小圆 1 -->
+  <circle cx="350" cy="700" r="40" fill="#FF5E4D" opacity="0.1"/>
+  <!-- 装饰小圆 2 -->
+  <circle cx="1100" cy="200" r="60" fill="#FF2D78" opacity="0.08"/>
+  <!-- 装饰小圆 3 -->
+  <circle cx="900" cy="100" r="30" fill="#FFB84D" opacity="0.12"/>
+  <!-- 装饰圆环 -->
+  <circle cx="600" cy="250" r="80" stroke="#FF5E4D" stroke-width="1.5" opacity="0.12"/>
+  <circle cx="850" cy="650" r="50" stroke="#FF2D78" stroke-width="1.5" opacity="0.1"/>
+  <!-- 网格点阵 -->
+  <pattern id="dots" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+    <circle cx="30" cy="30" r="1.5" fill="#FF5E4D" opacity="0.15"/>
+  </pattern>
+  <rect width="1440" height="900" fill="url(#dots)"/>
+</svg>

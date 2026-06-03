@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>阅读理解 — Fast CET</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/content.css">
+  <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+</head>
+<body>
+  <main class="content-page container">
+    <div class="breadcrumb">
+      <a href="../index.html">首页</a>
+      <span class="breadcrumb__sep">/</span>
+      <span class="breadcrumb__current">阅读理解</span>
+    </div>
+    <header class="page-header">
+      <h1>阅读理解</h1>
+      <p>涵盖选词填空、长篇阅读、仔细阅读三大题型，配套全文翻译与逐题精解，帮你突破阅读瓶颈</p>
+    </header>
+    <div class="filter-tags" id="filterTags">
+      <button class="filter-tag is-active" data-filter="all">全部</button>
+      <button class="filter-tag" data-filter="wordBank">选词填空</button>
+      <button class="filter-tag" data-filter="longPassage">长篇阅读</button>
+      <button class="filter-tag" data-filter="inDepth">仔细阅读</button>
+    </div>
+    <div class="question-list" id="questionList">
+      <div class="skeleton" style="height:200px"></div>
+      <div class="skeleton" style="height:200px"></div>
+      <div class="skeleton" style="height:200px"></div>
+    </div>
+  </main>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/data-loader.js"></script>
+  <script src="../js/exam-renderer.js"></script>
+  <script src="../js/filter.js"></script>
+  <script src="../js/content-animations.js"></script>
+  <script>
+    initApp();
+
+    async function loadReadingBank() {
+      const container = document.getElementById('questionList');
+      const data = await DataLoader.loadQuestionBank('reading');
+      if (!data || !data.items) {
+        container.innerHTML = '<p class="empty-state">暂无阅读练习数据</p>';
+        return;
+      }
+      container.innerHTML = '';
+      data.items.forEach((item, i) => {
+        const card = document.createElement('div');
+        card.className = 'question-card filter-item';
+        card.setAttribute('data-category', item.category || 'wordBank');
+
+        const difficultyStars = '★'.repeat(item.difficulty || 3) + '☆'.repeat(5 - (item.difficulty || 3));
+        const categoryLabel = { wordBank: '选词填空', longPassage: '长篇阅读', inDepth: '仔细阅读' }[item.category] || item.category;
+
+        card.innerHTML = `
+          <div class="question-card__header">
+            <span class="question-card__badge">${categoryLabel}</span>
+            <span class="question-card__difficulty" title="难度 ${item.difficulty || 3}/5">${difficultyStars}</span>
+          </div>
+          <div class="question-card__body">
+            <p class="question-card__stem">${item.title || '阅读理解 ' + (i + 1)}</p>
+            <p class="question-card__passage" style="color:var(--color-text-secondary);font-size:0.875rem;margin-top:8px;line-height:1.8;">
+              ${item.passage ? item.passage.substring(0, 120) + '...' : '点击展开查看完整文章'}
+            </p>
+          </div>
+          <div class="question-card__footer">
+            <span class="question-card__meta">共 ${item.questions ? item.questions.length : 0} 题</span>
+            <button class="btn-ghost question-card__action" onclick="this.closest('.question-card').querySelector('.question-card__detail').classList.toggle('is-open')">
+              展开题目 <span class="link-arrow">→</span>
+            </button>
+          </div>
+          <div class="question-card__detail" style="display:none;margin-top:16px;padding-top:16px;border-top:1px solid var(--color-border);">
+            ${item.questions ? item.questions.map((q, qi) => `
+              <div class="question-item" style="margin-bottom:16px;">
+                <p class="question-item__stem" style="font-weight:600;margin-bottom:8px;">${qi + 1}. ${q.stem}</p>
+                <div class="options-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+                  ${q.options ? q.options.map((opt, oi) => `
+                    <span class="option-item" style="padding:8px 12px;background:var(--glass-bg);border:1px solid var(--color-border);border-radius:var(--radius-sm);font-size:0.875rem;">
+                      ${String.fromCharCode(65 + oi)}. ${opt}
+                    </span>
+                  `).join('') : ''}
+                </div>
+              </div>
+            `).join('') : ''}
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    loadReadingBank().then(() => {
+      Filter.init('filterTags', 'questionList', { filterAttr: 'data-category', itemSelector: '.question-card' });
+      ContentAnimations.init({ filterContainerId: 'filterTags', cardSelector: '.question-card' });
+    });
+  </script>
+</body>
+</html>

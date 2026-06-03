@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>听力理解 — Fast CET</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/content.css">
+  <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+</head>
+<body>
+  <main class="content-page container">
+    <div class="breadcrumb">
+      <a href="../index.html">首页</a>
+      <span class="breadcrumb__sep">/</span>
+      <span class="breadcrumb__current">听力理解</span>
+    </div>
+    <header class="page-header">
+      <h1>听力理解</h1>
+      <p>涵盖短新闻、长对话、短文理解三大题型，配套高清音频与逐题解析，帮你攻克听力难关</p>
+    </header>
+    <div class="filter-tags" id="filterTags">
+      <button class="filter-tag is-active" data-filter="all">全部</button>
+      <button class="filter-tag" data-filter="news">短新闻</button>
+      <button class="filter-tag" data-filter="longConversation">长对话</button>
+      <button class="filter-tag" data-filter="passage">短文理解</button>
+    </div>
+    <div class="question-list" id="questionList">
+      <div class="skeleton" style="height:160px"></div>
+      <div class="skeleton" style="height:160px"></div>
+      <div class="skeleton" style="height:160px"></div>
+    </div>
+  </main>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/data-loader.js"></script>
+  <script src="../js/exam-renderer.js"></script>
+  <script src="../js/filter.js"></script>
+  <script src="../js/audio-player.js"></script>
+  <script src="../js/content-animations.js"></script>
+  <script>
+    initApp();
+
+    async function loadListeningBank() {
+      const container = document.getElementById('questionList');
+      const data = await DataLoader.loadQuestionBank('listening');
+      if (!data || !data.items) {
+        container.innerHTML = '<p class="empty-state">暂无听力练习数据</p>';
+        return;
+      }
+      container.innerHTML = '';
+      data.items.forEach((item, i) => {
+        const card = document.createElement('div');
+        card.className = 'question-card filter-item';
+        card.setAttribute('data-category', item.category || 'news');
+
+        const difficultyStars = '★'.repeat(item.difficulty) + '☆'.repeat(5 - item.difficulty);
+        const categoryLabel = { news: '短新闻', longConversation: '长对话', passage: '短文理解' }[item.category] || item.category;
+
+        card.innerHTML = `
+          <div class="question-card__header">
+            <span class="question-card__badge">${categoryLabel}</span>
+            <span class="question-card__difficulty" title="难度 ${item.difficulty}/5">${difficultyStars}</span>
+          </div>
+          <div class="question-card__body">
+            <p class="question-card__stem">${item.title || '听力理解 ' + (i + 1)}</p>
+            <p class="question-card__transcript" style="color:var(--color-text-secondary);font-size:0.875rem;margin-top:8px;">${item.transcript ? item.transcript.substring(0, 80) + '...' : '点击播放音频开始练习'}</p>
+          </div>
+          <div class="question-card__footer">
+            <span class="question-card__meta">共 ${item.questions ? item.questions.length : 0} 题</span>
+            <button class="btn-ghost question-card__action" onclick="this.closest('.question-card').querySelector('.question-card__detail').classList.toggle('is-open')">
+              展开题目 <span class="link-arrow">→</span>
+            </button>
+          </div>
+          <div class="question-card__detail" style="display:none;margin-top:16px;padding-top:16px;border-top:1px solid var(--color-border);">
+            ${item.questions ? item.questions.map((q, qi) => `
+              <div class="question-item" style="margin-bottom:16px;">
+                <p class="question-item__stem" style="font-weight:600;margin-bottom:8px;">${qi + 1}. ${q.stem}</p>
+                <div class="options-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+                  ${q.options ? q.options.map((opt, oi) => `
+                    <span class="option-item" style="padding:8px 12px;background:var(--glass-bg);border:1px solid var(--color-border);border-radius:var(--radius-sm);font-size:0.875rem;">
+                      ${String.fromCharCode(65 + oi)}. ${opt}
+                    </span>
+                  `).join('') : ''}
+                </div>
+              </div>
+            `).join('') : ''}
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    loadListeningBank().then(() => {
+      Filter.init('filterTags', 'questionList', { filterAttr: 'data-category', itemSelector: '.question-card' });
+      ContentAnimations.init({ filterContainerId: 'filterTags', cardSelector: '.question-card' });
+    });
+  </script>
+</body>
+</html>

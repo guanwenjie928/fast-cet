@@ -1,0 +1,229 @@
+{
+  "type": "writing",
+  "title": "写作专项练习题库",
+  "description": "CET-4 写作专项训练，涵盖议论文、书信、图表作文、记叙文等常考题型。每道题包含写作要求、参考范文、写作要点和实用表达。",
+  "items": [
+    {
+      "id": "wb-001",
+      "category": "argumentation",
+      "difficulty": 2,
+      "topic": "Online Learning vs. Traditional Classroom Learning",
+      "direction": "Directions: For this part, you are allowed 30 minutes to write a short essay on the topic of Online Learning vs. Traditional Classroom Learning. You should write at least 120 words but no more than 180 words.",
+      "sampleEssay": "With the rapid development of technology, online learning has become increasingly popular in recent years. While some people argue that it will eventually replace traditional classroom learning, I believe both approaches have their unique advantages.\n\nOn the one hand, online learning offers unprecedented flexibility. Students can learn at their own pace, revisit difficult concepts multiple times, and access course materials anytime, anywhere. This is particularly beneficial for those with busy schedules or living in remote areas. On the other hand, traditional classroom learning provides face-to-face interaction, immediate feedback, and a structured environment that helps students stay disciplined.\n\nIn conclusion, rather than viewing online and traditional learning as competitors, we should see them as complementary tools. The ideal educational model would combine the flexibility of online resources with the personal engagement of classroom instruction, creating a blended learning experience that maximizes the benefits of both approaches.",
+      "keyPoints": [
+        "开头引出话题，表明已广泛存在并点明立场（两者各有优点）",
+        "第二段对比在线学习的灵活性和传统课堂的互动性",
+        "结论段提出两者互补的平衡观点",
+        "字数控制在120-180词范围内",
+        "使用过渡词 on the one hand / on the other hand / in conclusion"
+      ],
+      "usefulExpressions": [
+        "With the rapid development of... 随着...的快速发展",
+        "has become increasingly popular 变得越来越流行",
+        "On the one hand...On the other hand... 一方面...另一方面...",
+        "is particularly beneficial for... 对...特别有益",
+        "rather than...we should... 与其...不如..."
+      ]
+    },
+    {
+      "id": "wb-002",
+      "category": "argumentation",
+      "difficulty": 3,
+      "topic": "The Impact of Social Media on Interpersonal Relationships",
+      "direction": "Directions: For this part, you are allowed 30 minutes to write a short essay on the impact of social media on interpersonal relationships. You should give your opinion and support it with specific reasons and examples. Write at least 120 words but no more than 180 words.",
+      "sampleEssay": "Social media has fundamentally changed the way we interact with one another, and its impact on interpersonal relationships is both profound and complex.\n\nOn the positive side, social media enables us to stay connected with friends and family across great distances. We can share life moments instantly, maintain friendships that might otherwise fade, and even form new relationships with people who share our interests. However, the negative effects cannot be ignored. Many people spend so much time on social platforms that they neglect face-to-face interactions. Studies show that excessive social media use is linked to feelings of loneliness and decreased life satisfaction, as online connections often lack the depth of real-world relationships.\n\nIn my opinion, social media is a tool whose impact depends on how we use it. The key is to strike a healthy balance — using social media to enhance our real-world relationships rather than allowing it to replace them. We should always remember that a virtual hug can never replace a real one.",
+      "keyPoints": [
+        "开篇定调：影响深刻且复杂（profound and complex）",
+        "正面论述：跨越距离、维持友谊、结交新朋友",
+        "负面论述：忽视现实交往、孤独感增加",
+        "结论：工具论，关键在于平衡使用",
+        "结尾用比喻收束：虚拟拥抱vs真实拥抱"
+      ],
+      "usefulExpressions": [
+        "has fundamentally changed... 从根本上改变了...",
+        "the negative effects cannot be ignored 负面影响不容忽视",
+        "is linked to... 与...相关联",
+        "strike a healthy balance 取得健康的平衡",
+        "a virtual hug can never replace a real one 虚拟的拥抱永远无法取代真实的"
+      ]
+    },
+    {
+      "id": "wb-003",
+      "category": "letter",
+      "difficulty": 2,
+      "topic": "Letter of Suggestion to the University Library",
+      "direction": "Directions: For this part, you are allowed 30 minutes to write a letter to your university library to suggest improvements. You should introduce yourself, explain the problems you have noticed, and offer specific suggestions. Write at least 120 words but no more than 180 words.",
+      "sampleEssay": "Dear Librarian,\n\nI am a sophomore student majoring in English Literature, and I am writing to offer some suggestions for improving our university library, which I have been using regularly over the past two years.\n\nFirst, I have noticed that many popular reference books are often unavailable because the library only holds one or two copies. I suggest increasing the number of copies for high-demand titles, especially those listed on course syllabi. Second, the library closes at 9 p.m. on weekdays, which is too early for students who prefer studying late. Extending the opening hours until 11 p.m., at least during the exam season, would be greatly appreciated. Finally, some of the reading areas are poorly lit, making it difficult to read for extended periods. Better lighting would create a more comfortable environment.\n\nI sincerely hope you will consider these suggestions. Thank you for your time and attention to these matters. I look forward to seeing positive changes in our beloved library.\n\nYours faithfully,\nLi Hua",
+      "keyPoints": [
+        "书信格式完整：称呼、开场自我介绍、正文建议、结尾致谢、署名",
+        "三个建议层次清晰，各有First/Second/Finally引领",
+        "每条建议包含问题描述+具体改进方案",
+        "语气礼貌得体，使用sincerely hope / would be greatly appreciated",
+        "署名用Li Hua（CET-4书信写作惯例）"
+      ],
+      "usefulExpressions": [
+        "I am writing to offer some suggestions for... 我写信是为...提建议",
+        "I have noticed that... 我注意到...",
+        "I suggest... 我建议...",
+        "would be greatly appreciated 将不胜感激",
+        "Thank you for your time and attention to... 感谢您对...的时间和关注"
+      ]
+    },
+    {
+      "id": "wb-004",
+      "category": "letter",
+      "difficulty": 3,
+      "topic": "Letter of Application for a Volunteer Position",
+      "direction": "Directions: For this part, you are allowed 30 minutes to write an application letter for a volunteer teaching position in a rural area. You should state your qualifications, explain why you are interested, and describe what you can contribute. Write at least 120 words but no more than 180 words.",
+      "sampleEssay": "Dear Sir or Madam,\n\nI am writing to apply for the volunteer teaching position in rural areas, which was advertised on the university notice board last week. I am a junior student majoring in Education at Peking University.\n\nI believe I am well-suited for this position for several reasons. First, my academic background in education has equipped me with solid theoretical knowledge of teaching methods and classroom management. Second, I have gained practical experience through a one-semester internship at a local primary school, where I assisted in teaching English to fourth-grade students. Moreover, I grew up in a small village myself, so I deeply understand the challenges that rural students face and the importance of quality education in these areas.\n\nIf given this opportunity, I would dedicate myself to creating engaging lessons tailored to the students' needs and inspiring a love for learning. I would also be happy to organize extracurricular activities to enrich their school life.\n\nI look forward to hearing from you at your earliest convenience.\n\nYours sincerely,\nLi Hua",
+      "keyPoints": [
+        "说明信息来源（notice board）和申请职位",
+        "自我介绍：学校+专业+年级",
+        "三条资质论证：理论知识、实践经验、个人背景",
+        "承诺贡献：定制课程、激发兴趣、课外活动",
+        "结尾用look forward to...at your earliest convenience"
+      ],
+      "usefulExpressions": [
+        "I am writing to apply for... 我写信申请...",
+        "I believe I am well-suited for this position 我认为自己很适合这个职位",
+        "has equipped me with... 使我具备了...",
+        "If given this opportunity, I would... 如果获得这个机会，我将...",
+        "at your earliest convenience 方便时请尽早回复"
+      ]
+    },
+    {
+      "id": "wb-005",
+      "category": "chart",
+      "difficulty": 3,
+      "topic": "Changes in College Students' Spending Habits",
+      "direction": "Directions: For this part, you are allowed 30 minutes to write a short essay describing and commenting on the changes in college students' monthly spending habits between 2015 and 2025. You should write at least 120 words but no more than 180 words.",
+      "sampleEssay": "The chart illustrates the significant changes in college students' monthly spending patterns from 2015 to 2025. Overall, the total monthly expenditure has increased substantially, and the distribution of spending has shifted in notable ways.\n\nAs can be seen from the data, spending on food and daily necessities used to account for the largest proportion of students' budgets at 45% in 2015, but this figure dropped to 30% by 2025. In contrast, expenditure on online services, including entertainment subscriptions, food delivery, and ride-hailing, surged from 15% to 35% during the same period. Spending on books and study materials declined sharply from 25% to 10%, which may reflect the growing availability of digital learning resources. Meanwhile, the proportion allocated to clothing and personal items remained relatively stable at around 15%.\n\nThese changes reveal a broader transformation in how young people live and study. The rise of digital platforms has reshaped consumption habits, while the decline in spending on traditional learning materials suggests that education is becoming more digital. However, the decrease in book spending is a trend that deserves careful attention from educators.",
+      "keyPoints": [
+        "开篇概述：总花费增加 + 分布显著变化",
+        "数据描述：饮食从45%降至30%，在线服务从15%升至35%",
+        "趋势对比：书籍消费下降vs数字资源增长",
+        "使用in contrast / meanwhile / during the same period等对比连接",
+        "结尾评论：数字化趋势+对书籍消费下降的担忧"
+      ],
+      "usefulExpressions": [
+        "The chart illustrates... 图表展示了...",
+        "As can be seen from the data... 从数据可以看出...",
+        "used to account for... 过去占...",
+        "surged from...to... 从...猛增至...",
+        "These changes reveal a broader transformation in... 这些变化揭示了...的更广泛转变"
+      ]
+    },
+    {
+      "id": "wb-006",
+      "category": "chart",
+      "difficulty": 4,
+      "topic": "Employment Preferences of University Graduates",
+      "direction": "Directions: For this part, you are allowed 30 minutes to write a short essay based on the survey results about university graduates' employment preferences. You should describe the data and explain the reasons behind the trend. Write at least 120 words but no more than 180 words.",
+      "sampleEssay": "A recent survey on university graduates' employment preferences reveals a dramatic shift in career aspirations over the past decade. Three major trends stand out from the data.\n\nFirst, the proportion of graduates seeking employment in state-owned enterprises has dropped from 42% in 2015 to 25% in 2025. This decline can be attributed to the rise of more dynamic and high-paying opportunities in the private sector, especially in technology companies. Second, the percentage choosing to start their own businesses has tripled, rising from 8% to 24%. The booming entrepreneurial ecosystem, government support policies, and successful role models have all contributed to this trend. Third, a growing number of graduates — now 18%, up from 5% — prefer to pursue freelance careers or gig economy work, valuing flexibility and autonomy over traditional job security.\n\nThese trends reflect deeper changes in Chinese society. Young people today prioritize personal growth, work-life balance, and meaningful work over the 'iron rice bowl' mentality of previous generations. While this shift brings vitality to the economy, it also raises questions about long-term financial stability and social security for the new workforce.",
+      "keyPoints": [
+        "开篇点明调查主题和三大趋势",
+        "国有企业的下降：42%→25%，归因于私企机会",
+        "创业意愿的翻三倍增长：8%→24%",
+        "自由职业崭露头角：5%→18%",
+        "深层评论：代际价值观转变+提出质疑（金融稳定性）"
+      ],
+      "usefulExpressions": [
+        "reveals a dramatic shift in... 揭示了...的剧变",
+        "can be attributed to... 可归因于...",
+        "has tripled 增长了两倍",
+        "valuing...over... 看重...胜过...",
+        "raises questions about... 引发了关于...的疑问"
+      ]
+    },
+    {
+      "id": "wb-007",
+      "category": "argumentation",
+      "difficulty": 4,
+      "topic": "Should University Students Be Required to Take Physical Education Courses?",
+      "direction": "Directions: For this part, you are allowed 30 minutes to write a short essay discussing whether university students should be required to take physical education courses. You should explain both sides and give your own opinion. Write at least 120 words but no more than 180 words.",
+      "sampleEssay": "Whether university students should be required to take physical education courses has been a topic of much debate. In my view, while the arguments for making PE optional deserve consideration, the case for keeping it mandatory is ultimately stronger.\n\nThose who oppose compulsory PE argue that university students are adults who should have the freedom to manage their own time and health. Some students prefer independent exercise, and required classes may conflict with their academic schedules or personal fitness preferences. However, the evidence overwhelmingly supports mandatory PE programs. First, college students today face unprecedented levels of stress, anxiety, and sedentary lifestyles. Regular physical activity is proven to improve both mental health and cognitive performance. Second, many students would not exercise at all without the structure and accountability that required courses provide. Third, PE classes teach lifelong fitness skills and habits that students might not develop on their own.\n\nIn conclusion, while the autonomy argument has merit, the health benefits of mandatory PE are too significant to ignore. Universities should consider flexible options — such as allowing students to choose from yoga, swimming, or traditional sports — while maintaining the requirement itself.",
+      "keyPoints": [
+        "平衡引入话题，预告立场（支持保持必修）",
+        "让反方先发声：自主权、时间冲突、偏好差异",
+        "正方三连击：身心健康、强制性的必要性、终身习惯",
+        "however用作转折枢纽",
+        "折中结论：保持要求但增加选项"
+      ],
+      "usefulExpressions": [
+        "has been a topic of much debate 一直是热议话题",
+        "the case for...is ultimately stronger ...的论据最终更强",
+        "The evidence overwhelmingly supports... 证据压倒性地支持...",
+        "is proven to improve... 已被证明能改善...",
+        "while the autonomy argument has merit 虽然自主权的论点有道理"
+      ]
+    },
+    {
+      "id": "wb-008",
+      "category": "narrative",
+      "difficulty": 2,
+      "topic": "The Most Memorable Course I Have Taken",
+      "direction": "Directions: For this part, you are allowed 30 minutes to write a short essay about the most memorable course you have taken in university. You should describe what the course was about, why it impressed you, and what you learned from it. Write at least 120 words but no more than 180 words.",
+      "sampleEssay": "Among all the courses I have taken in university, the most memorable one is a public speaking class I enrolled in during my sophomore year. Initially, I took it only to fulfill a graduation requirement, but it turned out to be one of the most transformative experiences of my college life.\n\nWhat made this course special was the teaching approach. Instead of having us memorize speeches, the professor created a supportive environment where we could practice speaking in front of our classmates week after week. At first, my hands would tremble, and my voice would crack. But gradually, with constructive feedback and consistent practice, I gained confidence I never thought I could have. The professor once told me, \"Your voice matters — don't let fear silence it.\" That sentence has stayed with me ever since.\n\nBeyond public speaking skills, this course taught me that growth happens outside our comfort zones. The nervous freshman who could barely introduce herself is now the same person who volunteers to present group projects and speaks up in seminars. This course gave me more than a skill; it gave me the courage to be heard.",
+      "keyPoints": [
+        "开头点题+意外转折（为学分选修→改变人生的经历）",
+        "正文强调教学方法+渐进式成长过程",
+        "插入教授的原话增加感染力（直接引语）",
+        "从具体技能上升到人生哲理（成长在舒适区之外）",
+        "结尾前后对比呼应+情感升华"
+      ],
+      "usefulExpressions": [
+        "the most memorable...is... 最难忘的是...",
+        "it turned out to be... 结果证明它是...",
+        "What made...special was... 让...特别的是...",
+        "growth happens outside our comfort zones 成长发生在舒适区之外",
+        "gave me more than...it gave me... 给我的不只是...还给了我..."
+      ]
+    },
+    {
+      "id": "wb-009",
+      "category": "argumentation",
+      "difficulty": 5,
+      "topic": "The Role of Artificial Intelligence in the Future Job Market",
+      "direction": "Directions: For this part, you are allowed 30 minutes to write a short essay on the role of artificial intelligence in the future job market. You should discuss both the opportunities and challenges AI presents and give your opinion on how we should prepare. Write at least 120 words but no more than 180 words.",
+      "sampleEssay": "As artificial intelligence continues to advance at an astonishing pace, its implications for the job market have become a subject of intense concern and debate. While some fear massive job displacement, I believe AI will fundamentally reshape rather than simply eliminate employment.\n\nThere is no denying that certain routine and repetitive jobs will be automated, from data entry to basic customer service. This poses a genuine threat to workers whose skills are limited to such tasks. However, history suggests that technological revolutions create more jobs than they destroy. AI is expected to generate entirely new categories of employment — AI ethics specialists, prompt engineers, and human-AI collaboration designers, to name just a few. Moreover, by handling mundane tasks, AI can free workers to focus on what humans do best: creative thinking, emotional intelligence, and complex problem-solving.\n\nTo navigate this transition successfully, we must take proactive measures. Governments should invest in large-scale retraining programs, while universities need to update their curricula to emphasize skills that complement rather than compete with AI — critical thinking, adaptability, and interpersonal communication. The question is not whether AI will change work, but whether we will be ready when it does.",
+      "keyPoints": [
+        "高级引入：用astonishing pace / intense concern营造紧迫感",
+        "承认威胁（acknowledge the threat）再反驳，是高分议论文策略",
+        "历史类比（technological revolutions create more jobs）增强说服力",
+        "举例具体新兴职业，不空泛",
+        "结论上升至政策与教育的行动层面，展现深度思考",
+        "结尾反问句式增强力度"
+      ],
+      "usefulExpressions": [
+        "continues to advance at an astonishing pace 以惊人的速度持续发展",
+        "There is no denying that... 不可否认...",
+        "poses a genuine threat to... 对...构成真切威胁",
+        "history suggests that... 历史表明...",
+        "The question is not whether...but whether... 问题不在于是否...而在于是否..."
+      ]
+    },
+    {
+      "id": "wb-010",
+      "category": "practical",
+      "difficulty": 2,
+      "topic": "A Notice for a Campus English Speech Contest",
+      "direction": "Directions: For this part, you are allowed 30 minutes to write a notice to inform students about an upcoming English speech contest on campus. You should include the time, place, topic, eligibility, and how to register. Write at least 100 words but no more than 150 words.",
+      "sampleEssay": "NOTICE\n\nMay 15, 2025\n\nDear fellow students,\n\nWe are excited to announce that the annual Campus English Speech Contest will be held on Friday, June 20, 2025, in the University Auditorium, starting at 2:00 p.m.\n\nThe theme for this year's contest is \"Technology and Human Connection.\" Participants are expected to deliver a 3-to-5-minute prepared speech related to this theme, followed by a 2-minute impromptu Q&A session with the judges. The contest is open to all registered undergraduate students. \n\nPrizes include certificates, book vouchers worth up to 500 yuan, and the opportunity to represent our university at the Provincial English Speech Competition.\n\nStudents who wish to participate should register online at www.campus-contest.edu.cn by June 10, 2025. For further inquiries, please contact the Student Affairs Office at 8765-4321 or email us at speechcontest@university.edu.cn.\n\nDon't miss this opportunity to share your voice!\n\nStudent Union",
+      "keyPoints": [
+        "通知格式：NOTICE标题居中、发布日期、称呼、正文、署名",
+        "包含全部必需信息：时间、地点、主题、资格、报名方式",
+        "比赛流程清晰：3-5分钟有备演讲+2分钟即兴问答",
+        "奖项描述具体，增强吸引力",
+        "提供电话号码和邮箱两种联系方式",
+        "结尾用号召性语句（Don't miss this opportunity...）"
+      ],
+      "usefulExpressions": [
+        "We are excited to announce that... 我们激动地宣布...",
+        "starting at 2:00 p.m. 下午两点开始",
+        "is open to all registered... 对所有注册的...开放",
+        "For further inquiries, please contact... 如有疑问，请联系...",
+        "Don't miss this opportunity to... 不要错过这个机会来..."
+      ]
+    }
+  ]
+}

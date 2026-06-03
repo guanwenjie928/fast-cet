@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>段落翻译 — Fast CET</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/content.css">
+  <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+</head>
+<body>
+  <main class="content-page container">
+    <div class="breadcrumb">
+      <a href="../index.html">首页</a>
+      <span class="breadcrumb__sep">/</span>
+      <span class="breadcrumb__current">段落翻译</span>
+    </div>
+    <header class="page-header">
+      <h1>段落翻译</h1>
+      <p>涵盖社会、文化、科技、教育、经济、环境等常考话题，配套参考译文与翻译要点，帮你掌握汉译英技巧</p>
+    </header>
+    <div class="filter-tags" id="filterTags">
+      <button class="filter-tag is-active" data-filter="all">全部</button>
+      <button class="filter-tag" data-filter="society">社会</button>
+      <button class="filter-tag" data-filter="culture">文化</button>
+      <button class="filter-tag" data-filter="technology">科技</button>
+      <button class="filter-tag" data-filter="education">教育</button>
+      <button class="filter-tag" data-filter="economy">经济</button>
+      <button class="filter-tag" data-filter="environment">环境</button>
+    </div>
+    <div class="question-list" id="questionList">
+      <div class="skeleton" style="height:200px"></div>
+      <div class="skeleton" style="height:200px"></div>
+      <div class="skeleton" style="height:200px"></div>
+    </div>
+  </main>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/data-loader.js"></script>
+  <script src="../js/exam-renderer.js"></script>
+  <script src="../js/filter.js"></script>
+  <script src="../js/content-animations.js"></script>
+  <script>
+    initApp();
+
+    async function loadTranslationBank() {
+      const container = document.getElementById('questionList');
+      const data = await DataLoader.loadQuestionBank('translation');
+      if (!data || !data.items) {
+        container.innerHTML = '<p class="empty-state">暂无翻译练习数据</p>';
+        return;
+      }
+      container.innerHTML = '';
+      data.items.forEach((item, i) => {
+        const card = document.createElement('div');
+        card.className = 'question-card filter-item';
+        card.setAttribute('data-category', item.category || 'society');
+
+        const difficultyStars = '★'.repeat(item.difficulty || 3) + '☆'.repeat(5 - (item.difficulty || 3));
+        const categoryLabel = {
+          society: '社会', culture: '文化', technology: '科技',
+          education: '教育', economy: '经济', environment: '环境'
+        }[item.category] || item.category;
+
+        card.innerHTML = `
+          <div class="question-card__header">
+            <span class="question-card__badge">${categoryLabel}</span>
+            <span class="question-card__difficulty" title="难度 ${item.difficulty || 3}/5">${difficultyStars}</span>
+          </div>
+          <div class="question-card__body">
+            <div class="translation-source" style="background:var(--glass-bg);border:1px solid var(--color-border);border-radius:var(--radius-sm);padding:16px;margin-bottom:12px;font-size:1.05rem;line-height:2;border-left:3px solid var(--color-primary);">
+              ${item.chineseText || '暂无原文'}
+            </div>
+            <div class="translation-reference" style="display:none;background:rgba(255,94,77,0.04);border:1px solid var(--color-border);border-radius:var(--radius-sm);padding:16px;font-size:0.95rem;line-height:2;color:var(--color-text-secondary);">
+              <p style="font-weight:600;color:var(--color-primary);margin-bottom:8px;">参考译文</p>
+              ${item.referenceTranslation || '暂无参考译文'}
+            </div>
+          </div>
+          <div class="question-card__footer">
+            <span class="question-card__meta">难度 ${item.difficulty || 3}/5</span>
+            <button class="btn-ghost question-card__action translation-toggle" onclick="
+              const ref = this.closest('.question-card').querySelector('.translation-reference');
+              const isHidden = ref.style.display === 'none';
+              ref.style.display = isHidden ? 'block' : 'none';
+              this.innerHTML = isHidden ? '隐藏译文 <span class=\"link-arrow\">↑</span>' : '查看译文 <span class=\"link-arrow\">→</span>';
+              if (isHidden) {
+                gsap.fromTo(ref, {opacity:0, y:-10}, {opacity:1, y:0, duration:0.4, ease:'power2.out'});
+              }
+            ">
+              查看译文 <span class="link-arrow">→</span>
+            </button>
+          </div>
+          <div class="question-card__detail" style="display:none;margin-top:16px;padding-top:16px;border-top:1px solid var(--color-border);">
+            <p style="font-weight:600;margin-bottom:10px;color:var(--color-primary);">翻译要点</p>
+            <ul style="padding-left:20px;line-height:2.2;color:var(--color-text-secondary);">
+              ${item.keyPoints ? item.keyPoints.map(kp => `<li>${kp}</li>`).join('') : '<li>暂无要点</li>'}
+            </ul>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    loadTranslationBank().then(() => {
+      Filter.init('filterTags', 'questionList', { filterAttr: 'data-category', itemSelector: '.question-card' });
+      ContentAnimations.init({ filterContainerId: 'filterTags', cardSelector: '.question-card' });
+    });
+  </script>
+</body>
+</html>

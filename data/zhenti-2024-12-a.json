@@ -1,0 +1,302 @@
+{
+  "meta": {
+    "id": "cet4-2024-12-a",
+    "year": 2024,
+    "month": 12,
+    "set": "A",
+    "title": "2024年12月大学英语四级真题（卷一）",
+    "totalTime": 125,
+    "totalScore": 710
+  },
+  "sections": {
+    "writing": {
+      "title": "作文",
+      "time": 30,
+      "score": 106.5,
+      "direction": "Directions: For this part, you are allowed 30 minutes to write an essay on the impact of short video platforms on college students. You should write at least 120 words but no more than 180 words.",
+      "topic": "Suppose you are asked to give your opinion on how short video platforms (such as TikTok/Douyin) affect college students' study habits and daily life. Write an essay to express your views.",
+      "sampleEssay": "In recent years, short video platforms have become an integral part of college students' daily lives. While these platforms offer entertainment and even educational content, their impact on students' study habits deserves careful examination.\n\nOn the one hand, short video platforms can serve as valuable learning tools. Many educators and experts share knowledge through concise videos, making complex concepts more accessible. Students can learn English expressions, scientific principles, and practical skills in just a few minutes.\n\nOn the other hand, the addictive nature of these platforms poses significant challenges. The algorithm-driven content recommendation system is designed to maximize user engagement, often leading students to spend hours scrolling mindlessly. This not only reduces study time but also fragments attention spans, making it harder to concentrate on academic tasks requiring sustained focus.\n\nIn my opinion, the key lies in self-discipline and mindful usage. College students should set clear boundaries for short video consumption and prioritize their academic responsibilities. Universities could also offer guidance on digital literacy to help students navigate the digital landscape more effectively.",
+      "keyPoints": [
+        "阐述短视频平台在大学生中的普及现状",
+        "分析短视频对学习习惯的正面影响（知识获取便捷）",
+        "分析短视频对学习习惯的负面影响（注意力分散、时间浪费）",
+        "提出个人观点和建议（自律+数字素养教育）"
+      ]
+    },
+    "listening": {
+      "title": "听力理解",
+      "time": 25,
+      "score": 248.5,
+      "sections": {
+        "newsReports": [
+          {
+            "id": "l1",
+            "type": "news",
+            "audioSrc": "assets/audio/2024-12-a/l1.mp3",
+            "transcript": "The United Nations Educational, Scientific and Cultural Organization (UNESCO) has added 27 new sites to its World Heritage List this year. Among the most notable additions is an ancient tea forest in southwest China's Yunnan Province, recognized for its centuries-old tea cultivation traditions. The cultural landscape features traditional villages and ancient tea plantations that date back over a thousand years. UNESCO officials said the designation highlights the harmonious relationship between humans and nature. The listing is expected to boost conservation efforts and sustainable tourism in the region.",
+            "questions": [
+              {
+                "id": "q1",
+                "stem": "What is the news report mainly about?",
+                "options": ["A. UNESCO's new World Heritage Site in Yunnan", "B. Tea production techniques in China", "C. Tourism development in southwest China", "D. Ancient village preservation methods"],
+                "answer": "A"
+              },
+              {
+                "id": "q2",
+                "stem": "According to UNESCO, what does the new listing demonstrate?",
+                "options": ["A. The economic value of tea exports", "B. The harmony between humans and nature", "C. The architectural beauty of ancient villages", "D. The diversity of Chinese agricultural products"],
+                "answer": "B"
+              }
+            ]
+          },
+          {
+            "id": "l2",
+            "type": "news",
+            "audioSrc": "assets/audio/2024-12-a/l2.mp3",
+            "transcript": "A groundbreaking study published in Nature Climate Change suggests that urban green spaces can reduce city temperatures by up to 4 degrees Celsius during heatwaves. Researchers from the University of Melbourne analyzed data from 140 cities worldwide and found that parks, street trees, and green roofs play a crucial role in mitigating the urban heat island effect. The study recommends that cities aim for at least 30% green coverage to achieve meaningful cooling benefits. Several European cities, including Copenhagen and Amsterdam, have already incorporated these findings into their urban planning strategies.",
+            "questions": [
+              {
+                "id": "q3",
+                "stem": "How much can urban green spaces reduce city temperatures according to the study?",
+                "options": ["A. Up to 2 degrees Celsius", "B. Up to 4 degrees Celsius", "C. Up to 6 degrees Celsius", "D. Up to 8 degrees Celsius"],
+                "answer": "B"
+              },
+              {
+                "id": "q4",
+                "stem": "What green coverage percentage does the study recommend for cities?",
+                "options": ["A. At least 20%", "B. At least 25%", "C. At least 30%", "D. At least 40%"],
+                "answer": "C"
+              }
+            ]
+          }
+        ],
+        "longConversations": [
+          {
+            "id": "lc1",
+            "type": "longConversation",
+            "audioSrc": "assets/audio/2024-12-a/lc1.mp3",
+            "transcript": "M: Hey Sarah, have you decided on your internship for next semester?\nW: Not yet, Tom. I'm torn between a marketing agency and a tech startup. The agency offers a structured program with mentorship, but the startup seems more exciting and hands-on.\nM: I was in a similar situation last year. I chose the startup and never regretted it. You get to wear multiple hats and learn so much more.\nW: That's what attracts me. But I'm worried about the lack of guidance. At a startup, you're often expected to figure things out on your own.\nM: True, but that's also where the growth happens. Plus, the connections you make at a startup can be really valuable. The founders often have extensive industry networks.\nW: You make a good point. What about the workload though? I've heard startups can be pretty demanding.\nM: It varies, but yes, you'll probably work harder. The upside is that your contribution is visible and impactful. At a big company, you might just be a small cog in a large machine.",
+            "questions": [
+              {
+                "id": "q5",
+                "stem": "What is the woman trying to decide?",
+                "options": ["A. Which courses to take next semester", "B. Where to do her internship", "C. Whether to start her own business", "D. Which university to apply to"],
+                "answer": "B"
+              },
+              {
+                "id": "q6",
+                "stem": "What does the man say about his startup experience?",
+                "options": ["A. He regretted choosing it", "B. He found it too demanding", "C. He never regretted his choice", "D. He wished he had more guidance"],
+                "answer": "C"
+              },
+              {
+                "id": "q7",
+                "stem": "According to the man, what is an advantage of working at a startup?",
+                "options": ["A. Higher salary and benefits", "B. Flexible working hours", "C. Visible and impactful contributions", "D. Comprehensive training programs"],
+                "answer": "C"
+              }
+            ]
+          },
+          {
+            "id": "lc2",
+            "type": "longConversation",
+            "audioSrc": "assets/audio/2024-12-a/lc2.mp3",
+            "transcript": "W: Professor Li, I'm struggling with my research paper on consumer behavior. Could you give me some advice?\nM: Of course, Lily. What specific aspect are you having trouble with?\nW: I have collected a lot of survey data, but I'm not sure how to organize my findings into a coherent argument.\nM: That's a common challenge. Start by identifying the key patterns in your data. What surprised you the most? What trends emerged consistently?\nW: Well, I found that younger consumers care more about sustainability than price, which contradicts some earlier studies.\nM: That's exactly your angle! Use that contradiction as the backbone of your paper. Present the established view first, then introduce your findings as a challenge to that view.\nW: That makes sense. What about the structure?\nM: Follow the standard IMRAD format — Introduction, Methods, Results, and Discussion. But in the Discussion section, really emphasize the implications of your findings. Don't just describe what you found; explain why it matters.\nW: Thank you, Professor. One more question — how should I address the limitations of my study?\nM: Be honest and straightforward. Acknowledge sample size constraints or geographic limitations. It shows academic integrity and helps future researchers build on your work.",
+            "questions": [
+              {
+                "id": "q8",
+                "stem": "What problem does the woman have with her research paper?",
+                "options": ["A. She lacks sufficient survey data", "B. She doesn't know how to organize her findings", "C. She hasn't chosen a research topic yet", "D. She disagrees with her professor's suggestions"],
+                "answer": "B"
+              },
+              {
+                "id": "q9",
+                "stem": "What surprising finding does the woman mention?",
+                "options": ["A. Price is the main factor for most consumers", "B. Older consumers prefer sustainable products", "C. Younger consumers value sustainability over price", "D. Sustainability has no impact on purchasing decisions"],
+                "answer": "C"
+              },
+              {
+                "id": "q10",
+                "stem": "What does Professor Li suggest about discussing study limitations?",
+                "options": ["A. Avoid mentioning them to strengthen the paper", "B. Be honest and acknowledge them openly", "C. Only mention them in the appendix", "D. Focus on positive aspects instead"],
+                "answer": "B"
+              }
+            ]
+          }
+        ],
+        "passages": [
+          {
+            "id": "p1",
+            "type": "passage",
+            "audioSrc": "assets/audio/2024-12-a/p1.mp3",
+            "transcript": "Emotional intelligence, often abbreviated as EQ, has emerged as a critical factor in professional success. Unlike IQ, which measures cognitive abilities such as logical reasoning and problem-solving, EQ refers to the capacity to recognize, understand, and manage one's own emotions as well as the emotions of others. Research conducted by TalentSmart found that EQ accounts for 58% of job performance across all types of positions. Furthermore, 90% of top performers in the workplace demonstrate high emotional intelligence. The good news is that unlike IQ, which remains relatively stable throughout life, emotional intelligence can be developed and improved with practice. Key components of EQ include self-awareness, self-regulation, motivation, empathy, and social skills. Organizations are increasingly incorporating EQ training into their leadership development programs. A study by the Harvard Business Review revealed that companies investing in emotional intelligence training saw an average return of 400% on their investment through improved productivity and reduced turnover.",
+            "questions": [
+              {
+                "id": "q11",
+                "stem": "According to the passage, what percentage of job performance is attributed to EQ?",
+                "options": ["A. 48%", "B. 58%", "C. 68%", "D. 90%"],
+                "answer": "B"
+              },
+              {
+                "id": "q12",
+                "stem": "How does EQ differ from IQ according to the passage?",
+                "options": ["A. EQ is more important than IQ", "B. EQ can be improved with practice", "C. EQ is easier to measure than IQ", "D. EQ decreases with age"],
+                "answer": "B"
+              },
+              {
+                "id": "q13",
+                "stem": "What return on investment did companies see from EQ training?",
+                "options": ["A. 200%", "B. 300%", "C. 400%", "D. 500%"],
+                "answer": "C"
+              }
+            ]
+          },
+          {
+            "id": "p2",
+            "type": "passage",
+            "audioSrc": "assets/audio/2024-12-a/p2.mp3",
+            "transcript": "The concept of a four-day workweek has gained significant traction in recent years, with several countries and companies experimenting with reduced working hours. Iceland conducted one of the largest trials between 2015 and 2019, involving roughly 2,500 workers. The results were remarkable: productivity either remained the same or improved in the majority of workplaces, while worker well-being increased dramatically across indicators such as perceived stress, burnout, and work-life balance. Similar trials in the UK, involving 61 companies and nearly 3,000 employees, found that company revenue stayed broadly the same over the trial period, while 39% of employees reported being less stressed. However, critics argue that a four-day workweek may not be feasible for all industries, particularly those requiring round-the-clock service such as healthcare and retail. Proponents counter that with proper scheduling and technological support, even these sectors can implement flexible arrangements. The key insight from all trials is that working fewer hours forces organizations to eliminate inefficiencies, reduce meeting times, and focus on what truly matters.",
+            "questions": [
+              {
+                "id": "q14",
+                "stem": "What did the Iceland trial reveal about worker productivity?",
+                "options": ["A. It decreased across all workplaces", "B. It remained the same or improved", "C. It improved only in technology companies", "D. It had no measurable change"],
+                "answer": "B"
+              },
+              {
+                "id": "q15",
+                "stem": "What concern do critics raise about the four-day workweek?",
+                "options": ["A. It reduces company revenue significantly", "B. It may not work for all industries", "C. It increases employee stress levels", "D. It requires too much government support"],
+                "answer": "B"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "reading": {
+      "title": "阅读理解",
+      "time": 40,
+      "score": 248.5,
+      "sections": {
+        "wordBank": {
+          "title": "选词填空",
+          "passage": "The rise of remote work has fundamentally (1)______ the way people think about their careers. No longer (2)______ to a specific geographic location, many professionals are choosing to relocate to smaller cities or rural areas where the cost of living is lower. This shift has significant (3)______ for urban economies, as major cities that once (4)______ on a steady inflow of young professionals may face declining tax revenues. At the same time, remote work is not without its (5)______. Many remote workers report feeling isolated from their colleagues and (6)______ from the company culture. Some companies have responded by adopting a (7)______ model, where employees split their time between home and office. The long-term (8)______ of this transformation remain to be seen, but one thing is clear: the traditional 9-to-5 office routine is (9)______ a thing of the past. Organizations must (10)______ to this new reality or risk losing top talent to more flexible competitors.",
+          "words": [
+            {"word": "transformed", "id": "A"},
+            {"word": "bound", "id": "B"},
+            {"word": "implications", "id": "C"},
+            {"word": "depended", "id": "D"},
+            {"word": "challenges", "id": "E"},
+            {"word": "disconnected", "id": "F"},
+            {"word": "hybrid", "id": "G"},
+            {"word": "effects", "id": "H"},
+            {"word": "increasingly", "id": "I"},
+            {"word": "adapt", "id": "J"},
+            {"word": "attached", "id": "K"},
+            {"word": "consequences", "id": "L"},
+            {"word": "benefits", "id": "M"},
+            {"word": "rarely", "id": "N"},
+            {"word": "adjust", "id": "O"}
+          ],
+          "answers": {
+            "1": "A",
+            "2": "B",
+            "3": "C",
+            "4": "D",
+            "5": "E",
+            "6": "F",
+            "7": "G",
+            "8": "H",
+            "9": "I",
+            "10": "J"
+          }
+        },
+        "longPassage": {
+          "title": "长篇阅读",
+          "passage": "The Evolution of Artificial Intelligence in Healthcare\n\nA. Artificial intelligence has been making steady inroads into healthcare over the past decade. From diagnostic algorithms that can detect diseases in medical images to predictive models that forecast patient outcomes, AI applications are becoming increasingly sophisticated and widespread.\n\nB. One of the most promising areas of AI in healthcare is medical imaging. Deep learning algorithms have demonstrated remarkable accuracy in detecting conditions such as lung cancer, diabetic retinopathy, and skin cancer from X-rays, CT scans, and photographs. In some studies, these algorithms have matched or even exceeded the diagnostic accuracy of experienced radiologists.\n\nC. However, the integration of AI into clinical practice faces significant hurdles. Data privacy concerns, regulatory requirements, and the need for extensive validation studies have slowed adoption. Moreover, many healthcare professionals remain skeptical about relying on machine-generated diagnoses without understanding how the algorithms reach their conclusions — the so-called 'black box' problem.\n\nD. Another critical application of AI in healthcare is drug discovery. Traditional drug development is a lengthy and expensive process, often taking more than a decade and costing billions of dollars. AI can accelerate this process by analyzing vast databases of molecular structures and predicting which compounds are most likely to be effective against specific diseases.\n\nE. During the COVID-19 pandemic, AI played a crucial role in tracking the spread of the virus, predicting hotspots, and accelerating vaccine development. This real-world test demonstrated both the potential and the limitations of AI in managing public health crises.\n\nF. The use of AI-powered chatbots and virtual health assistants has also expanded significantly. These tools can triage patients, answer common health questions, and provide medication reminders, thereby reducing the burden on healthcare systems and improving patient engagement.\n\nG. Looking ahead, the future of AI in healthcare will likely involve more personalized approaches. By analyzing an individual's genetic profile, lifestyle data, and medical history, AI systems could recommend tailored prevention strategies and treatment plans, ushering in an era of truly personalized medicine.",
+          "paragraphs": [
+            {"id": "A", "summary": "Overview of AI's growing role in healthcare over the past decade"},
+            {"id": "B", "summary": "AI's accuracy in medical imaging, sometimes exceeding human radiologists"},
+            {"id": "C", "summary": "Barriers to AI adoption: privacy, regulation, and the 'black box' problem"},
+            {"id": "D", "summary": "AI's application in accelerating drug discovery and development"},
+            {"id": "E", "summary": "AI's real-world test during the COVID-19 pandemic"},
+            {"id": "F", "summary": "Growth of AI chatbots and virtual assistants in patient care"},
+            {"id": "G", "summary": "Future direction: personalized medicine through AI analysis"}
+          ],
+          "questions": [
+            {"id": "q16", "stem": "AI algorithms have shown accuracy comparable to or better than experienced doctors in analyzing medical images.", "answer": "B"},
+            {"id": "q17", "stem": "The drug development process traditionally takes over ten years and costs billions of dollars.", "answer": "D"},
+            {"id": "q18", "stem": "Many doctors are unwilling to trust AI diagnoses because they cannot understand how the algorithms work.", "answer": "C"},
+            {"id": "q19", "stem": "AI could use individual genetic and lifestyle information to create customized treatment plans.", "answer": "G"},
+            {"id": "q20", "stem": "The COVID-19 pandemic served as a practical test for AI's capabilities in public health management.", "answer": "E"},
+            {"id": "q21", "stem": "Virtual health assistants can help reduce the workload on healthcare systems.", "answer": "F"},
+            {"id": "q22", "stem": "AI has been gradually entering the healthcare field for about ten years.", "answer": "A"}
+          ]
+        },
+        "inDepth": {
+          "title": "仔细阅读",
+          "passages": [
+            {
+              "id": "idp1",
+              "title": "The Psychology of Procrastination",
+              "content": "Procrastination is often misunderstood as simple laziness or poor time management. However, psychological research over the past two decades has revealed that procrastination is far more complex and deeply rooted in our emotional regulation systems.\n\nAccording to Dr. Timothy Pychyl, a leading researcher on procrastination, the behavior is primarily an emotional response rather than a time management problem. When faced with a task that triggers negative emotions — such as anxiety, boredom, or self-doubt — people procrastinate to avoid those uncomfortable feelings. The short-term relief provided by switching to a more pleasant activity reinforces the behavior, creating a cycle that becomes increasingly difficult to break.\n\nNeuroimaging studies have shown that procrastinators exhibit different patterns of brain activity when contemplating future tasks. The amygdala, which processes emotions like fear and anxiety, tends to be more active in chronic procrastinators. Meanwhile, the prefrontal cortex, responsible for planning and impulse control, shows reduced connectivity with other brain regions involved in task initiation.\n\nThe consequences of chronic procrastination extend beyond missed deadlines. Studies have linked habitual procrastination to higher levels of stress, poorer physical health, and reduced life satisfaction. College students who procrastinate consistently earn lower grades and report higher levels of academic anxiety. In the workplace, procrastinators tend to have lower salaries and fewer career advancement opportunities.\n\nHowever, researchers emphasize that procrastination is not a fixed personality trait. Cognitive-behavioral interventions have proven effective in helping individuals overcome chronic procrastination. Key strategies include breaking large tasks into smaller, manageable components, setting specific rather than vague goals, and practicing self-compassion rather than self-criticism when setbacks occur. The most effective approach, according to Pychyl, is simply to take the first small step — what he calls 'the five-minute rule': commit to working on a task for just five minutes, after which the momentum often carries you forward.",
+              "questions": [
+                {
+                  "id": "q23",
+                  "stem": "According to the passage, procrastination is primarily a problem of:",
+                  "options": ["A. Poor time management skills", "B. Emotional regulation", "C. Lack of motivation", "D. Insufficient intelligence"],
+                  "answer": "B"
+                },
+                {
+                  "id": "q24",
+                  "stem": "What brain region is more active in chronic procrastinators according to neuroimaging studies?",
+                  "options": ["A. The prefrontal cortex", "B. The hippocampus", "C. The amygdala", "D. The cerebellum"],
+                  "answer": "C"
+                },
+                {
+                  "id": "q25",
+                  "stem": "What is the 'five-minute rule' mentioned in the passage?",
+                  "options": ["A. Taking a five-minute break every hour", "B. Committing to work on a task for just five minutes", "C. Completing tasks within five minutes", "D. Waiting five minutes before starting any task"],
+                  "answer": "B"
+                },
+                {
+                  "id": "q26",
+                  "stem": "The author suggests that effective strategies for overcoming procrastination include:",
+                  "options": ["A. Being more strict with oneself about deadlines", "B. Practicing self-compassion and breaking tasks into smaller parts", "C. Avoiding all tasks that trigger negative emotions", "D. Focusing on multiple tasks at once to stay engaged"],
+                  "answer": "B"
+                },
+                {
+                  "id": "q27",
+                  "stem": "What is the main purpose of this passage?",
+                  "options": ["A. To criticize people who procrastinate", "B. To explain the psychological mechanisms and solutions for procrastination", "C. To promote a specific time management system", "D. To compare different types of personality disorders"],
+                  "answer": "B"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "translation": {
+      "title": "翻译",
+      "time": 30,
+      "score": 106.5,
+      "direction": "Directions: For this part, you are allowed 30 minutes to translate a passage from Chinese into English.",
+      "chineseText": "近年来，中国的数字经济发展迅速，已经成为推动国民经济增长的重要引擎。据统计，2023年中国数字经济规模超过50万亿元，占国内生产总值的比重达到41.5%。电子商务、移动支付和共享经济等新业态蓬勃发展，深刻改变了人们的生活方式。越来越多的传统企业也开始进行数字化转型，利用大数据、人工智能等技术提高效率、降低成本。政府出台了一系列政策支持数字经济发展，包括建设数字基础设施、培育数字人才和完善相关法律法规。专家认为，中国的数字经济仍有巨大的增长潜力，未来将在推动高质量发展中发挥更加重要的作用。",
+      "referenceTranslation": "In recent years, China's digital economy has developed rapidly and has become an important engine driving national economic growth. According to statistics, in 2023, the scale of China's digital economy exceeded 50 trillion yuan, accounting for 41.5% of the GDP. New business forms such as e-commerce, mobile payment, and the sharing economy have flourished, profoundly changing people's lifestyles. An increasing number of traditional enterprises have also begun their digital transformation, using technologies such as big data and artificial intelligence to improve efficiency and reduce costs. The government has introduced a series of policies to support the development of the digital economy, including building digital infrastructure, cultivating digital talent, and improving relevant laws and regulations. Experts believe that China's digital economy still has enormous growth potential and will play an even more important role in promoting high-quality development in the future.",
+      "keyPoints": [
+        "数字经济 digital economy",
+        "国民经济增长 national economic growth",
+        "国内生产总值 GDP (Gross Domestic Product)",
+        "电子商务 e-commerce",
+        "移动支付 mobile payment",
+        "共享经济 sharing economy",
+        "数字化转型 digital transformation",
+        "大数据 big data",
+        "人工智能 artificial intelligence",
+        "高质量发展 high-quality development"
+      ]
+    }
+  }
+}

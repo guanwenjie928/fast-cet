@@ -1,0 +1,470 @@
+{
+  "meta": {
+    "id": "cet4-2024-12-c",
+    "year": 2024,
+    "month": 12,
+    "set": "C",
+    "title": "2024年12月大学英语四级真题（卷三）",
+    "totalTime": 125,
+    "totalScore": 710
+  },
+  "sections": {
+    "writing": {
+      "title": "作文",
+      "time": 30,
+      "score": 106.5,
+      "direction": "Directions: For this part, you are allowed 30 minutes to write an essay on the topic below. You should write at least 120 words but no more than 180 words.",
+      "topic": "The importance of learning a second language in a globalized world",
+      "sampleEssay": "In today's increasingly interconnected world, the ability to communicate in more than one language has become an invaluable asset. Learning a second language offers profound benefits that extend far beyond basic communication.\n\nFirst and foremost, bilingualism enhances cognitive abilities. Research has consistently shown that learning another language improves memory, problem-solving skills, and even delays the onset of dementia. The mental exercise of switching between languages strengthens the brain's executive functions.\n\nMoreover, from a career perspective, multilingual professionals enjoy a competitive edge in the global job market. Companies expanding internationally actively seek employees who can bridge cultural and linguistic gaps. Mastering a second language can open doors to opportunities that would otherwise remain closed.\n\nAdditionally, language learning fosters cross-cultural understanding. When we learn a language, we also absorb the customs, values, and perspectives embedded within it. This cultural empathy is essential in our diverse, globalized society.\n\nIn conclusion, investing time in learning a second language yields lifelong dividends—intellectually, professionally, and personally. It is not merely about memorizing vocabulary and grammar rules, but about expanding one's worldview.",
+      "keyPoints": [
+        "Cognitive benefits: improved memory and problem-solving abilities",
+        "Career advantages: global job market competitiveness",
+        "Cultural understanding and empathy development",
+        "Long-term personal and professional value"
+      ]
+    },
+    "listening": {
+      "title": "听力理解",
+      "time": 25,
+      "score": 248.5,
+      "sections": {
+        "newsReports": [
+          {
+            "id": "l1",
+            "type": "news",
+            "audioSrc": "assets/audio/2024-12-c/l1.mp3",
+            "transcript": "The International Olympic Committee announced on Monday that Brisbane, Australia will host the 2032 Summer Olympics, marking the third time the Games will be held in Australia. The decision was made during the IOC's 138th session in Tokyo. Brisbane's proposal focused heavily on sustainability, with 84 percent of venues either existing or temporary. The organizing committee has estimated the total cost at approximately 5 billion Australian dollars, significantly lower than recent Games. Brisbane was selected as the preferred candidate in February after a new selection process designed to reduce costs and simplify bidding. The IOC president praised Brisbane's climate-positive commitment and its plan to use the Games to drive long-term community benefits.",
+            "questions": [
+              {
+                "id": "q1",
+                "stem": "What is the news report mainly about?",
+                "options": [
+                  "A) The cancellation of the 2032 Olympics",
+                  "B) Brisbane being selected to host the 2032 Olympics",
+                  "C) Australia's withdrawal from the Olympic bidding",
+                  "D) The Olympic Games returning to Tokyo"
+                ],
+                "answer": "B"
+              },
+              {
+                "id": "q2",
+                "stem": "What feature of Brisbane's proposal was highlighted?",
+                "options": [
+                  "A) The largest budget in Olympic history",
+                  "B) All venues being newly constructed",
+                  "C) Environmental sustainability with mostly existing venues",
+                  "D) The shortest preparation time ever"
+                ],
+                "answer": "C"
+              }
+            ]
+          },
+          {
+            "id": "l2",
+            "type": "news",
+            "audioSrc": "assets/audio/2024-12-c/l2.mp3",
+            "transcript": "A groundbreaking study published in the journal Nature Medicine reveals that a simple blood test could detect Alzheimer's disease up to 15 years before symptoms appear. Researchers from Sweden's Karolinska Institute analyzed blood samples from over 50,000 individuals and identified specific protein markers that signal early neurological changes. The test, which measures levels of a protein called p-tau217, demonstrated 96 percent accuracy in predicting the disease. Currently, Alzheimer's is typically diagnosed only after significant cognitive decline has occurred. Experts say early detection could revolutionize treatment approaches, allowing interventions before irreversible brain damage takes place. The research team is now working on making the test widely available, with hopes it could become part of routine health screenings within five years.",
+            "questions": [
+              {
+                "id": "q3",
+                "stem": "How early can the blood test detect Alzheimer's disease?",
+                "options": [
+                  "A) 5 years before symptoms",
+                  "B) 10 years before symptoms",
+                  "C) 15 years before symptoms",
+                  "D) 20 years before symptoms"
+                ],
+                "answer": "C"
+              },
+              {
+                "id": "q4",
+                "stem": "What was the accuracy rate of the blood test mentioned in the report?",
+                "options": [
+                  "A) 86 percent",
+                  "B) 90 percent",
+                  "C) 96 percent",
+                  "D) 99 percent"
+                ],
+                "answer": "C"
+              }
+            ]
+          }
+        ],
+        "longConversations": [
+          {
+            "id": "lc1",
+            "type": "longConversation",
+            "audioSrc": "assets/audio/2024-12-c/lc1.mp3",
+            "transcript": "M: Hey Sarah, I heard you're organizing the campus volunteer fair next month. How's that going?\nW: It's been quite challenging, actually, Mark. We have over 40 organizations that want to participate, but we only have space for about 30 booths in the student center.\nM: Wow, that's a lot more interest than last year. Could you use the outdoor plaza as well?\nW: We considered that, but November weather is too unpredictable. The student activities office suggested we split the fair across two days instead.\nM: That's a creative solution. Would each day feature different organizations?\nW: Exactly. We're grouping them by cause: environmental and health-related organizations on Friday, and education and social justice groups on Saturday.\nM: That actually makes it easier for students too. They can focus on the causes they care about most.\nW: My thoughts exactly. The only concern is whether students will come back on the second day.\nM: You could offer a stamp collection activity—students who visit both days get entered into a raffle.\nW: That's brilliant, Mark! I'll definitely include that. We have some great prizes donated by local businesses.",
+            "questions": [
+              {
+                "id": "q5",
+                "stem": "What problem is the woman facing?",
+                "options": [
+                  "A) Not enough student volunteers",
+                  "B) More organizations than available booth space",
+                  "C) The volunteer fair was cancelled",
+                  "D) Bad weather ruined the outdoor event"
+                ],
+                "answer": "B"
+              },
+              {
+                "id": "q6",
+                "stem": "How did the student activities office suggest solving the problem?",
+                "options": [
+                  "A) Moving the fair to a larger venue",
+                  "B) Reducing the number of organizations",
+                  "C) Splitting the fair across two days",
+                  "D) Holding the fair entirely online"
+                ],
+                "answer": "C"
+              },
+              {
+                "id": "q7",
+                "stem": "What did Mark suggest to encourage attendance on both days?",
+                "options": [
+                  "A) Offering free food to all participants",
+                  "B) A stamp collection activity with a raffle prize",
+                  "C) Requiring attendance for course credits",
+                  "D) Sending email reminders to all students"
+                ],
+                "answer": "B"
+              }
+            ]
+          },
+          {
+            "id": "lc2",
+            "type": "longConversation",
+            "audioSrc": "assets/audio/2024-12-c/lc2.mp3",
+            "transcript": "W: Professor Chen, do you have a moment? I wanted to discuss my research proposal for the semester project.\nM: Of course, Lisa. I read through your draft proposal on sustainable urban transportation. It's an ambitious topic.\nW: Thank you. I'm particularly interested in how bike-sharing programs have transformed commuting patterns in medium-sized cities. But I'm worried the scope might be too broad.\nM: That's a valid concern. Rather than examining multiple cities superficially, I'd suggest focusing on two or three cities and doing a deep comparative analysis.\nW: That makes sense. I was thinking of looking at Portland, Oregon, and Hangzhou, China, since they both have well-established bike-sharing systems but very different urban layouts.\nM: Excellent choices. The cross-cultural comparison would add significant depth to your research. Have you identified your primary data sources?\nM: I've found municipal transportation reports and usage statistics from the bike-sharing companies themselves. I was also hoping to conduct some user surveys.\nW: Be careful with surveys—you'll need approval from the institutional review board before collecting any primary data from human subjects.\nW: Oh, I hadn't considered that. How long does the approval process usually take?\nM: About two to three weeks. I'd recommend submitting the application this week so you can start data collection by early next month.\nW: I'll do that right away. Thank you for the guidance, Professor Chen.",
+            "questions": [
+              {
+                "id": "q8",
+                "stem": "What is Lisa's research topic about?",
+                "options": [
+                  "A) Electric vehicle manufacturing",
+                  "B) Sustainable urban transportation and bike-sharing programs",
+                  "C) Public transit funding models",
+                  "D) Highway infrastructure development"
+                ],
+                "answer": "B"
+              },
+              {
+                "id": "q9",
+                "stem": "What did Professor Chen advise Lisa to do regarding her research scope?",
+                "options": [
+                  "A) Include more cities in her analysis",
+                  "B) Focus on a deep comparison of two or three cities",
+                  "C) Switch to a completely different topic",
+                  "D) Only study American cities"
+                ],
+                "answer": "B"
+              },
+              {
+                "id": "q10",
+                "stem": "What requirement did Professor Chen mention about conducting surveys?",
+                "options": [
+                  "A) Surveys are not allowed for student research",
+                  "B) Approval from the institutional review board is needed",
+                  "C) Surveys can only be conducted online",
+                  "D) A minimum of 500 responses is required"
+                ],
+                "answer": "B"
+              }
+            ]
+          }
+        ],
+        "passages": [
+          {
+            "id": "p1",
+            "type": "passage",
+            "audioSrc": "assets/audio/2024-12-c/p1.mp3",
+            "transcript": "The concept of emotional intelligence, or EQ, has gained significant attention in both academic and professional circles over the past two decades. Unlike IQ, which measures cognitive abilities such as logical reasoning and mathematical skills, emotional intelligence refers to the capacity to recognize, understand, and manage our own emotions, as well as the emotions of others.\n\nResearch conducted at Harvard University followed over 800 professionals across various industries for ten years and found that emotional intelligence was a stronger predictor of career success than IQ or technical skills alone. The study identified five key components of EQ: self-awareness, self-regulation, motivation, empathy, and social skills.\n\nPerhaps most encouraging is that, unlike IQ, which remains relatively stable throughout adulthood, emotional intelligence can be developed and improved through deliberate practice. Simple habits such as pausing before reacting to stressful situations, actively listening during conversations, and keeping a journal to reflect on emotional responses have all been shown to increase EQ scores over time.\n\nOrganizations are increasingly incorporating EQ training into their leadership development programs. Companies like Google and Microsoft have reported measurable improvements in team performance and employee satisfaction after implementing emotional intelligence workshops. The evidence suggests that in an era of automation and artificial intelligence, uniquely human skills like emotional intelligence will become even more valuable.",
+            "questions": [
+              {
+                "id": "q11",
+                "stem": "What did the Harvard study find about emotional intelligence?",
+                "options": [
+                  "A) It was less important than IQ for success",
+                  "B) It was a stronger predictor of career success than IQ",
+                  "C) It only mattered in creative professions",
+                  "D) It decreased as professionals got older"
+                ],
+                "answer": "B"
+              },
+              {
+                "id": "q12",
+                "stem": "According to the passage, how does EQ differ from IQ in terms of development?",
+                "options": [
+                  "A) EQ cannot be improved once you reach adulthood",
+                  "B) Both EQ and IQ remain stable throughout life",
+                  "C) EQ can be developed through deliberate practice unlike IQ",
+                  "D) IQ is easier to improve than EQ"
+                ],
+                "answer": "C"
+              },
+              {
+                "id": "q13",
+                "stem": "Why are companies investing in emotional intelligence training?",
+                "options": [
+                  "A) To reduce employee salaries",
+                  "B) To comply with government regulations",
+                  "C) Because human skills are becoming more valuable in the age of AI",
+                  "D) To replace all technical training programs"
+                ],
+                "answer": "C"
+              }
+            ]
+          },
+          {
+            "id": "p2",
+            "type": "passage",
+            "audioSrc": "assets/audio/2024-12-c/p2.mp3",
+            "transcript": "The phenomenon of 'forest bathing,' or shinrin-yoku as it is known in Japan, has emerged as a scientifically-supported wellness practice. Originating in Japan in the 1980s as a public health initiative, forest bathing involves immersing oneself in a forest environment and mindfully engaging all five senses with the natural surroundings.\n\nScientists at Nippon Medical School have documented measurable physiological changes after just two hours of forest bathing. Study participants showed a 16 percent decrease in the stress hormone cortisol, a 2 percent drop in blood pressure, and a significant increase in natural killer cells—specialized white blood cells that fight viruses and tumors. These immune-boosting effects were observed to last for up to 30 days after a single forest visit.\n\nThe mechanism behind these health benefits is believed to be related to phytoncides—aromatic compounds released by trees to protect themselves from insects and disease. When humans inhale these compounds, our bodies respond by increasing the activity of natural killer cells.\n\nCountries around the world are now incorporating forest therapy into their healthcare systems. South Korea has designated dozens of official 'healing forests,' complete with trained forest therapy guides. In the United Kingdom, doctors in some regions can now prescribe nature walks as part of social prescribing programs. As urbanization continues to accelerate globally, the ancient practice of spending time among trees is gaining modern scientific validation.",
+            "questions": [
+              {
+                "id": "q14",
+                "stem": "What physiological effect was observed after two hours of forest bathing?",
+                "options": [
+                  "A) A 16 percent increase in cortisol levels",
+                  "B) A 16 percent decrease in the stress hormone cortisol",
+                  "C) A significant drop in white blood cell count",
+                  "D) An immediate increase in blood pressure"
+                ],
+                "answer": "B"
+              },
+              {
+                "id": "q15",
+                "stem": "According to the passage, what are phytoncides?",
+                "options": [
+                  "A) A type of tree disease",
+                  "B) Aromatic compounds released by trees that boost human immunity",
+                  "C) Synthetic chemicals used in forest management",
+                  "D) Japanese words for meditation techniques"
+                ],
+                "answer": "B"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "reading": {
+      "title": "阅读理解",
+      "time": 40,
+      "score": 248.5,
+      "sections": {
+        "wordBank": {
+          "title": "选词填空",
+          "direction": "In this section, there is a passage with ten blanks. You are required to select one word for each blank from a list of choices given in a word bank following the passage.",
+          "passage": "Artificial intelligence is rapidly transforming the healthcare industry in ways that were once considered science fiction. From (1)______ diseases earlier than human doctors to personalizing treatment plans, AI's potential seems boundless. However, as with any (2)______ technology, there are significant ethical considerations that must be addressed.\n\nThe most immediate concern is patient (3)______. AI systems require vast amounts of medical data to function effectively, and this data is among the most (4)______ information a person possesses. Questions about who owns this data and how it can be used remain largely (5)______. Another pressing issue is algorithmic bias. If an AI system is trained primarily on data from one demographic group, its (6)______ for other populations may be less accurate, potentially (7)______ existing health disparities rather than reducing them.\n\nDespite these challenges, most experts agree that AI's benefits in healthcare (8)______ its risks when properly regulated. AI-assisted surgery has already shown (9)______ outcomes with fewer complications. Radiologists using AI tools detect tumors with greater (10)______ than either humans or machines working alone. The key lies in developing robust regulatory frameworks that encourage innovation while protecting patients.",
+          "words": [
+            { "word": "diagnosing", "id": "A" },
+            { "word": "revolutionary", "id": "B" },
+            { "word": "privacy", "id": "C" },
+            { "word": "sensitive", "id": "D" },
+            { "word": "unresolved", "id": "E" },
+            { "word": "recommendations", "id": "F" },
+            { "word": "worsening", "id": "G" },
+            { "word": "outweigh", "id": "H" },
+            { "word": "superior", "id": "I" },
+            { "word": "accuracy", "id": "J" },
+            { "word": "detecting", "id": "K" },
+            { "word": "conventional", "id": "L" },
+            { "word": "transparency", "id": "M" },
+            { "word": "meaningful", "id": "N" },
+            { "word": "improving", "id": "O" }
+          ],
+          "answerKey": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
+        },
+        "longPassage": {
+          "title": "长篇阅读",
+          "direction": "In this section, you are going to read a passage with ten statements attached to it. Each statement contains information given in one of the paragraphs. Identify the paragraph from which the information is derived.",
+          "passage": "The Future of Food: How Technology Is Reshaping What We Eat\n\n[A] The global food system stands at a crossroads. By 2050, the world's population is expected to reach 9.7 billion, requiring a 70 percent increase in food production. Yet agriculture already consumes 70 percent of the world's freshwater and generates roughly one-quarter of global greenhouse gas emissions. Meeting future food demand through conventional farming alone would require converting most remaining forests into cropland—an environmentally catastrophic path. This stark reality has sparked an unprecedented wave of innovation in food technology.\n\n[B] Vertical farming represents one of the most promising developments. These indoor facilities grow crops in stacked layers under LED lights, using up to 95 percent less water than traditional agriculture. AeroFarms, a leading vertical farming company based in New Jersey, operates a 70,000-square-foot facility that produces over 2 million pounds of leafy greens annually. Because the environment is fully controlled, no pesticides are needed, and crops can be grown year-round regardless of weather conditions. The primary limitation remains energy costs for lighting, though advances in LED efficiency are steadily improving the economics.\n\n[C] Cellular agriculture—growing real meat from animal cells without raising and slaughtering animals—has progressed from laboratory curiosity to commercial reality. In 2020, Singapore became the first country to approve the sale of cultured chicken. Since then, the industry has attracted billions in investment. Upside Foods and Good Meat, two California-based companies, have received FDA approval and are now selling cultivated chicken products in select U.S. restaurants. The environmental benefits are substantial: cultivated meat uses 90 percent less land and produces 90 percent fewer greenhouse gas emissions than conventional beef production.\n\n[D] Plant-based alternatives have moved beyond bland veggie burgers into sophisticated products that closely mimic the taste and texture of animal products. Beyond Meat and Impossible Foods pioneered this category, but a new generation of startups is using precision fermentation to create animal-free dairy proteins, egg whites, and even honey. Perfect Day, a company using this technology, produces whey protein identical to cow-derived whey through fermentation—no cows required. Their proteins are already used in commercial ice creams, cream cheeses, and sports nutrition products.\n\n[E] Artificial intelligence is transforming every stage of the food supply chain. AI-powered computer vision systems inspect produce quality on sorting lines, reducing food waste. Machine learning algorithms predict crop yields months before harvest, helping farmers optimize planting decisions and resource allocation. In restaurants, AI systems forecast customer demand with remarkable accuracy, enabling more precise inventory management and reducing food waste. IBM's Watson Decision Platform for Agriculture integrates AI, weather data, and IoT sensors to give farmers field-level insights.\n\n[F] However, technological solutions face significant barriers to widespread adoption. High upfront costs exclude small-scale farmers in developing countries, who produce the majority of the world's food. Consumer acceptance remains uncertain, particularly for products perceived as 'unnatural' like cultivated meat. A 2024 survey found that while 60 percent of U.S. consumers were willing to try plant-based meat, only 25 percent expressed interest in cell-cultured products. Cultural and emotional attachments to traditional foods run deep and cannot be dismissed by technological solutions alone.\n\n[G] The regulatory landscape presents another challenge. Novel foods require extensive safety testing, and regulatory frameworks vary dramatically between countries. The European Union's precautionary principle leads to slower approvals, while Singapore and Israel have created dedicated regulatory pathways to fast-track food innovation. International harmonization of food safety standards for novel foods remains a distant goal, creating complex compliance challenges for global companies.\n\n[H] Perhaps the most overlooked aspect is the intersection of food technology and food justice. Technologies like vertical farming and cellular agriculture could make nutritious food available in areas with poor soil or limited water—including urban food deserts. However, if these technologies remain controlled by a few large corporations, they could exacerbate existing inequalities in food access. Ensuring that food technology benefits are distributed equitably will require deliberate policy intervention.\n\n[I] Looking ahead, experts envision a diversified food future rather than a single solution winning out. Traditional farming will remain essential, but it will be enhanced by precision agriculture technologies. Vertical farms will supply fresh produce to cities. Cellular agriculture will produce specific high-value proteins. Plant-based products will occupy a growing share of the protein market. The food system of 2050 will be more resilient precisely because it draws on multiple production methods.\n\n[J] Education will be critical to this transition. Consumers need accurate information about how new foods are produced and what their environmental and health impacts truly are. Universities are already establishing new interdisciplinary programs combining food science, environmental studies, and data science. The next generation of food system professionals will need skills that span traditional disciplinary boundaries.\n\n[K] The transformation of our food system represents one of the defining challenges of this century. Technology alone cannot solve it—but we cannot solve it without technology. The path forward requires integrating technological innovation with thoughtful policy, cultural sensitivity, and a commitment to making the future of food work for everyone.",
+          "statements": [
+            {
+              "id": "s1",
+              "text": "Vertical farming uses significantly less water compared to traditional agricultural methods.",
+              "answer": "B"
+            },
+            {
+              "id": "s2",
+              "text": "Singapore was the first nation to grant regulatory approval for the sale of lab-grown meat products.",
+              "answer": "C"
+            },
+            {
+              "id": "s3",
+              "text": "Consumer surveys indicate that cultivated meat faces greater consumer resistance than plant-based alternatives.",
+              "answer": "F"
+            },
+            {
+              "id": "s4",
+              "text": "Technology for producing dairy proteins through fermentation without animals is already being used in commercial products.",
+              "answer": "D"
+            },
+            {
+              "id": "s5",
+              "text": "The European Union takes a more cautious regulatory approach to novel foods than countries like Singapore and Israel.",
+              "answer": "G"
+            },
+            {
+              "id": "s6",
+              "text": "Access to food technologies could widen inequality if controlled by a small number of large companies.",
+              "answer": "H"
+            },
+            {
+              "id": "s7",
+              "text": "According to the passage, experts predict that future food production will involve multiple complementary methods rather than a single solution.",
+              "answer": "I"
+            },
+            {
+              "id": "s8",
+              "text": "Agriculture currently accounts for approximately one-fourth of worldwide greenhouse gas emissions.",
+              "answer": "A"
+            },
+            {
+              "id": "s9",
+              "text": "IBM has developed an agricultural platform that combines artificial intelligence with weather data and IoT sensors.",
+              "answer": "E"
+            },
+            {
+              "id": "s10",
+              "text": "Universities are creating interdisciplinary programs that merge food science with environmental studies and data science.",
+              "answer": "J"
+            }
+          ]
+        },
+        "inDepth": {
+          "title": "仔细阅读",
+          "direction": "There are 2 passages in this section. Each passage is followed by some questions or unfinished statements. For each of them there are four choices marked A), B), C) and D). You should decide on the best choice.",
+          "passages": [
+            {
+              "id": "idp1",
+              "title": "Passage One — The Dunning-Kruger Effect in the Workplace",
+              "text": "In 1999, psychologists David Dunning and Justin Kruger published a study that would become one of the most cited in modern psychology. Their finding was elegantly simple: people with the least competence in a given domain tend to overestimate their abilities the most, while true experts often underestimate theirs. This cognitive bias, now known as the Dunning-Kruger effect, has profound implications for workplace dynamics.\n\nConsider a typical project team. The least experienced member may confidently propose solutions without recognizing their flaws, while the most knowledgeable member hesitates, acutely aware of complexities that others don't see. This creates a dangerous dynamic where confidence is mistaken for competence, and genuine expertise is overlooked because it presents itself with appropriate caution.\n\nResearch has shown that the Dunning-Kruger effect is particularly pronounced in domains where feedback is delayed or ambiguous. In software development, for instance, poor architectural decisions may not reveal their consequences for months. By then, the overconfident developer who made those decisions may have been promoted based on their apparent (but illusory) competence, while the cautious expert who raised concerns was seen as unhelpfully negative.\n\nOrganizations can counter this effect through several mechanisms. Structured decision-making processes that require explicit justification of assumptions can surface hidden flaws in overconfident proposals. Regular, specific feedback loops—not annual reviews but weekly check-ins with concrete metrics—help individuals calibrate their self-assessment. Most importantly, cultivating a culture that rewards intellectual humility and treats uncertainty as a sign of careful thinking rather than weakness can transform how expertise is valued.\n\nThe implications extend beyond individual performance to organizational learning. When overconfident individuals dominate discussions, teams make worse decisions because crucial information goes unshared. Studies of surgical teams found that hierarchies where junior members felt safe questioning senior surgeons had significantly better patient outcomes—precisely because the Dunning-Kruger effect was neutralized through open communication.",
+              "questions": [
+                {
+                  "id": "q16",
+                  "stem": "According to the Dunning-Kruger effect, how do incompetent people tend to assess their own abilities?",
+                  "options": [
+                    "A) They accurately judge their limitations",
+                    "B) They tend to overestimate their competence",
+                    "C) They consistently underestimate their skills",
+                    "D) They avoid evaluating their abilities entirely"
+                  ],
+                  "answer": "B",
+                  "explanation": "The passage explicitly states that 'people with the least competence in a given domain tend to overestimate their abilities the most.'"
+                },
+                {
+                  "id": "q17",
+                  "stem": "Why is the Dunning-Kruger effect particularly problematic in software development?",
+                  "options": [
+                    "A) Software developers are naturally overconfident",
+                    "B) The consequences of poor decisions may not appear for months",
+                    "C) Programming languages change too frequently",
+                    "D) Team projects are inherently inefficient"
+                  ],
+                  "answer": "B",
+                  "explanation": "The passage notes that in software development, 'poor architectural decisions may not reveal their consequences for months,' allowing the effect to go undetected."
+                },
+                {
+                  "id": "q18",
+                  "stem": "What does the passage recommend as a way to counter the Dunning-Kruger effect in organizations?",
+                  "options": [
+                    "A) Firing employees who show overconfidence",
+                    "B) Eliminating all forms of team discussion",
+                    "C) Rewarding intellectual humility and providing regular specific feedback",
+                    "D) Promoting employees based solely on years of experience"
+                  ],
+                  "answer": "C",
+                  "explanation": "The passage recommends 'cultivating a culture that rewards intellectual humility' and 'regular, specific feedback loops—not annual reviews but weekly check-ins with concrete metrics.'"
+                },
+                {
+                  "id": "q19",
+                  "stem": "What example does the passage give to illustrate the benefits of reducing the Dunning-Kruger effect?",
+                  "options": [
+                    "A) Technology companies that use agile development methods",
+                    "B) Surgical teams where junior members felt safe questioning senior surgeons",
+                    "C) Universities that reformed their grading systems",
+                    "D) Manufacturing plants that automated quality control"
+                  ],
+                  "answer": "B",
+                  "explanation": "The passage states that 'studies of surgical teams found that hierarchies where junior members felt safe questioning senior surgeons had significantly better patient outcomes.'"
+                }
+              ]
+            },
+            {
+              "id": "idp2",
+              "title": "Passage Two — Rethinking the Workweek",
+              "text": "The five-day, 40-hour workweek has been the standard in developed economies for nearly a century. Yet a growing body of evidence suggests this model may be overdue for reconsideration. Large-scale experiments with four-day workweeks, conducted across countries including Iceland, the United Kingdom, and New Zealand, have yielded remarkably consistent results: productivity remains stable or even improves, while employee wellbeing dramatically increases.\n\nIceland's trial, which ran from 2015 to 2019 and involved roughly one percent of the country's working population, was particularly instructive. Workers moved from 40-hour to 35-36 hour weeks with no reduction in pay. The results showed that productivity stayed the same or improved in the majority of workplaces, while workers reported less stress, better work-life balance, and more time for family, hobbies, and exercise.\n\nThe United Kingdom's 2022 pilot, involving 61 companies and approximately 2,900 workers, was the largest of its kind. Organized by the nonprofit 4 Day Week Global, the trial showed a 65 percent reduction in sick days, a 57 percent decrease in employee turnover, and company revenue that remained largely unchanged. Of the participating companies, 92 percent decided to continue with the four-day week after the trial ended.\n\nHowever, the transition to shorter workweeks is not without challenges. Industries requiring continuous coverage—healthcare, emergency services, hospitality—cannot simply reduce everyone's hours without operational redesign. Knowledge workers may find that meetings expand to fill available time regardless of the number of working days. The biggest obstacle may be cultural: in many organizations, presenteeism and long hours are deeply embedded as signals of dedication and ambition.\n\nProponents argue that the four-day week is a productivity innovation in disguise. When workers have fewer hours, meetings become shorter and more focused, unnecessary emails are reduced, and time-wasting activities are eliminated. The constraint of limited time forces organizations to become more efficient—a phenomenon observed in all the major trials. As one participating CEO noted, 'We didn't just work less; we worked better.'\n\nCritics caution that a one-size-fits-all mandate would be counterproductive. Different industries, roles, and individual preferences demand flexibility rather than rigid schedules. The future of work may not be a universal four-day week but rather a more fundamental rethinking of when, where, and how work happens—with outcomes measured by results rather than hours logged.",
+              "questions": [
+                {
+                  "id": "q20",
+                  "stem": "What was the key finding of Iceland's four-day workweek trial?",
+                  "options": [
+                    "A) Productivity significantly decreased across all workplaces",
+                    "B) Workers demanded higher pay to compensate for changes",
+                    "C) Productivity stayed the same or improved in most workplaces",
+                    "D) The trial was abandoned after the first year"
+                  ],
+                  "answer": "C",
+                  "explanation": "The passage states that 'productivity stayed the same or improved in the majority of workplaces, while workers reported less stress.'"
+                },
+                {
+                  "id": "q21",
+                  "stem": "What result did the UK four-day week trial show regarding employee turnover?",
+                  "options": [
+                    "A) Turnover remained unchanged",
+                    "B) There was a 57 percent decrease in employee turnover",
+                    "C) Turnover actually increased by 15 percent",
+                    "D) The data on turnover was inconclusive"
+                  ],
+                  "answer": "B",
+                  "explanation": "The passage notes 'a 57 percent decrease in employee turnover' as one of the key results of the UK trial."
+                },
+                {
+                  "id": "q22",
+                  "stem": "What does the passage identify as the biggest obstacle to implementing four-day workweeks?",
+                  "options": [
+                    "A) Lack of supporting technology",
+                    "B) Legal restrictions on working hours",
+                    "C) Cultural norms that equate long hours with dedication",
+                    "D) Worker resistance to schedule changes"
+                  ],
+                  "answer": "C",
+                  "explanation": "The passage states that 'the biggest obstacle may be cultural: in many organizations, presenteeism and long hours are deeply embedded as signals of dedication and ambition.'"
+                },
+                {
+                  "id": "q23",
+                  "stem": "According to critics mentioned in the passage, what approach to work schedules is preferable?",
+                  "options": [
+                    "A) A legally mandated four-day week for all industries",
+                    "B) Eliminating all fixed work schedules entirely",
+                    "C) Flexibility tailored to different industries and individual preferences",
+                    "D) Returning to the traditional six-day workweek"
+                  ],
+                  "answer": "C",
+                  "explanation": "The passage concludes that critics argue 'different industries, roles, and individual preferences demand flexibility rather than rigid schedules.'"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "translation": {
+      "title": "翻译",
+      "time": 30,
+      "score": 106.5,
+      "direction": "Directions: For this part, you are allowed 30 minutes to translate a passage from Chinese into English.",
+      "chineseText": "近年来，中国的高速铁路网络经历了前所未有的扩张。截至2024年底，中国高铁运营里程已超过4.5万公里，占全球高铁总里程的三分之二以上。高铁不仅改变了中国人的出行方式，也成为中国经济快速发展的重要推动力。乘坐高铁从北京到上海只需要大约四个半小时，而这段路程的距离超过1300公里。高铁沿线的城市经济因便捷的交通而蓬勃发展，旅游业和商业活动显著增加。此外，中国的高铁技术已经出口到多个国家，包括印度尼西亚、泰国和塞尔维亚，成为中国制造走向世界的一张亮丽名片。中国高铁的成功，展示了科技创新与基础设施建设相结合的巨大潜力。",
+      "referenceTranslation": "In recent years, China's high-speed railway network has undergone unprecedented expansion. By the end of 2024, China's operational high-speed rail mileage had exceeded 45,000 kilometers, accounting for more than two-thirds of the world's total high-speed rail length. High-speed rail has not only transformed the way Chinese people travel but has also become a significant driving force behind China's rapid economic development. Traveling by high-speed rail from Beijing to Shanghai takes only about four and a half hours, covering a distance of over 1,300 kilometers. Cities along the high-speed rail lines have seen their economies flourish due to convenient transportation, with tourism and commercial activities increasing significantly. Moreover, China's high-speed rail technology has been exported to multiple countries, including Indonesia, Thailand, and Serbia, becoming a shining calling card for Chinese manufacturing on the global stage. The success of China's high-speed rail demonstrates the immense potential of combining technological innovation with infrastructure development.",
+      "keyPoints": [
+        "High-speed rail mileage: over 45,000 km, more than two-thirds of global total",
+        "Beijing-Shanghai travel time: about 4.5 hours for over 1,300 km",
+        "Technology exports: Indonesia, Thailand, Serbia",
+        "Theme: combination of technological innovation and infrastructure"
+      ]
+    }
+  }
+}

@@ -1,0 +1,511 @@
+/**
+ * Fast CET — Stealth Mode (摸鱼模式)
+ *
+ * 场景: 公司/实习工位, 老板随时走过, 需要不引人注意地学习
+ * 设计原则:
+ *   1. 零动画 — 任何动效都会引起旁人注意
+ *   2. 无毛玻璃 — 关闭所有 backdrop-filter (性能+低调)
+ *   3. 默认光标 — cursor:default (避免看起来在点东西)
+ *   4. 小窗口适配 — 支持 400×300 最小化窗口
+ *   5. 纯键盘优先 — 减少鼠标操作, 降低被注意风险
+ *   6. 静音 — 所有音频默认静音, 手动开启
+ */
+
+/* ============================================================
+   1. 全局变量覆盖
+   ============================================================ */
+
+[data-mode="stealth"] {
+  /* 动画倍率为 0 — 所有动画瞬间完成, 无过渡 */
+  --animation-duration-multiplier: 0;
+
+  /* 触摸反馈关闭 */
+  --haptic: none;
+
+  /* 字体缩小 (小窗口阅读) */
+  --font-size-scale: 0.9;
+
+  /* 间距收紧 (节省空间) */
+  --card-gap: 8px;
+  --card-padding: 12px;
+
+  /* 过渡时间归零 */
+  --transition-fast: 0s;
+  --transition-normal: 0s;
+  --transition-slow: 0s;
+}
+
+/* ============================================================
+   2. 关闭所有装饰性动画
+   ============================================================ */
+
+[data-mode="stealth"] {
+  /* GSAP 动画元素 — 强制静态 */
+  .hero__shape,
+  .hero__cursor-glow,
+  .hero__particles,
+  .hero__grid,
+  .hero__scroll-indicator,
+  .hero__scroll-dot,
+  .hero__scroll-line::after,
+  .bento-card__glow,
+  .bento-card__border,
+  .bento-card__bg-pattern,
+  .stat-card__ring,
+  .cta-sparkle,
+  .step__ring,
+  .marquee,
+  .metro-streak,
+  .offline-indicator,
+  .station-alert,
+  .landscape-warning {
+    display: none !important;
+  }
+
+  /* 渐变文字变静态 */
+  .gradient-text {
+    background: none !important;
+    -webkit-text-fill-color: var(--color-primary, #FF5E4D) !important;
+    background-clip: unset !important;
+    animation: none !important;
+  }
+
+  /* 梯度背景变纯色 */
+  .btn-primary {
+    background: var(--color-primary, #FF5E4D);
+    box-shadow: none;
+    transition: none;
+  }
+
+  .cta-section {
+    background: var(--color-primary, #FF5E4D);
+  }
+
+  .cta-section::before,
+  .cta-section::after {
+    display: none;
+  }
+}
+
+/* ============================================================
+   3. 关闭毛玻璃效果 (性能 + 低调)
+   ============================================================ */
+
+[data-mode="stealth"] {
+  .nav,
+  .bento-card,
+  .exam-card,
+  .question-card,
+  .word-card,
+  .glass-card,
+  .audio-player,
+  .filter-tag,
+  .metro-actions {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  /* 毛玻璃背景降级为纯色半透明 */
+  .nav {
+    background: rgba(255, 248, 245, 0.95) !important;
+  }
+
+  .bento-card,
+  .exam-card,
+  .question-card,
+  .word-card,
+  .glass-card {
+    background: rgba(255, 255, 255, 0.95) !important;
+  }
+}
+
+/* ============================================================
+   4. 光标隐藏策略
+   ============================================================ */
+
+[data-mode="stealth"] {
+  /* 所有可点击元素恢复默认光标 */
+  .btn,
+  .btn-primary,
+  .btn-outline,
+  .btn-ghost,
+  .option-btn,
+  .exam-card,
+  .filter-tag,
+  .word-card,
+  .bento-card,
+  .nav__links a,
+  .nav__toggle,
+  .breadcrumb a,
+  .answer-reveal__toggle,
+  a[href] {
+    cursor: default !important;
+  }
+
+  /* 题干文字不可选中 */
+  .question-card__stem,
+  .word-card__word,
+  .word-card__meaning {
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  /* 点击高亮关闭 */
+  * {
+    -webkit-tap-highlight-color: transparent !important;
+  }
+}
+
+/* ============================================================
+   5. 小窗口适配 (400×300 最小化模式)
+   ============================================================ */
+
+/* 当窗口宽度 < 500px 时 (最小化窗口) */
+@media (max-width: 500px) {
+  [data-mode="stealth"] {
+    /* 侧边栏/导航隐藏 */
+    .nav__links {
+      display: none;
+    }
+
+    /* 汉堡菜单也隐藏 */
+    .nav__toggle {
+      display: none;
+    }
+
+    /* 导航缩减为极简横条 */
+    .nav {
+      height: 28px;
+      padding: 0 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav__logo {
+      font-size: 11px;
+    }
+
+    .nav__logo img {
+      width: 14px;
+      height: 14px;
+    }
+
+    /* 内容区padding缩小 */
+    .app-content {
+      padding: 4px 8px;
+    }
+
+    .content-page {
+      padding: 8px;
+    }
+
+    /* 页面标题缩小 */
+    .page-header {
+      padding: 4px 0;
+      margin-bottom: 4px;
+    }
+
+    .page-header h1 {
+      font-size: 0.95rem;
+    }
+
+    .page-header p {
+      display: none;
+    }
+
+    .breadcrumb {
+      display: none;
+    }
+
+    /* 卡片缩小 */
+    .bento-card,
+    .exam-card,
+    .question-card {
+      padding: 8px 12px;
+      margin: 0 0 6px;
+      border-radius: 4px;
+    }
+
+    .bento-card__content {
+      padding: 12px;
+    }
+
+    .bento-card__title {
+      font-size: 0.85rem;
+    }
+
+    .bento-card__desc {
+      display: none;
+    }
+
+    /* 选项收紧 */
+    .options-grid {
+      gap: 4px;
+    }
+
+    .option-btn {
+      min-height: 32px;
+      padding: 6px 10px;
+      font-size: 0.8rem;
+    }
+
+    /* 筛选标签隐藏 */
+    .filter-tags {
+      display: none;
+    }
+
+    /* 页脚隐藏 */
+    footer {
+      display: none;
+    }
+
+    /* 双栏变单栏 */
+    .review-layout {
+      grid-template-columns: 1fr;
+    }
+
+    /* 听力播放器缩小 */
+    .audio-player {
+      padding: 6px 10px;
+      gap: 6px;
+    }
+
+    .audio-player__play-btn {
+      width: 32px;
+      height: 32px;
+      min-width: 32px;
+    }
+
+    /* 答案区缩小 */
+    .answer-reveal__toggle {
+      min-height: 32px;
+      padding: 6px 12px;
+      font-size: 0.75rem;
+    }
+  }
+}
+
+/* ============================================================
+   6. 超小窗口 (400×300 最小化)
+   ============================================================ */
+
+@media (max-width: 420px) {
+  [data-mode="stealth"] {
+    /* 隐藏所有非必要元素 */
+    .top-bar,
+    .hero,
+    .stats,
+    .cta-section,
+    .learning-path,
+    .marquee-section,
+    .metro-actions,
+    .metro-summary,
+    .metro-streak,
+    .audio-player {
+      display: none !important;
+    }
+
+    /* 仅保留核心内容 */
+    .app-content {
+      padding: 2px 4px;
+    }
+
+    .question-card {
+      padding: 6px 8px;
+      margin: 0 0 4px;
+      border-radius: 2px;
+      border: 1px solid var(--color-border, rgba(255,94,77,0.15));
+    }
+
+    .question-card__stem {
+      font-size: 0.8rem;
+      line-height: 1.4;
+      margin-bottom: 6px;
+    }
+
+    .option-btn {
+      min-height: 28px;
+      padding: 4px 8px;
+      font-size: 0.75rem;
+      gap: 4px;
+    }
+
+    /* 答题卡简化 */
+    .answer-sheet {
+      display: none;
+    }
+  }
+}
+
+/* ============================================================
+   7. 静音策略
+   ============================================================ */
+
+[data-mode="stealth"] {
+  audio,
+  video {
+    /* 初始静音, 不自动播放 */
+    autoplay: false;
+  }
+
+  /* 音频播放器默认静音标记 */
+  .audio-player {
+    opacity: 0.7;
+  }
+
+  .audio-player::after {
+    content: '🔇';
+    position: absolute;
+    top: 4px;
+    right: 8px;
+    font-size: 10px;
+    opacity: 0.5;
+  }
+
+  .audio-player--unmuted::after {
+    content: '🔊';
+  }
+}
+
+/* ============================================================
+   8. 键盘操作提示 (首次进入时显示, 3秒后消失)
+   ============================================================ */
+
+[data-mode="stealth"] {
+  .stealth-key-hint {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 20px;
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    font-size: 12px;
+    border-radius: 20px;
+    z-index: 99999;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+    font-family: 'Consolas', 'Courier New', monospace;
+  }
+
+  .stealth-key-hint--visible {
+    opacity: 1;
+  }
+
+  .stealth-key-hint kbd {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 1px 6px;
+    border-radius: 3px;
+    margin: 0 2px;
+    font-family: inherit;
+  }
+}
+
+/* ============================================================
+   9. 伪装主题切换面板 (可选 UI)
+   ============================================================ */
+
+[data-mode="stealth"] {
+  .stealth-panel {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 8px 0 0 8px;
+    padding: 8px 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    z-index: 99998;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+  }
+
+  .stealth-panel:hover {
+    opacity: 1;
+  }
+
+  .stealth-panel__btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    background: transparent;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.1s;
+    cursor: default;
+    border: none;
+  }
+
+  .stealth-panel__btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  .stealth-panel__btn--active {
+    background: rgba(255, 255, 255, 0.25);
+  }
+}
+
+/* ============================================================
+   10. Boss Key 叠加层
+   ============================================================ */
+
+/* 叠加层本身是 boss-key.js 动态创建的, 这里提供基础样式覆盖 */
+#stealth-overlay {
+  /* 确保叠加层在所有内容之上 */
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+
+  /* 过渡由 JS 控制, 这里设默认值 */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+  overflow: auto;
+}
+
+/* 叠加层显示时, 阻止底层滚动 */
+body:has(#stealth-overlay[style*="opacity: 1"]) {
+  overflow: hidden;
+}
+
+/* ============================================================
+   11. 全局性能优化
+   ============================================================ */
+
+[data-mode="stealth"] {
+  /* 关闭所有 will-change (减少 GPU 内存占用) */
+  .swipe-card,
+  .hero__shape,
+  .hero__cursor-glow,
+  .bento-card,
+  .word-card,
+  .particle {
+    will-change: auto !important;
+  }
+
+  /* 关闭 3D 变换 */
+  .bento-card,
+  .stat-card {
+    transform-style: flat !important;
+    perspective: none !important;
+  }
+
+  /* 卡片内层 translateZ 归零 */
+  .bento-card__content {
+    transform: none !important;
+  }
+
+  /* 滚动条更细 (更不显眼) */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.15) transparent;
+  }
+}

@@ -1,0 +1,335 @@
+{
+  "meta": {
+    "id": "cet4-2024-12-b",
+    "year": 2024,
+    "month": 12,
+    "set": "B",
+    "title": "2024年12月大学英语四级真题（卷二）",
+    "totalTime": 125,
+    "totalScore": 710
+  },
+  "sections": {
+    "writing": {
+      "title": "作文",
+      "time": 30,
+      "score": 106.5,
+      "direction": "Directions: For this part, you are allowed 30 minutes to write an essay on the topic below. You should write at least 120 words but no more than 180 words.",
+      "topic": "Suppose your university is conducting a survey on students' reading habits. Write an essay to discuss the current state of reading among college students and suggest ways to encourage more reading on campus.",
+      "sampleEssay": "In recent years, the reading habits of college students have undergone significant changes. With the rise of digital entertainment and social media, many students find themselves spending less time on traditional reading. According to a survey conducted by our university library, the average student reads fewer than three non-textbook books per semester.\n\nThere are several factors contributing to this decline. First, the prevalence of short-form content on platforms like TikTok and WeChat has shortened students' attention spans. Second, academic pressure leaves students with limited leisure time. Third, many students have not developed a genuine interest in reading beyond required course materials.\n\nTo address this issue, universities can take multiple measures. Establishing book clubs and reading communities can create a social dimension to reading. Libraries could organize monthly book recommendation events featuring both faculty and student picks. Additionally, incorporating more engaging reading materials into the curriculum could help students discover the joy of reading. Ultimately, cultivating a reading culture on campus requires collective effort from both the institution and the students themselves.",
+      "keyPoints": [
+        "描述大学生阅读现状：数字娱乐冲击，阅读量下降",
+        "分析原因：短视频影响注意力、学业压力、缺乏阅读兴趣",
+        "提出建议：建立读书俱乐部、图书馆推荐活动、课程融入有趣读物"
+      ]
+    },
+    "listening": {
+      "title": "听力理解",
+      "time": 25,
+      "score": 248.5,
+      "sections": {
+        "newsReports": [
+          {
+            "id": "l1",
+            "type": "news",
+            "audioSrc": "assets/audio/2024-12-b/l1.mp3",
+            "transcript": "The United Nations Educational, Scientific and Cultural Organization has added 27 new sites to its World Heritage list. Among the most notable additions is the historic center of a Baltic port city, recognized for its well-preserved Hanseatic architecture dating back to the 13th century. The committee also inscribed a vast wetland area in South America, home to over 200 migratory bird species. UNESCO officials emphasized that these designations come with responsibilities for the host countries to protect and preserve these sites for future generations. The new additions bring the total number of World Heritage sites to 1,199 across 168 countries.",
+            "questions": [
+              {
+                "id": "q1",
+                "stem": "How many new sites were added to the UNESCO World Heritage list?",
+                "options": ["A. 13", "B. 27", "C. 168", "D. 200"],
+                "answer": "B"
+              },
+              {
+                "id": "q2",
+                "stem": "What did UNESCO officials emphasize about the new designations?",
+                "options": ["A. The economic benefits for local communities", "B. The need for international tourism promotion", "C. The responsibilities of host countries to protect the sites", "D. The architectural uniqueness of the Baltic port city"],
+                "answer": "C"
+              }
+            ]
+          },
+          {
+            "id": "l2",
+            "type": "news",
+            "audioSrc": "assets/audio/2024-12-b/l2.mp3",
+            "transcript": "A groundbreaking study published in the journal Nature Climate Change suggests that urban rooftop gardens could reduce city temperatures by up to 3 degrees Celsius during summer heatwaves. Researchers from the University of Tokyo analyzed data from 15 major cities across three continents over a five-year period. The study found that buildings with green roofs not only helped cool the immediate surroundings but also contributed to reducing the overall urban heat island effect. The researchers estimate that if 50 percent of suitable rooftops in major cities were converted to gardens, the cooling effect could save billions in energy costs and significantly reduce heat-related health issues.",
+            "questions": [
+              {
+                "id": "q3",
+                "stem": "What temperature reduction could rooftop gardens achieve according to the study?",
+                "options": ["A. Up to 1 degree Celsius", "B. Up to 3 degrees Celsius", "C. Up to 5 degrees Celsius", "D. Up to 15 degrees Celsius"],
+                "answer": "B"
+              },
+              {
+                "id": "q4",
+                "stem": "How many cities did the researchers analyze?",
+                "options": ["A. 3", "B. 5", "C. 15", "D. 50"],
+                "answer": "C"
+              }
+            ]
+          }
+        ],
+        "longConversations": [
+          {
+            "id": "lc1",
+            "type": "long_conversation",
+            "audioSrc": "assets/audio/2024-12-b/lc1.mp3",
+            "transcript": "M: Hey Sarah, I heard you're applying for the student exchange program to Germany. How's that going?\nW: It's going well, actually! I just submitted my application last week. But I'm a bit nervous about the language requirement.\nM: Don't you need to pass a German proficiency test?\nW: Yes, I need at least B1 level. I've been taking German classes for two semesters, but I'm not sure if I'm ready for the exam.\nM: Have you considered taking an intensive course over the winter break? The language center is offering a four-week program.\nW: I saw that, but it's quite expensive — about 2,000 yuan. I'm not sure my parents would agree to pay for it.\nM: Actually, the international office has scholarships specifically for language preparation. My roommate applied last year and got 80 percent covered.\nW: Really? That's great to know! I'll check with them tomorrow. Thanks for the tip!\nQ5: What is the woman's main concern about the exchange program?\nQ6: What does the man suggest the woman do?\nQ7: What does the man say about the scholarship?",
+            "questions": [
+              {
+                "id": "q5",
+                "stem": "What is the woman's main concern about the exchange program?",
+                "options": ["A. The application deadline", "B. The language requirement", "C. The cost of living in Germany", "D. Finding accommodation"],
+                "answer": "B"
+              },
+              {
+                "id": "q6",
+                "stem": "What does the man suggest the woman do?",
+                "options": ["A. Apply to a different country", "B. Ask her parents for money", "C. Take an intensive German course during winter break", "D. Postpone her application to next year"],
+                "answer": "C"
+              },
+              {
+                "id": "q7",
+                "stem": "How much of the language course fee was covered by the scholarship for the man's roommate?",
+                "options": ["A. 20 percent", "B. 50 percent", "C. 80 percent", "D. 100 percent"],
+                "answer": "C"
+              }
+            ]
+          },
+          {
+            "id": "lc2",
+            "type": "long_conversation",
+            "audioSrc": "assets/audio/2024-12-b/lc2.mp3",
+            "transcript": "W: Professor Li, I'm having trouble deciding on a topic for my graduation thesis. Could you give me some advice?\nM: Of course, Lin. What's your major area of interest?\nW: I'm really interested in social media's impact on consumer behavior, but I'm worried that topic has been overdone.\nM: That's a valid concern. But the key is to find a specific angle that hasn't been explored much. Have you thought about focusing on a particular platform or demographic?\nW: I was thinking about looking at how short-video platforms affect purchasing decisions among Gen Z consumers.\nM: That's actually quite promising. There's a lot of new research emerging in that area. Why don't you draft a preliminary outline and we can discuss it next week?\nW: That would be great. Should I also start collecting data?\nM: First, let's nail down your research questions. Then we'll talk about methodology. Remember, a good thesis starts with a clear, focused question.\nW: Thank you, Professor. I'll have the outline ready by Tuesday.\nQ8: What is the student's research interest?\nQ9: What specific angle does the professor suggest?\nQ10: What does the professor advise the student to do first?",
+            "questions": [
+              {
+                "id": "q8",
+                "stem": "What is the student's research interest?",
+                "options": ["A. Traditional advertising methods", "B. Social media's impact on consumer behavior", "C. Television's influence on shopping habits", "D. Print media's role in marketing"],
+                "answer": "B"
+              },
+              {
+                "id": "q9",
+                "stem": "What specific topic does the student propose?",
+                "options": ["A. Facebook advertising strategies", "B. Email marketing effectiveness", "C. Short-video platforms and Gen Z purchasing decisions", "D. Celebrity endorsements on Instagram"],
+                "answer": "C"
+              },
+              {
+                "id": "q10",
+                "stem": "What does the professor advise the student to do first?",
+                "options": ["A. Start collecting data immediately", "B. Choose a different research topic", "C. Draft a preliminary outline", "D. Submit the final thesis proposal"],
+                "answer": "C"
+              }
+            ]
+          }
+        ],
+        "passages": [
+          {
+            "id": "p1",
+            "type": "passage",
+            "audioSrc": "assets/audio/2024-12-b/p1.mp3",
+            "transcript": "Good morning, everyone. Today I'd like to talk about the concept of 'digital minimalism,' which has gained significant attention in recent years. Digital minimalism is a philosophy that encourages people to be more intentional about how they use technology. Rather than mindlessly scrolling through social media or constantly checking notifications, digital minimalists carefully choose which digital tools add value to their lives and eliminate the rest.\n\nResearch from Stanford University suggests that the average smartphone user checks their device 96 times per day — that's roughly once every 10 minutes during waking hours. This constant digital interaction has been linked to increased anxiety, decreased attention spans, and reduced face-to-face social interaction.\n\nTo practice digital minimalism, experts recommend starting with a 30-day digital declutter. During this period, you temporarily remove all non-essential apps from your phone and only use technology for necessary tasks. After the 30 days, you slowly reintroduce only those tools that genuinely improve your life. The goal is not to reject technology entirely, but to develop a healthier, more mindful relationship with it.",
+            "questions": [
+              {
+                "id": "q11",
+                "stem": "What is the main topic of the passage?",
+                "options": ["A. The history of smartphones", "B. Digital minimalism", "C. Social media marketing", "D. Stanford University research methods"],
+                "answer": "B"
+              },
+              {
+                "id": "q12",
+                "stem": "How often does the average smartphone user check their device?",
+                "options": ["A. 10 times per day", "B. 30 times per day", "C. 96 times per day", "D. 200 times per day"],
+                "answer": "C"
+              },
+              {
+                "id": "q13",
+                "stem": "What do experts recommend as the first step in practicing digital minimalism?",
+                "options": ["A. Buying a new phone", "B. Deleting all social media accounts", "C. A 30-day digital declutter", "D. Attending a technology workshop"],
+                "answer": "C"
+              }
+            ]
+          },
+          {
+            "id": "p2",
+            "type": "passage",
+            "audioSrc": "assets/audio/2024-12-b/p2.mp3",
+            "transcript": "The concept of 'blue zones' has fascinated researchers for decades. Blue zones are regions of the world where people live significantly longer than average — often reaching age 100 at rates ten times higher than in the United States. There are five identified blue zones: Okinawa in Japan, Sardinia in Italy, Nicoya in Costa Rica, Ikaria in Greece, and Loma Linda in California.\n\nResearchers have identified several common factors among these communities. First, they all follow predominantly plant-based diets, with meat consumed only sparingly — perhaps five times per month. Second, they engage in natural, low-intensity physical activity throughout the day, such as walking, gardening, and doing household chores without modern conveniences. Third, they have strong social connections and a clear sense of purpose, which the Okinawans call 'ikigai' and the Nicoyans call 'plan de vida.'\n\nWhat's particularly interesting is that none of these communities consciously set out to live longer. Their longevity is a byproduct of their lifestyle, environment, and social structures. This suggests that the most effective health interventions may not be individual choices but rather changes to our built environment and social fabric.",
+            "questions": [
+              {
+                "id": "q14",
+                "stem": "What are 'blue zones' according to the passage?",
+                "options": ["A. Areas with the highest pollution levels", "B. Regions where people live significantly longer than average", "C. Coastal areas with blue water", "D. Urban zones with advanced healthcare"],
+                "answer": "B"
+              },
+              {
+                "id": "q15",
+                "stem": "Which of the following is NOT mentioned as a blue zone?",
+                "options": ["A. Okinawa, Japan", "B. Sardinia, Italy", "C. Sydney, Australia", "D. Loma Linda, California"],
+                "answer": "C"
+              },
+              {
+                "id": "q16",
+                "stem": "What common factor do blue zone communities share?",
+                "options": ["A. High-intensity exercise routines", "B. Predominantly plant-based diets", "C. Advanced medical technology", "D. Urban living environments"],
+                "answer": "B"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "reading": {
+      "title": "阅读理解",
+      "time": 40,
+      "score": 248.5,
+      "sections": {
+        "wordBank": {
+          "passage": "The rise of the gig economy has fundamentally ___ (26) the way people think about employment. Instead of working for a single employer for decades, many workers now ___ (27) between multiple short-term contracts and freelance projects. This shift has brought both ___ (28) and challenges to the modern workforce.\n\nOn the positive side, gig work offers unprecedented ___ (29). Workers can choose when, where, and how much they want to work. This is particularly ___ (30) for parents, students, and others who need to balance work with other responsibilities. However, the gig economy also has significant ___ (31). Gig workers typically lack access to benefits such as health insurance, paid leave, and retirement plans that traditional employees take for ___ (32).\n\nMoreover, the income from gig work can be highly ___ (33), making it difficult for workers to plan their finances. Some months may bring abundant opportunities, while others may be ___ (34) slow. Despite these concerns, the gig economy continues to grow, and policymakers are increasingly ___ (35) on how to adapt labor laws to protect this new category of workers.",
+          "words": [
+            { "id": "A", "word": "transformed" },
+            { "id": "B", "word": "rotate" },
+            { "id": "C", "word": "opportunities" },
+            { "id": "D", "word": "flexibility" },
+            { "id": "E", "word": "appealing" },
+            { "id": "F", "word": "drawbacks" },
+            { "id": "G", "word": "granted" },
+            { "id": "H", "word": "unpredictable" },
+            { "id": "I", "word": "disappointingly" },
+            { "id": "J", "word": "focusing" },
+            { "id": "K", "word": "stability" },
+            { "id": "L", "word": "expanded" },
+            { "id": "M", "word": "advantages" },
+            { "id": "N", "word": "additionally" },
+            { "id": "O", "word": "reluctant" }
+          ],
+          "answers": [
+            { "position": 26, "word_id": "A" },
+            { "position": 27, "word_id": "B" },
+            { "position": 28, "word_id": "C" },
+            { "position": 29, "word_id": "D" },
+            { "position": 30, "word_id": "E" },
+            { "position": 31, "word_id": "F" },
+            { "position": 32, "word_id": "G" },
+            { "position": 33, "word_id": "H" },
+            { "position": 34, "word_id": "I" },
+            { "position": 35, "word_id": "J" }
+          ]
+        },
+        "longPassage": {
+          "title": "The Evolution of Remote Work",
+          "passage": "The COVID-19 pandemic accelerated a transformation that had been quietly underway for decades: the shift toward remote work. [A] While telecommuting was once a rare perk offered by progressive companies, it has now become a mainstream expectation for millions of workers worldwide. [B] This shift has profound implications for how we think about productivity, workplace culture, and the very nature of employment.\n\n[C] Before the pandemic, only about 5 percent of the American workforce worked primarily from home. By April 2020, that figure had jumped to over 60 percent. While some of that shift was temporary, surveys suggest that a significant portion of workers will continue to work remotely at least part of the time. [D] Companies that once insisted on full-time office attendance are now adopting 'hybrid' models that combine remote and in-person work.\n\n[E] The benefits of remote work are well-documented. Employees report higher job satisfaction, better work-life balance, and reduced commuting stress. [F] Companies benefit from reduced office costs and access to a broader talent pool unrestricted by geographic location. [G] However, remote work is not without its challenges. Many workers report feelings of isolation and loneliness. [H] The blurring of boundaries between work and personal life can lead to burnout, as employees find it difficult to 'switch off' when their office is also their living room.\n\n[I] Perhaps the most significant challenge is the impact on collaboration and innovation. While video conferencing tools have improved dramatically, they cannot fully replicate the spontaneous interactions that occur in a physical office — the casual conversations by the coffee machine that sometimes lead to breakthrough ideas. [J] Research from Microsoft suggests that remote work can make teams more siloed, with fewer cross-departmental connections.\n\n[K] Looking ahead, the future of work is likely to be hybrid. Companies are experimenting with various models: some require two or three days in the office per week, others have designated 'collaboration days' when all team members are expected to be present, and still others allow individual teams to decide what works best for them. [L] The key insight from the past few years is that there is no one-size-fits-all solution. The most successful organizations will be those that remain flexible and responsive to the evolving needs of their workforce.",
+          "paragraphs": [
+            { "id": "A", "range": "Paragraph 1-2" },
+            { "id": "B", "range": "Paragraph 1" },
+            { "id": "C", "range": "Paragraph 2" },
+            { "id": "D", "range": "Paragraph 2" },
+            { "id": "E", "range": "Paragraph 3" },
+            { "id": "F", "range": "Paragraph 3" },
+            { "id": "G", "range": "Paragraph 3" },
+            { "id": "H", "range": "Paragraph 3" },
+            { "id": "I", "range": "Paragraph 4" },
+            { "id": "J", "range": "Paragraph 4" },
+            { "id": "K", "range": "Paragraph 5" },
+            { "id": "L", "range": "Paragraph 5" }
+          ],
+          "questions": [
+            {
+              "id": "q36",
+              "stem": "Before the pandemic, what percentage of the American workforce worked primarily from home?",
+              "options": ["A. About 2 percent", "B. About 5 percent", "C. About 10 percent", "D. About 20 percent"],
+              "answer": "B",
+              "paragraph": "C"
+            },
+            {
+              "id": "q37",
+              "stem": "What is mentioned as a challenge of remote work?",
+              "options": ["A. Higher office costs", "B. Reduced job satisfaction", "C. Feelings of isolation and loneliness", "D. Limited access to technology"],
+              "answer": "C",
+              "paragraph": "G"
+            },
+            {
+              "id": "q38",
+              "stem": "According to the passage, what is difficult to replicate in remote work environments?",
+              "options": ["A. Formal meetings and presentations", "B. Spontaneous interactions that lead to breakthrough ideas", "C. Written communication between team members", "D. Performance evaluations and feedback"],
+              "answer": "B",
+              "paragraph": "I"
+            },
+            {
+              "id": "q39",
+              "stem": "What does Microsoft's research suggest about remote work?",
+              "options": ["A. It increases productivity across all departments", "B. It can make teams more siloed", "C. It improves cross-departmental communication", "D. It has no effect on team collaboration"],
+              "answer": "B",
+              "paragraph": "J"
+            },
+            {
+              "id": "q40",
+              "stem": "What is the key insight about the future of work according to the passage?",
+              "options": ["A. All companies should return to full-time office work", "B. Remote work should be completely eliminated", "C. There is no one-size-fits-all solution", "D. Technology will solve all remote work challenges"],
+              "answer": "C",
+              "paragraph": "L"
+            },
+            {
+              "id": "q41",
+              "stem": "Which statement best describes the author's view on hybrid work models?",
+              "options": ["A. They are a temporary solution", "B. They are the most likely future of work", "C. They are less effective than full-time office work", "D. They are only suitable for tech companies"],
+              "answer": "B",
+              "paragraph": "K"
+            },
+            {
+              "id": "q42",
+              "stem": "What is the main idea of the passage?",
+              "options": ["A. Remote work is a failed experiment", "B. The pandemic had no lasting effect on work patterns", "C. Remote work has transformed employment with both benefits and challenges", "D. Technology companies should lead the return to office work"],
+              "answer": "C",
+              "paragraph": "A"
+            }
+          ]
+        },
+        "inDepth": {
+          "passages": [
+            {
+              "title": "The Power of Micro-Habits",
+              "content": "We tend to overestimate the importance of single dramatic actions and underestimate the power of small, consistent behaviors repeated over time. This cognitive bias explains why so many people fail at New Year's resolutions: they attempt to make massive changes overnight rather than building sustainable micro-habits.\n\nBJ Fogg, a behavioral scientist at Stanford University, has spent decades studying habit formation. His research suggests that the most effective way to build a new habit is to start so small that it seems almost ridiculous. Want to develop a reading habit? Start by reading one page per day. Want to exercise more? Begin with one push-up. The key insight is that the size of the habit matters far less than its consistency.\n\nThis approach works for several reasons. First, micro-habits are too small to fail. When your goal is to read one page, you can always find time to do it, removing the excuse of being 'too busy.' Second, micro-habits build momentum. Once you've read one page, you'll often continue reading. Third, micro-habits reinforce your identity as someone who reads, exercises, or meditates — and identity-based habits are far more durable than those based on outcomes alone.\n\nCritics might argue that micro-habits are too small to make a meaningful difference. But the mathematics of compounding tells a different story. If you read just 10 pages per day, you'll finish about 15 books in a year. If you save just $5 per day, you'll have over $1,800 at the end of the year. The seemingly insignificant, repeated consistently, becomes transformative.",
+              "questions": [
+                {
+                  "id": "q43",
+                  "stem": "According to the passage, why do many people fail at New Year's resolutions?",
+                  "options": ["A. They lack motivation entirely", "B. They attempt to make massive changes overnight", "C. They don't tell anyone about their goals", "D. They choose the wrong time of year"],
+                  "answer": "B"
+                },
+                {
+                  "id": "q44",
+                  "stem": "What does BJ Fogg recommend for building a new habit?",
+                  "options": ["A. Setting ambitious goals from the start", "B. Starting so small that it seems almost ridiculous", "C. Waiting for the perfect moment to begin", "D. Focusing only on the end result"],
+                  "answer": "B"
+                },
+                {
+                  "id": "q45",
+                  "stem": "Why does the author mention reading 10 pages per day?",
+                  "options": ["A. To show that reading is the best habit", "B. To illustrate the compounding effect of small actions", "C. To criticize people who don't read enough", "D. To compare reading with saving money"],
+                  "answer": "B"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "translation": {
+      "title": "翻译",
+      "time": 30,
+      "score": 106.5,
+      "direction": "Directions: For this part, you are allowed 30 minutes to translate a passage from Chinese into English. You should write your answer on the answer sheet.",
+      "chineseText": "近年来，中国在可再生能源领域取得了举世瞩目的成就。中国已成为全球最大的太阳能电池板生产国和风力发电装机容量最大的国家。沙漠中绵延数公里的太阳能发电场和沿海地区高耸入云的风力发电机，已成为中国向绿色能源转型的象征。根据官方数据，中国可再生能源发电量占总发电量的比例已超过30%，这一数字还在持续增长。中国政府的承诺是实现2030年前碳达峰和2060年前碳中和的目标。",
+      "referenceTranslation": "In recent years, China has made remarkable achievements in the field of renewable energy. China has become the world's largest producer of solar panels and the country with the largest installed wind power capacity. Solar farms stretching for kilometers across deserts and towering wind turbines along coastal areas have become symbols of China's transition to green energy. According to official data, renewable energy accounts for over 30 percent of China's total electricity generation, and this figure continues to grow. The Chinese government has committed to achieving peak carbon emissions before 2030 and carbon neutrality before 2060.",
+      "keyPoints": [
+        "可再生能源：renewable energy",
+        "太阳能电池板：solar panels",
+        "风力发电装机容量：installed wind power capacity",
+        "碳达峰：peak carbon emissions",
+        "碳中和：carbon neutrality",
+        "注意使用现在完成时描述已取得的成就"
+      ]
+    }
+  }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>历年真题 — Fast CET</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/content.css">
+  <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+</head>
+<body>
+  <main class="content-page container">
+    <div class="breadcrumb">
+      <a href="../index.html">首页</a>
+      <span class="breadcrumb__sep">/</span>
+      <span class="breadcrumb__current">历年真题</span>
+    </div>
+    <header class="page-header">
+      <h1>历年真题</h1>
+      <p>收录2024年6套CET-4全真试卷，逐题精解，还原真实考试难度与节奏</p>
+    </header>
+    <div class="filter-tags" id="filterTags">
+      <button class="filter-tag is-active" data-filter="all">全部</button>
+      <button class="filter-tag" data-filter="2024-06">2024年6月</button>
+      <button class="filter-tag" data-filter="2024-12">2024年12月</button>
+    </div>
+    <div class="exam-grid" id="examGrid">
+      <!-- 骨架屏占位 -->
+      <div class="skeleton" style="height:200px"></div>
+      <div class="skeleton" style="height:200px"></div>
+      <div class="skeleton" style="height:200px"></div>
+    </div>
+  </main>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/data-loader.js"></script>
+  <script src="../js/exam-renderer.js"></script>
+  <script src="../js/filter.js"></script>
+  <script src="../js/content-animations.js"></script>
+  <script>
+    initApp();
+    ExamRenderer.renderExamGrid('examGrid', { type: 'real' }).then(() => {
+      Filter.init('filterTags', 'examGrid', { filterAttr: 'data-month' });
+      ContentAnimations.init({ filterContainerId: 'filterTags', cardSelector: '.exam-card' });
+    });
+  </script>
+</body>
+</html>

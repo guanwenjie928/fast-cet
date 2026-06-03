@@ -1,0 +1,336 @@
+{
+  "meta": {
+    "id": "cet4-mock-03",
+    "year": 2025,
+    "month": 1,
+    "set": null,
+    "type": "mock",
+    "title": "CET-4 全真模拟题（三）",
+    "totalTime": 125,
+    "totalScore": 710,
+    "difficulty": 3
+  },
+  "sections": {
+    "writing": {
+      "title": "作文",
+      "time": 30,
+      "score": 106.5,
+      "direction": "Directions: For this part, you are allowed 30 minutes to write a short essay on the following topic. You should write at least 120 words but no more than 180 words.",
+      "topic": "The Impact of Short Video Platforms on College Students' Study Habits",
+      "keyPoints": [
+        "描述短视频平台在大学生中的普及现象",
+        "分析短视频对学习习惯的正面和负面影响",
+        "提出合理使用短视频的建议"
+      ],
+      "sampleEssay": "In recent years, short video platforms such as Douyin and Kuaishou have become an integral part of college students' daily lives. While these platforms offer entertainment and even educational content, their impact on study habits deserves careful examination.\n\nOn the positive side, many educators and institutions have embraced short video platforms to deliver bite-sized knowledge. Students can access quick tutorials, language learning tips, and academic discussions within minutes. This format suits the modern attention span and makes learning more accessible.\n\nHowever, the negative effects are more pronounced. The algorithm-driven content recommendation system is deliberately designed to maximize user engagement, often leading to prolonged, uncontrollable scrolling sessions that eat into study time. Many students report losing one to two hours daily to these platforms without realizing it. Furthermore, the constant exposure to fast-paced, highly stimulating content can reduce the ability to focus on longer, more demanding academic materials.\n\nTo strike a balance, I suggest that students set strict time limits for short video consumption, perhaps using screen-time management apps. It is also advisable to curate one's feed deliberately—following educational creators and unfollowing purely entertaining accounts. Ultimately, short videos should serve as a supplement to, not a substitute for, deep learning."
+    },
+    "listening": {
+      "title": "听力理解",
+      "time": 25,
+      "score": 248.5,
+      "sections": {
+        "newsReports": [
+          {
+            "id": "l3-1",
+            "type": "news",
+            "audioSrc": "assets/audio/mock-03/news-1.mp3",
+            "transcript": "The European Union has announced a landmark agreement to phase out gasoline-powered vehicles by 2035, accelerating the transition to electric mobility. The deal, reached after intense negotiations among member states, requires all new cars sold in the EU to produce zero carbon emissions by the 2035 deadline. Environmental groups have welcomed the decision, calling it a historic step toward combating climate change. However, the automotive industry has expressed concerns about the feasibility of the timeline, citing the need for massive investments in battery production and charging infrastructure. The agreement also includes provisions for small automakers producing fewer than 10,000 vehicles annually to receive extended compliance deadlines.",
+            "questions": [
+              {
+                "id": "q3-1-1",
+                "stem": "What is the news report mainly about?",
+                "options": ["The decline of the European automotive industry", "The EU's plan to ban gasoline cars by 2035", "A new electric vehicle technology breakthrough", "Environmental protests in European cities"],
+                "answer": "B"
+              },
+              {
+                "id": "q3-1-2",
+                "stem": "What concern did the automotive industry raise?",
+                "options": ["The lack of consumer interest in electric cars", "The difficulty of meeting the timeline due to investment needs", "The shortage of gasoline for testing vehicles", "The competition from American automakers"],
+                "answer": "B"
+              }
+            ]
+          },
+          {
+            "id": "l3-2",
+            "type": "news",
+            "audioSrc": "assets/audio/mock-03/news-2.mp3",
+            "transcript": "Scientists in Japan have developed a new type of biodegradable plastic that decomposes completely in seawater within just 30 days, offering a potential solution to the global crisis of ocean microplastic pollution. The material, made from plant-derived cellulose and modified starch, maintains the durability of conventional plastics during use but breaks down rapidly when exposed to salt water and marine bacteria. Laboratory tests showed that the material loses 90 percent of its structural integrity within two weeks of submersion. The research team, based at Osaka University, is now working with industry partners to scale up production. If successful, the material could replace single-use plastics in packaging, fishing gear, and other applications where ocean pollution is a significant concern.",
+            "questions": [
+              {
+                "id": "q3-2-1",
+                "stem": "How quickly does the new plastic decompose in seawater?",
+                "options": ["Within 7 days", "Within 30 days", "Within 90 days", "Within 6 months"],
+                "answer": "B"
+              },
+              {
+                "id": "q3-2-2",
+                "stem": "What is the current focus of the research team?",
+                "options": ["Applying for environmental awards", "Testing the material in freshwater lakes", "Scaling up production with industry partners", "Writing academic papers about the discovery"],
+                "answer": "C"
+              }
+            ]
+          }
+        ],
+        "longConversations": [
+          {
+            "id": "l3-3",
+            "type": "longConversation",
+            "audioSrc": "assets/audio/mock-03/conversation-1.mp3",
+            "transcript": "W: Hey David, have you decided on your summer internship yet? I heard the application deadlines are coming up fast.\n\nM: I'm torn between two options, actually. There's a research opportunity at the university lab working on renewable energy, and then there's a corporate internship at a consulting firm downtown.\n\nW: Those sound completely different! The research one would be great if you're thinking about graduate school, right?\n\nM: Exactly. My professor says the lab project on solar panel efficiency could lead to a publication, which would really strengthen my PhD application. But the consulting internship pays almost three times as much, and they have a high conversion rate to full-time positions.\n\nW: That's a tough call. What's your priority right now — immediate financial benefit or long-term academic goals?\n\nM: That's what I've been asking myself. My parents think I should take the corporate route for the job security, but my academic advisor is pushing for the research position. Honestly, I'm leaning toward the lab. I can always go into industry after graduate school, but getting research experience as an undergraduate is harder.\n\nW: That makes sense. When do you need to decide by?\n\nM: The consulting firm needs an answer by next Friday, but the lab position can wait until the end of the month. I'm going to talk to a few more people before making a final decision.",
+            "questions": [
+              {
+                "id": "q3-3-1",
+                "stem": "What are the two options the man is considering?",
+                "options": ["Studying abroad or staying home", "A research position and a consulting internship", "Two different consulting firms", "A part-time job or full-time employment"],
+                "answer": "B"
+              },
+              {
+                "id": "q3-3-2",
+                "stem": "What advantage does the research position offer?",
+                "options": ["Higher salary", "Better location", "Possibility of publication for PhD application", "More vacation days"],
+                "answer": "C"
+              },
+              {
+                "id": "q3-3-3",
+                "stem": "Which option is the man leaning toward?",
+                "options": ["The consulting firm for job security", "The research lab for academic experience", "Neither option — he decided to travel", "Both options simultaneously"],
+                "answer": "B"
+              }
+            ]
+          },
+          {
+            "id": "l3-4",
+            "type": "longConversation",
+            "audioSrc": "assets/audio/mock-03/conversation-2.mp3",
+            "transcript": "M: Professor Liu, I wanted to discuss my term paper topic with you. I was thinking of writing about the gig economy and its impact on traditional employment.\n\nW: That's a timely topic, Zhang Wei. What specific angle were you planning to take?\n\nM: I wanted to argue that while gig work offers flexibility, it's actually creating a new class of workers without basic protections like health insurance and retirement benefits.\n\nW: That's a strong thesis, but it's been covered quite a bit in the media. Let me challenge you — have you considered looking at it from the perspective of workers in developing countries? The gig economy might function very differently outside of the Western context.\n\nM: I hadn't thought about that. Do you mean comparing how gig platforms operate in China versus the United States?\n\nW: Exactly. For instance, the social safety net, cultural attitudes toward freelance work, and regulatory environment are all different. You could make this a comparative study. It would be more original and give you a chance to use sources in both English and Chinese.\n\nM: That does sound more interesting. I could look at food delivery workers in both countries as a case study.\n\nW: That would work well. Just make sure you have access to reliable data. The deadline for the proposal is next Wednesday, so you'll need to narrow your focus quickly. I suggest starting with a literature review this weekend.\n\nM: Will do. Thank you for the guidance, Professor Liu.",
+            "questions": [
+              {
+                "id": "q3-4-1",
+                "stem": "What is the student's original topic for the term paper?",
+                "options": ["Social media marketing", "The gig economy and traditional employment", "International trade policies", "Environmental sustainability"],
+                "answer": "B"
+              },
+              {
+                "id": "q3-4-2",
+                "stem": "What suggestion does the professor make?",
+                "options": ["Change the topic entirely", "Focus on a comparative study between countries", "Interview gig workers directly", "Write about a different industry"],
+                "answer": "B"
+              },
+              {
+                "id": "q3-4-3",
+                "stem": "When is the proposal due?",
+                "options": ["This Friday", "Next Wednesday", "At the end of the month", "Next Monday"],
+                "answer": "B"
+              }
+            ]
+          }
+        ],
+        "passages": [
+          {
+            "id": "l3-5",
+            "type": "passage",
+            "audioSrc": "assets/audio/mock-03/passage-1.mp3",
+            "transcript": "The concept of 'blue zones' has fascinated researchers for decades. These are regions of the world where people live significantly longer than average, often reaching 100 years old while maintaining good health. The five identified blue zones are Okinawa in Japan, Sardinia in Italy, Nicoya in Costa Rica, Ikaria in Greece, and Loma Linda in California. Researchers have identified nine common lifestyle characteristics shared by these populations, which they call the 'Power Nine.' These include moving naturally throughout the day rather than sitting for long periods, having a sense of purpose that adds years to life expectancy, managing stress through daily rituals, eating until only 80 percent full, consuming a mostly plant-based diet, drinking moderate amounts of wine, belonging to a faith-based community, putting family first, and maintaining strong social circles that support healthy behaviors. What's particularly striking is that none of these communities consciously pursued longevity — their healthy habits were simply part of their environment and culture. The lesson for modern society may be that we need to design our environments to make the healthy choice the easy choice, rather than relying solely on individual willpower.",
+            "questions": [
+              {
+                "id": "q3-5-1",
+                "stem": "What characterizes 'blue zones'?",
+                "options": ["Regions with the highest GDP per capita", "Areas where people live unusually long lives", "Locations with the cleanest air quality", "Communities with the best healthcare systems"],
+                "answer": "B"
+              },
+              {
+                "id": "q3-5-2",
+                "stem": "According to the passage, what is a key insight from the blue zone research?",
+                "options": ["Long life is purely determined by genetics", "Healthy habits were embedded in the environment and culture", "People in blue zones exercised intensively every day", "Blue zone residents all followed strict diets"],
+                "answer": "B"
+              },
+              {
+                "id": "q3-5-3",
+                "stem": "What does the '80 percent full' rule refer to?",
+                "options": ["Saving 20 percent of income for retirement", "Exercising at 80 percent of maximum capacity", "Stopping eating before feeling completely full", "Spending 20 percent of the day on leisure activities"],
+                "answer": "C"
+              }
+            ]
+          },
+          {
+            "id": "l3-6",
+            "type": "passage",
+            "audioSrc": "assets/audio/mock-03/passage-2.mp3",
+            "transcript": "In recent years, the concept of 'forest bathing,' or shinrin-yoku, has gained international attention as a scientifically-backed wellness practice. Originating in Japan in the 1980s, forest bathing involves immersing oneself in a forest environment and mindfully engaging all five senses with the natural surroundings. Unlike hiking or exercising in nature, the goal is not physical exertion or reaching a destination, but simply being present among the trees. Scientific studies have documented remarkable physiological effects. Spending just two hours in a forest can lower cortisol levels by 16 percent, reduce blood pressure by 2 to 4 percent, and increase the activity of natural killer cells — a type of white blood cell that fights viruses and tumors — by up to 50 percent. These effects are attributed in part to phytoncides, which are antimicrobial compounds released by trees. Remarkably, the immune system boost can last for up to 30 days after a forest bathing session. Some countries are now incorporating forest bathing into their public health strategies. In South Korea, the government has established official 'healing forests' with trained facilitators, and doctors in several countries now prescribe nature time as part of treatment plans for stress-related conditions, anxiety, and depression.",
+            "questions": [
+              {
+                "id": "q3-6-1",
+                "stem": "How does forest bathing differ from hiking?",
+                "options": ["It requires more physical effort", "The goal is sensory immersion rather than physical exercise", "It is always done in groups", "It must be led by a professional guide"],
+                "answer": "B"
+              },
+              {
+                "id": "q3-6-2",
+                "stem": "What physiological effect does forest bathing produce?",
+                "options": ["Increased heart rate", "Higher cortisol levels", "Lower blood pressure and reduced stress hormones", "Decreased white blood cell count"],
+                "answer": "C"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "reading": {
+      "title": "阅读理解",
+      "time": 40,
+      "score": 248.5,
+      "sections": {
+        "wordBank": {
+          "title": "选词填空",
+          "passage": "Volunteering has long been recognized as a noble activity, but recent research suggests it may offer ___1___ health benefits to the volunteers themselves. A comprehensive study published in the Journal of Health Psychology found that individuals who volunteer regularly experience lower rates of depression, higher life satisfaction, and even ___2___ physical health outcomes compared to non-volunteers. The study, which tracked over 5,000 participants across a ten-year period, revealed that the act of helping others triggers the release of endorphins and oxytocin — often referred to as the 'helper's high.' These chemical responses can ___3___ stress and promote feelings of well-being. Interestingly, the benefits appear to be most pronounced among adults over 50, for whom volunteering provides a sense of purpose and social ___4___ that might otherwise diminish in retirement. The frequency of volunteering also matters: those who volunteered at least two hours per week showed ___5___ greater improvements than those who volunteered sporadically. Researchers emphasize, however, that the motivation behind volunteering plays a ___6___ role. Those who volunteer primarily for altruistic reasons experience stronger health benefits than those who feel ___7___ or obligated to participate. The study's authors suggest that healthcare providers should consider ___8___ volunteering as part of a holistic approach to mental and physical health, particularly for older adults ___9___ to maintain active, meaningful lives. They caution, though, that volunteering should not be viewed as a ___10___ for professional medical treatment, but rather as a complementary practice.",
+          "words": [
+            "significant",
+            "connection",
+            "replacement",
+            "substantially",
+            "reduced",
+            "crucial",
+            "enhanced",
+            "promoting",
+            "recommending",
+            "seeking",
+            "obligated",
+            "reduce",
+            "pressured",
+            "unexpected",
+            "temporary"
+          ],
+          "blanks": [
+            {"position": 1, "correct_word": "significant"},
+            {"position": 2, "correct_word": "enhanced"},
+            {"position": 3, "correct_word": "reduce"},
+            {"position": 4, "correct_word": "connection"},
+            {"position": 5, "correct_word": "substantially"},
+            {"position": 6, "correct_word": "crucial"},
+            {"position": 7, "correct_word": "pressured"},
+            {"position": 8, "correct_word": "recommending"},
+            {"position": 9, "correct_word": "seeking"},
+            {"position": 10, "correct_word": "replacement"}
+          ]
+        },
+        "longPassage": {
+          "title": "长篇阅读",
+          "passageTitle": "The Quiet Revolution of Remote Work",
+          "paragraphs": [
+            {"label": "A", "content": "When the COVID-19 pandemic forced offices worldwide to close their doors in early 2020, few predicted that the mass experiment in remote work would permanently reshape the global economy. What began as a temporary health measure has evolved into one of the most significant shifts in work culture since the Industrial Revolution. Three years later, the debate over where and how we work continues to intensify, with profound implications for cities, companies, and workers themselves."},
+            {"label": "B", "content": "The numbers tell a compelling story. According to a survey by the Pew Research Center, 35 percent of American workers who have jobs that can be done remotely now work from home full-time, compared to just 7 percent before the pandemic. An additional 41 percent follow a hybrid model, splitting their time between home and office. This represents a fundamental restructuring of how nearly 80 million American workers spend their professional lives."},
+            {"label": "C", "content": "Employers have been perhaps the most surprised by the results. Early fears that productivity would collapse without in-person supervision proved largely unfounded. A study by Stanford economist Nicholas Bloom found that remote work led to a 13 percent increase in productivity at a major Chinese travel agency — driven primarily by a quieter, more focused work environment and fewer breaks and sick days. Similar findings have emerged from companies across various sectors."},
+            {"label": "D", "content": "However, the picture is not uniformly positive. The same Stanford study noted that while individual productivity improved, collaboration and innovation — what researchers call 'collaborative creativity' — suffered measurably. The number of patent applications and breakthrough innovations declined at companies that went fully remote, suggesting that the spontaneous interactions of office life play a crucial role in generating new ideas."},
+            {"label": "E", "content": "The impact on cities has been dramatic and, in many cases, destabilizing. Central business districts that were designed around the assumption of daily office worker foot traffic have seen vacancy rates soar. In San Francisco, office vacancy rates reached 30 percent by late 2023, and commercial property values have declined by an estimated 40 to 50 percent. The ripple effects extend to the entire ecosystem of businesses that depend on office workers — from coffee shops and restaurants to dry cleaners and public transit systems."},
+            {"label": "F", "content": "On the other hand, suburban and rural communities have experienced an unexpected renaissance. With workers no longer tethered to expensive urban centers, many have relocated to smaller towns and cities offering lower costs of living and more space. This geographic dispersion, nicknamed the 'Zoom migration,' has revitalized communities that had been losing population for decades, bringing fresh economic energy and cultural diversity."},
+            {"label": "G", "content": "Work-life balance, a perennial concern of the modern workforce, has seen both improvements and complications. Parents, particularly mothers, report that remote work has made it easier to manage childcare and household responsibilities. However, the erosion of boundaries between professional and personal time has led to longer working hours for many remote employees. The average workday has expanded by 48 minutes since the shift to remote work, according to a Harvard Business School study of 3.1 million workers across 21,000 companies."},
+            {"label": "H", "content": "The generational divide adds another layer of complexity. Younger workers, particularly those in entry-level positions, have expressed concerns about missed mentorship opportunities and reduced visibility to senior leadership. Career development in remote environments requires deliberate effort and structured programs — something many organizations are still struggling to establish. Surveys consistently show that Gen Z workers are the most likely to prefer in-person work, while mid-career professionals with established networks are more comfortable with remote arrangements."},
+            {"label": "I", "content": "As companies navigate this new landscape, various hybrid models have emerged. Some organizations designate specific in-office days for all employees; others allow individual teams to decide their own schedules; still others have adopted a 'remote-first' approach where the office serves primarily as a gathering space for occasional meetings and social events. No single model has emerged as the clear winner, reflecting the highly contextual nature of work arrangements across different industries and company cultures."},
+            {"label": "J", "content": "The environmental implications are also noteworthy. Reduced commuting has led to measurable decreases in carbon emissions in many metropolitan areas. However, the increase in home energy consumption during work hours partially offsets these gains, and the long-term urban sprawl enabled by remote work could lead to increased automobile dependency and habitat loss. The net environmental effect remains an active area of research and debate."},
+            {"label": "K", "content": "Looking ahead, the future of work appears likely to remain hybrid for the foreseeable future. The key challenge for organizations will be to design work arrangements that capture the productivity and flexibility benefits of remote work while preserving the collaborative, creative, and cultural elements that in-person interaction uniquely provides. As one researcher aptly put it, 'We've spent three years learning to work apart. Now we need to spend the next decade learning how to come together — both physically and virtually — in smarter ways.'"}
+          ],
+          "statements": [
+            {"id": "s3-1", "content": "The percentage of Americans working fully remote has increased from 7 to 35 percent.", "answer": "B"},
+            {"id": "s3-2", "content": "Some companies found that while individual performance improved, collaborative innovation declined with remote work.", "answer": "D"},
+            {"id": "s3-3", "content": "Commercial property in San Francisco lost nearly half of its value after the shift to remote work.", "answer": "E"},
+            {"id": "s3-4", "content": "Young workers are more likely to prefer in-person work than their more experienced colleagues.", "answer": "H"},
+            {"id": "s3-5", "content": "Remote work has caused people to work longer hours on average each day.", "answer": "G"},
+            {"id": "s3-6", "content": "Small towns have seen population growth due to workers leaving expensive cities.", "answer": "F"},
+            {"id": "s3-7", "content": "The environmental effects of remote work are complex and still being studied.", "answer": "J"},
+            {"id": "s3-8", "content": "A study in China found that remote work increased productivity by 13 percent.", "answer": "C"},
+            {"id": "s3-9", "content": "Companies are experimenting with different hybrid models without a clear best practice emerging.", "answer": "I"},
+            {"id": "s3-10", "content": "The pandemic-related shift to remote work started as a temporary measure but became permanent for many.", "answer": "A"}
+          ]
+        },
+        "inDepth": {
+          "title": "仔细阅读",
+          "passages": [
+            {
+              "title": "The Paradox of Choice in Modern Consumer Culture",
+              "content": "In 2004, psychologist Barry Schwartz published his influential book 'The Paradox of Choice,' arguing that while freedom of choice is essential to well-being, too many choices can lead to anxiety, decision paralysis, and dissatisfaction. Two decades later, his thesis seems more relevant than ever in an age of algorithmic recommendations, infinite scroll, and same-day delivery.\n\nConsider the modern supermarket experience. A typical grocery store now stocks over 40,000 items, compared to about 9,000 in the 1970s. The average consumer navigating the cereal aisle faces more than 200 options. While this variety might seem purely beneficial, research consistently shows that when faced with too many choices, consumers are less likely to make any decision at all. A famous study conducted in a California grocery store found that when shoppers were presented with 24 varieties of jam, only 3 percent made a purchase. When the display was reduced to 6 varieties, the purchase rate jumped to 30 percent.\n\nThe psychological mechanism behind this paradox involves several factors. First, the cognitive load of evaluating numerous options is mentally exhausting, a phenomenon known as 'decision fatigue.' Second, when there are many alternatives, people's expectations rise — they believe that among so many options, one must be perfect for them. This leads to what Schwartz calls 'maximizing' behavior, where people obsessively seek the best possible choice rather than settling for one that is good enough ('satisficing'). The result is that maximizers often end up less happy with their decisions than satisficers, because they're haunted by the thought that a better option might have been missed.\n\nTechnology companies have both exacerbated and exploited this dynamic. Streaming services present thousands of movies, leading many viewers to spend more time browsing than watching. Dating apps offer seemingly endless potential partners, paradoxically making users more selective and less committed. Social media feeds provide constant exposure to curated versions of others' lives, feeding the 'fear of missing out' and making people perpetually second-guess their own choices.\n\nSome businesses have recognized this problem and built their success on reducing choice. Trader Joe's, the American grocery chain, stocks only about 4,000 items — a fraction of a typical supermarket — yet consistently ranks highest in customer satisfaction. The curated, limited selection eliminates decision fatigue and builds trust: customers believe that whatever Trader Joe's chooses to sell has been vetted for quality.",
+              "questions": [
+                {
+                  "id": "q3-rp1-1",
+                  "stem": "What does the jam study mentioned in the passage illustrate?",
+                  "options": ["Consumers prefer high-quality jams over cheaper ones", "Too many options can reduce the likelihood of making a purchase", "Most shoppers are willing to try new products", "Product placement affects consumer behavior"],
+                  "answer": "B",
+                  "explanation": "The jam study showed that 24 varieties led to only 3% purchasing, while 6 varieties led to 30% purchasing, demonstrating that too many options can paralyze decision-making."
+                },
+                {
+                  "id": "q3-rp1-2",
+                  "stem": "According to the passage, how do 'maximizers' differ from 'satisficers'?",
+                  "options": ["Maximizers make decisions more quickly", "Maximizers spend less money on purchases", "Maximizers obsessively seek the best option and end up less satisfied", "Maximizers tend to ignore product reviews"],
+                  "answer": "C",
+                  "explanation": "The passage explains that maximizers 'obsessively seek the best possible choice' and 'often end up less happy with their decisions than satisficers' because they worry a better option was missed."
+                },
+                {
+                  "id": "q3-rp1-3",
+                  "stem": "Why is Trader Joe's mentioned as an example in the passage?",
+                  "options": ["To criticize its limited product selection", "To show how reducing choice can increase customer satisfaction", "To compare American and European retail models", "To illustrate the growth of organic food markets"],
+                  "answer": "B",
+                  "explanation": "Trader Joe's stocks far fewer items than typical supermarkets but achieves the highest customer satisfaction, demonstrating that curated, limited selection can eliminate decision fatigue and build trust."
+                },
+                {
+                  "id": "q3-rp1-4",
+                  "stem": "What is the author's overall attitude toward the abundance of choice in modern society?",
+                  "options": ["Unreservedly positive about the benefits of variety", "Neutral, presenting only facts without judgment", "Cautious, acknowledging both the value of choice and its psychological costs", "Dismissive, arguing that choice should be significantly restricted"],
+                  "answer": "C",
+                  "explanation": "The author acknowledges that 'freedom of choice is essential to well-being' while documenting the anxiety, decision paralysis, and dissatisfaction that excessive choice can cause, presenting a balanced, cautious perspective."
+                }
+              ]
+            },
+            {
+              "title": "The Rise of Micro-Credentials and the Future of Higher Education",
+              "content": "In the evolving landscape of higher education, micro-credentials — short, focused certifications in specific skills — have emerged as a significant alternative to traditional degree programs. Offered by universities, technology companies, and specialized platforms, these credentials promise to bridge the widening gap between what colleges teach and what employers need. Their rapid growth has sparked intense debate about the future value of conventional four-year degrees.\n\nThe appeal of micro-credentials is straightforward. They are typically much cheaper than degree programs, can be completed in weeks or months rather than years, and focus directly on job-relevant skills such as data analytics, digital marketing, or cloud computing. For employers, they offer a more granular signal of a candidate's specific capabilities than a broad degree classification. For workers, particularly those seeking to change careers or update their skills mid-career, they provide an accessible entry point into new fields without the time and financial commitment of returning to university.\n\nMajor technology companies have embraced the trend aggressively. Google offers its Career Certificate program, which can be completed in about six months at a cost of roughly $300 — compared to the tens of thousands of dollars and four years typically required for a bachelor's degree. IBM, Microsoft, and Amazon have launched similar initiatives. Notably, many of these programs explicitly state that a college degree is not a prerequisite, opening pathways for people from non-traditional backgrounds.\n\nHowever, critics raise important concerns. The quality and rigor of micro-credentials vary enormously across providers, with little standardization or regulatory oversight. There is also the question of whether employers will continue to value these credentials as they become more common — a form of credential inflation. Moreover, skeptics argue that reducing education to a collection of discrete technical skills ignores the broader purpose of higher education: developing critical thinking, ethical reasoning, cultural awareness, and the capacity for lifelong learning.\n\nA growing consensus suggests that the future will likely involve not a replacement of degrees by micro-credentials, but an integration of both. Some universities are already embedding micro-credentials within their degree programs, allowing students to graduate with both a traditional degree and a portfolio of verified skills. This model — sometimes called 'stackable credentials' — combines the depth and breadth of a university education with the specificity and flexibility of skills-based certification.",
+              "questions": [
+                {
+                  "id": "q3-rp2-1",
+                  "stem": "What is the main advantage of micro-credentials according to the passage?",
+                  "options": ["They replace the need for any formal education", "They are cheaper, shorter, and focus on specific job-relevant skills", "They guarantee employment at major technology companies", "They provide the same social experience as a university degree"],
+                  "answer": "B",
+                  "explanation": "The passage states micro-credentials are 'cheaper than degree programs, can be completed in weeks or months rather than years, and focus directly on job-relevant skills.'"
+                },
+                {
+                  "id": "q3-rp2-2",
+                  "stem": "What concern do critics raise about micro-credentials?",
+                  "options": ["They are too expensive for most workers", "Quality varies widely with little standardization", "Technology companies refuse to recognize them", "They take too long to complete"],
+                  "answer": "B",
+                  "explanation": "The passage notes critics point out 'the quality and rigor of micro-credentials vary enormously across providers, with little standardization or regulatory oversight.'"
+                },
+                {
+                  "id": "q3-rp2-3",
+                  "stem": "What is meant by 'stackable credentials' in the context of the passage?",
+                  "options": ["Credentials that can be physically stacked on a desk", "Combining micro-credentials with traditional degrees into one qualification", "Credentials that lose value over time", "Credentials issued only by technology companies"],
+                  "answer": "B",
+                  "explanation": "Stackable credentials combine 'the depth and breadth of a university education with the specificity and flexibility of skills-based certification,' integrating micro-credentials into degree programs."
+                },
+                {
+                  "id": "q3-rp2-4",
+                  "stem": "What does the passage suggest about the future relationship between degrees and micro-credentials?",
+                  "options": ["Micro-credentials will completely replace traditional degrees", "Traditional degrees will become illegal", "Integration of both into a combined educational model is likely", "Employers will stop valuing either form of education"],
+                  "answer": "C",
+                  "explanation": "The final paragraph states the consensus 'suggests that the future will likely involve not a replacement of degrees by micro-credentials, but an integration of both.'"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "translation": {
+      "title": "翻译",
+      "time": 30,
+      "score": 106.5,
+      "direction": "Directions: For this part, you are allowed 30 minutes to translate a passage from Chinese into English.",
+      "chineseText": "中国的高铁网络是世界上最庞大、最繁忙的铁路系统之一。截至2024年底，中国高铁运营里程已超过4.5万公里，占全球高铁总里程的三分之二以上。高铁不仅极大地缩短了城市间的旅行时间，还促进了区域经济发展和旅游业繁荣。例如，北京到上海的行程时间从原来的12小时以上缩短至约4.5小时。高铁列车以准时、舒适和安全著称，已成为中国民众出行的首选交通工具之一。此外，中国高铁技术还出口到多个国家，包括印度尼西亚、土耳其和沙特阿拉伯，成为中国技术创新的闪亮名片。",
+      "referenceTranslation": "China's high-speed railway network is one of the largest and busiest rail systems in the world. By the end of 2024, the operating mileage of China's high-speed railways had exceeded 45,000 kilometers, accounting for more than two-thirds of the world's total high-speed rail mileage. High-speed rail has not only dramatically shortened travel times between cities, but has also promoted regional economic development and the prosperity of the tourism industry. For example, the travel time from Beijing to Shanghai has been reduced from over 12 hours to approximately 4.5 hours. Known for their punctuality, comfort, and safety, high-speed trains have become one of the preferred modes of transportation for the Chinese people. In addition, China's high-speed rail technology has been exported to multiple countries, including Indonesia, Turkey, and Saudi Arabia, becoming a shining example of China's technological innovation.",
+      "keyPoints": [
+        "\"运营里程\" 可译为 operating mileage",
+        "\"占...三分之二以上\" 译为 accounting for more than two-thirds of",
+        "\"缩短\" 用 shorten/reduce，注意时态",
+        "\"以...著称\" 用 known for / renowned for 结构",
+        "\"闪亮名片\" 意译为 shining example 而非直译"
+      ]
+    }
+  }
+}

@@ -1,0 +1,854 @@
+/**
+ * Fast CET — Metro Mode (通勤模式)
+ *
+ * 场景: 地铁/公交通勤，单手操作，网络不稳定
+ * 设计原则:
+ *   1. 拇指热区布局 — 核心操作在屏幕底部 40%
+ *   2. 超大触摸目标 — 最小 48×48dp，摇晃中也能精准点击
+ *   3. 滑动优先于点击 — 左滑不认识，右滑认识
+ *   4. 离线优先 — 断网不中断，静默降级
+ *   5. 仅竖屏 — 通勤场景横屏不现实
+ */
+
+/* ============================================================
+   1. 全局变量覆盖
+   ============================================================ */
+
+[data-mode="metro"] {
+  /* 触摸目标 */
+  --touch-target-min: 48px;
+  --touch-target-lg: 56px;
+
+  /* 字体放大（手机屏幕小 + 摇晃中阅读） */
+  --font-size-scale: 1.1;
+
+  /* 间距增大（防误触） */
+  --card-gap: 16px;
+  --card-padding: 20px;
+
+  /* 动画加速（通勤场景不需要冗长过渡） */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.2s ease;
+
+  /* 底部安全区（iPhone 刘海屏） */
+  --safe-area-bottom: env(safe-area-inset-bottom, 16px);
+}
+
+/* ============================================================
+   2. 竖屏锁定提示
+   ============================================================ */
+
+[data-mode="metro"] .landscape-warning {
+  display: none;
+}
+
+@media (orientation: landscape) {
+  [data-mode="metro"] .landscape-warning {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    inset: 0;
+    background: var(--color-bg, #FFF8F5);
+    z-index: 99999;
+    font-size: 1.2rem;
+    color: var(--color-text-secondary, #8B6B5E);
+    text-align: center;
+    padding: 24px;
+  }
+
+  [data-mode="metro"] .landscape-warning::before {
+    content: '📱';
+    display: block;
+    font-size: 3rem;
+    margin-bottom: 16px;
+    animation: rotate-phone 2s ease-in-out infinite;
+  }
+
+  [data-mode="metro"] .landscape-warning::after {
+    content: '请竖屏使用，通勤模式不支持横屏';
+    display: block;
+  }
+
+  [data-mode="metro"] .app-content {
+    display: none;
+  }
+}
+
+@keyframes rotate-phone {
+  0%, 100% { transform: rotate(0deg); }
+  25%  { transform: rotate(-90deg); }
+  50%  { transform: rotate(-90deg); }
+  75%  { transform: rotate(0deg); }
+}
+
+/* ============================================================
+   3. 拇指热区布局
+   ============================================================ */
+
+[data-mode="metro"] {
+  /* 导航移至底部 */
+  .nav {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 248, 245, 0.92);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 1px solid var(--color-border, rgba(255,94,77,0.15));
+    border-bottom: none;
+    padding-bottom: var(--safe-area-bottom);
+    z-index: var(--z-nav, 1000);
+  }
+
+  .nav__inner {
+    flex-direction: column;
+    padding: 8px 16px;
+  }
+
+  .nav__links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 0;
+  }
+
+  .nav__links a {
+    font-size: 0.75rem;
+    padding: 8px 4px;
+    min-width: 48px;
+    min-height: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+  }
+
+  /* 隐藏桌面端 logo 文字，仅保留图标 */
+  .nav__logo span {
+    display: none;
+  }
+
+  .nav__logo {
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+  }
+
+  /* 汉堡菜单隐藏（底部导航已展开） */
+  .nav__toggle {
+    display: none;
+  }
+}
+
+/* ============================================================
+   4. 内容区域适配
+   ============================================================ */
+
+[data-mode="metro"] {
+  /* 顶部精简为进度条 */
+  .top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: rgba(0, 0, 0, 0.05);
+    z-index: var(--z-nav, 1000);
+  }
+
+  .top-bar__progress {
+    height: 100%;
+    background: var(--gradient-hero, linear-gradient(135deg, #FF2D78, #FF5E4D, #FFB84D));
+    transition: width 0.3s ease;
+    border-radius: 0 2px 2px 0;
+  }
+
+  /* 主内容区留出顶部进度条 + 底部导航的空间 */
+  .app-content {
+    padding-top: 8px;
+    padding-bottom: calc(80px + var(--safe-area-bottom));
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+
+  /* 页面标题精简 */
+  .page-header {
+    padding: 12px 16px 8px;
+    margin-bottom: 8px;
+  }
+
+  .page-header h1 {
+    font-size: 1.3rem;
+    line-height: 1.3;
+  }
+
+  .page-header p {
+    font-size: 0.8rem;
+    display: none; /* 通勤不显示描述文字，省空间 */
+  }
+
+  .breadcrumb {
+    display: none; /* 通勤不显示面包屑 */
+  }
+}
+
+/* ============================================================
+   5. 词汇卡片 — Word River
+   ============================================================ */
+
+[data-mode="metro"] {
+  .word-card {
+    height: 60vh;
+    height: 60dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 16px;
+    padding: 24px;
+    background: var(--glass-bg, rgba(255,255,255,0.6));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border, rgba(255,255,255,0.8));
+    border-radius: var(--radius-lg, 24px);
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: pan-y; /* 允许纵向滑动，禁止横向 */
+  }
+
+  .word-card__word {
+    font-family: var(--font-en, 'Inter', sans-serif);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-text, #2D1A14);
+    margin-bottom: 12px;
+  }
+
+  .word-card__phonetic {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary, #8B6B5E);
+    margin-bottom: 20px;
+  }
+
+  .word-card__meaning {
+    font-size: 1.1rem;
+    color: var(--color-text, #2D1A14);
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+
+  .word-card__example {
+    font-size: 0.85rem;
+    color: var(--color-text-secondary, #8B6B5E);
+    font-style: italic;
+  }
+
+  /* 滑动指示器 */
+  .word-card__swipe-hint {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 40px;
+    opacity: 0.4;
+    font-size: 0.75rem;
+    color: var(--color-text-secondary, #8B6B5E);
+  }
+
+  .word-card__swipe-hint span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+}
+
+/* ============================================================
+   6. 底部操作按钮（拇指自然区）
+   ============================================================ */
+
+[data-mode="metro"] {
+  .metro-actions {
+    position: fixed;
+    bottom: calc(72px + var(--safe-area-bottom));
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 24px;
+    z-index: 100;
+  }
+
+  .metro-actions .btn {
+    flex: 1;
+    max-width: 160px;
+    min-height: var(--touch-target-lg, 56px);
+    border-radius: 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* 不认识按钮 — 左滑对应 */
+  .metro-actions .btn--unknown {
+    background: rgba(255, 94, 77, 0.08);
+    color: var(--color-primary, #FF5E4D);
+    border: 1px solid rgba(255, 94, 77, 0.2);
+  }
+
+  /* 认识按钮 — 右滑对应 */
+  .metro-actions .btn--known {
+    background: var(--gradient-hero, linear-gradient(135deg, #FF2D78, #FF5E4D));
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(255, 94, 77, 0.3);
+  }
+
+  /* 按下反馈 */
+  .metro-actions .btn:active {
+    transform: scale(0.95);
+  }
+
+  .btn--known:active {
+    box-shadow: 0 2px 8px rgba(255, 94, 77, 0.2);
+  }
+}
+
+/* ============================================================
+   7. 滑动交互
+   ============================================================ */
+
+[data-mode="metro"] {
+  /* 滑动卡片容器 */
+  .swipe-container {
+    position: relative;
+    overflow: hidden;
+    touch-action: pan-y;
+  }
+
+  .swipe-card {
+    position: absolute;
+    width: 100%;
+    will-change: transform;
+    transition: none; /* JS 实时控制，不用 CSS transition */
+  }
+
+  /* 滑动反馈覆盖层 */
+  .swipe-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 800;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 5;
+    border-radius: var(--radius-lg, 24px);
+  }
+
+  .swipe-overlay--left {
+    background: rgba(255, 94, 77, 0.15);
+    color: var(--color-primary, #FF5E4D);
+    justify-content: flex-start;
+    padding-left: 40px;
+  }
+
+  .swipe-overlay--right {
+    background: rgba(46, 204, 113, 0.15);
+    color: #2ecc71;
+    justify-content: flex-end;
+    padding-right: 40px;
+  }
+}
+
+/* ============================================================
+   8. 离线指示器
+   ============================================================ */
+
+[data-mode="metro"] {
+  .offline-indicator {
+    position: fixed;
+    top: 4px; /* 紧贴进度条下方 */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    font-size: 0.7rem;
+    border-radius: 0 0 12px 12px;
+    z-index: calc(var(--z-nav, 1000) + 1);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .offline-indicator__icon {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #FFB84D;
+    animation: offline-pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes offline-pulse {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 1; }
+  }
+
+  /* 离线时显示 */
+  &[data-offline] .offline-indicator {
+    opacity: 1;
+  }
+
+  /* 恢复在线时短暂显示"已连接" */
+  .online-restored-toast {
+    position: fixed;
+    top: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 4px 16px;
+    background: rgba(46, 204, 113, 0.9);
+    color: #fff;
+    font-size: 0.7rem;
+    border-radius: 0 0 12px 12px;
+    z-index: calc(var(--z-nav, 1000) + 2);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+}
+
+/* ============================================================
+   9. 低带宽模式
+   ============================================================ */
+
+[data-mode="metro"][data-low-bandwidth] {
+  /* 低带宽时隐藏图片 */
+  .word-card__image,
+  .exam-card__thumbnail,
+  img:not(.nav__logo img) {
+    display: none;
+  }
+
+  /* 减少背景模糊（性能） */
+  .word-card {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: rgba(255, 255, 255, 0.9);
+  }
+
+  /* 低带宽标记 */
+  .bandwidth-indicator {
+    position: fixed;
+    top: 4px;
+    right: 8px;
+    font-size: 0.6rem;
+    color: var(--color-text-secondary, #8B6B5E);
+    z-index: calc(var(--z-nav, 1000) + 1);
+    opacity: 0.6;
+  }
+}
+
+/* ============================================================
+   10. 题目卡片（通勤简化版）
+   ============================================================ */
+
+[data-mode="metro"] {
+  .question-card {
+    padding: 16px;
+    margin: 0 12px 12px;
+    min-height: auto;
+  }
+
+  .question-card__stem {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 12px;
+  }
+
+  /* 选项 — 通勤用大按钮 */
+  .options-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .option-btn {
+    min-height: var(--touch-target-min, 48px);
+    padding: 12px 16px;
+    font-size: 0.9rem;
+    border-radius: var(--radius-sm, 8px);
+    border: 1px solid var(--color-border, rgba(255,94,77,0.15));
+    background: var(--glass-bg, rgba(255,255,255,0.6));
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    -webkit-tap-highlight-color: transparent;
+    transition: background 0.15s ease, border-color 0.15s ease;
+  }
+
+  .option-btn:active {
+    background: rgba(255, 94, 77, 0.08);
+    border-color: var(--color-primary, #FF5E4D);
+  }
+
+  .option-btn--selected {
+    background: rgba(255, 94, 77, 0.12);
+    border-color: var(--color-primary, #FF5E4D);
+  }
+
+  .option-btn--correct {
+    background: rgba(46, 204, 113, 0.12);
+    border-color: #2ecc71;
+  }
+
+  .option-btn--wrong {
+    background: rgba(255, 94, 77, 0.12);
+    border-color: var(--color-primary, #FF5E4D);
+  }
+}
+
+/* ============================================================
+   11. 试卷列表（通勤简化版）
+   ============================================================ */
+
+[data-mode="metro"] {
+  .exam-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 12px;
+  }
+
+  .exam-card {
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: var(--touch-target-lg, 56px);
+    background: var(--glass-bg, rgba(255,255,255,0.6));
+    border: 1px solid var(--glass-border, rgba(255,255,255,0.8));
+    border-radius: var(--radius-md, 16px);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .exam-card:active {
+    background: rgba(255, 94, 77, 0.06);
+  }
+
+  .exam-card__title {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .exam-card__meta {
+    font-size: 0.7rem;
+    color: var(--color-text-secondary, #8B6B5E);
+  }
+
+  .exam-card__arrow {
+    font-size: 1.2rem;
+    color: var(--color-primary, #FF5E4D);
+  }
+}
+
+/* ============================================================
+   12. 通勤专属 — 微会话总结
+   ============================================================ */
+
+[data-mode="metro"] {
+  .metro-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 24px;
+    text-align: center;
+    min-height: 50vh;
+    min-height: 50dvh;
+  }
+
+  .metro-summary__emoji {
+    font-size: 3rem;
+    margin-bottom: 16px;
+  }
+
+  .metro-summary__title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-text, #2D1A14);
+    margin-bottom: 8px;
+  }
+
+  .metro-summary__stats {
+    display: flex;
+    gap: 24px;
+    margin: 16px 0;
+  }
+
+  .metro-summary__stat {
+    text-align: center;
+  }
+
+  .metro-summary__stat-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primary, #FF5E4D);
+  }
+
+  .metro-summary__stat-label {
+    font-size: 0.7rem;
+    color: var(--color-text-secondary, #8B6B5E);
+  }
+
+  .metro-summary__message {
+    font-size: 0.85rem;
+    color: var(--color-text-secondary, #8B6B5E);
+    line-height: 1.6;
+    max-width: 280px;
+  }
+}
+
+/* ============================================================
+   13. 筛选标签（通勤简化版）
+   ============================================================ */
+
+[data-mode="metro"] {
+  .filter-tags {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 8px;
+    padding: 8px 12px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .filter-tags::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-tag {
+    flex-shrink: 0;
+    min-height: 36px;
+    padding: 8px 16px;
+    font-size: 0.8rem;
+    border-radius: 18px;
+    border: 1px solid var(--color-border, rgba(255,94,77,0.15));
+    background: var(--glass-bg, rgba(255,255,255,0.6));
+    white-space: nowrap;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .filter-tag--active {
+    background: var(--gradient-hero, linear-gradient(135deg, #FF2D78, #FF5E4D));
+    color: #fff;
+    border-color: transparent;
+  }
+}
+
+/* ============================================================
+   14. 听力播放器（通勤简化版）
+   ============================================================ */
+
+[data-mode="metro"] {
+  .audio-player {
+    position: fixed;
+    bottom: calc(72px + var(--safe-area-bottom));
+    left: 8px;
+    right: 8px;
+    padding: 12px 16px;
+    background: rgba(255, 248, 245, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--color-border, rgba(255,94,77,0.15));
+    border-radius: var(--radius-md, 16px);
+    z-index: 90;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .audio-player__play-btn {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    border-radius: 50%;
+    background: var(--gradient-hero, linear-gradient(135deg, #FF2D78, #FF5E4D));
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .audio-player__progress {
+    flex: 1;
+    height: 4px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .audio-player__progress-fill {
+    height: 100%;
+    background: var(--gradient-hero, linear-gradient(135deg, #FF2D78, #FF5E4D));
+    border-radius: 2px;
+    transition: width 0.1s linear;
+  }
+
+  .audio-player__time {
+    font-size: 0.7rem;
+    color: var(--color-text-secondary, #8B6B5E);
+    min-width: 36px;
+    text-align: center;
+  }
+}
+
+/* ============================================================
+   15. 到站提醒（位置感知，可选）
+   ============================================================ */
+
+[data-mode="metro"] {
+  .station-alert {
+    position: fixed;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 20px;
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    font-size: 0.8rem;
+    border-radius: 20px;
+    z-index: calc(var(--z-nav, 1000) + 3);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+  }
+
+  .station-alert--visible {
+    opacity: 1;
+  }
+
+  .station-alert__action {
+    color: var(--color-accent, #FFB84D);
+    font-weight: 600;
+  }
+}
+
+/* ============================================================
+   16. 全局触摸优化
+   ============================================================ */
+
+[data-mode="metro"] {
+  /* 防止 iOS 双击缩放 */
+  .btn, .option-btn, .exam-card, .filter-tag, .word-card {
+    touch-action: manipulation;
+  }
+
+  /* 禁止文本选择（避免长按出选择菜单） */
+  .word-card, .metro-summary {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  /* 点击高亮统一 */
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* 滚动容器惯性滚动 */
+  .exam-grid, .filter-tags, .app-content {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* ============================================================
+   17. 答案揭示（通勤简化版）
+   ============================================================ */
+
+[data-mode="metro"] {
+  .answer-reveal {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, opacity 0.35s ease;
+    opacity: 0;
+  }
+
+  .answer-reveal--open {
+    max-height: 600px;
+    opacity: 1;
+  }
+
+  .answer-reveal__toggle {
+    min-height: 44px;
+    padding: 10px 20px;
+    font-size: 0.85rem;
+    color: var(--color-primary, #FF5E4D);
+    background: transparent;
+    border: 1px dashed var(--color-primary, #FF5E4D);
+    border-radius: 22px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .answer-reveal__toggle:active {
+    background: rgba(255, 94, 77, 0.06);
+  }
+}
+
+/* ============================================================
+   18. 通勤连胜指示器
+   ============================================================ */
+
+[data-mode="metro"] {
+  .metro-streak {
+    position: fixed;
+    top: 8px;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--color-accent, #FFB84D);
+    z-index: 50;
+    opacity: 0.8;
+  }
+
+  .metro-streak__fire {
+    font-size: 0.9rem;
+  }
+
+  .metro-streak--active {
+    animation: streak-pop 0.5s ease;
+  }
+
+  @keyframes streak-pop {
+    0% { transform: scale(1); }
+    30% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+  }
+}

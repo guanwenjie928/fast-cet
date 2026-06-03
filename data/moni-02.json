@@ -1,0 +1,373 @@
+{
+  "meta": {
+    "id": "cet4-mock-02",
+    "year": 2025,
+    "month": 1,
+    "set": "B",
+    "type": "mock",
+    "difficulty": 4,
+    "title": "CET-4 全真模拟题（二）",
+    "totalTime": 125,
+    "totalScore": 710
+  },
+  "sections": {
+    "writing": {
+      "title": "作文",
+      "time": 30,
+      "score": 106.5,
+      "direction": "Directions: For this part, you are allowed 30 minutes to write an essay on the topic below. You should write at least 120 words but no more than 180 words.",
+      "topic": "The Role of Artificial Intelligence in Modern Education",
+      "prompt": "Suppose your university is holding a debate on whether AI tools like ChatGPT should be allowed in classrooms. Write an essay expressing your viewpoint on the role of artificial intelligence in modern education. You should discuss both the benefits and potential drawbacks, and state your own position clearly.",
+      "sampleEssay": "Artificial intelligence has become an increasingly prominent force in modern education, sparking heated debates about its proper role in classrooms. While AI tools offer remarkable opportunities for personalized learning, they also present significant challenges that educators must address.\n\nOn the positive side, AI-powered educational tools can adapt to individual students' learning paces and styles. For instance, intelligent tutoring systems can identify a student's weak areas and provide targeted exercises, something that would be nearly impossible for a single teacher managing a class of forty students. Moreover, AI can automate administrative tasks such as grading multiple-choice questions and tracking attendance, freeing up teachers to focus on more meaningful interactions with students.\n\nHowever, the integration of AI in education is not without its risks. The most pressing concern is academic integrity. When students can simply ask ChatGPT to write their essays or solve their math problems, the development of critical thinking and problem-solving skills is severely undermined. Furthermore, over-reliance on AI tools may weaken students' ability to conduct independent research and formulate original ideas.\n\nIn my opinion, the key lies in finding a balanced approach. AI should be treated as a supplementary tool rather than a replacement for traditional learning methods. Schools should establish clear guidelines on when and how AI can be used, and teachers should design assignments that require genuine human creativity and analysis. Ultimately, AI is a powerful servant but a poor master in the realm of education.",
+      "keyPoints": [
+        "AI tools offer personalized learning and adaptive instruction",
+        "Automation of administrative tasks frees teachers for meaningful work",
+        "Academic integrity is threatened by easy access to AI writing tools",
+        "Over-reliance on AI can weaken critical thinking and research skills",
+        "A balanced approach with clear guidelines is the optimal solution"
+      ]
+    },
+    "listening": {
+      "title": "听力理解",
+      "time": 25,
+      "score": 248.5,
+      "sections": {
+        "newsReports": [
+          {
+            "id": "l1",
+            "type": "news",
+            "audioSrc": "assets/audio/mock-02/l1.mp3",
+            "transcript": "The United Nations Educational, Scientific and Cultural Organization has released a new report highlighting the global teacher shortage crisis. According to UNESCO, the world needs 44 million additional teachers to achieve universal primary and secondary education by 2030. Sub-Saharan Africa faces the most severe shortage, requiring 15 million new teachers alone. The report identifies low salaries, poor working conditions, and lack of professional development opportunities as the primary factors driving teachers away from the profession. UNESCO Director-General Audrey Azoulay stated that 'the global teacher shortage is not just a numbers problem—it is a quality crisis that threatens the future of millions of children worldwide.' The organization is calling on governments to increase investment in teacher training programs and improve working conditions to attract and retain qualified educators.",
+            "questions": [
+              {
+                "id": "q1",
+                "stem": "How many additional teachers does the world need by 2030 according to UNESCO?",
+                "options": ["A. 15 million", "B. 44 million", "C. 30 million", "D. 50 million"],
+                "answer": "B",
+                "explanation": "The report states that 'the world needs 44 million additional teachers to achieve universal primary and secondary education by 2030.'"
+              },
+              {
+                "id": "q2",
+                "stem": "What are the main reasons teachers are leaving the profession?",
+                "options": ["A. Lack of students", "B. Too much vacation time", "C. Low salaries, poor working conditions, and lack of professional development", "D. Strict government regulations"],
+                "answer": "C",
+                "explanation": "The report identifies 'low salaries, poor working conditions, and lack of professional development opportunities as the primary factors driving teachers away.'"
+              }
+            ]
+          },
+          {
+            "id": "l2",
+            "type": "news",
+            "audioSrc": "assets/audio/mock-02/l2.mp3",
+            "transcript": "Scientists at the Massachusetts Institute of Technology have developed a new battery technology that could revolutionize the electric vehicle industry. The lithium-air battery prototype can store up to four times more energy than conventional lithium-ion batteries of the same weight. The research team, led by Professor Yang Shao-Horn, achieved this breakthrough by redesigning the battery's cathode structure using nano-engineered materials. The new design addresses the stability issues that have previously prevented lithium-air batteries from being commercially viable. If successfully commercialized, this technology could extend the driving range of electric vehicles to over 1,000 kilometers on a single charge. However, Professor Shao-Horn cautioned that significant engineering challenges remain before the technology can be mass-produced, estimating a timeline of five to eight years before these batteries appear in consumer vehicles.",
+            "questions": [
+              {
+                "id": "q3",
+                "stem": "How much more energy can the new lithium-air battery store compared to conventional batteries?",
+                "options": ["A. Two times more", "B. Three times more", "C. Four times more", "D. Five times more"],
+                "answer": "C",
+                "explanation": "The transcript states the battery 'can store up to four times more energy than conventional lithium-ion batteries of the same weight.'"
+              },
+              {
+                "id": "q4",
+                "stem": "What is the estimated timeline for commercialization of this technology?",
+                "options": ["A. 1-2 years", "B. 3-4 years", "C. 5-8 years", "D. 10-15 years"],
+                "answer": "C",
+                "explanation": "Professor Shao-Horn estimated 'a timeline of five to eight years before these batteries appear in consumer vehicles.'"
+              }
+            ]
+          }
+        ],
+        "longConversations": [
+          {
+            "id": "l3",
+            "type": "longConversation",
+            "audioSrc": "assets/audio/mock-02/l3.mp3",
+            "transcript": "M: Hey Sarah, have you decided on your study abroad destination for next semester?\nW: I'm torn between the University of Edinburgh and the University of Melbourne, Tom. Both have excellent programs in environmental science.\nM: Those are both great choices. What are the main differences between the two programs?\nW: Well, Edinburgh's program focuses more on policy and conservation, while Melbourne's emphasizes climate science and data analysis. Edinburgh is also closer to home, but Melbourne offers better research facilities.\nM: Have you considered the cost of living? I've heard Edinburgh can be quite expensive for international students.\nW: Actually, I've done the math. Melbourne is about 15% more expensive overall, but they offer more generous scholarships. Edinburgh's tuition is slightly lower, but the scholarship options are limited.\nM: What about the visa requirements? I know Australia has been tightening its student visa policies recently.\nW: That's true. The UK's post-study work visa allows graduates to stay for two years, while Australia offers up to three years for certain degrees. That's definitely something to consider since I'd like to gain some work experience after graduation.\nM: Sounds like you've really thought this through. When do you need to make your final decision?\nW: The deadline for both applications is March 15th, so I still have about six weeks to decide.",
+            "questions": [
+              {
+                "id": "q5",
+                "stem": "What is the main difference between the two programs?",
+                "options": ["A. One is longer than the other", "B. Edinburgh focuses on policy while Melbourne focuses on climate science", "C. One requires more credits", "D. They are in different languages"],
+                "answer": "B",
+                "explanation": "Sarah says 'Edinburgh's program focuses more on policy and conservation, while Melbourne's emphasizes climate science and data analysis.'"
+              },
+              {
+                "id": "q6",
+                "stem": "How does the cost of living compare between the two cities?",
+                "options": ["A. Edinburgh is more expensive", "B. They are the same", "C. Melbourne is about 15% more expensive", "D. Melbourne is cheaper"],
+                "answer": "C",
+                "explanation": "Sarah says 'Melbourne is about 15% more expensive overall, but they offer more generous scholarships.'"
+              },
+              {
+                "id": "q7",
+                "stem": "When is the application deadline for both programs?",
+                "options": ["A. February 15th", "B. March 15th", "C. April 15th", "D. May 15th"],
+                "answer": "B",
+                "explanation": "Sarah says 'The deadline for both applications is March 15th.'"
+              }
+            ]
+          },
+          {
+            "id": "l4",
+            "type": "longConversation",
+            "audioSrc": "assets/audio/mock-02/l4.mp3",
+            "transcript": "W: Professor Chen, I'm having trouble with my senior thesis project. The data I collected from the survey doesn't seem to support my original hypothesis.\nM: That's actually quite common in research, Lisa. What was your hypothesis about?\nW: I was investigating whether social media usage negatively affects college students' sleep quality. I surveyed 200 students and expected to find a strong negative correlation.\nM: And what did you find?\nW: Surprisingly, the correlation was much weaker than I expected. Students who used social media for more than three hours a day did report slightly worse sleep, but the difference wasn't statistically significant. I'm worried this means my entire project is a failure.\nM: Not at all, Lisa. In fact, a null result can be just as valuable as a positive one. It tells us that the relationship might be more complex than we assumed. Have you considered analyzing other variables?\nW: Like what?\nM: Well, the timing of social media use might matter more than the duration. Students who check social media right before bed might be more affected than those who use it during the day. Also, the type of content they consume could be relevant.\nW: That's a great idea. I did collect data on when students use social media. I could re-analyze the data focusing on bedtime usage specifically.\nM: Exactly. And don't forget to discuss the limitations of your study in your thesis. Negative findings are an important part of the scientific process.",
+            "questions": [
+              {
+                "id": "q8",
+                "stem": "What was Lisa's original hypothesis?",
+                "options": ["A. Social media improves sleep quality", "B. Social media negatively affects sleep quality", "C. Social media has no effect on sleep", "D. College students don't use social media"],
+                "answer": "B",
+                "explanation": "Lisa says 'I was investigating whether social media usage negatively affects college students' sleep quality.'"
+              },
+              {
+                "id": "q9",
+                "stem": "What did Professor Chen suggest Lisa should analyze instead?",
+                "options": ["A. The number of followers students have", "B. The timing of social media use, especially before bed", "C. The brand of phones students use", "D. The students' academic performance"],
+                "answer": "B",
+                "explanation": "Professor Chen suggests 'the timing of social media use might matter more than the duration. Students who check social media right before bed might be more affected.'"
+              },
+              {
+                "id": "q10",
+                "stem": "How many students did Lisa survey?",
+                "options": ["A. 100", "B. 150", "C. 200", "D. 250"],
+                "answer": "C",
+                "explanation": "Lisa says 'I surveyed 200 students.'"
+              }
+            ]
+          }
+        ],
+        "passages": [
+          {
+            "id": "l5",
+            "type": "passage",
+            "audioSrc": "assets/audio/mock-02/l5.mp3",
+            "transcript": "The concept of 'digital minimalism' has gained significant traction in recent years, particularly among young professionals who feel overwhelmed by constant connectivity. Coined by author Cal Newport in his 2019 bestseller, digital minimalism is a philosophy of technology use in which you focus your online time on a small number of carefully selected and optimized activities that strongly support things you value, and then happily miss out on everything else.\n\nNewport argues that the average person spends over two hours a day on social media alone, time that could be redirected toward more fulfilling activities like reading, exercising, or spending time with loved ones. He recommends a 30-day 'digital declutter' during which you step away from optional technologies and rediscover what truly matters to you.\n\nThe movement has inspired thousands of people to delete social media apps from their phones, disable notifications, and set strict boundaries around their technology use. Critics, however, point out that digital minimalism is a privilege not available to everyone—many workers are required to be constantly reachable by their employers, and social media provides vital community connections for marginalized groups.\n\nDespite these valid concerns, the core message of digital minimalism—that we should be intentional about how we use technology rather than letting technology use us—resonates with a growing number of people seeking a healthier relationship with their devices.",
+            "questions": [
+              {
+                "id": "q11",
+                "stem": "What is digital minimalism according to the passage?",
+                "options": ["A. Using no technology at all", "B. A philosophy of focusing online time on carefully selected activities that support what you value", "C. Using only Apple products", "D. A type of software design"],
+                "answer": "B",
+                "explanation": "The passage defines it as 'a philosophy of technology use in which you focus your online time on a small number of carefully selected and optimized activities.'"
+              },
+              {
+                "id": "q12",
+                "stem": "What does Cal Newport recommend as a first step?",
+                "options": ["A. Buying a new phone", "B. A 30-day digital declutter", "C. Deleting all email accounts", "D. Moving to a rural area"],
+                "answer": "B",
+                "explanation": "The passage says 'He recommends a 30-day digital declutter during which you step away from optional technologies.'"
+              },
+              {
+                "id": "q13",
+                "stem": "What criticism has been raised against digital minimalism?",
+                "options": ["A. It is too expensive", "B. It is not effective", "C. It is a privilege not available to everyone", "D. It is too complicated to understand"],
+                "answer": "C",
+                "explanation": "Critics 'point out that digital minimalism is a privilege not available to everyone—many workers are required to be constantly reachable by their employers.'"
+              }
+            ]
+          },
+          {
+            "id": "l6",
+            "type": "passage",
+            "audioSrc": "assets/audio/mock-02/l6.mp3",
+            "transcript": "Urban vertical farming is emerging as a promising solution to the challenge of feeding growing city populations sustainably. Unlike traditional horizontal farming, vertical farming involves growing crops in stacked layers within controlled indoor environments, often using hydroponic or aeroponic systems that require no soil.\n\nThe benefits of vertical farming are numerous. First, it dramatically reduces the distance food travels from farm to table, cutting transportation emissions and ensuring fresher produce. Second, indoor farming uses up to 95% less water than conventional agriculture because water is recycled within the closed system. Third, vertical farms can operate year-round, unaffected by weather conditions or seasonal changes, producing consistent yields regardless of external climate.\n\nSingapore, a city-state that imports over 90% of its food, has become a global leader in vertical farming technology. The country's Sky Greens vertical farm, standing nine meters tall, produces approximately one ton of vegetables every two days. Japan has also embraced the technology, with a former Sony semiconductor factory in Miyagi Prefecture converted into one of the world's largest indoor lettuce farms.\n\nHowever, the technology faces significant challenges. The high energy costs of artificial lighting and climate control make vertical farming expensive compared to traditional methods. Currently, most vertical farms are limited to growing leafy greens and herbs, as staple crops like wheat, rice, and corn require too much space and light to be economically viable in vertical systems. Researchers are working to develop more energy-efficient LED lighting and automation systems to make vertical farming more cost-competitive in the coming decades.",
+            "questions": [
+              {
+                "id": "q14",
+                "stem": "How much less water does indoor farming use compared to conventional agriculture?",
+                "options": ["A. Up to 50% less", "B. Up to 75% less", "C. Up to 95% less", "D. Up to 100% less"],
+                "answer": "C",
+                "explanation": "The passage states 'indoor farming uses up to 95% less water than conventional agriculture because water is recycled within the closed system.'"
+              },
+              {
+                "id": "q15",
+                "stem": "What is a major challenge facing vertical farming?",
+                "options": ["A. Lack of consumer interest", "B. High energy costs of artificial lighting and climate control", "C. Government regulations", "D. Shortage of seeds"],
+                "answer": "B",
+                "explanation": "The passage mentions 'The high energy costs of artificial lighting and climate control make vertical farming expensive compared to traditional methods.'"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "reading": {
+      "title": "阅读理解",
+      "time": 40,
+      "score": 248.5,
+      "sections": {
+        "wordBank": {
+          "title": "选词填空",
+          "passage": "The sharing economy has transformed the way people access goods and services, from transportation to accommodation. However, as the sector matures, questions about its long-term ___ (1) ___ are becoming more urgent. While platforms like Uber and Airbnb have created new income opportunities for millions, they have also been ___ (2) ___ for contributing to rising housing costs in major cities and undermining labor protections. A recent study by the Economic Policy Institute found that gig economy workers earn ___ (3) ___ less per hour than traditional employees in comparable roles, after accounting for expenses such as vehicle maintenance and health insurance. Furthermore, the ___ (4) ___ of gig work means that income is unpredictable, making it difficult for workers to plan their finances or qualify for loans. Despite these concerns, the flexibility offered by the sharing economy remains ___ (5) ___ to many workers, particularly students, parents with young children, and those seeking to ___ (6) ___ their primary income. Policymakers face the challenge of designing regulations that protect workers without ___ (7) ___ the innovation that makes these platforms valuable. Some cities have ___ (8) ___ measures such as caps on short-term rentals and minimum wage guarantees for ride-share drivers. Looking ahead, the sustainability of the sharing economy will likely depend on finding a balance between flexibility and ___ (9) ___. As one industry analyst noted, 'The question is not whether the sharing economy will exist in ten years, but whether it will have ___ (10) ___ into something that serves both workers and consumers fairly.'",
+          "words": [
+            "A. significantly",
+            "B. evolved",
+            "C. security",
+            "D. criticized",
+            "E. adopted",
+            "F. viability",
+            "G. stifling",
+            "H. attractive",
+            "I. supplement",
+            "J. gradually",
+            "K. unpredictability",
+            "L. abandoned",
+            "M. enormous",
+            "N. supplementing",
+            "O. rigid"
+          ],
+          "answerKey": ["F", "D", "A", "K", "H", "I", "G", "E", "C", "B"]
+        },
+        "longPassage": {
+          "title": "长篇阅读",
+          "passage": "The Rise of Eco-Anxiety Among Young Adults\n\nA. In recent years, mental health professionals have observed a striking new phenomenon in their consulting rooms: young adults expressing profound distress about climate change. This condition, now widely referred to as 'eco-anxiety,' is characterized by chronic worry about environmental degradation, feelings of helplessness in the face of global warming, and guilt about one's own carbon footprint. While not yet classified as a formal mental health disorder in diagnostic manuals, eco-anxiety is increasingly recognized as a significant psychological burden affecting millions of young people worldwide.\n\nB. A landmark 2021 survey published in The Lancet Planetary Health journal, which polled 10,000 young people aged 16 to 25 across ten countries, found that 59% of respondents were 'very or extremely worried' about climate change. More alarmingly, 45% said their feelings about climate change negatively affected their daily life and functioning. The survey revealed that young people in developing countries, particularly in the Philippines, India, and Nigeria, reported the highest levels of climate anxiety, likely because they are already experiencing the direct impacts of environmental change.\n\nC. Psychologists distinguish between adaptive and maladaptive forms of eco-anxiety. Adaptive eco-anxiety can motivate constructive action—it is the concern that drives someone to reduce their plastic consumption, join an environmental organization, or choose a career in sustainability. This type of anxiety, when managed properly, can be a powerful force for positive change. Dr. Sarah Lowe, a clinical psychologist at Yale University, describes it as 'a rational response to a real threat, not a disorder to be cured.'\n\nD. Maladaptive eco-anxiety, however, can be debilitating. Sufferers may experience panic attacks when reading news about climate disasters, develop obsessive behaviors around recycling and energy use, or fall into deep despair about the future of the planet. In extreme cases, some young people report being reluctant to have children because of fears about the world they would inherit. This form of eco-anxiety often co-occurs with depression and generalized anxiety disorder, complicating treatment.\n\nE. The media's role in fueling eco-anxiety has come under scrutiny. The 24-hour news cycle, with its emphasis on dramatic disasters and worst-case scenarios, can create a distorted perception of risk. Social media algorithms, which prioritize emotionally engaging content, often amplify the most alarming climate stories while filtering out more nuanced or hopeful narratives. Dr. James Robertson, a media psychologist at the University of Texas, notes that 'young people today are exposed to more information about environmental threats than any generation before them, but they lack the context to process this information constructively.'\n\nF. Several therapeutic approaches have been developed to address eco-anxiety. Cognitive-behavioral therapy helps individuals identify and challenge catastrophic thinking patterns about the environment while maintaining a realistic assessment of risks. Group therapy, where participants share their fears and coping strategies, has proven particularly effective because it reduces the sense of isolation that often accompanies eco-anxiety. Ecotherapy, which involves structured outdoor activities in natural settings, helps rebuild the positive connection with nature that anxiety can sever.\n\nG. Educational institutions are beginning to respond to the eco-anxiety crisis. Schools in the United Kingdom, Sweden, and New Zealand have integrated climate psychology into their curricula, teaching students not only the science of climate change but also emotional resilience skills. The University of California system has established eco-anxiety support groups on all its campuses, staffed by counselors trained in environmental mental health. These programs aim to help students transform their anxiety into agency.\n\nH. Community-level action has emerged as one of the most effective antidotes to eco-anxiety. When individuals participate in local environmental initiatives—whether it is a community garden, a beach cleanup, or an advocacy campaign—they experience a sense of collective efficacy that counteracts feelings of powerlessness. Research published in the Journal of Environmental Psychology found that engagement in community environmental projects reduced eco-anxiety symptoms by an average of 35% among participants.\n\nI. The corporate sector has also been implicated in eco-anxiety, with some critics accusing companies of 'greenwashing'—making misleading claims about environmental responsibility to appeal to eco-conscious consumers. This practice can exacerbate eco-anxiety by creating false hope and subsequent disillusionment. Transparency initiatives, such as mandatory carbon reporting and third-party sustainability certifications, are being advocated as ways to restore trust and reduce the psychological burden on consumers.\n\nJ. Intergenerational dynamics add another layer to the eco-anxiety phenomenon. Many young people express frustration and anger toward older generations, whom they perceive as having failed to act on climate change despite decades of scientific warnings. This intergenerational tension can strain family relationships and contribute to feelings of betrayal. However, some psychologists see potential in intergenerational dialogue programs that bring young and old together to work on environmental projects, fostering mutual understanding and shared purpose.\n\nK. Looking ahead, mental health experts emphasize that addressing eco-anxiety requires both individual and systemic solutions. On the individual level, strategies such as limiting media consumption, practicing mindfulness, and engaging in meaningful action can help manage symptoms. But on a systemic level, governments and institutions must take visible, credible action on climate change to address the root cause of the anxiety. As one young activist told researchers, 'I do not need a therapist to tell me my anxiety is irrational. I need my government to tell me they are taking this seriously.'",
+          "statements": [
+            {
+              "id": "s1",
+              "text": "A global survey found that nearly half of young respondents reported that climate worries interfered with their daily lives.",
+              "answer": "B"
+            },
+            {
+              "id": "s2",
+              "text": "Some psychologists view eco-anxiety as a reasonable reaction to a genuine danger rather than a mental illness.",
+              "answer": "C"
+            },
+            {
+              "id": "s3",
+              "text": "Participating in local environmental projects significantly reduced symptoms of eco-anxiety according to research.",
+              "answer": "H"
+            },
+            {
+              "id": "s4",
+              "text": "The constant flow of alarming news and social media content may contribute to eco-anxiety in young people.",
+              "answer": "E"
+            },
+            {
+              "id": "s5",
+              "text": "Some young adults have expressed hesitation about becoming parents due to environmental concerns.",
+              "answer": "D"
+            },
+            {
+              "id": "s6",
+              "text": "Companies making false environmental claims may worsen eco-anxiety among consumers.",
+              "answer": "I"
+            },
+            {
+              "id": "s7",
+              "text": "Universities in the UK, Sweden, and New Zealand have begun teaching climate psychology alongside climate science.",
+              "answer": "G"
+            },
+            {
+              "id": "s8",
+              "text": "Many young people feel betrayed by older generations for not acting on climate change sooner.",
+              "answer": "J"
+            },
+            {
+              "id": "s9",
+              "text": "Group therapy has been especially effective for eco-anxiety because it reduces feelings of isolation.",
+              "answer": "F"
+            },
+            {
+              "id": "s10",
+              "text": "Young people in developing nations reported the most severe climate anxiety.",
+              "answer": "B"
+            }
+          ]
+        },
+        "inDepth": {
+          "title": "仔细阅读",
+          "passages": [
+            {
+              "id": "p1",
+              "title": "The Four-Day Workweek",
+              "passage": "The five-day workweek has been the standard in industrialized nations for nearly a century, but a growing number of companies and researchers are questioning whether it is still fit for purpose. The four-day workweek movement, which proposes reducing the standard workweek from 40 to 32 hours without cutting pay, has gained momentum following several high-profile trials that reported remarkable results.\n\nIn 2022, the largest-ever four-day workweek trial was conducted in the United Kingdom, involving 61 companies and nearly 3,000 employees across various sectors. The results, published by the University of Cambridge, were striking. Companies reported an average revenue increase of 1.4% over the trial period, and employee turnover dropped by 57%. Perhaps most importantly, 71% of employees reported reduced levels of burnout, and 39% said they were less stressed than before the trial began.\n\nThe key to the success of reduced-hour workweeks appears to lie in efficiency gains. Companies that participated in the trial implemented various productivity-enhancing measures, such as reducing meeting lengths, limiting email communication outside core hours, and automating routine tasks. As one CEO noted, 'When you have five days to do something, it takes five days. When you have four days, it takes four days.' The principle aligns with Parkinson's Law, which states that work expands to fill the time available for its completion.\n\nHowever, the four-day workweek is not without its critics. Some economists argue that the model is not feasible for all industries, particularly those requiring continuous operations like healthcare, manufacturing, and customer service. Others point out that the productivity gains observed in early trials may not be sustainable over the long term, as the novelty effect wears off and workers return to their baseline efficiency levels.\n\nDespite these concerns, the movement continues to spread. Belgium became the first European country to legislate the right to a four-day workweek in 2022, and similar proposals are being debated in parliaments across Europe, North America, and Asia. Whether the four-day workweek becomes the new standard or remains a niche experiment, it has already succeeded in sparking a long-overdue conversation about the role of work in our lives and the true meaning of productivity.",
+              "questions": [
+                {
+                  "id": "q1",
+                  "stem": "What was one of the key findings from the UK four-day workweek trial?",
+                  "options": ["A. Company revenue decreased by 1.4%", "B. Employee turnover dropped by 57%", "C. Most employees wanted to return to five days", "D. Productivity decreased significantly"],
+                  "answer": "B",
+                  "explanation": "The passage states 'employee turnover dropped by 57%' as one of the trial results."
+                },
+                {
+                  "id": "q2",
+                  "stem": "What principle does the four-day workweek success align with?",
+                  "options": ["A. The Peter Principle", "B. The Pareto Principle", "C. Parkinson's Law", "D. Moore's Law"],
+                  "answer": "C",
+                  "explanation": "The passage says 'The principle aligns with Parkinson's Law, which states that work expands to fill the time available for its completion.'"
+                },
+                {
+                  "id": "q3",
+                  "stem": "What concern do critics raise about the four-day workweek?",
+                  "options": ["A. It is too expensive to implement", "B. It may not be feasible for industries requiring continuous operations", "C. Workers prefer longer hours", "D. It violates labor laws"],
+                  "answer": "B",
+                  "explanation": "Critics argue 'the model is not feasible for all industries, particularly those requiring continuous operations like healthcare, manufacturing, and customer service.'"
+                },
+                {
+                  "id": "q4",
+                  "stem": "What was the author's overall assessment of the four-day workweek movement?",
+                  "options": ["A. It is destined to fail", "B. It has already become the global standard", "C. It has sparked an important conversation about work and productivity, regardless of its ultimate adoption", "D. It only works in the technology sector"],
+                  "answer": "C",
+                  "explanation": "The author concludes that 'it has already succeeded in sparking a long-overdue conversation about the role of work in our lives and the true meaning of productivity.'"
+                }
+              ]
+            },
+            {
+              "id": "p2",
+              "title": "The Science of Habit Formation",
+              "passage": "We are what we repeatedly do, as the ancient Greek philosopher Aristotle observed. Modern neuroscience has confirmed this ancient wisdom, revealing that habits are not merely behavioral patterns but physical structures encoded in our brains. Understanding how habits form—and how they can be changed—has become one of the most practically important areas of psychological research.\n\nAt the neurological level, habits are stored in a region of the brain called the basal ganglia, which is responsible for the development of automatic behaviors. When we first perform a new action, the prefrontal cortex—the brain's executive center—is highly active as we consciously think through each step. But as we repeat the behavior, the neural activity gradually shifts from the prefrontal cortex to the basal ganglia, and the action becomes increasingly automatic. This process, known as 'chunking,' allows the brain to conserve mental energy by converting deliberate actions into unconscious routines.\n\nResearch by Dr. Wendy Wood, a professor of psychology at the University of Southern California, has shown that approximately 43% of our daily actions are performed habitually, without conscious decision-making. This finding has profound implications for personal development. It suggests that nearly half of what we do each day is not the result of deliberate choices but of automatic patterns that have been reinforced over time.\n\nThe practical question, then, is how to break bad habits and build good ones. Dr. Wood's research emphasizes the importance of context over willpower. Because habits are triggered by environmental cues, changing your environment is often more effective than trying to change your mind. Removing temptations from your surroundings and adding friction to bad habits while reducing friction for good ones are evidence-based strategies for habit change. For example, keeping unhealthy snacks out of sight and placing exercise clothes next to your bed are small environmental adjustments that can yield significant behavioral changes over time.",
+              "questions": [
+                {
+                  "id": "q5",
+                  "stem": "Where in the brain are habits primarily stored according to the passage?",
+                  "options": ["A. The prefrontal cortex", "B. The amygdala", "C. The basal ganglia", "D. The hippocampus"],
+                  "answer": "C",
+                  "explanation": "The passage says 'habits are stored in a region of the brain called the basal ganglia.'"
+                },
+                {
+                  "id": "q6",
+                  "stem": "What percentage of daily actions are performed habitually according to Dr. Wood's research?",
+                  "options": ["A. About 25%", "B. About 43%", "C. About 60%", "D. About 75%"],
+                  "answer": "B",
+                  "explanation": "The passage states 'approximately 43% of our daily actions are performed habitually, without conscious decision-making.'"
+                },
+                {
+                  "id": "q7",
+                  "stem": "What does Dr. Wood's research emphasize as more important than willpower for changing habits?",
+                  "options": ["A. Motivation", "B. Education", "C. Context and environment", "D. Social support"],
+                  "answer": "C",
+                  "explanation": "Dr. Wood's research 'emphasizes the importance of context over willpower. Because habits are triggered by environmental cues, changing your environment is often more effective than trying to change your mind.'"
+                },
+                {
+                  "id": "q8",
+                  "stem": "What is the process called when the brain converts deliberate actions into automatic routines?",
+                  "options": ["A. Conditioning", "B. Chunking", "C. Encoding", "D. Filtering"],
+                  "answer": "B",
+                  "explanation": "The passage says 'This process, known as chunking, allows the brain to conserve mental energy by converting deliberate actions into unconscious routines.'"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "translation": {
+      "title": "翻译",
+      "time": 30,
+      "score": 106.5,
+      "direction": "Directions: For this part, you are allowed 30 minutes to translate a passage from Chinese into English. You should write your answer on the Answer Sheet.",
+      "chineseText": "中国传统文化中的"二十四节气"（The 24 Solar Terms）是古代中国人通过观察太阳周年运动而形成的时间知识体系，至今已有两千多年的历史。2016年，二十四节气被联合国教科文组织（UNESCO）列入人类非物质文化遗产代表作名录。这一古老的历法系统将一年分为24个阶段，每个节气约15天，反映了季节、气候和物候的变化规律。即使在现代社会，许多农民仍然参考节气来安排农事活动，而城市居民则根据节气调整饮食和生活习惯。例如，在"立冬"时节吃饺子，在"清明"时节踏青扫墓，这些传统习俗至今仍在延续。二十四节气不仅是中国农耕文明的智慧结晶，也是人与自然和谐共处理念的生动体现。",
+      "referenceTranslation": "The '24 Solar Terms' in traditional Chinese culture is a temporal knowledge system developed by ancient Chinese people through observing the sun's annual motion, with a history of over two thousand years. In 2016, the 24 Solar Terms were inscribed on UNESCO's Representative List of the Intangible Cultural Heritage of Humanity. This ancient calendar system divides the year into 24 phases, with each solar term lasting approximately 15 days, reflecting the patterns of seasonal, climatic, and phenological changes. Even in modern society, many farmers still refer to the solar terms to arrange agricultural activities, while urban residents adjust their diet and lifestyle according to the terms. For example, eating dumplings at the 'Start of Winter' solar term and visiting ancestral graves and enjoying the spring greenery at the 'Clear and Bright' solar term—these traditional customs continue to be practiced to this day. The 24 Solar Terms are not only the crystallization of China's agricultural civilization's wisdom but also a vivid embodiment of the concept of harmony between humans and nature.",
+      "keyPoints": [
+        "二十四节气: The 24 Solar Terms",
+        "联合国教科文组织: UNESCO",
+        "人类非物质文化遗产代表作名录: Representative List of the Intangible Cultural Heritage of Humanity",
+        "物候变化: phenological changes",
+        "农耕文明: agricultural civilization",
+        "人与自然和谐共处: harmony between humans and nature"
+      ]
+    }
+  }
+}

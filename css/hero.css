@@ -1,0 +1,312 @@
+/* ============================================
+   Fast CET — Hero Section (hero.css)
+   Framer-level animated hero with shapes, grid,
+   cursor glow, particles, and scroll indicator
+   ============================================ */
+
+/* ── Hero Container ── */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background: var(--color-bg);
+  padding-top: 80px;
+}
+
+/* ── Grid Pattern Background ── */
+.hero__grid {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, var(--color-primary) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.12;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ── Floating Shapes ── */
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.hero__shape {
+  position: absolute;
+  border-radius: 50%;
+  will-change: transform;
+  pointer-events: none;
+}
+
+.hero__shape--1 {
+  width: 300px; height: 300px;
+  background: var(--color-primary);
+  filter: blur(80px);
+  opacity: 0.12;
+  top: 10%; left: 5%;
+}
+
+.hero__shape--2 {
+  width: 200px; height: 200px;
+  background: var(--color-secondary);
+  filter: blur(70px);
+  opacity: 0.1;
+  top: 55%; right: 8%;
+  border-radius: 40% 60% 30% 70%;
+}
+
+.hero__shape--3 {
+  width: 120px; height: 120px;
+  background: var(--color-accent);
+  filter: blur(60px);
+  opacity: 0.13;
+  bottom: 18%; left: 12%;
+}
+
+.hero__shape--4 {
+  width: 180px; height: 180px;
+  background: var(--color-primary);
+  filter: blur(60px);
+  opacity: 0.08;
+  top: 28%; right: 22%;
+  border-radius: 30% 70% 50% 50%;
+}
+
+.hero__shape--5 {
+  width: 80px; height: 80px;
+  background: var(--color-secondary);
+  filter: blur(40px);
+  opacity: 0.14;
+  top: 12%; left: 48%;
+}
+
+.hero__shape--6 {
+  width: 150px; height: 150px;
+  background: var(--color-accent);
+  filter: blur(70px);
+  opacity: 0.1;
+  bottom: 28%; right: 4%;
+  border-radius: 60% 40% 50% 50%;
+}
+
+/* ── Cursor Glow ── */
+.hero__cursor-glow {
+  position: fixed;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 94, 77, 0.12), transparent 70%);
+  pointer-events: none;
+  z-index: var(--z-cursor-glow);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  will-change: transform, opacity;
+  transition: opacity 0.3s ease;
+}
+
+.hero__cursor-glow.is-visible {
+  opacity: 1;
+}
+
+/* ── Particles ── */
+.hero__particles {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes particle-float-1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  25% { transform: translate(20px, -30px) scale(1.5); }
+  50% { transform: translate(-10px, -60px) scale(0.8); }
+  75% { transform: translate(-25px, -20px) scale(1.2); }
+}
+
+@keyframes particle-float-2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(-18px, -40px) scale(0.7); }
+  66% { transform: translate(15px, -25px) scale(1.4); }
+}
+
+@keyframes particle-float-3 {
+  0%, 100% { transform: translate(0, 0) scale(0.8); }
+  50% { transform: translate(10px, -50px) scale(1.3); }
+}
+
+/* ── Hero Content ── */
+.hero__content {
+  position: relative;
+  z-index: var(--z-hero);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-lg);
+  padding: 40px 0;
+}
+
+/* ── Title ── */
+.hero__title {
+  font-family: var(--font-en);
+  text-align: center;
+  position: relative;
+}
+
+.hero__title-line {
+  display: block;
+  font-size: clamp(36px, 8vw, 72px);
+  font-weight: var(--weight-extrabold);
+  line-height: 1.2;
+  color: var(--color-text);
+}
+
+.hero__title-line .char,
+.hero__title-line .word {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+/* ── Subtitle ── */
+.hero__subtitle {
+  font-size: var(--text-md);
+  color: var(--color-text-secondary);
+  max-width: 520px;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+/* ── CTA Buttons ── */
+.hero__cta {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero__cta .btn-primary,
+.hero__cta .btn-outline {
+  opacity: 0;
+  transform: translateY(40px) scale(0.8);
+}
+
+.btn-magnetic {
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn-arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.btn-primary:hover .btn-arrow {
+  transform: translateX(4px);
+}
+
+/* ── Scroll Indicator ── */
+.hero__scroll-indicator {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  z-index: 2;
+  color: var(--color-text-secondary);
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0;
+}
+
+.hero__scroll-line {
+  width: 1px;
+  height: 30px;
+  background: var(--color-border);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero__scroll-line::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--gradient-hero);
+  animation: scroll-line 2s ease-in-out infinite;
+}
+
+@keyframes scroll-line {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+.hero__scroll-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: scroll-dot 2s ease-in-out infinite;
+}
+
+@keyframes scroll-dot {
+  0% { top: 0; opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}
+
+/* ── Responsive: Hero ── */
+@media (max-width: 640px) {
+  .hero {
+    min-height: 90vh;
+    padding-top: 100px;
+  }
+
+  .hero__title-line {
+    font-size: clamp(28px, 10vw, 48px);
+  }
+
+  .hero__subtitle {
+    font-size: var(--text-base);
+    max-width: 320px;
+  }
+
+  .hero__cta {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__scroll-indicator {
+    bottom: 24px;
+  }
+
+  .hero__cursor-glow {
+    display: none;
+  }
+
+  .hero__shape--4,
+  .hero__shape--6 {
+    display: none;
+  }
+}
