@@ -115,6 +115,7 @@
   --container-max:        1200px;
   --container-narrow:     860px;
   --container-padding:    24px;
+  --nav-height:           72px;
 
   /* ── 响应式断点 (供 @media 引用，实际断点定义在 media queries) ── */
   /* mobile:  < 640px  (default) */

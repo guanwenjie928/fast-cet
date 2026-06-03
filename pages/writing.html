@@ -8,11 +8,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <link rel="stylesheet" href="../css/reset.css?v=c16ecbc">
-  <link rel="stylesheet" href="../css/variables.css?v=c16ecbc">
-  <link rel="stylesheet" href="../css/global.css?v=c16ecbc">
-  <link rel="stylesheet" href="../css/nav.css?v=c16ecbc">
-  <link rel="stylesheet" href="../css/content.css?v=c16ecbc">
+  <link rel="stylesheet" href="../css/reset.css?v=af37c8f">
+  <link rel="stylesheet" href="../css/variables.css?v=af37c8f">
+  <link rel="stylesheet" href="../css/global.css?v=af37c8f">
+  <link rel="stylesheet" href="../css/nav.css?v=af37c8f">
+  <link rel="stylesheet" href="../css/content.css?v=af37c8f">
   <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
 </head>
 <body>
@@ -41,11 +41,11 @@
     </div>
   </main>
 
-  <script src="../js/main.js?v=c16ecbc"></script>
-  <script src="../js/data-loader.js?v=c16ecbc"></script>
-  <script src="../js/exam-renderer.js?v=c16ecbc"></script>
-  <script src="../js/filter.js?v=4d8947e"></script>
-  <script src="../js/content-animations.js?v=c16ecbc"></script>
+  <script src="../js/main.js?v=af37c8f"></script>
+  <script src="../js/data-loader.js?v=af37c8f"></script>
+  <script src="../js/exam-renderer.js?v=af37c8f"></script>
+  <script src="../js/filter.js?v=af37c8f"></script>
+  <script src="../js/content-animations.js?v=af37c8f"></script>
   <script>
     initApp();
 
@@ -59,7 +59,7 @@
       container.innerHTML = '';
       data.items.forEach((item, i) => {
         const card = document.createElement('div');
-        card.className = 'question-card filter-item';
+        card.className = 'question-card';
         card.setAttribute('data-category', item.category || 'argumentation');
 
         const difficultyStars = '★'.repeat(item.difficulty || 3) + '☆'.repeat(5 - (item.difficulty || 3));
@@ -80,10 +80,6 @@
             <div class="writing-direction" style="background:var(--glass-bg);border:1px solid var(--color-border);border-radius:var(--radius-sm);padding:14px 16px;margin-bottom:12px;font-size:0.9rem;line-height:1.8;color:var(--color-text-secondary);border-left:3px solid var(--color-accent);">
               ${item.direction || '暂无写作要求'}
             </div>
-            <div class="writing-sample" style="display:none;background:rgba(255,94,77,0.04);border:1px solid var(--color-border);border-radius:var(--radius-sm);padding:16px;font-size:0.9rem;line-height:2;color:var(--color-text-secondary);white-space:pre-line;">
-              <p style="font-weight:600;color:var(--color-primary);margin-bottom:8px;">参考范文</p>
-              ${item.sampleEssay || '暂无参考范文'}
-            </div>
           </div>
           <div class="question-card__footer" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
             <span class="question-card__meta">难度 ${item.difficulty || 3}/5</span>
@@ -95,6 +91,10 @@
                 写作要点 <span class="link-arrow">→</span>
               </button>
             </div>
+          </div>
+          <div class="writing-sample" style="display:none;margin-top:16px;padding-top:16px;border-top:1px solid var(--color-border);background:rgba(255,94,77,0.04);border:1px solid var(--color-border);border-radius:var(--radius-sm);padding:16px;font-size:0.9rem;line-height:2;color:var(--color-text-secondary);white-space:pre-line;">
+            <p style="font-weight:600;color:var(--color-primary);margin-bottom:8px;">参考范文</p>
+            ${item.sampleEssay || '暂无参考范文'}
           </div>
           <div class="question-card__detail" style="display:none;margin-top:16px;padding-top:16px;border-top:1px solid var(--color-border);">
             <div style="margin-bottom:16px;">

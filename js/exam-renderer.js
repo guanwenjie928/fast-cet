@@ -323,15 +323,20 @@ const ExamRenderer = {
     const typeClass = exam.type === 'mock' ? 'exam-card__badge--mock' : '';
 
     card.innerHTML = `
-      <div class="exam-card__badge ${typeClass}">${typeLabel}</div>
-      <div class="exam-card__year">${exam.year}年${exam.month}月</div>
-      <div class="exam-card__title">${exam.title || `CET-4 ${exam.year}年${exam.month}月真题`}</div>
-      <div class="exam-card__meta">
-        ${exam.set ? `<span class="exam-card__set">📋 第${String(exam.set).toUpperCase()}套</span>` : ''}
-        <span class="exam-card__time">⏱ ${exam.totalTime || 125}分钟</span>
-        <span class="exam-card__score">📊 ${exam.totalScore || 710}分</span>
+      <div class="exam-card__inner">
+        <div class="exam-card__badge ${typeClass}">${typeLabel}</div>
+        <div class="exam-card__year">${exam.year}年${exam.month}月</div>
+        <div class="exam-card__title">${exam.title || `CET-4 ${exam.year}年${exam.month}月真题`}</div>
+        <div class="exam-card__meta">
+          ${exam.set ? `<span class="exam-card__set">📋 第${String(exam.set).toUpperCase()}套</span>` : ''}
+          <span class="exam-card__time">⏱ ${exam.totalTime || 125}分钟</span>
+          <span class="exam-card__score">📊 ${exam.totalScore || 710}分</span>
+        </div>
+        <button class="exam-card__start-btn" onclick="event.stopPropagation(); this.closest('.exam-card').click();">
+          开始练习
+          <span class="exam-card__start-arrow">→</span>
+        </button>
       </div>
-      <div class="exam-card__arrow">→</div>
     `;
 
     // Click to load exam detail

@@ -243,6 +243,39 @@
   color: #FFF;
 }
 
+/* ── Exam Card Start Button ── */
+.exam-card__start-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: var(--space-md);
+  padding: 10px 24px;
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+  color: #FFF;
+  background: var(--gradient-hero);
+  border: none;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 3;
+}
+
+.exam-card__start-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 94, 77, 0.35);
+}
+
+.exam-card__start-arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.exam-card__start-btn:hover .exam-card__start-arrow {
+  transform: translateX(4px);
+}
+
 /* ── Question Card ── */
 .question-card {
   position: relative;

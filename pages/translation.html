@@ -8,11 +8,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <link rel="stylesheet" href="../css/reset.css?v=c16ecbc">
-  <link rel="stylesheet" href="../css/variables.css?v=c16ecbc">
-  <link rel="stylesheet" href="../css/global.css?v=c16ecbc">
-  <link rel="stylesheet" href="../css/nav.css?v=c16ecbc">
-  <link rel="stylesheet" href="../css/content.css?v=c16ecbc">
+  <link rel="stylesheet" href="../css/reset.css?v=af37c8f">
+  <link rel="stylesheet" href="../css/variables.css?v=af37c8f">
+  <link rel="stylesheet" href="../css/global.css?v=af37c8f">
+  <link rel="stylesheet" href="../css/nav.css?v=af37c8f">
+  <link rel="stylesheet" href="../css/content.css?v=af37c8f">
   <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
 </head>
 <body>
@@ -42,11 +42,11 @@
     </div>
   </main>
 
-  <script src="../js/main.js?v=c16ecbc"></script>
-  <script src="../js/data-loader.js?v=c16ecbc"></script>
-  <script src="../js/exam-renderer.js?v=c16ecbc"></script>
-  <script src="../js/filter.js?v=4d8947e"></script>
-  <script src="../js/content-animations.js?v=c16ecbc"></script>
+  <script src="../js/main.js?v=af37c8f"></script>
+  <script src="../js/data-loader.js?v=af37c8f"></script>
+  <script src="../js/exam-renderer.js?v=af37c8f"></script>
+  <script src="../js/filter.js?v=af37c8f"></script>
+  <script src="../js/content-animations.js?v=af37c8f"></script>
   <script>
     initApp();
 
@@ -60,7 +60,7 @@
       container.innerHTML = '';
       data.items.forEach((item, i) => {
         const card = document.createElement('div');
-        card.className = 'question-card filter-item';
+        card.className = 'question-card';
         card.setAttribute('data-category', item.category || 'society');
 
         const difficultyStars = '★'.repeat(item.difficulty || 3) + '☆'.repeat(5 - (item.difficulty || 3));
@@ -83,11 +83,16 @@
               ${item.referenceTranslation || '暂无参考译文'}
             </div>
           </div>
-          <div class="question-card__footer">
+          <div class="question-card__footer" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
             <span class="question-card__meta">难度 ${item.difficulty || 3}/5</span>
-            <button class="btn-ghost question-card__action translation-toggle" onclick="toggleTranslation(this)">
-              查看译文 <span class="link-arrow">→</span>
-            </button>
+            <div style="display:flex;gap:8px;">
+              <button class="btn-ghost question-card__action translation-toggle" onclick="toggleTranslation(this)">
+                查看译文 <span class="link-arrow">→</span>
+              </button>
+              <button class="btn-ghost question-card__action translation-detail-toggle" onclick="toggleKeyPoints(this)">
+                翻译要点 <span class="link-arrow">→</span>
+              </button>
+            </div>
           </div>
           <div class="question-card__detail" style="display:none;margin-top:16px;padding-top:16px;border-top:1px solid var(--color-border);">
             <p style="font-weight:600;margin-bottom:10px;color:var(--color-primary);">翻译要点</p>
@@ -112,6 +117,16 @@
       btn.innerHTML = isHidden ? '隐藏译文 <span class="link-arrow">↑</span>' : '查看译文 <span class="link-arrow">→</span>';
       if (isHidden) {
         gsap.fromTo(ref, {opacity:0, y:-10}, {opacity:1, y:0, duration:0.4, ease:'power2.out'});
+      }
+    }
+
+    function toggleKeyPoints(btn) {
+      const detail = btn.closest('.question-card').querySelector('.question-card__detail');
+      const isHidden = detail.style.display === 'none';
+      detail.style.display = isHidden ? 'block' : 'none';
+      btn.innerHTML = isHidden ? '隐藏要点 <span class="link-arrow">↑</span>' : '翻译要点 <span class="link-arrow">→</span>';
+      if (isHidden) {
+        gsap.fromTo(detail, {opacity:0, y:-10}, {opacity:1, y:0, duration:0.4, ease:'power2.out'});
       }
     }
   </script>

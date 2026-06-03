@@ -8,11 +8,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <link rel="stylesheet" href="../css/reset.css?v=c16ecbc">
-  <link rel="stylesheet" href="../css/variables.css?v=c16ecbc">
-  <link rel="stylesheet" href="../css/global.css?v=c16ecbc">
-  <link rel="stylesheet" href="../css/nav.css?v=c16ecbc">
-  <link rel="stylesheet" href="../css/content.css?v=c16ecbc">
+  <link rel="stylesheet" href="../css/reset.css?v=af37c8f">
+  <link rel="stylesheet" href="../css/variables.css?v=af37c8f">
+  <link rel="stylesheet" href="../css/global.css?v=af37c8f">
+  <link rel="stylesheet" href="../css/nav.css?v=af37c8f">
+  <link rel="stylesheet" href="../css/content.css?v=af37c8f">
   <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
 </head>
 <body>
@@ -39,12 +39,12 @@
     </div>
   </main>
 
-  <script src="../js/main.js?v=c16ecbc"></script>
-  <script src="../js/data-loader.js?v=c16ecbc"></script>
-  <script src="../js/exam-renderer.js?v=c16ecbc"></script>
-  <script src="../js/filter.js?v=4d8947e"></script>
-  <script src="../js/audio-player.js?v=c16ecbc"></script>
-  <script src="../js/content-animations.js?v=c16ecbc"></script>
+  <script src="../js/main.js?v=af37c8f"></script>
+  <script src="../js/data-loader.js?v=af37c8f"></script>
+  <script src="../js/exam-renderer.js?v=af37c8f"></script>
+  <script src="../js/filter.js?v=af37c8f"></script>
+  <script src="../js/audio-player.js?v=af37c8f"></script>
+  <script src="../js/content-animations.js?v=af37c8f"></script>
   <script>
     initApp();
 
@@ -58,7 +58,7 @@
       container.innerHTML = '';
       data.items.forEach((item, i) => {
         const card = document.createElement('div');
-        card.className = 'question-card filter-item';
+        card.className = 'question-card';
         card.setAttribute('data-category', item.category || 'news');
 
         const difficultyStars = '★'.repeat(item.difficulty) + '☆'.repeat(5 - item.difficulty);
@@ -90,6 +90,9 @@
                     </span>
                   `).join('') : ''}
                 </div>
+                ${q.answer ? `<div style="margin-top:8px;padding:8px 12px;background:rgba(34,197,94,0.08);border:1px solid rgba(34,197,94,0.2);border-radius:var(--radius-sm);font-size:0.85rem;">
+                  <span style="font-weight:600;color:#22C55E;">✓ 正确答案: ${q.answer}</span>
+                </div>` : ''}
               </div>
             `).join('') : ''}
           </div>
