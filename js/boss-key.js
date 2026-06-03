@@ -582,10 +582,17 @@ const BossKey = (() => {
 
     const key = e.key;
 
-    // Boss Key 触发 (最高优先级)
+    // Boss Key 触发 (Esc — 仅 stealth 模式下生效)
+    // 正常模式按 Esc 不受影响，避免误触
     if (key === PANIC_KEY && !e.ctrlKey && !e.metaKey && !e.altKey) {
-      e.preventDefault();
-      toggle();
+      const currentMode = document.documentElement.getAttribute('data-mode');
+      // stealth 模式下 Esc = 关闭伪装；其他模式仅 Ctrl+` 可开启
+      if (currentMode === 'stealth' || isHidden) {
+        e.preventDefault();
+        toggle();
+        return;
+      }
+      // 非 stealth 且非伪装状态下，Esc 放行给浏览器默认行为
       return;
     }
 
@@ -691,8 +698,10 @@ const BossKey = (() => {
       // 累加新的位移
       shakeState.magnitude += distance;
 
-      // 触发阈值: 累积幅度 > 50
-      if (shakeState.magnitude > 50 && !isHidden) {
+      // 触发阈值: 累积幅度 > 50 (仅 stealth 模式下生效)
+      // 正常模式不触发，避免日常使用时误触
+      const currentMode = document.documentElement.getAttribute('data-mode');
+      if (shakeState.magnitude > 50 && !isHidden && currentMode === 'stealth') {
         hide();
         shakeState.magnitude = 0; // 重置防止连续触发
       }
