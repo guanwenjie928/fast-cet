@@ -40,11 +40,19 @@ const ContentAnimations = {
       );
     }
 
-    // Page title: char reveal
+    // Page title: char reveal (TextReveal from animations.js, fallback if not loaded)
     const title = document.querySelector('.page-header h1');
     if (title) {
       tl.add(() => {
-        TextReveal.charReveal(title, { stagger: 0.035, duration: 0.6, ease: 'power4.out' });
+        if (typeof TextReveal !== 'undefined') {
+          TextReveal.charReveal(title, { stagger: 0.035, duration: 0.6, ease: 'power4.out' });
+        } else {
+          // Graceful fallback: simple fade-in without per-character split
+          gsap.fromTo(title,
+            { y: 30, opacity: 0 },
+            { y: 0, opacity: 1, duration: 0.6, ease: 'power4.out' }
+          );
+        }
       }, '-=0.2');
     }
 
