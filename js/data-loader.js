@@ -5,8 +5,15 @@
    ============================================ */
 
 const DataLoader = {
-  // Switch to '/api/v1/' for backend migration
-  API_BASE: '/data/',
+  // Auto-detect correct data path (works on both local & GitHub Pages)
+  API_BASE: (function() {
+    var path = window.location.pathname;
+    // If current page is under /pages/ dir, data is one level up
+    if (path.includes('/pages/')) {
+      return '../data/';
+    }
+    return 'data/';
+  })(),
 
   // Internal cache
   _cache: new Map(),
