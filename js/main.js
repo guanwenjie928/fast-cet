@@ -134,12 +134,13 @@ function loadSharedComponents() {
           <span>Fast CET</span>
         </a>
         <ul class="nav__links">
-          <li><a href="${prefix}pages/zhenti.html">真题</a></li>
-          <li><a href="${prefix}pages/moni.html">模拟题</a></li>
-          <li><a href="${prefix}pages/listening.html">听力</a></li>
-          <li><a href="${prefix}pages/reading.html">阅读</a></li>
-          <li><a href="${prefix}pages/translation.html">翻译</a></li>
-          <li><a href="${prefix}pages/writing.html">作文</a></li>
+          <!-- TODO: 其他板块构建完成后取消注释 -->
+          <!-- <li><a href="${prefix}pages/zhenti.html">真题</a></li> -->
+          <!-- <li><a href="${prefix}pages/moni.html">模拟题</a></li> -->
+          <!-- <li><a href="${prefix}pages/listening.html">听力</a></li> -->
+          <!-- <li><a href="${prefix}pages/reading.html">阅读</a></li> -->
+          <!-- <li><a href="${prefix}pages/translation.html">翻译</a></li> -->
+          <!-- <li><a href="${prefix}pages/writing.html">作文</a></li> -->
           <li><a href="${prefix}pages/vocabulary.html">词汇</a></li>
         </ul>
         <button class="nav__toggle" aria-label="菜单">
@@ -150,12 +151,13 @@ function loadSharedComponents() {
       </div>
       <div class="nav__mobile-panel">
         <a href="${prefix}index.html">首页</a>
-        <a href="${prefix}pages/zhenti.html">真题</a>
-        <a href="${prefix}pages/moni.html">模拟题</a>
-        <a href="${prefix}pages/listening.html">听力</a>
-        <a href="${prefix}pages/reading.html">阅读</a>
-        <a href="${prefix}pages/translation.html">翻译</a>
-        <a href="${prefix}pages/writing.html">作文</a>
+        <!-- TODO: 其他板块构建完成后取消注释 -->
+        <!-- <a href="${prefix}pages/zhenti.html">真题</a> -->
+        <!-- <a href="${prefix}pages/moni.html">模拟题</a> -->
+        <!-- <a href="${prefix}pages/listening.html">听力</a> -->
+        <!-- <a href="${prefix}pages/reading.html">阅读</a> -->
+        <!-- <a href="${prefix}pages/translation.html">翻译</a> -->
+        <!-- <a href="${prefix}pages/writing.html">作文</a> -->
         <a href="${prefix}pages/vocabulary.html">词汇</a>
       </div>
     </nav>
@@ -177,17 +179,19 @@ function loadSharedComponents() {
             <h4 class="footer__heading">快速链接</h4>
             <ul class="footer__links">
               <li><a href="${prefix}index.html">首页</a></li>
-              <li><a href="${prefix}pages/zhenti.html">历年真题</a></li>
-              <li><a href="${prefix}pages/moni.html">模拟测试</a></li>
+              <!-- TODO: 其他板块构建完成后取消注释 -->
+              <!-- <li><a href="${prefix}pages/zhenti.html">历年真题</a></li> -->
+              <!-- <li><a href="${prefix}pages/moni.html">模拟测试</a></li> -->
             </ul>
           </div>
           <div class="footer__col">
             <h4 class="footer__heading">考试模块</h4>
             <ul class="footer__links">
-              <li><a href="${prefix}pages/listening.html">听力理解</a></li>
-              <li><a href="${prefix}pages/reading.html">阅读理解</a></li>
-              <li><a href="${prefix}pages/translation.html">翻译</a></li>
-              <li><a href="${prefix}pages/writing.html">作文</a></li>
+              <!-- TODO: 其他板块构建完成后取消注释 -->
+              <!-- <li><a href="${prefix}pages/listening.html">听力理解</a></li> -->
+              <!-- <li><a href="${prefix}pages/reading.html">阅读理解</a></li> -->
+              <!-- <li><a href="${prefix}pages/translation.html">翻译</a></li> -->
+              <!-- <li><a href="${prefix}pages/writing.html">作文</a></li> -->
               <li><a href="${prefix}pages/vocabulary.html">核心词汇</a></li>
             </ul>
           </div>

@@ -1,29 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 56" fill="none">
-  <defs>
-    <linearGradient id="iconGrad" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#6366F1"/>
-      <stop offset="100%" stop-color="#818CF8"/>
-    </linearGradient>
-    <linearGradient id="goldAccent" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#F59E0B"/>
-      <stop offset="100%" stop-color="#FBBF24"/>
-    </linearGradient>
-    <linearGradient id="textFast" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#F1F5F9"/>
-      <stop offset="100%" stop-color="#94A3B8"/>
-    </linearGradient>
-  </defs>
-  <!-- F-lightning geometric mark (in 48x48 area, y=4 to 52) -->
-  <!-- F stem -->
-  <polygon points="8,50 8,8 16,8 16,50" fill="url(#iconGrad)"/>
-  <!-- F upper arm (lightning strike upward) -->
-  <polygon points="16,14 42,4 42,11 16,20" fill="url(#iconGrad)"/>
-  <!-- F lower arm (dynamic angle) -->
-  <polygon points="16,29 38,28 38,35 16,36" fill="url(#iconGrad)"/>
-  <!-- Gold energy accent -->
-  <polyline points="12,48 12,12 40,6" stroke="url(#goldAccent)" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
-  <!-- Text: FAST (bold, silver gradient) -->
-  <text x="58" y="28" font-family="'Inter', -apple-system, sans-serif" font-weight="800" font-size="20" fill="url(#textFast)">FAST</text>
-  <!-- Text: CET (regular, muted gray) -->
-  <text x="58" y="48" font-family="'Inter', -apple-system, sans-serif" font-weight="400" font-size="20" fill="#64748B">CET</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 48" fill="none">
+  <!-- 闪电图标 -->
+  <path d="M14 26L24 6L20 20H28L18 42L21 26H14Z" fill="#FF5E4D" stroke="#FF5E4D" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Fast 文字 -->
+  <text x="34" y="32" font-family="'Inter', -apple-system, sans-serif" font-weight="800" font-size="24" fill="#FF5E4D">Fast</text>
+  <!-- CET 文字 -->
+  <text x="96" y="32" font-family="'Inter', -apple-system, sans-serif" font-weight="500" font-size="24" fill="#2D1A14">CET</text>
 </svg>
