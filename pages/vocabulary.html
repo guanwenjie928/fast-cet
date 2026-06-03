@@ -850,8 +850,11 @@
         ` : ''}
       `;
 
+      // Clear any leftover GSAP inline styles from advance animation
+      gsap.set(actions, { clearProps: 'all' });
+
       // Animate card in
-      gsap.fromTo(card, { opacity: 0, y: 30, scale: 0.95 }, { opacity: 1, y: 0, scale: 1, duration: 0.5, ease: 'power3.out' });
+      gsap.fromTo([card, actions], { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.5, stagger: 0.06, ease: 'power3.out' });
     }
 
     /* ── Reveal Definition (3D Flip) ── */
