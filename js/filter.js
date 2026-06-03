@@ -47,6 +47,13 @@ const Filter = {
         const value = tag.getAttribute('data-filter');
         if (!value) return;
 
+        // "全部" 按钮特殊处理：清空所有筛选，显示全部内容
+        if (value === 'all') {
+          this.clearFilter();
+          tag.classList.add('filter-tag--active');
+          return;
+        }
+
         if (this._options.multiSelect) {
           this._toggleTag(tag, value);
         } else {
@@ -66,18 +73,28 @@ const Filter = {
     if (this._activeTags.has(value)) {
       this._activeTags.delete(value);
       tag.classList.remove('filter-tag--active');
+      // 如果没有选中任何标签，自动激活「全部」
+      if (this._activeTags.size === 0) {
+        const allTag = this._container.querySelector('.filter-tag[data-filter="all"]');
+        if (allTag) allTag.classList.add('filter-tag--active');
+      }
     } else {
       this._activeTags.add(value);
       tag.classList.add('filter-tag--active');
+      // 选中具体分类时，取消「全部」的高亮
+      const allTag = this._container.querySelector('.filter-tag[data-filter="all"]');
+      if (allTag) allTag.classList.remove('filter-tag--active');
     }
   },
 
   /** Select a single tag (radio mode) */
   _selectSingle(tag, value) {
     if (this._activeTags.has(value)) {
-      // Deselect current
+      // Deselect current: re-activate "全部"
       this._activeTags.clear();
       tag.classList.remove('filter-tag--active');
+      const allTag = this._container.querySelector('.filter-tag[data-filter="all"]');
+      if (allTag) allTag.classList.add('filter-tag--active');
     } else {
       // Clear all, select one
       this._activeTags.clear();
